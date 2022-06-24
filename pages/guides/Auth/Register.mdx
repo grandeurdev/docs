@@ -1,0 +1,21 @@
+---
+title: Register a New User 
+---
+# Register a New User
+
+
+****auth.register(email, password, displayName, phone)****
+
+The first step to accessing any platform is signing up on it. This method allows you to add new users to your project through SDK. To create a new user account, simply provide the user email, password, display name and phone number as an argument to this function. Registering a new user account with SDK involves verification from our side to protect you from bogus users. So when you execute this function, Grandeur automatically sends a verification code to the phone number provided in the argument and returns you a promise so you can access the confirmation method.
+
+Account registration has been illustrated in the example below
+
+
+```js
+// Get user data from the inputs and
+// Submit request to the server
+auth.register(email, password, displayName, phone).then((res) => {
+  // Handle Response
+})
+```
+
