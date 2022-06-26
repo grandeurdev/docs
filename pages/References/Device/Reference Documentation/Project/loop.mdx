@@ -1,0 +1,18 @@
+#loop-TBD
+
+>loop () : returns void loop (valve: bool) : returns void
+
+This method is the legs of the SDK. Without it, the SDK doesn't run. Therefore, it must be called in Arduino's loop() and without being suspected to any delay. This method is what runs the underlying event loop and makes all the Async functions possible. It can also accept an argument which we call valve. A valve is a boolean expression whose value decides if the SDK would run for current loop or not. For example, we can use it to dictate to the SDK to run only when the device WiFi is connected. You can also use an if-statement instead.
+
+
+Example-Arduino
+Grandeur::Project myProject;
+void setup() {
+  myProject = grandeur.init(YourApiKey, YourToken);
+}
+
+void loop() {
+  myProject.loop(WiFiState == CONNECTED);  // Same as "if(WiFiState == CONNECTED) myProject.loop();"
+}
+// **RESULT**
+// Runs the SDK only when the WiFi is connected.
