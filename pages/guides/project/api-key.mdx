@@ -8,6 +8,8 @@ Each project is identified by a digital signature that we call the API key, just
 
 This is how they work: In every SDK, there is a global object aka. `grandeur`. You can initialize your configurations by calling `grandeur.init()`. This returns you a reference to your whole project in case of your application or just to your device in case of your hardware. Your project's API Key then delegates your project's access to the SDKs.
 
+API Key comes in the form of: `grandeurl4o2g68v1u1v0pxfb2mkeurh`
+
 Use of this key is illustrated below:
 
 ```py
@@ -16,3 +18,4 @@ import grandeur.device as grandeur
 # Init the SDK and get reference to the project
 project = grandeur.init(ApiKey, DeviceToken)
 ```
+

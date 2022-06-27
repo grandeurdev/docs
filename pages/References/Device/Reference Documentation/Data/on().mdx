@@ -1,6 +1,10 @@
-#on
+#data().on
 
+##Arduino
 >on (path: String, callback : Callback) : returns void on (callback : Callback) : returns void
+
+##py
+on(path: str, callback: Callable[[str, dict], None]) -> Subscriber
 
 This method schedules a function to be called when a device variable changes on Grandeur.
 
@@ -8,10 +12,11 @@ A variable can be changed by a paired user from an app, dashboard, or any SDKs. 
 
 A Tidbit: Update is a special type of event and the function that handles it is called an update handler.
 
-Parameters
-Name	Type	Description
-path	String	Path of the device variable using dot notation
-callback	Callback	An update handler for the device variable
+
+| Name       | Type |   Description |
+| :------------ | :---------: | ----------: |
+| path        |    string    | Path of the device variable using dot notation|
+| callback     |    Callback     |  An update handler for the device variable |
 
 
 ###Example-Arduino
@@ -39,21 +44,9 @@ void loop() {
 }
 ```
 
+###Example-py
 
-
-### Py
-on
-on(path: str, callback: Callable[[str, dict], None]) -> Subscriber
-
-This method schedules a function to be called when a device variable changes on Grandeur.
-
-A Tidbit: Update is a special type of event and the function that handles it is called an update handler.
-
-Parameters
-Name	Type	Description
-path	str	Path of the device variable using dot notation
-callback	Callable[[str, dict], None]	An update handler for the device variable
-Example
+```
 import grandeur.device as grandeur
 
 # Init the sdk
@@ -68,3 +61,4 @@ def updateHandler(path, update):
 
 # Get data of the device
 device.data().on("", updateHandler)
+```

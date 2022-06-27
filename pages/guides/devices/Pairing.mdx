@@ -1,3 +1,8 @@
+---
+title: Pairing
+---
+# Pairing
+
 On Grandeur, a device falls under the ownership of the project's administrator. The project's API Key delegates the device pairing authority to the SDK which the user uses to pair with the device. Pairing a device makes it live on Grandeur and the user gets delegated access to the device's data. But a user cannot delete or modify a device's inherent data because it's not within its scope.A user can pair with any number of devices but a device can be paired with at the most one user.
 
 The device entity, in the end, defines two things:
@@ -24,6 +29,8 @@ device.pair().then((res) => {
 })
 ```
 
+![alt text](/images/Pair.mov)
+
 Just like pairing you can also unpair your device. It allows you to unpair a device from a user account. It simply declares that the user account no longer owns the device. In other words, it makes the device available for other users to claim.
 
 Use of unpairDevice method has been illustrated in the example below
@@ -39,4 +46,5 @@ device.unpair().then((res) => {
 })
 ```
 
-![alt text](/images/Pair.webm)
+#This is pending
+![alt text](/images/unpair.mov)

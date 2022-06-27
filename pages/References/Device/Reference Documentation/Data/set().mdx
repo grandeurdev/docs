@@ -1,4 +1,4 @@
-#set
+#data().on
 
 ###Arduino
 >set (path : String, data : any, callback: Callback) : returns void set (path : String, data : any) : returns void
@@ -8,11 +8,14 @@
 
 This method updates a device variable on Grandeur with new data.
 
-Parameters
-Name	Type	Description
-path	String	Path of the device variable using dot notation.
-data	Var	New data to store in the variable.
-callback	Callback	A function to be called after the variable at path is actually updated.
+###Parameters
+
+| Name       | Type |   Description |
+| :------------ | :---------: | ----------: |
+| path        |    string    | Path of the device variable using dot notation|
+| callback     |   var     | New data to store in the variable|
+| data        |    string    | Path of the device variable using dot notation|
+
 
 ###Example-Arduino
 

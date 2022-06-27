@@ -10,3 +10,16 @@ Each device comes with a privileged space in which you can save data. Like suppo
 This storage space is sandboxed, so only the paired users can request or update the data. You can store the data in json format and can also get/set individual key by specifying the path in dot notation.
 
 Grandeur gives you a lot of control over your data. You can use multiple methods to access and manipulate your data.
+
+The usage of these methods is illustrated below:
+
+```
+//To fetch device data
+device.data().get();
+//To update or set device data
+device.data().set();
+//Subscribe to the data update event of a device
+device.data().on();
+```
+
+##Link to reference
