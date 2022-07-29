@@ -22,7 +22,7 @@ class Header extends Component {
         // and give the page a structure
 
         return (
-            <div className={`bg-gray-2 px-6 py-6 w-full h-18 -mt-18`}>
+            <div className={`bg-gray-2 px-12 py-6 w-full h-18 -mt-18`}>
 
                 {/* Logo */}
                 <Link href="/">

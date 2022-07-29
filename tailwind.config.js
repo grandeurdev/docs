@@ -28,11 +28,11 @@ module.exports = {
 
 		// Font size
 		fontSize: {
-			'xs': '0.55rem',
-			'sm': '0.65rem',
-			'base': '0.75rem',
-			'lg': '0.85rem',
-			'xl': '1.2rem',
+			'xs': '0.65rem',
+			'sm': '0.75rem',
+			'base': '0.85rem',
+			'lg': '0.95rem',
+			'xl': '1.4rem',
 			'title': '2rem'
 		},
 

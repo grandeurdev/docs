@@ -22,7 +22,7 @@ function Route({ title, path, depth }) {
     }, [ router.asPath, path ])
 
     // Return the markdown
-    return <Link key={cuid()} href={path}><div className={`${active} text-base pt-2 cursor-pointer`} style={{ marginLeft: `${ depth <= 0 ? 0 : depth * 10 }px` }}>{title}</div></Link>
+    return <Link key={cuid()} href={path}><div className={`${active} text-base py-2 w-full border-l border-gray-4 border-opacity-90 pl-4 cursor-pointer text-opacity-90 hover:text-opacity-100 hover:border-opacity-100`} style={{ marginLeft: `${ depth <= 0 ? 0 : depth * 10 }px` }}>{title}</div></Link>
 
 }
 
@@ -62,7 +62,7 @@ class Sidebar extends Component {
             else {
                 // If it is a directory, then we gotta do another
                 // pass to also tranform all the children
-                processed.push(<div key={cuid()} className={`mt-5 mb-1 text-white-2 text-base ${ depth >= 0 ? "" : "uppercase" }`} style={{ marginLeft: `${ depth <= 0 ? 0 : depth * 10 }px` }}>{route.key}</div>)
+                processed.push(<div key={cuid()} className={`my-4 select-none text-white-2 border-b border-white-2 text-lg ${ depth >= 0 ? "" : "" }`} style={{ marginLeft: `${ depth <= 0 ? 0 : depth * 10 }px` }}>{route.key}</div>)
                 processed.push(...this.toc(route.children, depth + 1));
             }
 
@@ -78,7 +78,7 @@ class Sidebar extends Component {
         // and give the page a structure
 
         return (
-            <div className={`px-6 my-8 w-full box-border flex flex-col items-start`}>
+            <div className={`px-12 my-8 w-full box-border flex flex-col items-start`}>
 
                 {/* Render TOC */}
                 {this.toc(this.state.toc, -1)}
