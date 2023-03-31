@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/auth/overview",
+  "id": "references/client-sdk/auth/overview",
+  "title": "Overview",
+  "description": "This class provides access to the auth feature of Grandeur. Simply get a reference to the auth class by calling auth() method with the project object. This is illustrated as below",
+  "source": "@site/docs/references/client-sdk/auth/overview.mdx",
+  "sourceDirName": "references/client-sdk/auth",
+  "slug": "/references/client-sdk/auth/overview",
+  "permalink": "/docs/references/client-sdk/auth/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.data.on",
+    "permalink": "/docs/references/client-sdk/devices/device/data/on"
+  },
+  "next": {
+    "title": "auth.register",
+    "permalink": "/docs/references/client-sdk/auth/register"
+  }
+}

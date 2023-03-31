@@ -1,0 +1,22 @@
+{
+  "unversionedId": "faqs",
+  "id": "faqs",
+  "title": "FAQs",
+  "description": "Where do I find support?",
+  "source": "@site/docs/faqs.mdx",
+  "sourceDirName": ".",
+  "slug": "/faqs",
+  "permalink": "/docs/faqs",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/faqs.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "FAQs"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Keywords",
+    "permalink": "/docs/keywords"
+  }
+}

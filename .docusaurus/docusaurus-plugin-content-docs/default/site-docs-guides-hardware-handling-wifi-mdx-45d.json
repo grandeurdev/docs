@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/handling-wifi",
+  "id": "guides/hardware/handling-wifi",
+  "title": "Handling the WiFi",
+  "description": "You can use a WiFi library corresponding to your microcontroller to handle your device's WiFi. Here are some popular ones:",
+  "source": "@site/docs/guides/hardware/handling-wifi.mdx",
+  "sourceDirName": "guides/hardware",
+  "slug": "/guides/hardware/handling-wifi",
+  "permalink": "/docs/guides/hardware/handling-wifi",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-wifi.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Handling the WiFi"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Setting up Boards",
+    "permalink": "/docs/guides/hardware/setting-up-the-board"
+  },
+  "next": {
+    "title": "Handling Connection Status",
+    "permalink": "/docs/guides/hardware/handling-connection-status"
+  }
+}

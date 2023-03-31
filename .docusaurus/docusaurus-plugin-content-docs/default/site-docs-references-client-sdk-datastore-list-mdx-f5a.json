@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/list",
+  "id": "references/client-sdk/datastore/list",
+  "title": "datastore.list",
+  "description": "This method returns the list of collections in the datastore of your project. This method accpets the following input arguments",
+  "source": "@site/docs/references/client-sdk/datastore/list.mdx",
+  "sourceDirName": "references/client-sdk/datastore",
+  "slug": "/references/client-sdk/datastore/list",
+  "permalink": "/docs/references/client-sdk/datastore/list",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/list.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "datastore.list"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/datastore/overview"
+  },
+  "next": {
+    "title": "datastore.drop",
+    "permalink": "/docs/references/client-sdk/datastore/drop"
+  }
+}

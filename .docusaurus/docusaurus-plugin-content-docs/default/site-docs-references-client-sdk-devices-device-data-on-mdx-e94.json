@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/data/on",
+  "id": "references/client-sdk/devices/device/data/on",
+  "title": "device.data.on",
+  "description": "You can also attach a listener to device data. For example if {voltage 10, vrms 1} is stored then you can subscribe to updates on either vpp and current by providing voltage.vpp and current in path field respectively. You can subscribe to root by providing empty path.",
+  "source": "@site/docs/references/client-sdk/devices/device/data/on.mdx",
+  "sourceDirName": "references/client-sdk/devices/device/data",
+  "slug": "/references/client-sdk/devices/device/data/on",
+  "permalink": "/docs/references/client-sdk/devices/device/data/on",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/data/on.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.data.on"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.data.set",
+    "permalink": "/docs/references/client-sdk/devices/device/data/set"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/auth/overview"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/devices/pairing",
+  "id": "guides/devices/pairing",
+  "title": "Pairing",
+  "description": "On Grandeur, a device falls under the ownership of the project's administrator. The project's API Key delegates the device pairing authority to the SDK which the user uses to pair with the device. Pairing a device makes it live on Grandeur and the user gets delegated access to the device's data. But a user cannot delete or modify a device's inherent data because it's not within its scope.A user can pair with any number of devices but a device can be paired with at the most one user.",
+  "source": "@site/docs/guides/devices/pairing.mdx",
+  "sourceDirName": "guides/devices",
+  "slug": "/guides/devices/pairing",
+  "permalink": "/docs/guides/devices/pairing",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/devices/pairing.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Pairing"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Data",
+    "permalink": "/docs/guides/devices/data"
+  },
+  "next": {
+    "title": "Datastore",
+    "permalink": "/docs/guides/datastore/overview"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/datastore/overview",
+  "id": "guides/datastore/overview",
+  "title": "Datastore",
+  "description": "Data storage is the basic requirement of a data driven application or device. We have built this feature in order to enable users to store large amount of data like logs of devices. Imagine it as an infinite storage between your apps and your devices — ensuring high availability and scalability without you ever worrying about them. Millions of your devices could be logging tons of variables each and you can just treat it as a chunk of Big Data, analyze it, pass it through AI models, and learn from it.  To access this feature simply get a reference to the storage class by calling datastore() method with the project object.",
+  "source": "@site/docs/guides/datastore/overview.mdx",
+  "sourceDirName": "guides/datastore",
+  "slug": "/guides/datastore/overview",
+  "permalink": "/docs/guides/datastore/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/datastore/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Datastore"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Pairing",
+    "permalink": "/docs/guides/devices/pairing"
+  },
+  "next": {
+    "title": "Collections",
+    "permalink": "/docs/guides/datastore/collections"
+  }
+}

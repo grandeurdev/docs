@@ -1,0 +1,28 @@
+{
+  "unversionedId": "getting-started",
+  "id": "getting-started",
+  "title": "Getting Started",
+  "description": "To use Grandeur in our project, let's first set it up.",
+  "source": "@site/docs/getting-started.mdx",
+  "sourceDirName": ".",
+  "slug": "/getting-started",
+  "permalink": "/docs/getting-started",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/getting-started.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Getting Started",
+    "pinned": "pinned",
+    "emoji": "🔥"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/introduction"
+  },
+  "next": {
+    "title": "Hello World with IoT",
+    "permalink": "/docs/hello-world-with-iot"
+  }
+}

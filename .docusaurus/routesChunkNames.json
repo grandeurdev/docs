@@ -1,0 +1,535 @@
+{
+  "/__docusaurus/debug-ab1": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    }
+  },
+  "/__docusaurus/debug/config-fed": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    }
+  },
+  "/__docusaurus/debug/content-52e": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-c89": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    }
+  },
+  "/__docusaurus/debug/metadata-902": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    }
+  },
+  "/__docusaurus/debug/registry-59f": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    }
+  },
+  "/__docusaurus/debug/routes-e0e": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-8-c-2-67f"
+    }
+  },
+  "/blog-5c5": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "metadata": "metadata---blogb-2-b-df1"
+  },
+  "/blog/archive-773": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "archive": "archive---blog-archiveb-2-f-393"
+  },
+  "/blog/first-blog-post-54c": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-first-blog-poste-27-4a1"
+  },
+  "/blog/long-blog-post-936": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-long-blog-post-736-bc7"
+  },
+  "/blog/mdx-blog-post-804": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-mdx-blog-post-593-37b"
+  },
+  "/blog/tags-f0c": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
+  },
+  "/blog/tags/docusaurus-60f": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blogf-4-f-cd7"
+      },
+      {
+        "content": "content---blog-871-381"
+      },
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-docusaurusa-80-728",
+    "listMetadata": "listMetadata---blog-tags-docusaurus-608-c09"
+  },
+  "/blog/tags/facebook-f2f": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      }
+    ],
+    "tag": "tag---blog-tags-facebook-031-c52",
+    "listMetadata": "listMetadata---blog-tags-facebook-096-d31"
+  },
+  "/blog/tags/hello-ade": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-766-e3c"
+      },
+      {
+        "content": "content---blog-871-381"
+      }
+    ],
+    "tag": "tag---blog-tags-hello-30-a-bed",
+    "listMetadata": "listMetadata---blog-tags-hello-664-70a"
+  },
+  "/blog/tags/hola-2f2": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "items": [
+      {
+        "content": "content---blog-925-e00"
+      }
+    ],
+    "tag": "tag---blog-tags-holae-16-18a",
+    "listMetadata": "listMetadata---blog-tags-hola-4-c-9-a24"
+  },
+  "/blog/welcome-95d": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
+    "__context": {
+      "plugin": "plugin---blog-965-94a"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcomed-9-f-ffb"
+  },
+  "/markdown-page-d4f": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-page-572-e54"
+    },
+    "content": "content---markdown-page-393-028"
+  },
+  "/docs-7e7": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
+    "__context": {
+      "plugin": "plugin---docs-132-fff"
+    },
+    "versionMetadata": "versionMetadata---docs-935-398"
+  },
+  "/docs/build-your-custom-app-8f3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-build-your-custom-app-43-c-629"
+  },
+  "/docs/faqs-45d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-faqsc-12-b19"
+  },
+  "/docs/getting-started-719": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-getting-started-302-242"
+  },
+  "/docs/guides/auth/login-4a5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-auth-login-472-6b9"
+  },
+  "/docs/guides/auth/logout-324": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-auth-logoutcd-6-606"
+  },
+  "/docs/guides/auth/managing-user-account/update-account-password-a1d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-auth-managing-user-account-update-account-passwordf-9-a-c4b"
+  },
+  "/docs/guides/auth/managing-user-account/update-forgotten-password-cb2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-auth-managing-user-account-update-forgotten-password-893-e3f"
+  },
+  "/docs/guides/auth/managing-user-account/update-user-profile-e73": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-auth-managing-user-account-update-user-profileaa-3-bee"
+  },
+  "/docs/guides/auth/register-70d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-auth-registere-0-a-5c2"
+  },
+  "/docs/guides/canvas-a09": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-canvasb-70-633"
+  },
+  "/docs/guides/datastore/collections-5eb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-datastore-collections-527-3f0"
+  },
+  "/docs/guides/datastore/overview-ce0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-datastore-overview-06-a-c02"
+  },
+  "/docs/guides/datastore/querying-ea7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-datastore-queryingf-8-a-f2e"
+  },
+  "/docs/guides/devices/data-00a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-devices-datac-3-b-8a2"
+  },
+  "/docs/guides/devices/model-9d4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-devices-model-101-3c2"
+  },
+  "/docs/guides/devices/pairing-4e3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-devices-pairing-54-e-950"
+  },
+  "/docs/guides/hardware/handling-connection-status-043": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-handling-connection-status-998-428"
+  },
+  "/docs/guides/hardware/handling-device-variables-bf9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-handling-device-variablesc-09-639"
+  },
+  "/docs/guides/hardware/handling-updates-4c5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-handling-updates-9-e-3-915"
+  },
+  "/docs/guides/hardware/handling-wifi-b5d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-handling-wifi-45-d-c0d"
+  },
+  "/docs/guides/hardware/setting-up-the-board-730": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-setting-up-the-boardddb-688"
+  },
+  "/docs/guides/hardware/wifi-connection-b4a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-wifi-connectiond-3-b-516"
+  },
+  "/docs/guides/project/api-key-d60": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-project-api-keyf-6-c-2e4"
+  },
+  "/docs/guides/project/managing-a-project-455": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-project-managing-a-project-5-f-2-514"
+  },
+  "/docs/guides/security/access-credentials-361": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-security-access-credentials-0-e-1-b54"
+  },
+  "/docs/guides/security/cors-83b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-security-corscc-5-f5b"
+  },
+  "/docs/guides/security/user-and-administrator-669": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-security-user-and-administrator-0-d-7-722"
+  },
+  "/docs/hello-world-with-iot-4d5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-hello-world-with-iotb-5-d-8e0"
+  },
+  "/docs/introduction-3a2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-introduction-972-0fc"
+  },
+  "/docs/keywords-f32": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-keywords-634-e51"
+  },
+  "/docs/references/canvas/button-0d7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-button-15-f-4c2"
+  },
+  "/docs/references/canvas/display-fa8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-display-5-b-7-8a8"
+  },
+  "/docs/references/canvas/graph-45b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-graphc-3-c-54c"
+  },
+  "/docs/references/canvas/overview-7ed": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-overview-632-408"
+  },
+  "/docs/references/canvas/progress-0d6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-progress-2-b-7-f6e"
+  },
+  "/docs/references/canvas/slider-a62": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-slider-108-c9f"
+  },
+  "/docs/references/canvas/table-581": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-canvas-tablef-24-9aa"
+  },
+  "/docs/references/cli-0e7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-cli-4-f-2-724"
+  },
+  "/docs/references/client-sdk/auth/change-password-c35": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-change-passworda-84-739"
+  },
+  "/docs/references/client-sdk/auth/forgot-password-fdd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-forgot-passwordd-15-dd6"
+  },
+  "/docs/references/client-sdk/auth/is-authenticated-7a0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-is-authenticateda-11-3cc"
+  },
+  "/docs/references/client-sdk/auth/login-938": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-login-94-a-17d"
+  },
+  "/docs/references/client-sdk/auth/logout-811": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-logout-664-7c0"
+  },
+  "/docs/references/client-sdk/auth/overview-c84": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-overview-075-c1c"
+  },
+  "/docs/references/client-sdk/auth/register-1ef": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-register-433-0b6"
+  },
+  "/docs/references/client-sdk/auth/update-profile-80d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-auth-update-profile-4-ec-636"
+  },
+  "/docs/references/client-sdk/datastore/collection/delete-04e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-collection-delete-226-3bb"
+  },
+  "/docs/references/client-sdk/datastore/collection/insert-d9a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-collection-insertad-0-5f6"
+  },
+  "/docs/references/client-sdk/datastore/collection/overview-9d9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-collection-overview-84-f-d32"
+  },
+  "/docs/references/client-sdk/datastore/collection/search-e2e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-collection-search-22-f-ad2"
+  },
+  "/docs/references/client-sdk/datastore/collection/update-902": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-collection-update-0-dd-a07"
+  },
+  "/docs/references/client-sdk/datastore/drop-3ae": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-drop-1-bc-116"
+  },
+  "/docs/references/client-sdk/datastore/list-ea9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-listf-5-a-b6c"
+  },
+  "/docs/references/client-sdk/datastore/overview-c6a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-datastore-overview-196-ded"
+  },
+  "/docs/references/client-sdk/devices/count-17c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-countc-47-8ae"
+  },
+  "/docs/references/client-sdk/devices/device/data/get-f93": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-data-getb-06-a69"
+  },
+  "/docs/references/client-sdk/devices/device/data/on-313": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-data-one-94-0ca"
+  },
+  "/docs/references/client-sdk/devices/device/data/set-cfb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-data-setc-8-b-9b8"
+  },
+  "/docs/references/client-sdk/devices/device/get-d57": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-get-207-af7"
+  },
+  "/docs/references/client-sdk/devices/device/on-6ab": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-on-727-54f"
+  },
+  "/docs/references/client-sdk/devices/device/overview-ccc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-overview-07-d-d5d"
+  },
+  "/docs/references/client-sdk/devices/device/pair-1de": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-pair-517-ee5"
+  },
+  "/docs/references/client-sdk/devices/device/set-c71": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-setdd-9-4ad"
+  },
+  "/docs/references/client-sdk/devices/device/unpair-15c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-device-unpaire-10-5e6"
+  },
+  "/docs/references/client-sdk/devices/get-b63": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-get-63-e-9ee"
+  },
+  "/docs/references/client-sdk/devices/on-0fb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-on-99-c-a5a"
+  },
+  "/docs/references/client-sdk/devices/overview-d33": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-devices-overviewd-88-776"
+  },
+  "/docs/references/client-sdk/initialization-8b9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-initializationdf-2-d87"
+  },
+  "/docs/references/client-sdk/installation-4f9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-installation-7-b-3-f3c"
+  },
+  "/docs/references/client-sdk/is-connected-15d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-is-connected-3-bb-5aa"
+  },
+  "/docs/references/client-sdk/on-connection-6f3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-client-sdk-on-connection-455-829"
+  },
+  "/docs/references/device-sdk/datastore/collection/insert-c42": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-datastore-collection-insert-3-dd-ae8"
+  },
+  "/docs/references/device-sdk/datastore/collection/search-374": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-datastore-collection-search-43-d-5be"
+  },
+  "/docs/references/device-sdk/datastore/overview-e0d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-datastore-overviewf-86-4bd"
+  },
+  "/docs/references/device-sdk/device/data/get-122": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-device-data-getdf-1-490"
+  },
+  "/docs/references/device-sdk/device/data/on-df7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-device-data-on-190-070"
+  },
+  "/docs/references/device-sdk/device/data/set-951": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-device-data-set-7-d-3-553"
+  },
+  "/docs/references/device-sdk/device/overview-046": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-device-overview-03-c-5f5"
+  },
+  "/docs/references/device-sdk/initialization-daf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-initialization-33-a-d20"
+  },
+  "/docs/references/device-sdk/installation-2bd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-installation-25-a-51f"
+  },
+  "/docs/references/device-sdk/is-connected-f17": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-is-connected-4-f-5-cb2"
+  },
+  "/docs/references/device-sdk/on-connection-56e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-references-device-sdk-on-connectioncbd-5ca"
+  },
+  "/docs/restapi-121": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-restapi-453-48c"
+  },
+  "/-222": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---markdown-page-572-e54"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

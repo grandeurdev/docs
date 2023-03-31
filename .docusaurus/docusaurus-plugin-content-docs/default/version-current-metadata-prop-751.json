@@ -1,0 +1,1174 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "sidebar": [
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/docs/introduction",
+        "docId": "introduction"
+      },
+      {
+        "type": "link",
+        "label": "Getting started",
+        "href": "/docs/getting-started",
+        "docId": "getting-started"
+      },
+      {
+        "type": "link",
+        "label": "Hello world with IoT",
+        "href": "/docs/hello-world-with-iot",
+        "docId": "hello-world-with-iot"
+      },
+      {
+        "type": "link",
+        "label": "Build your custom app",
+        "href": "/docs/build-your-custom-app",
+        "docId": "build-your-custom-app"
+      },
+      {
+        "type": "category",
+        "label": "Guides",
+        "items": [
+          {
+            "type": "link",
+            "label": "Canvas",
+            "href": "/docs/guides/canvas",
+            "docId": "guides/canvas"
+          },
+          {
+            "type": "category",
+            "label": "Project",
+            "items": [
+              {
+                "type": "link",
+                "label": "API key",
+                "href": "/docs/guides/project/api-key",
+                "docId": "guides/project/api-key"
+              },
+              {
+                "type": "link",
+                "label": "Managing a project",
+                "href": "/docs/guides/project/managing-a-project",
+                "docId": "guides/project/managing-a-project"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Auth",
+            "items": [
+              {
+                "type": "link",
+                "label": "Register",
+                "href": "/docs/guides/auth/register",
+                "docId": "guides/auth/register"
+              },
+              {
+                "type": "link",
+                "label": "Login",
+                "href": "/docs/guides/auth/login",
+                "docId": "guides/auth/login"
+              },
+              {
+                "type": "link",
+                "label": "Logout",
+                "href": "/docs/guides/auth/logout",
+                "docId": "guides/auth/logout"
+              },
+              {
+                "type": "category",
+                "label": "Managing user account",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Update account password",
+                    "href": "/docs/guides/auth/managing-user-account/update-account-password",
+                    "docId": "guides/auth/managing-user-account/update-account-password"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Update forgotten password",
+                    "href": "/docs/guides/auth/managing-user-account/update-forgotten-password",
+                    "docId": "guides/auth/managing-user-account/update-forgotten-password"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Update user profile",
+                    "href": "/docs/guides/auth/managing-user-account/update-user-profile",
+                    "docId": "guides/auth/managing-user-account/update-user-profile"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Devices",
+            "items": [
+              {
+                "type": "link",
+                "label": "Model",
+                "href": "/docs/guides/devices/model",
+                "docId": "guides/devices/model"
+              },
+              {
+                "type": "link",
+                "label": "Data",
+                "href": "/docs/guides/devices/data",
+                "docId": "guides/devices/data"
+              },
+              {
+                "type": "link",
+                "label": "Pairing",
+                "href": "/docs/guides/devices/pairing",
+                "docId": "guides/devices/pairing"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Datastore",
+            "items": [
+              {
+                "type": "link",
+                "label": "Overview",
+                "href": "/docs/guides/datastore/overview",
+                "docId": "guides/datastore/overview"
+              },
+              {
+                "type": "link",
+                "label": "Collections",
+                "href": "/docs/guides/datastore/collections",
+                "docId": "guides/datastore/collections"
+              },
+              {
+                "type": "link",
+                "label": "Querying",
+                "href": "/docs/guides/datastore/querying",
+                "docId": "guides/datastore/querying"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Security",
+            "items": [
+              {
+                "type": "link",
+                "label": "User and administrator",
+                "href": "/docs/guides/security/user-and-administrator",
+                "docId": "guides/security/user-and-administrator"
+              },
+              {
+                "type": "link",
+                "label": "CORS",
+                "href": "/docs/guides/security/cors",
+                "docId": "guides/security/cors"
+              },
+              {
+                "type": "link",
+                "label": "Access Credentials",
+                "href": "/docs/guides/security/access-credentials",
+                "docId": "guides/security/access-credentials"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Hardware",
+            "items": [
+              {
+                "type": "link",
+                "label": "Setting up the board",
+                "href": "/docs/guides/hardware/setting-up-the-board",
+                "docId": "guides/hardware/setting-up-the-board"
+              },
+              {
+                "type": "link",
+                "label": "Handling WiFi",
+                "href": "/docs/guides/hardware/handling-wifi",
+                "docId": "guides/hardware/handling-wifi"
+              },
+              {
+                "type": "link",
+                "label": "Handling Connection Status",
+                "href": "/docs/guides/hardware/handling-connection-status",
+                "docId": "guides/hardware/handling-connection-status"
+              },
+              {
+                "type": "link",
+                "label": "Handling Device Variables",
+                "href": "/docs/guides/hardware/handling-device-variables",
+                "docId": "guides/hardware/handling-device-variables"
+              },
+              {
+                "type": "link",
+                "label": "Handling Updates",
+                "href": "/docs/guides/hardware/handling-updates",
+                "docId": "guides/hardware/handling-updates"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "References",
+        "items": [
+          {
+            "type": "category",
+            "label": "Device SDK",
+            "items": [
+              {
+                "type": "link",
+                "label": "Installation",
+                "href": "/docs/references/device-sdk/installation",
+                "docId": "references/device-sdk/installation"
+              },
+              {
+                "type": "link",
+                "label": ".init",
+                "href": "/docs/references/device-sdk/initialization",
+                "docId": "references/device-sdk/initialization"
+              },
+              {
+                "type": "link",
+                "label": ".isConnected",
+                "href": "/docs/references/device-sdk/is-connected",
+                "docId": "references/device-sdk/is-connected"
+              },
+              {
+                "type": "link",
+                "label": ".onConnection",
+                "href": "/docs/references/device-sdk/on-connection",
+                "docId": "references/device-sdk/on-connection"
+              },
+              {
+                "type": "category",
+                "label": "device",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Overview",
+                    "href": "/docs/references/device-sdk/device/overview",
+                    "docId": "references/device-sdk/device/overview"
+                  },
+                  {
+                    "type": "category",
+                    "label": ".data",
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": ".get",
+                        "href": "/docs/references/device-sdk/device/data/get",
+                        "docId": "references/device-sdk/device/data/get"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".set",
+                        "href": "/docs/references/device-sdk/device/data/set",
+                        "docId": "references/device-sdk/device/data/set"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".on",
+                        "href": "/docs/references/device-sdk/device/data/on",
+                        "docId": "references/device-sdk/device/data/on"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "datastore",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Overview",
+                    "href": "/docs/references/device-sdk/datastore/overview",
+                    "docId": "references/device-sdk/datastore/overview"
+                  },
+                  {
+                    "type": "category",
+                    "label": ".collection",
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": ".insert",
+                        "href": "/docs/references/device-sdk/datastore/collection/insert",
+                        "docId": "references/device-sdk/datastore/collection/insert"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".search",
+                        "href": "/docs/references/device-sdk/datastore/collection/search",
+                        "docId": "references/device-sdk/datastore/collection/search"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Client SDK",
+            "items": [
+              {
+                "type": "link",
+                "label": "Installation",
+                "href": "/docs/references/client-sdk/installation",
+                "docId": "references/client-sdk/installation"
+              },
+              {
+                "type": "link",
+                "label": ".init",
+                "href": "/docs/references/client-sdk/initialization",
+                "docId": "references/client-sdk/initialization"
+              },
+              {
+                "type": "link",
+                "label": ".isConnected",
+                "href": "/docs/references/client-sdk/is-connected",
+                "docId": "references/client-sdk/is-connected"
+              },
+              {
+                "type": "link",
+                "label": ".onConnection",
+                "href": "/docs/references/client-sdk/on-connection",
+                "docId": "references/client-sdk/on-connection"
+              },
+              {
+                "type": "category",
+                "label": "devices",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Overview",
+                    "href": "/docs/references/client-sdk/devices/overview",
+                    "docId": "references/client-sdk/devices/overview"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".get",
+                    "href": "/docs/references/client-sdk/devices/get",
+                    "docId": "references/client-sdk/devices/get"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".count",
+                    "href": "/docs/references/client-sdk/devices/count",
+                    "docId": "references/client-sdk/devices/count"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".on",
+                    "href": "/docs/references/client-sdk/devices/on",
+                    "docId": "references/client-sdk/devices/on"
+                  },
+                  {
+                    "type": "category",
+                    "label": ".device",
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": "Overview",
+                        "href": "/docs/references/client-sdk/devices/device/overview",
+                        "docId": "references/client-sdk/devices/device/overview"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".get",
+                        "href": "/docs/references/client-sdk/devices/device/get",
+                        "docId": "references/client-sdk/devices/device/get"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".set",
+                        "href": "/docs/references/client-sdk/devices/device/set",
+                        "docId": "references/client-sdk/devices/device/set"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".on",
+                        "href": "/docs/references/client-sdk/devices/device/on",
+                        "docId": "references/client-sdk/devices/device/on"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".pair",
+                        "href": "/docs/references/client-sdk/devices/device/pair",
+                        "docId": "references/client-sdk/devices/device/pair"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".unpair",
+                        "href": "/docs/references/client-sdk/devices/device/unpair",
+                        "docId": "references/client-sdk/devices/device/unpair"
+                      },
+                      {
+                        "type": "category",
+                        "label": ".data",
+                        "items": [
+                          {
+                            "type": "link",
+                            "label": ".get",
+                            "href": "/docs/references/client-sdk/devices/device/data/get",
+                            "docId": "references/client-sdk/devices/device/data/get"
+                          },
+                          {
+                            "type": "link",
+                            "label": ".set",
+                            "href": "/docs/references/client-sdk/devices/device/data/set",
+                            "docId": "references/client-sdk/devices/device/data/set"
+                          },
+                          {
+                            "type": "link",
+                            "label": ".on",
+                            "href": "/docs/references/client-sdk/devices/device/data/on",
+                            "docId": "references/client-sdk/devices/device/data/on"
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "auth",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Overview",
+                    "href": "/docs/references/client-sdk/auth/overview",
+                    "docId": "references/client-sdk/auth/overview"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".register",
+                    "href": "/docs/references/client-sdk/auth/register",
+                    "docId": "references/client-sdk/auth/register"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".isAuthenticated",
+                    "href": "/docs/references/client-sdk/auth/is-authenticated",
+                    "docId": "references/client-sdk/auth/is-authenticated"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".login",
+                    "href": "/docs/references/client-sdk/auth/login",
+                    "docId": "references/client-sdk/auth/login"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".logout",
+                    "href": "/docs/references/client-sdk/auth/logout",
+                    "docId": "references/client-sdk/auth/logout"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".forgotPassword",
+                    "href": "/docs/references/client-sdk/auth/forgot-password",
+                    "docId": "references/client-sdk/auth/forgot-password"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".changePassword",
+                    "href": "/docs/references/client-sdk/auth/change-password",
+                    "docId": "references/client-sdk/auth/change-password"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".updateProfile",
+                    "href": "/docs/references/client-sdk/auth/update-profile",
+                    "docId": "references/client-sdk/auth/update-profile"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "datastore",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Overview",
+                    "href": "/docs/references/client-sdk/datastore/overview",
+                    "docId": "references/client-sdk/datastore/overview"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".list",
+                    "href": "/docs/references/client-sdk/datastore/list",
+                    "docId": "references/client-sdk/datastore/list"
+                  },
+                  {
+                    "type": "link",
+                    "label": ".drop",
+                    "href": "/docs/references/client-sdk/datastore/drop",
+                    "docId": "references/client-sdk/datastore/drop"
+                  },
+                  {
+                    "type": "category",
+                    "label": ".collection",
+                    "items": [
+                      {
+                        "type": "link",
+                        "label": "Overview",
+                        "href": "/docs/references/client-sdk/datastore/collection/overview",
+                        "docId": "references/client-sdk/datastore/collection/overview"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".insert",
+                        "href": "/docs/references/client-sdk/datastore/collection/insert",
+                        "docId": "references/client-sdk/datastore/collection/insert"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".search",
+                        "href": "/docs/references/client-sdk/datastore/collection/search",
+                        "docId": "references/client-sdk/datastore/collection/search"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".update",
+                        "href": "/docs/references/client-sdk/datastore/collection/update",
+                        "docId": "references/client-sdk/datastore/collection/update"
+                      },
+                      {
+                        "type": "link",
+                        "label": ".delete",
+                        "href": "/docs/references/client-sdk/datastore/collection/delete",
+                        "docId": "references/client-sdk/datastore/collection/delete"
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Canvas",
+            "items": [
+              {
+                "type": "link",
+                "label": "Overview",
+                "href": "/docs/references/canvas/overview",
+                "docId": "references/canvas/overview"
+              },
+              {
+                "type": "link",
+                "label": "Button",
+                "href": "/docs/references/canvas/button",
+                "docId": "references/canvas/button"
+              },
+              {
+                "type": "link",
+                "label": "Display",
+                "href": "/docs/references/canvas/display",
+                "docId": "references/canvas/display"
+              },
+              {
+                "type": "link",
+                "label": "Progress",
+                "href": "/docs/references/canvas/progress",
+                "docId": "references/canvas/progress"
+              },
+              {
+                "type": "link",
+                "label": "Slider",
+                "href": "/docs/references/canvas/slider",
+                "docId": "references/canvas/slider"
+              },
+              {
+                "type": "link",
+                "label": "Table",
+                "href": "/docs/references/canvas/table",
+                "docId": "references/canvas/table"
+              },
+              {
+                "type": "link",
+                "label": "Graph",
+                "href": "/docs/references/canvas/graph",
+                "docId": "references/canvas/graph"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "link",
+            "label": "CLI",
+            "href": "/docs/references/cli",
+            "docId": "references/cli"
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "link",
+        "label": "Keywords",
+        "href": "/docs/keywords",
+        "docId": "keywords"
+      },
+      {
+        "type": "link",
+        "label": "FAQs",
+        "href": "/docs/faqs",
+        "docId": "faqs"
+      }
+    ]
+  },
+  "docs": {
+    "build-your-custom-app": {
+      "id": "build-your-custom-app",
+      "title": "Builing Your Custom App",
+      "description": "We've already accomplished the task of blinking the on-board LED of ESP8266 through our Grandeur Platform so let's take things one step further. Would'nt it be cool if we could control that LED using our custom app.",
+      "sidebar": "sidebar"
+    },
+    "faqs": {
+      "id": "faqs",
+      "title": "FAQs",
+      "description": "Where do I find support?",
+      "sidebar": "sidebar"
+    },
+    "getting-started": {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "description": "To use Grandeur in our project, let's first set it up.",
+      "sidebar": "sidebar"
+    },
+    "guides/auth/login": {
+      "id": "guides/auth/login",
+      "title": "Login a User",
+      "description": "After successful registration, the user can login with its credentials.",
+      "sidebar": "sidebar"
+    },
+    "guides/auth/logout": {
+      "id": "guides/auth/logout",
+      "title": "Logout a User",
+      "description": "Logout serves as the most basic and important feature.",
+      "sidebar": "sidebar"
+    },
+    "guides/auth/managing-user-account/update-account-password": {
+      "id": "guides/auth/managing-user-account/update-account-password",
+      "title": "Update Account Password",
+      "description": "auth.changePassword()",
+      "sidebar": "sidebar"
+    },
+    "guides/auth/managing-user-account/update-forgotten-password": {
+      "id": "guides/auth/managing-user-account/update-forgotten-password",
+      "title": "Update Forgotten Password",
+      "description": "auth.forgotPassword()",
+      "sidebar": "sidebar"
+    },
+    "guides/auth/managing-user-account/update-user-profile": {
+      "id": "guides/auth/managing-user-account/update-user-profile",
+      "title": "Update User Profile",
+      "description": "auth.updateProfile()",
+      "sidebar": "sidebar"
+    },
+    "guides/auth/register": {
+      "id": "guides/auth/register",
+      "title": "Register a New User",
+      "description": "So you've created the perfect custom app and now want to elevate the end user experience by ensuring that they can use these apps securely. This is where the whole auth concept comes into play.",
+      "sidebar": "sidebar"
+    },
+    "guides/canvas": {
+      "id": "guides/canvas",
+      "title": "Canvas",
+      "description": "Canvas is an imperative addition to the Grandeur family. It is a prototyping tool that lets you drag and drop widgets — like buttons, sliders, displays, and graphs — to sketch a layout which you can use instead of coding a full app. This means you do not have to have app designers in your team before starting to build IoT — a single hardware engineer is a beast with Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "guides/datastore/collections": {
+      "id": "guides/datastore/collections",
+      "title": "Collections",
+      "description": "Collections are essentially database tables where all of your information is stored.",
+      "sidebar": "sidebar"
+    },
+    "guides/datastore/overview": {
+      "id": "guides/datastore/overview",
+      "title": "Datastore",
+      "description": "Data storage is the basic requirement of a data driven application or device. We have built this feature in order to enable users to store large amount of data like logs of devices. Imagine it as an infinite storage between your apps and your devices — ensuring high availability and scalability without you ever worrying about them. Millions of your devices could be logging tons of variables each and you can just treat it as a chunk of Big Data, analyze it, pass it through AI models, and learn from it.  To access this feature simply get a reference to the storage class by calling datastore() method with the project object.",
+      "sidebar": "sidebar"
+    },
+    "guides/datastore/querying": {
+      "id": "guides/datastore/querying",
+      "title": "Querying",
+      "description": "Just like SQL, querying here is used to retrieve the required data from the database. You may perform operations like select, group by, join and filtering to retrieve the required data and present it in a meaningful manner to extract significant information out of it.",
+      "sidebar": "sidebar"
+    },
+    "guides/devices/data": {
+      "id": "guides/devices/data",
+      "title": "Data",
+      "description": "When you register a device, you make it available in your project's network. Not just that, a new namespace is created for your device in the device registry.",
+      "sidebar": "sidebar"
+    },
+    "guides/devices/model": {
+      "id": "guides/devices/model",
+      "title": "Model",
+      "description": "To register your device, you first need to register its data model under the Models Section. Model is a way to manage and categorize devices. You can create multiple models and each model can then be associated with multiple devices. You are free to name the function whatever you want, but you have to be vigilant in the schema field while passing a variable with its value. Schema here is not strictly enforced and meant to give your device an initial state.",
+      "sidebar": "sidebar"
+    },
+    "guides/devices/pairing": {
+      "id": "guides/devices/pairing",
+      "title": "Pairing",
+      "description": "On Grandeur, a device falls under the ownership of the project's administrator. The project's API Key delegates the device pairing authority to the SDK which the user uses to pair with the device. Pairing a device makes it live on Grandeur and the user gets delegated access to the device's data. But a user cannot delete or modify a device's inherent data because it's not within its scope.A user can pair with any number of devices but a device can be paired with at the most one user.",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/handling-connection-status": {
+      "id": "guides/hardware/handling-connection-status",
+      "title": "Handling Connection Status",
+      "description": "You can also listen on SDK's connection-related events. For example, to run some code when the device makes a successful connection to Grandeur or when the device's connection to Grandeur breaks, you can wrap that code in \"a function that takes a bool and returns void\" and pass it to Grandeur::Project's onConnection() function.",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/handling-device-variables": {
+      "id": "guides/hardware/handling-device-variables",
+      "title": "Handling Device Variables",
+      "description": "In IoT, every device in the network wants to publish some variables for users or other devices in the network to see. On Grandeur, we call these the data of the device. you can store the device variables as key-value pairs, like the device's voltage or current or its ON/OFF state. Keeping the online copy of device variables (aka. data) updated gives you many advantages: you can see if your device is ON or OFF at any moment just by fetching its state from Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/handling-updates": {
+      "id": "guides/hardware/handling-updates",
+      "title": "Handling Updates",
+      "description": "You can not only get()/set() but also subscribe to a device variable, which means if an update occurs in that variable at any time, the device will instantly get it. To subscribe to a variable, you just need to pass the variable name and a function to device(deviceId).data().on(). The function you pass to device(deviceId).data().on() is set as an update handler for that variable, which means the code inside that function will be run whenever that variable is updated.",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/handling-wifi": {
+      "id": "guides/hardware/handling-wifi",
+      "title": "Handling the WiFi",
+      "description": "You can use a WiFi library corresponding to your microcontroller to handle your device's WiFi. Here are some popular ones:",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/setting-up-the-board": {
+      "id": "guides/hardware/setting-up-the-board",
+      "title": "Setting up Boards",
+      "description": "Setup ESP8266 for Arduino",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/wifi-connection": {
+      "id": "guides/hardware/wifi-connection",
+      "title": "Handling Wifi Connection",
+      "description": "loop function is what runs the SDK: it connects the device with Grandeur; when disconnected, it automatically reconnects; pulls new messages from Grandeur; pushes messages to Grandeur; and so on. But trying to do any sort of communication on the internet is useless until the WiFi isn't connected. That's exactly what the statement if(WiFi.status() == WLCONNECTED) myProject.loop() does. The if-statement decides when the SDK should run and when it should not. In this case, it would only run when the WiFi is connected. If while running, the WiFi gets disconnected, WiFi.status() == WLCONNECTED would evaluate to false and the SDK would stop running (trying to send more messages or fetch data)."
+    },
+    "guides/project/api-key": {
+      "id": "guides/project/api-key",
+      "title": "API Key",
+      "description": "Each project is identified by a digital signature that we call the API key, just as your identification card or social security identifies you as a citizen. To connect your apps or hardware to your project's network, this is the first thing that you need to provide to any SDK. The API key is sent with every request to Grandeur and this is what tells the cloud about the project that you are requesting to.",
+      "sidebar": "sidebar"
+    },
+    "guides/project/managing-a-project": {
+      "id": "guides/project/managing-a-project",
+      "title": "Managing a Project",
+      "description": "A project is the first thing you need to create to start working with Grandeur. A project is like a namespace, a completely isolated network of users and devices, along with a separate datastore. While you can create an unlimited number of projects, but no two projects can interact or share anything with one other.",
+      "sidebar": "sidebar"
+    },
+    "guides/security/access-credentials": {
+      "id": "guides/security/access-credentials",
+      "title": "Access Credentials",
+      "description": "Grandeur generates a secret key which acts as an imperative access credential in addition to the API key. This access token along with the API Key is what authorises the device's connection to Grandeur. You pass in your app credentials to gain complete access. The secret key provides an extra layer of security as it is not transferred over wire.",
+      "sidebar": "sidebar"
+    },
+    "guides/security/cors": {
+      "id": "guides/security/cors",
+      "title": "CORS",
+      "description": "In the real world, you would not want to add a new user or pair a device with that user manually every time someone buys your product. Therefore you delegate a part of your project authorities to the SDK when you plug your project's API Key in. And so a new user gets to sign up, pair, monitor and control your device through your product's companion app.",
+      "sidebar": "sidebar"
+    },
+    "guides/security/user-and-administrator": {
+      "id": "guides/security/user-and-administrator",
+      "title": "User and Administrator",
+      "description": "This topic is about the relationship between you as an administrator and your users and the access scope of both.",
+      "sidebar": "sidebar"
+    },
+    "hello-world-with-iot": {
+      "id": "hello-world-with-iot",
+      "title": "Hello World with IoT",
+      "description": "In order to truly understand the potential of Grandeur, we are going to make a start with building an internet switch. Just like internet makes the world a global village for us humans, Internet of Things does that for the things (the machines). For example, you can control your ESP8266 device using bluetooth as well. But when you want to connect 100s of devices, monitor them, control them, automate them, and over internet (for global access) things get extremely complex. That's where the concept of backend comes in. All your devices connect to the backend and this backend is what makes it possible then to control anything from anywhere in the world from your phone or laptop.",
+      "sidebar": "sidebar"
+    },
+    "introduction": {
+      "id": "introduction",
+      "title": "Introduction",
+      "description": "Building a smart (IoT) device is an art because it is about unifying the physical world with the digital one. When you put a piece of hardware on the web, magic happens, but dealing with a single device is one thing, and forging an automated ecosystem with tens and thousands of these devices is another. Creating that sort of magic isn't without it's challenges:",
+      "sidebar": "sidebar"
+    },
+    "keywords": {
+      "id": "keywords",
+      "title": "Keywords",
+      "description": "Grandeur",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/button": {
+      "id": "references/canvas/button",
+      "title": "Button",
+      "description": "Make buttons and control other services with a single tap. The button widget allows to send commands and view binary statuses of the device, such as power ON/OFF.",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/display": {
+      "id": "references/canvas/display",
+      "title": "Display",
+      "description": "A screen to display the current status of any of your chosen variable.This widget displays value of input pin e.g. temperature and other data types including strings.",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/graph": {
+      "id": "references/canvas/graph",
+      "title": "Graph",
+      "description": "The Graph widget displays quantitative attributes from a data source as a graphical representation. It allows end users to visualize and observe possible patterns and trends from raw data.",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/overview": {
+      "id": "references/canvas/overview",
+      "title": "Overview",
+      "description": "Canvas is an imperative addition to the Grandeur family. It is a prototyping tool that lets you drag and drop widgets — like buttons, sliders, displays, and graphs — to sketch a layout which you can use instead of coding a full app. This means you do not have to have app designers in your team before starting to build IoT — a single hardware engineer is a beast with Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/progress": {
+      "id": "references/canvas/progress",
+      "title": "Progress",
+      "description": "Displays the current progress over a specified range. The progress is displayed as a %age.",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/slider": {
+      "id": "references/canvas/slider",
+      "title": "Slider",
+      "description": "Slider allows to view and send values in the predefined range. Usage examples: resistance, brightness etc. Set the slider handle to choose the required value.",
+      "sidebar": "sidebar"
+    },
+    "references/canvas/table": {
+      "id": "references/canvas/table",
+      "title": "Table",
+      "description": "Displays a particular collection of data from the datastore.",
+      "sidebar": "sidebar"
+    },
+    "references/cli": {
+      "id": "references/cli",
+      "title": "CLI",
+      "description": "Grandeur CLI a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/change-password": {
+      "id": "references/client-sdk/auth/change-password",
+      "title": "auth.changePassword",
+      "description": "This method is very similar to the forgot password feature. But unlike forgot password, here it is important for a user to be logged into his account first. To ensure the security of a user account, we send a verification code to the phone number associated with user account and return you a confirmation method.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/forgot-password": {
+      "id": "references/client-sdk/auth/forgot-password",
+      "title": "auth.forgotPassword",
+      "description": "A very important feature is to add the forgot password option into your app. This method allows you to update the password of a user account if the user is not authenticated. We validate a user with phone authentication in this case. So just prompt user about the email account associated with the account, we will automatically send the verification code the phone number associated with the profile and after which you can submit a confirmation request.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/is-authenticated": {
+      "id": "references/client-sdk/auth/is-authenticated",
+      "title": "auth.isAuthenticated",
+      "description": "Often times, it is required to verify that a user account is authenticated into the application or not. This functionality can be achieved through this method. It returns a response with user profile details if user is authorized.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/login": {
+      "id": "references/client-sdk/auth/login",
+      "title": "auth.login",
+      "description": "This method allows you to login a user into his account. Simply provide the user email and password in the argument and execute the  method. The SDK will automatically obtain the auth token from the server. It is important to note that nearly all the methods of this SDK require a user to be authenticated first.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/logout": {
+      "id": "references/client-sdk/auth/logout",
+      "title": "auth.logout",
+      "description": "This method comes handy because along with logging the user in, it is also required to logout a user when required.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/overview": {
+      "id": "references/client-sdk/auth/overview",
+      "title": "Overview",
+      "description": "This class provides access to the auth feature of Grandeur. Simply get a reference to the auth class by calling auth() method with the project object. This is illustrated as below",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/register": {
+      "id": "references/client-sdk/auth/register",
+      "title": "auth.register",
+      "description": "This method allows you to add new users to your project through SDK. To create a new user account, simply provide the user email, password, display name and phone number as an argument to this function. Unlike dashboard, where you can create a user account without validation by just filling user details in a form, registering a new user account with SDK is little bit different. Because instead of directly registering the new user, we first verify that either the user is genuine to protect you from bogus users. So when you execute this function, we automatically send a verification code to the phone number provided in the argument and returns you a promise.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/auth/update-profile": {
+      "id": "references/client-sdk/auth/update-profile",
+      "title": "updateProfile",
+      "description": "A user profile gets automatically created whenever you register a new user account. This makes it really easy for you as a developer to handle data specific to the user. Like you can setup display picture of a user. Which allows you present a unique experience to each user. This is why we have added this method with which you can update the profile of a authenticated user.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/collection/delete": {
+      "id": "references/client-sdk/datastore/collection/delete",
+      "title": "collection.delete",
+      "description": "This method can be used to delete a document from a collection. It accepts a json object which specifies the match condition and returns the count of total deleted documents. It accepts following arguments",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/collection/insert": {
+      "id": "references/client-sdk/datastore/collection/insert",
+      "title": "collection.insert",
+      "description": "This method can be used to insert a json object/document into a collection. It accepts an array of json objects (so you can insert one or many documents into a collection with single function call). It returns the ids of inserted documents in response (we automatically assign a unique id to each document before actually inserting it into the datastore - primary key). It accepts following arguments",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/collection/overview": {
+      "id": "references/client-sdk/datastore/collection/overview",
+      "title": "Overview",
+      "description": "From the datastore class, you can get a reference to a collection in order to execute a query or insert new documents into it.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/collection/search": {
+      "id": "references/client-sdk/datastore/collection/search",
+      "title": "collection.search",
+      "description": "This method can be used to query documents in a collection. It accepts a match condition and fetches the documents. It accepts following arguments",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/collection/update": {
+      "id": "references/client-sdk/datastore/collection/update",
+      "title": "collection.update",
+      "description": "This method can be used to update a document in a collection. It accepts a json object which specifies the match condition and returns the count of total updated documents. It accepts following arguments",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/drop": {
+      "id": "references/client-sdk/datastore/drop",
+      "title": "datastore.drop",
+      "description": "This method deletes a collections and all of its documents from the datastore of your project. This method accpets the following input arguments",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/list": {
+      "id": "references/client-sdk/datastore/list",
+      "title": "datastore.list",
+      "description": "This method returns the list of collections in the datastore of your project. This method accpets the following input arguments",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/datastore/overview": {
+      "id": "references/client-sdk/datastore/overview",
+      "title": "Overview",
+      "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/count": {
+      "id": "references/client-sdk/devices/count",
+      "title": "devices.count",
+      "description": "This methods returns the total number of online, offline or all devices paired to a user account.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/data/get": {
+      "id": "references/client-sdk/devices/device/data/get",
+      "title": "device.data.get",
+      "description": "Each device comes with a privileged space in which you can save data. Like suppose you have build a power meter, then you can store the voltage, current and power measured by the device in this space. This data can be be set by a device and retrived by the app to be consumed/displayed to end user.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/data/on": {
+      "id": "references/client-sdk/devices/device/data/on",
+      "title": "device.data.on",
+      "description": "You can also attach a listener to device data. For example if {voltage 10, vrms 1} is stored then you can subscribe to updates on either vpp and current by providing voltage.vpp and current in path field respectively. You can subscribe to root by providing empty path.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/data/set": {
+      "id": "references/client-sdk/devices/device/data/set",
+      "title": "device.data.set",
+      "description": "Just like get, you can also set the data of the device in similar way.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/get": {
+      "id": "references/client-sdk/devices/device/get",
+      "title": "device.get",
+      "description": "This method returns the meta data of a device like device name, product id, device id and state.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/on": {
+      "id": "references/client-sdk/devices/device/on",
+      "title": "device.on",
+      "description": "You can also attach a listener to device meta data. For example you can subscribe to updates on device name to automatically receive update whenever the name of device will be updated.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/overview": {
+      "id": "references/client-sdk/devices/device/overview",
+      "title": "Overview",
+      "description": "From the devices class, you can get reference to a device class by calling this function. Then you can perform various operations on a device using the device reference.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/pair": {
+      "id": "references/client-sdk/devices/device/pair",
+      "title": "device.pair",
+      "description": "As documented earlier, it is compulsory to pair a device with a user account before getting access to its data. Pairing feature is similar to claiming ownership over a device. When you send us a pairing request, we first verify that the device isn't paired to another account.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/set": {
+      "id": "references/client-sdk/devices/device/set",
+      "title": "device.set",
+      "description": "Using device.set(), you can also change few fields of the device data. For example the name of the device can be changed from the SDK.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/device/unpair": {
+      "id": "references/client-sdk/devices/device/unpair",
+      "title": "device.unpair",
+      "description": "This method allows you to unpair a device from a user account. It simply declares that the user account no longer owns the device. In other words, it makes the device available for other users to claim.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/get": {
+      "id": "references/client-sdk/devices/get",
+      "title": "devices.get",
+      "description": "This method comes in handy whenever you need a list of all the devices paired to a user account.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/on": {
+      "id": "references/client-sdk/devices/on",
+      "title": "devices.on",
+      "description": "The best thing about Grandeur is the fact that it is event driven. Means you can subscribe to events and we will automatically send you an alert whenever the subscribed event will occur.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/devices/overview": {
+      "id": "references/client-sdk/devices/overview",
+      "title": "Overview",
+      "description": "This class provides access to the features associated to device. Simply get a reference to the device class by calling devices() method with the project object. This is illustrated as below",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/initialization": {
+      "id": "references/client-sdk/initialization",
+      "title": "Initialization",
+      "description": "First and foremost thing that you are required to do in order to access our platform is initialization. When you drop in the link of the CDN in your app, we create a global object accessible through JS. This object can be then utilized to init the SDK with your API key and access credential. Upon init, the SDK returns you a reference to your project, through which you can access all the features of Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/installation": {
+      "id": "references/client-sdk/installation",
+      "title": "Installation",
+      "description": "Simply drop the link of JavaScript SDK in a script tag inside your web app using our CDN.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/is-connected": {
+      "id": "references/client-sdk/is-connected",
+      "title": "isConnected",
+      "description": "Once you init the SDK and get reference to the project, the SDK tries to establish a persistent connection to the cloud platform. Establishing this persistent connection is the key because this allows us to do realtime communication with the server. Almost all of the SDK features are based on this realtime channel. This is why we have added this function, which can be utilized to verify either we are connected to the server or not.",
+      "sidebar": "sidebar"
+    },
+    "references/client-sdk/on-connection": {
+      "id": "references/client-sdk/on-connection",
+      "title": "onConnection",
+      "description": "This methods let to keep track of the persistent connection that the SDK tries to establish with the cloud. As mentioned earlier, the persistent connection is the key because this allows us to do realtime communication with the server. Almost all of the SDK features are based on this realtime channel. This is why we have added this function, which can be utilized to verify either we are connected to the server or not.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/datastore/collection/insert": {
+      "id": "references/device-sdk/datastore/collection/insert",
+      "title": "insert",
+      "description": "This method inserts documents into datastore.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/datastore/collection/search": {
+      "id": "references/device-sdk/datastore/collection/search",
+      "title": "search",
+      "description": "| Name       | Type |   Description |",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/datastore/overview": {
+      "id": "references/device-sdk/datastore/overview",
+      "title": "Overview",
+      "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/device/data/get": {
+      "id": "references/device-sdk/device/data/get",
+      "title": "data.get",
+      "description": "This method gets a device variable from Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/device/data/on": {
+      "id": "references/device-sdk/device/data/on",
+      "title": "data.on",
+      "description": "This method schedules a function to be called when a device variable changes on Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/device/data/set": {
+      "id": "references/device-sdk/device/data/set",
+      "title": "data.set",
+      "description": "This method updates a device variable on Grandeur with new data.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/device/overview": {
+      "id": "references/device-sdk/device/overview",
+      "title": "Overview",
+      "description": "This method returns a reference to object of the device class.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/initialization": {
+      "id": "references/device-sdk/initialization",
+      "title": "Initialization",
+      "description": "Initialization is as simple as calling grandeur.init() with your credentials (Your project's API Key and device's Access Token). The SDK uses your API key to know which project and access token to make sure the request is coming from a legit source. It then returns a Grandeur::Project object which exposes other subclasses like Device and Datastore, and you can go programming your device from there.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/installation": {
+      "id": "references/device-sdk/installation",
+      "title": "Installation",
+      "description": "1. You can search for Grandeur in Arduino's library manager. In Arduino IDE, open Sketch > Include Library > Manage Libraries and install Grandeur from there.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/is-connected": {
+      "id": "references/device-sdk/is-connected",
+      "title": "isConnected",
+      "description": "This method returns true if the device is connected with Grandeur.",
+      "sidebar": "sidebar"
+    },
+    "references/device-sdk/on-connection": {
+      "id": "references/device-sdk/on-connection",
+      "title": "onConnection",
+      "description": "This method schedules a function to be called when the device's connection with Grandeur is made or broken. The function passed to it as argument is called an event handler for it handles events like connection/disconnection with Grandeur. Example below illustrates its usage.",
+      "sidebar": "sidebar"
+    },
+    "restapi": {
+      "id": "restapi",
+      "title": "Introduction",
+      "description": "You need three credentials to use the REST API for anything:"
+    }
+  }
+}

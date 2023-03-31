@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/device/data/get",
+  "id": "references/device-sdk/device/data/get",
+  "title": "data.get",
+  "description": "This method gets a device variable from Grandeur.",
+  "source": "@site/docs/references/device-sdk/device/data/get.mdx",
+  "sourceDirName": "references/device-sdk/device/data",
+  "slug": "/references/device-sdk/device/data/get",
+  "permalink": "/docs/references/device-sdk/device/data/get",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/data/get.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "data.get"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/device-sdk/device/overview"
+  },
+  "next": {
+    "title": "data.set",
+    "permalink": "/docs/references/device-sdk/device/data/set"
+  }
+}

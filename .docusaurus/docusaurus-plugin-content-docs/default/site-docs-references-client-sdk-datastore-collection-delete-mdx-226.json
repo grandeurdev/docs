@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/collection/delete",
+  "id": "references/client-sdk/datastore/collection/delete",
+  "title": "collection.delete",
+  "description": "This method can be used to delete a document from a collection. It accepts a json object which specifies the match condition and returns the count of total deleted documents. It accepts following arguments",
+  "source": "@site/docs/references/client-sdk/datastore/collection/delete.mdx",
+  "sourceDirName": "references/client-sdk/datastore/collection",
+  "slug": "/references/client-sdk/datastore/collection/delete",
+  "permalink": "/docs/references/client-sdk/datastore/collection/delete",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/delete.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "collection.delete"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "collection.update",
+    "permalink": "/docs/references/client-sdk/datastore/collection/update"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/canvas/overview"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/devices/data",
+  "id": "guides/devices/data",
+  "title": "Data",
+  "description": "When you register a device, you make it available in your project's network. Not just that, a new namespace is created for your device in the device registry.",
+  "source": "@site/docs/guides/devices/data.mdx",
+  "sourceDirName": "guides/devices",
+  "slug": "/guides/devices/data",
+  "permalink": "/docs/guides/devices/data",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/devices/data.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Data"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Model",
+    "permalink": "/docs/guides/devices/model"
+  },
+  "next": {
+    "title": "Pairing",
+    "permalink": "/docs/guides/devices/pairing"
+  }
+}

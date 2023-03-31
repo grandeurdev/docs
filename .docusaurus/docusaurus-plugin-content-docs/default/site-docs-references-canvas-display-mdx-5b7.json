@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/canvas/display",
+  "id": "references/canvas/display",
+  "title": "Display",
+  "description": "A screen to display the current status of any of your chosen variable.This widget displays value of input pin e.g. temperature and other data types including strings.",
+  "source": "@site/docs/references/canvas/display.mdx",
+  "sourceDirName": "references/canvas",
+  "slug": "/references/canvas/display",
+  "permalink": "/docs/references/canvas/display",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/display.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Display"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Button",
+    "permalink": "/docs/references/canvas/button"
+  },
+  "next": {
+    "title": "Progress",
+    "permalink": "/docs/references/canvas/progress"
+  }
+}

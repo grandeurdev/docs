@@ -1,6 +1,8 @@
 ---
 title: Overview
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # device
 
@@ -11,7 +13,7 @@ This method returns a reference to object of the device class.
   <Item value="arduino" label="Arduino">
 
    
-      ```cpp
+  ```cpp
       Grandeur::Project project;
       Grandeur::project::Device device;
       void setup() {
@@ -19,12 +21,12 @@ This method returns a reference to object of the device class.
         device = project.device(deviceID);
       }
 
-      ```
+  ```
   </Item>
 
   <Item value="py" label="Py">
 
-    ```py
+  ```py
 
     import grandeur.device as grandeur
 
@@ -33,7 +35,7 @@ This method returns a reference to object of the device class.
 
     # Get reference to device class
     device = project.device(deviceID)
-    ```
+  ```
 
   </Item>
 

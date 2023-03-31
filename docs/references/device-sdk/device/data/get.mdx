@@ -2,6 +2,9 @@
 title: data.get
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # data.get
 
 This method gets a device variable from Grandeur.
@@ -16,7 +19,7 @@ This method gets a device variable from Grandeur.
 
 <Tabs group="tab-test">
 
-  <Item value="arduino" label="Arduino">
+<Item value="arduino" label="Arduino">
 
 ```cpp
 Grandeur::Project project;
@@ -45,7 +48,7 @@ void loop() {
 
    <Item value="py" label="Py">
 
-      ```py
+  ```py
       import grandeur.device as grandeur
 
       # Init the sdk
@@ -60,7 +63,7 @@ void loop() {
 
       # Get data of the device
       device.data().get("", getCallback)
-      ```
+  ```
 </Item>
 
 </Tabs>

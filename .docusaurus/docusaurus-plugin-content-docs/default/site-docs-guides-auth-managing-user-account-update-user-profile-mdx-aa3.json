@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/auth/managing-user-account/update-user-profile",
+  "id": "guides/auth/managing-user-account/update-user-profile",
+  "title": "Update User Profile",
+  "description": "auth.updateProfile()",
+  "source": "@site/docs/guides/auth/managing-user-account/update-user-profile.mdx",
+  "sourceDirName": "guides/auth/managing-user-account",
+  "slug": "/guides/auth/managing-user-account/update-user-profile",
+  "permalink": "/docs/guides/auth/managing-user-account/update-user-profile",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/managing-user-account/update-user-profile.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Update User Profile"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Update Forgotten Password",
+    "permalink": "/docs/guides/auth/managing-user-account/update-forgotten-password"
+  },
+  "next": {
+    "title": "Model",
+    "permalink": "/docs/guides/devices/model"
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "introduction",
+          "docs": [
+            {
+              "id": "build-your-custom-app",
+              "path": "/docs/build-your-custom-app",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "faqs",
+              "path": "/docs/faqs",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "getting-started",
+              "path": "/docs/getting-started",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/auth/login",
+              "path": "/docs/guides/auth/login",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/auth/logout",
+              "path": "/docs/guides/auth/logout",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/auth/managing-user-account/update-account-password",
+              "path": "/docs/guides/auth/managing-user-account/update-account-password",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/auth/managing-user-account/update-forgotten-password",
+              "path": "/docs/guides/auth/managing-user-account/update-forgotten-password",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/auth/managing-user-account/update-user-profile",
+              "path": "/docs/guides/auth/managing-user-account/update-user-profile",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/auth/register",
+              "path": "/docs/guides/auth/register",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/canvas",
+              "path": "/docs/guides/canvas",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/datastore/collections",
+              "path": "/docs/guides/datastore/collections",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/datastore/overview",
+              "path": "/docs/guides/datastore/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/datastore/querying",
+              "path": "/docs/guides/datastore/querying",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/devices/data",
+              "path": "/docs/guides/devices/data",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/devices/model",
+              "path": "/docs/guides/devices/model",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/devices/pairing",
+              "path": "/docs/guides/devices/pairing",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/handling-connection-status",
+              "path": "/docs/guides/hardware/handling-connection-status",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/handling-device-variables",
+              "path": "/docs/guides/hardware/handling-device-variables",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/handling-updates",
+              "path": "/docs/guides/hardware/handling-updates",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/handling-wifi",
+              "path": "/docs/guides/hardware/handling-wifi",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/setting-up-the-board",
+              "path": "/docs/guides/hardware/setting-up-the-board",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/wifi-connection",
+              "path": "/docs/guides/hardware/wifi-connection"
+            },
+            {
+              "id": "guides/project/api-key",
+              "path": "/docs/guides/project/api-key",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/project/managing-a-project",
+              "path": "/docs/guides/project/managing-a-project",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/security/access-credentials",
+              "path": "/docs/guides/security/access-credentials",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/security/cors",
+              "path": "/docs/guides/security/cors",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/security/user-and-administrator",
+              "path": "/docs/guides/security/user-and-administrator",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "hello-world-with-iot",
+              "path": "/docs/hello-world-with-iot",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "introduction",
+              "path": "/docs/introduction",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "keywords",
+              "path": "/docs/keywords",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/button",
+              "path": "/docs/references/canvas/button",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/display",
+              "path": "/docs/references/canvas/display",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/graph",
+              "path": "/docs/references/canvas/graph",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/overview",
+              "path": "/docs/references/canvas/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/progress",
+              "path": "/docs/references/canvas/progress",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/slider",
+              "path": "/docs/references/canvas/slider",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/canvas/table",
+              "path": "/docs/references/canvas/table",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/cli",
+              "path": "/docs/references/cli",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/change-password",
+              "path": "/docs/references/client-sdk/auth/change-password",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/forgot-password",
+              "path": "/docs/references/client-sdk/auth/forgot-password",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/is-authenticated",
+              "path": "/docs/references/client-sdk/auth/is-authenticated",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/login",
+              "path": "/docs/references/client-sdk/auth/login",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/logout",
+              "path": "/docs/references/client-sdk/auth/logout",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/overview",
+              "path": "/docs/references/client-sdk/auth/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/register",
+              "path": "/docs/references/client-sdk/auth/register",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/auth/update-profile",
+              "path": "/docs/references/client-sdk/auth/update-profile",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/collection/delete",
+              "path": "/docs/references/client-sdk/datastore/collection/delete",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/collection/insert",
+              "path": "/docs/references/client-sdk/datastore/collection/insert",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/collection/overview",
+              "path": "/docs/references/client-sdk/datastore/collection/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/collection/search",
+              "path": "/docs/references/client-sdk/datastore/collection/search",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/collection/update",
+              "path": "/docs/references/client-sdk/datastore/collection/update",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/drop",
+              "path": "/docs/references/client-sdk/datastore/drop",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/list",
+              "path": "/docs/references/client-sdk/datastore/list",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/datastore/overview",
+              "path": "/docs/references/client-sdk/datastore/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/count",
+              "path": "/docs/references/client-sdk/devices/count",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/data/get",
+              "path": "/docs/references/client-sdk/devices/device/data/get",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/data/on",
+              "path": "/docs/references/client-sdk/devices/device/data/on",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/data/set",
+              "path": "/docs/references/client-sdk/devices/device/data/set",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/get",
+              "path": "/docs/references/client-sdk/devices/device/get",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/on",
+              "path": "/docs/references/client-sdk/devices/device/on",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/overview",
+              "path": "/docs/references/client-sdk/devices/device/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/pair",
+              "path": "/docs/references/client-sdk/devices/device/pair",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/set",
+              "path": "/docs/references/client-sdk/devices/device/set",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/device/unpair",
+              "path": "/docs/references/client-sdk/devices/device/unpair",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/get",
+              "path": "/docs/references/client-sdk/devices/get",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/on",
+              "path": "/docs/references/client-sdk/devices/on",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/devices/overview",
+              "path": "/docs/references/client-sdk/devices/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/initialization",
+              "path": "/docs/references/client-sdk/initialization",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/installation",
+              "path": "/docs/references/client-sdk/installation",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/is-connected",
+              "path": "/docs/references/client-sdk/is-connected",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/client-sdk/on-connection",
+              "path": "/docs/references/client-sdk/on-connection",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/datastore/collection/insert",
+              "path": "/docs/references/device-sdk/datastore/collection/insert",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/datastore/collection/search",
+              "path": "/docs/references/device-sdk/datastore/collection/search",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/datastore/overview",
+              "path": "/docs/references/device-sdk/datastore/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/device/data/get",
+              "path": "/docs/references/device-sdk/device/data/get",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/device/data/on",
+              "path": "/docs/references/device-sdk/device/data/on",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/device/data/set",
+              "path": "/docs/references/device-sdk/device/data/set",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/device/overview",
+              "path": "/docs/references/device-sdk/device/overview",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/initialization",
+              "path": "/docs/references/device-sdk/initialization",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/installation",
+              "path": "/docs/references/device-sdk/installation",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/is-connected",
+              "path": "/docs/references/device-sdk/is-connected",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/device-sdk/on-connection",
+              "path": "/docs/references/device-sdk/on-connection",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "restapi",
+              "path": "/docs/restapi"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "sidebar": {
+              "link": {
+                "path": "/docs/introduction",
+                "label": "Introduction"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

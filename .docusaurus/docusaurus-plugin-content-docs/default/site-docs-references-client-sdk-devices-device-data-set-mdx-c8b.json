@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/data/set",
+  "id": "references/client-sdk/devices/device/data/set",
+  "title": "device.data.set",
+  "description": "Just like get, you can also set the data of the device in similar way.",
+  "source": "@site/docs/references/client-sdk/devices/device/data/set.mdx",
+  "sourceDirName": "references/client-sdk/devices/device/data",
+  "slug": "/references/client-sdk/devices/device/data/set",
+  "permalink": "/docs/references/client-sdk/devices/device/data/set",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/data/set.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.data.set"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.data.get",
+    "permalink": "/docs/references/client-sdk/devices/device/data/get"
+  },
+  "next": {
+    "title": "device.data.on",
+    "permalink": "/docs/references/client-sdk/devices/device/data/on"
+  }
+}

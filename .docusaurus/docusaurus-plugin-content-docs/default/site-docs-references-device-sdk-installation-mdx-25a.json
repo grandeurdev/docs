@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/installation",
+  "id": "references/device-sdk/installation",
+  "title": "Installation",
+  "description": "1. You can search for Grandeur in Arduino's library manager. In Arduino IDE, open Sketch > Include Library > Manage Libraries and install Grandeur from there.",
+  "source": "@site/docs/references/device-sdk/installation.mdx",
+  "sourceDirName": "references/device-sdk",
+  "slug": "/references/device-sdk/installation",
+  "permalink": "/docs/references/device-sdk/installation",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/installation.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Installation"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Handling Updates",
+    "permalink": "/docs/guides/hardware/handling-updates"
+  },
+  "next": {
+    "title": "Initialization",
+    "permalink": "/docs/references/device-sdk/initialization"
+  }
+}

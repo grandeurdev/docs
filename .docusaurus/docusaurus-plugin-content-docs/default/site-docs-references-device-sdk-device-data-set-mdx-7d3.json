@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/device/data/set",
+  "id": "references/device-sdk/device/data/set",
+  "title": "data.set",
+  "description": "This method updates a device variable on Grandeur with new data.",
+  "source": "@site/docs/references/device-sdk/device/data/set.mdx",
+  "sourceDirName": "references/device-sdk/device/data",
+  "slug": "/references/device-sdk/device/data/set",
+  "permalink": "/docs/references/device-sdk/device/data/set",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/data/set.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "data.set"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "data.get",
+    "permalink": "/docs/references/device-sdk/device/data/get"
+  },
+  "next": {
+    "title": "data.on",
+    "permalink": "/docs/references/device-sdk/device/data/on"
+  }
+}

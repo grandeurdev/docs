@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/canvas/graph",
+  "id": "references/canvas/graph",
+  "title": "Graph",
+  "description": "The Graph widget displays quantitative attributes from a data source as a graphical representation. It allows end users to visualize and observe possible patterns and trends from raw data.",
+  "source": "@site/docs/references/canvas/graph.mdx",
+  "sourceDirName": "references/canvas",
+  "slug": "/references/canvas/graph",
+  "permalink": "/docs/references/canvas/graph",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/graph.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Graph"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Table",
+    "permalink": "/docs/references/canvas/table"
+  },
+  "next": {
+    "title": "CLI",
+    "permalink": "/docs/references/cli"
+  }
+}

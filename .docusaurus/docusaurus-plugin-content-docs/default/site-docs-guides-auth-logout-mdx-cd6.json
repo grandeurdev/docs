@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/auth/logout",
+  "id": "guides/auth/logout",
+  "title": "Logout a User",
+  "description": "Logout serves as the most basic and important feature.",
+  "source": "@site/docs/guides/auth/logout.mdx",
+  "sourceDirName": "guides/auth",
+  "slug": "/guides/auth/logout",
+  "permalink": "/docs/guides/auth/logout",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/logout.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Logout a User"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Login a User",
+    "permalink": "/docs/guides/auth/login"
+  },
+  "next": {
+    "title": "Update Account Password",
+    "permalink": "/docs/guides/auth/managing-user-account/update-account-password"
+  }
+}

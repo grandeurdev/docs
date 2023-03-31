@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/auth/register",
+  "id": "references/client-sdk/auth/register",
+  "title": "auth.register",
+  "description": "This method allows you to add new users to your project through SDK. To create a new user account, simply provide the user email, password, display name and phone number as an argument to this function. Unlike dashboard, where you can create a user account without validation by just filling user details in a form, registering a new user account with SDK is little bit different. Because instead of directly registering the new user, we first verify that either the user is genuine to protect you from bogus users. So when you execute this function, we automatically send a verification code to the phone number provided in the argument and returns you a promise.",
+  "source": "@site/docs/references/client-sdk/auth/register.mdx",
+  "sourceDirName": "references/client-sdk/auth",
+  "slug": "/references/client-sdk/auth/register",
+  "permalink": "/docs/references/client-sdk/auth/register",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/register.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "auth.register"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/auth/overview"
+  },
+  "next": {
+    "title": "auth.isAuthenticated",
+    "permalink": "/docs/references/client-sdk/auth/is-authenticated"
+  }
+}

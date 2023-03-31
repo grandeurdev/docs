@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/project/api-key",
+  "id": "guides/project/api-key",
+  "title": "API Key",
+  "description": "Each project is identified by a digital signature that we call the API key, just as your identification card or social security identifies you as a citizen. To connect your apps or hardware to your project's network, this is the first thing that you need to provide to any SDK. The API key is sent with every request to Grandeur and this is what tells the cloud about the project that you are requesting to.",
+  "source": "@site/docs/guides/project/api-key.mdx",
+  "sourceDirName": "guides/project",
+  "slug": "/guides/project/api-key",
+  "permalink": "/docs/guides/project/api-key",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/project/api-key.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "API Key"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Canvas",
+    "permalink": "/docs/guides/canvas"
+  },
+  "next": {
+    "title": "Managing a Project",
+    "permalink": "/docs/guides/project/managing-a-project"
+  }
+}

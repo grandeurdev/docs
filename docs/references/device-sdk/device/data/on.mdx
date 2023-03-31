@@ -2,6 +2,9 @@
 title: data.on
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # data.on
 
 This method schedules a function to be called when a device variable changes on Grandeur.
@@ -22,7 +25,7 @@ A variable can be changed by a paired user from an app, dashboard, or any SDKs. 
 
   <Item value="arduino" label="Arduino">
 
-    ```cpp
+  ```cpp
     Grandeur::Project project;
     Grandeur::Project::Device device;
 
@@ -43,13 +46,13 @@ A variable can be changed by a paired user from an app, dashboard, or any SDKs. 
     void loop() {
       if(WiFiIsConnected) project.loop();
     }
-    ```
+  ```
 
   </Item>
 
    <Item value="py" label="Py">
 
-      ```py
+   ```py
       import grandeur.device as grandeur
 
       # Init the sdk
@@ -64,8 +67,8 @@ A variable can be changed by a paired user from an app, dashboard, or any SDKs. 
 
       # Get data of the device
       device.data().get("", getCallback)
-      ```
-</Item>
+   ```
+   </Item>
 
 </Tabs>
 

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/overview",
+  "id": "references/client-sdk/devices/device/overview",
+  "title": "Overview",
+  "description": "From the devices class, you can get reference to a device class by calling this function. Then you can perform various operations on a device using the device reference.",
+  "source": "@site/docs/references/client-sdk/devices/device/overview.mdx",
+  "sourceDirName": "references/client-sdk/devices/device",
+  "slug": "/references/client-sdk/devices/device/overview",
+  "permalink": "/docs/references/client-sdk/devices/device/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "devices.on",
+    "permalink": "/docs/references/client-sdk/devices/on"
+  },
+  "next": {
+    "title": "device.get",
+    "permalink": "/docs/references/client-sdk/devices/device/get"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/auth/is-authenticated",
+  "id": "references/client-sdk/auth/is-authenticated",
+  "title": "auth.isAuthenticated",
+  "description": "Often times, it is required to verify that a user account is authenticated into the application or not. This functionality can be achieved through this method. It returns a response with user profile details if user is authorized.",
+  "source": "@site/docs/references/client-sdk/auth/is-authenticated.mdx",
+  "sourceDirName": "references/client-sdk/auth",
+  "slug": "/references/client-sdk/auth/is-authenticated",
+  "permalink": "/docs/references/client-sdk/auth/is-authenticated",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/is-authenticated.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "auth.isAuthenticated"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "auth.register",
+    "permalink": "/docs/references/client-sdk/auth/register"
+  },
+  "next": {
+    "title": "auth.login",
+    "permalink": "/docs/references/client-sdk/auth/login"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/is-connected",
+  "id": "references/client-sdk/is-connected",
+  "title": "isConnected",
+  "description": "Once you init the SDK and get reference to the project, the SDK tries to establish a persistent connection to the cloud platform. Establishing this persistent connection is the key because this allows us to do realtime communication with the server. Almost all of the SDK features are based on this realtime channel. This is why we have added this function, which can be utilized to verify either we are connected to the server or not.",
+  "source": "@site/docs/references/client-sdk/is-connected.mdx",
+  "sourceDirName": "references/client-sdk",
+  "slug": "/references/client-sdk/is-connected",
+  "permalink": "/docs/references/client-sdk/is-connected",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/is-connected.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "isConnected"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Initialization",
+    "permalink": "/docs/references/client-sdk/initialization"
+  },
+  "next": {
+    "title": "onConnection",
+    "permalink": "/docs/references/client-sdk/on-connection"
+  }
+}

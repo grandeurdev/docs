@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/datastore/collection/insert",
+  "id": "references/device-sdk/datastore/collection/insert",
+  "title": "insert",
+  "description": "This method inserts documents into datastore.",
+  "source": "@site/docs/references/device-sdk/datastore/collection/insert.mdx",
+  "sourceDirName": "references/device-sdk/datastore/collection",
+  "slug": "/references/device-sdk/datastore/collection/insert",
+  "permalink": "/docs/references/device-sdk/datastore/collection/insert",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/datastore/collection/insert.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "insert"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/device-sdk/datastore/overview"
+  },
+  "next": {
+    "title": "search",
+    "permalink": "/docs/references/device-sdk/datastore/collection/search"
+  }
+}

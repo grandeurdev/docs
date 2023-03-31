@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/on-connection",
+  "id": "references/client-sdk/on-connection",
+  "title": "onConnection",
+  "description": "This methods let to keep track of the persistent connection that the SDK tries to establish with the cloud. As mentioned earlier, the persistent connection is the key because this allows us to do realtime communication with the server. Almost all of the SDK features are based on this realtime channel. This is why we have added this function, which can be utilized to verify either we are connected to the server or not.",
+  "source": "@site/docs/references/client-sdk/on-connection.mdx",
+  "sourceDirName": "references/client-sdk",
+  "slug": "/references/client-sdk/on-connection",
+  "permalink": "/docs/references/client-sdk/on-connection",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/on-connection.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "onConnection"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "isConnected",
+    "permalink": "/docs/references/client-sdk/is-connected"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/devices/overview"
+  }
+}

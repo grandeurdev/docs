@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/installation",
+  "id": "references/client-sdk/installation",
+  "title": "Installation",
+  "description": "Simply drop the link of JavaScript SDK in a script tag inside your web app using our CDN.",
+  "source": "@site/docs/references/client-sdk/installation.mdx",
+  "sourceDirName": "references/client-sdk",
+  "slug": "/references/client-sdk/installation",
+  "permalink": "/docs/references/client-sdk/installation",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/installation.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Installation"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "search",
+    "permalink": "/docs/references/device-sdk/datastore/collection/search"
+  },
+  "next": {
+    "title": "Initialization",
+    "permalink": "/docs/references/client-sdk/initialization"
+  }
+}

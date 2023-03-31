@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/collection/insert",
+  "id": "references/client-sdk/datastore/collection/insert",
+  "title": "collection.insert",
+  "description": "This method can be used to insert a json object/document into a collection. It accepts an array of json objects (so you can insert one or many documents into a collection with single function call). It returns the ids of inserted documents in response (we automatically assign a unique id to each document before actually inserting it into the datastore - primary key). It accepts following arguments",
+  "source": "@site/docs/references/client-sdk/datastore/collection/insert.mdx",
+  "sourceDirName": "references/client-sdk/datastore/collection",
+  "slug": "/references/client-sdk/datastore/collection/insert",
+  "permalink": "/docs/references/client-sdk/datastore/collection/insert",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/insert.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "collection.insert"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/datastore/collection/overview"
+  },
+  "next": {
+    "title": "collection.search",
+    "permalink": "/docs/references/client-sdk/datastore/collection/search"
+  }
+}

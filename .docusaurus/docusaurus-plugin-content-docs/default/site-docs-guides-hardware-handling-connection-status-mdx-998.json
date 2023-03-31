@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/handling-connection-status",
+  "id": "guides/hardware/handling-connection-status",
+  "title": "Handling Connection Status",
+  "description": "You can also listen on SDK's connection-related events. For example, to run some code when the device makes a successful connection to Grandeur or when the device's connection to Grandeur breaks, you can wrap that code in \"a function that takes a bool and returns void\" and pass it to Grandeur::Project's onConnection() function.",
+  "source": "@site/docs/guides/hardware/handling-connection-status.mdx",
+  "sourceDirName": "guides/hardware",
+  "slug": "/guides/hardware/handling-connection-status",
+  "permalink": "/docs/guides/hardware/handling-connection-status",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-connection-status.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Handling Connection Status"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Handling the WiFi",
+    "permalink": "/docs/guides/hardware/handling-wifi"
+  },
+  "next": {
+    "title": "Handling Device Variables",
+    "permalink": "/docs/guides/hardware/handling-device-variables"
+  }
+}

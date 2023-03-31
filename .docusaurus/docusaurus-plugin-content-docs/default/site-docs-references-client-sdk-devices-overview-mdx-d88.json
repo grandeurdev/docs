@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/overview",
+  "id": "references/client-sdk/devices/overview",
+  "title": "Overview",
+  "description": "This class provides access to the features associated to device. Simply get a reference to the device class by calling devices() method with the project object. This is illustrated as below",
+  "source": "@site/docs/references/client-sdk/devices/overview.mdx",
+  "sourceDirName": "references/client-sdk/devices",
+  "slug": "/references/client-sdk/devices/overview",
+  "permalink": "/docs/references/client-sdk/devices/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "onConnection",
+    "permalink": "/docs/references/client-sdk/on-connection"
+  },
+  "next": {
+    "title": "devices.get",
+    "permalink": "/docs/references/client-sdk/devices/get"
+  }
+}

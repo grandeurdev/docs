@@ -2,29 +2,31 @@
 title: Installation
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Installation
 
-<Tabs group="tab-group-test">
+<Tabs>
+<TabItem value="js" label="JS">
 
-  <Item value="js" label="JS">
+Simply drop the link of JavaScript SDK in a script tag inside your web app using our CDN.
 
-    Simply drop the link of JavaScript SDK in a script tag inside your web app using our CDN.
+```jsx
+<!-- Drop the Link of CDN in your Web App -->
+<script src="https://unpkg.com/grandeur-js"></script>
+```
 
-    ```js
-      <!-- Drop the Link of CDN in your Web App -->
-      <script src="https://unpkg.com/grandeur-js"></script>
-    ```
+</TabItem>
+<TabItem value="react" label="React">
 
-  </Item>
+Simply download the package from npm and use it in your react project. It is as shown below:
 
-  <Item value="react" label="React">
-    
-    Simply download the package from npm and use it in your react project. It is as shown below
+```bash
+npm install grandeur-js --save
+```
 
-    ```bash
-      npm install grandeur-js --save
-    ```
-
-  </Item>
+</TabItem>
 
 </Tabs>
+

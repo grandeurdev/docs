@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/data/get",
+  "id": "references/client-sdk/devices/device/data/get",
+  "title": "device.data.get",
+  "description": "Each device comes with a privileged space in which you can save data. Like suppose you have build a power meter, then you can store the voltage, current and power measured by the device in this space. This data can be be set by a device and retrived by the app to be consumed/displayed to end user.",
+  "source": "@site/docs/references/client-sdk/devices/device/data/get.mdx",
+  "sourceDirName": "references/client-sdk/devices/device/data",
+  "slug": "/references/client-sdk/devices/device/data/get",
+  "permalink": "/docs/references/client-sdk/devices/device/data/get",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/data/get.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.data.get"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.unpair",
+    "permalink": "/docs/references/client-sdk/devices/device/unpair"
+  },
+  "next": {
+    "title": "device.data.set",
+    "permalink": "/docs/references/client-sdk/devices/device/data/set"
+  }
+}

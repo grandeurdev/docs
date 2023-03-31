@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/get",
+  "id": "references/client-sdk/devices/device/get",
+  "title": "device.get",
+  "description": "This method returns the meta data of a device like device name, product id, device id and state.",
+  "source": "@site/docs/references/client-sdk/devices/device/get.mdx",
+  "sourceDirName": "references/client-sdk/devices/device",
+  "slug": "/references/client-sdk/devices/device/get",
+  "permalink": "/docs/references/client-sdk/devices/device/get",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/get.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.get"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/devices/device/overview"
+  },
+  "next": {
+    "title": "device.set",
+    "permalink": "/docs/references/client-sdk/devices/device/set"
+  }
+}

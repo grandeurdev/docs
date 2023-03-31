@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/datastore/collections",
+  "id": "guides/datastore/collections",
+  "title": "Collections",
+  "description": "Collections are essentially database tables where all of your information is stored.",
+  "source": "@site/docs/guides/datastore/collections.mdx",
+  "sourceDirName": "guides/datastore",
+  "slug": "/guides/datastore/collections",
+  "permalink": "/docs/guides/datastore/collections",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/datastore/collections.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Collections"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Datastore",
+    "permalink": "/docs/guides/datastore/overview"
+  },
+  "next": {
+    "title": "Querying",
+    "permalink": "/docs/guides/datastore/querying"
+  }
+}

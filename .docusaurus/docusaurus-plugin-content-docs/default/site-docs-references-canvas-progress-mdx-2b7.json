@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/canvas/progress",
+  "id": "references/canvas/progress",
+  "title": "Progress",
+  "description": "Displays the current progress over a specified range. The progress is displayed as a %age.",
+  "source": "@site/docs/references/canvas/progress.mdx",
+  "sourceDirName": "references/canvas",
+  "slug": "/references/canvas/progress",
+  "permalink": "/docs/references/canvas/progress",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/progress.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Progress"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Display",
+    "permalink": "/docs/references/canvas/display"
+  },
+  "next": {
+    "title": "Slider",
+    "permalink": "/docs/references/canvas/slider"
+  }
+}

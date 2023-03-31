@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/security/user-and-administrator",
+  "id": "guides/security/user-and-administrator",
+  "title": "User and Administrator",
+  "description": "This topic is about the relationship between you as an administrator and your users and the access scope of both.",
+  "source": "@site/docs/guides/security/user-and-administrator.mdx",
+  "sourceDirName": "guides/security",
+  "slug": "/guides/security/user-and-administrator",
+  "permalink": "/docs/guides/security/user-and-administrator",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/security/user-and-administrator.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "User and Administrator"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Querying",
+    "permalink": "/docs/guides/datastore/querying"
+  },
+  "next": {
+    "title": "CORS",
+    "permalink": "/docs/guides/security/cors"
+  }
+}

@@ -399,6 +399,52 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'auth',
+              items: [
+                {
+                  type: 'doc',
+                  label: 'Overview',
+                  id: 'references/client-sdk/auth/overview'
+                },
+                {
+                  type: 'doc',
+                  label: '.register',
+                  id: 'references/client-sdk/auth/register'
+                },
+                {
+                  type: 'doc',
+                  label: '.isAuthenticated',
+                  id: 'references/client-sdk/auth/is-authenticated'
+                },
+                {
+                  type: 'doc',
+                  label: '.login',
+                  id: 'references/client-sdk/auth/login'
+                },
+                {
+                  type: 'doc',
+                  label: '.logout',
+                  id: 'references/client-sdk/auth/logout'
+                },
+                {
+                  type: 'doc',
+                  label: '.forgotPassword',
+                  id: 'references/client-sdk/auth/forgot-password'
+                },
+                {
+                  type: 'doc',
+                  label: '.changePassword',
+                  id: 'references/client-sdk/auth/change-password'
+                },
+                {
+                  type: 'doc',
+                  label: '.updateProfile',
+                  id: 'references/client-sdk/auth/update-profile'
+                },
+              ]
+            },
+            {
+              type: 'category',
               label: 'datastore',
               items: [
                 {
@@ -496,6 +542,11 @@ const sidebars = {
           type: 'doc',
           label: 'CLI',
           id: 'references/cli'
+        },
+        {
+          type: 'doc',
+          label: 'RestAPI',
+          id: 'references/restapi'
         }
       ],
     },

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/device/data/on",
+  "id": "references/device-sdk/device/data/on",
+  "title": "data.on",
+  "description": "This method schedules a function to be called when a device variable changes on Grandeur.",
+  "source": "@site/docs/references/device-sdk/device/data/on.mdx",
+  "sourceDirName": "references/device-sdk/device/data",
+  "slug": "/references/device-sdk/device/data/on",
+  "permalink": "/docs/references/device-sdk/device/data/on",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/data/on.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "data.on"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "data.set",
+    "permalink": "/docs/references/device-sdk/device/data/set"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/device-sdk/datastore/overview"
+  }
+}

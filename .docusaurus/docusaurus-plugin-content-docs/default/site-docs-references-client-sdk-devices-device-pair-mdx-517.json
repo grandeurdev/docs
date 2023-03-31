@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/pair",
+  "id": "references/client-sdk/devices/device/pair",
+  "title": "device.pair",
+  "description": "As documented earlier, it is compulsory to pair a device with a user account before getting access to its data. Pairing feature is similar to claiming ownership over a device. When you send us a pairing request, we first verify that the device isn't paired to another account.",
+  "source": "@site/docs/references/client-sdk/devices/device/pair.mdx",
+  "sourceDirName": "references/client-sdk/devices/device",
+  "slug": "/references/client-sdk/devices/device/pair",
+  "permalink": "/docs/references/client-sdk/devices/device/pair",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/pair.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.pair"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.on",
+    "permalink": "/docs/references/client-sdk/devices/device/on"
+  },
+  "next": {
+    "title": "device.unpair",
+    "permalink": "/docs/references/client-sdk/devices/device/unpair"
+  }
+}

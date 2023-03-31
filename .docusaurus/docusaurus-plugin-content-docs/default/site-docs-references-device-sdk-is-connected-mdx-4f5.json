@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/is-connected",
+  "id": "references/device-sdk/is-connected",
+  "title": "isConnected",
+  "description": "This method returns true if the device is connected with Grandeur.",
+  "source": "@site/docs/references/device-sdk/is-connected.mdx",
+  "sourceDirName": "references/device-sdk",
+  "slug": "/references/device-sdk/is-connected",
+  "permalink": "/docs/references/device-sdk/is-connected",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/is-connected.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "isConnected"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Initialization",
+    "permalink": "/docs/references/device-sdk/initialization"
+  },
+  "next": {
+    "title": "onConnection",
+    "permalink": "/docs/references/device-sdk/on-connection"
+  }
+}

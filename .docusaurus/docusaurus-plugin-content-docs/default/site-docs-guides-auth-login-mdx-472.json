@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/auth/login",
+  "id": "guides/auth/login",
+  "title": "Login a User",
+  "description": "After successful registration, the user can login with its credentials.",
+  "source": "@site/docs/guides/auth/login.mdx",
+  "sourceDirName": "guides/auth",
+  "slug": "/guides/auth/login",
+  "permalink": "/docs/guides/auth/login",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/login.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Login a User"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Register a New User",
+    "permalink": "/docs/guides/auth/register"
+  },
+  "next": {
+    "title": "Logout a User",
+    "permalink": "/docs/guides/auth/logout"
+  }
+}

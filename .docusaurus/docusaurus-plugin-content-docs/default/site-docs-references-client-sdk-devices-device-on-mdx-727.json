@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/on",
+  "id": "references/client-sdk/devices/device/on",
+  "title": "device.on",
+  "description": "You can also attach a listener to device meta data. For example you can subscribe to updates on device name to automatically receive update whenever the name of device will be updated.",
+  "source": "@site/docs/references/client-sdk/devices/device/on.mdx",
+  "sourceDirName": "references/client-sdk/devices/device",
+  "slug": "/references/client-sdk/devices/device/on",
+  "permalink": "/docs/references/client-sdk/devices/device/on",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/on.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.on"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.set",
+    "permalink": "/docs/references/client-sdk/devices/device/set"
+  },
+  "next": {
+    "title": "device.pair",
+    "permalink": "/docs/references/client-sdk/devices/device/pair"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "unversionedId": "restapi",
+  "id": "restapi",
+  "title": "Introduction",
+  "description": "You need three credentials to use the REST API for anything:",
+  "source": "@site/docs/restapi.mdx",
+  "sourceDirName": ".",
+  "slug": "/restapi",
+  "permalink": "/docs/restapi",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/restapi.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Introduction",
+    "pinned": "pinned",
+    "emoji": "🤖"
+  }
+}

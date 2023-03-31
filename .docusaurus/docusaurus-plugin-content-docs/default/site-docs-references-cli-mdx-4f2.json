@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/cli",
+  "id": "references/cli",
+  "title": "CLI",
+  "description": "Grandeur CLI a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.",
+  "source": "@site/docs/references/cli.mdx",
+  "sourceDirName": "references",
+  "slug": "/references/cli",
+  "permalink": "/docs/references/cli",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/cli.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "CLI"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Graph",
+    "permalink": "/docs/references/canvas/graph"
+  },
+  "next": {
+    "title": "Keywords",
+    "permalink": "/docs/keywords"
+  }
+}

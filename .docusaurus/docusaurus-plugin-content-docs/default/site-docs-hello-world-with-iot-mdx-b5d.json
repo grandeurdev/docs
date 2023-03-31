@@ -1,0 +1,28 @@
+{
+  "unversionedId": "hello-world-with-iot",
+  "id": "hello-world-with-iot",
+  "title": "Hello World with IoT",
+  "description": "In order to truly understand the potential of Grandeur, we are going to make a start with building an internet switch. Just like internet makes the world a global village for us humans, Internet of Things does that for the things (the machines). For example, you can control your ESP8266 device using bluetooth as well. But when you want to connect 100s of devices, monitor them, control them, automate them, and over internet (for global access) things get extremely complex. That's where the concept of backend comes in. All your devices connect to the backend and this backend is what makes it possible then to control anything from anywhere in the world from your phone or laptop.",
+  "source": "@site/docs/hello-world-with-iot.mdx",
+  "sourceDirName": ".",
+  "slug": "/hello-world-with-iot",
+  "permalink": "/docs/hello-world-with-iot",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/hello-world-with-iot.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Hello World with IoT",
+    "pinned": "pinned",
+    "emoji": "👋🏻"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Getting Started",
+    "permalink": "/docs/getting-started"
+  },
+  "next": {
+    "title": "Builing Your Custom App",
+    "permalink": "/docs/build-your-custom-app"
+  }
+}

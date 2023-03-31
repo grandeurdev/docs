@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/canvas/button",
+  "id": "references/canvas/button",
+  "title": "Button",
+  "description": "Make buttons and control other services with a single tap. The button widget allows to send commands and view binary statuses of the device, such as power ON/OFF.",
+  "source": "@site/docs/references/canvas/button.mdx",
+  "sourceDirName": "references/canvas",
+  "slug": "/references/canvas/button",
+  "permalink": "/docs/references/canvas/button",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/button.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Button"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/canvas/overview"
+  },
+  "next": {
+    "title": "Display",
+    "permalink": "/docs/references/canvas/display"
+  }
+}

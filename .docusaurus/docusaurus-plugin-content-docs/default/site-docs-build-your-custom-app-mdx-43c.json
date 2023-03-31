@@ -1,0 +1,28 @@
+{
+  "unversionedId": "build-your-custom-app",
+  "id": "build-your-custom-app",
+  "title": "Builing Your Custom App",
+  "description": "We've already accomplished the task of blinking the on-board LED of ESP8266 through our Grandeur Platform so let's take things one step further. Would'nt it be cool if we could control that LED using our custom app.",
+  "source": "@site/docs/build-your-custom-app.mdx",
+  "sourceDirName": ".",
+  "slug": "/build-your-custom-app",
+  "permalink": "/docs/build-your-custom-app",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/build-your-custom-app.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Builing Your Custom App",
+    "pinned": "pinned",
+    "emoji": "🚀"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Hello World with IoT",
+    "permalink": "/docs/hello-world-with-iot"
+  },
+  "next": {
+    "title": "Canvas",
+    "permalink": "/docs/guides/canvas"
+  }
+}

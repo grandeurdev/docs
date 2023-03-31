@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/datastore/querying",
+  "id": "guides/datastore/querying",
+  "title": "Querying",
+  "description": "Just like SQL, querying here is used to retrieve the required data from the database. You may perform operations like select, group by, join and filtering to retrieve the required data and present it in a meaningful manner to extract significant information out of it.",
+  "source": "@site/docs/guides/datastore/querying.mdx",
+  "sourceDirName": "guides/datastore",
+  "slug": "/guides/datastore/querying",
+  "permalink": "/docs/guides/datastore/querying",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/datastore/querying.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Querying"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Collections",
+    "permalink": "/docs/guides/datastore/collections"
+  },
+  "next": {
+    "title": "User and Administrator",
+    "permalink": "/docs/guides/security/user-and-administrator"
+  }
+}

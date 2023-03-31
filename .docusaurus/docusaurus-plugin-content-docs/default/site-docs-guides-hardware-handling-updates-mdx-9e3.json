@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/handling-updates",
+  "id": "guides/hardware/handling-updates",
+  "title": "Handling Updates",
+  "description": "You can not only get()/set() but also subscribe to a device variable, which means if an update occurs in that variable at any time, the device will instantly get it. To subscribe to a variable, you just need to pass the variable name and a function to device(deviceId).data().on(). The function you pass to device(deviceId).data().on() is set as an update handler for that variable, which means the code inside that function will be run whenever that variable is updated.",
+  "source": "@site/docs/guides/hardware/handling-updates.mdx",
+  "sourceDirName": "guides/hardware",
+  "slug": "/guides/hardware/handling-updates",
+  "permalink": "/docs/guides/hardware/handling-updates",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-updates.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Handling Updates"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Handling Device Variables",
+    "permalink": "/docs/guides/hardware/handling-device-variables"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/references/device-sdk/installation"
+  }
+}

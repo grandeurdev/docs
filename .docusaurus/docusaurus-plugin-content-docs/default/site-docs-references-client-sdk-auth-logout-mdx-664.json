@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/auth/logout",
+  "id": "references/client-sdk/auth/logout",
+  "title": "auth.logout",
+  "description": "This method comes handy because along with logging the user in, it is also required to logout a user when required.",
+  "source": "@site/docs/references/client-sdk/auth/logout.mdx",
+  "sourceDirName": "references/client-sdk/auth",
+  "slug": "/references/client-sdk/auth/logout",
+  "permalink": "/docs/references/client-sdk/auth/logout",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/logout.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "auth.logout"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "auth.login",
+    "permalink": "/docs/references/client-sdk/auth/login"
+  },
+  "next": {
+    "title": "auth.forgotPassword",
+    "permalink": "/docs/references/client-sdk/auth/forgot-password"
+  }
+}

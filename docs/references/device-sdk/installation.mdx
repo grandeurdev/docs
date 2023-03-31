@@ -1,15 +1,19 @@
 ---
 title: Installation
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Installation
 
-## Arduino
+<Tabs group="tab-test">
 
-1. You can search for Grandeur in Arduino's library manager. In Arduino IDE, open `Sketch > Include Library > Manage Libraries` and install Grandeur from there.
+  <Item value="arduino" label="Arduino">
+  1. You can search for Grandeur in Arduino's library manager. In Arduino IDE, open `Sketch > Include Library > Manage Libraries` and install Grandeur from there.
 
-2. You can also download the latest release of Arduino SDK from [here](https://github.com/grandeurdev/arduino-sdk/releases/tag/1.0.6) and install it in your Arduino IDE.
+  2. You can also download the latest release of Arduino SDK from [here](https://github.com/grandeurdev/arduino-sdk/releases/tag/1.0.6) and install it in your Arduino IDE.
 
-This is how you can include `Grandeur` in your Arduino sketch:
+  This is how you can include `Grandeur` in your Arduino sketch:
 
 ```cpp
 #include <Grandeur.h>
@@ -17,9 +21,51 @@ This is how you can include `Grandeur` in your Arduino sketch:
 
 When you include `<Grandeur.h>` in your sketch, a global object grandeur is created right away which you can use to give the SDK your project's API Key and your device access token so it can start connecting with Grandeur.
 
-## Python
 
-You can install Py SDK using python's pip.
+  ```cpp
+
+    Var json; // The root
+    json["foo"] = "This is foo"; // "foo" key in json
+    json["bar"] = true; // "bar" key in json
+    json["foobar"]["foo"] = "This is foo inside foobar"; // "foo" key in "foobar" key in json
+
+    // In JSON, json would look like:
+    //  {
+    //    "foo": "This is foo",
+    //    "bar": true,
+    //    "foobar": {
+    //      "foo": "This is foo inside foobar"
+    //    }
+    //  }
+
+    // You can also store anything in Var.
+    Var x = 5;
+    x = "hello";
+
+    Serial.println(x); // Prints: hello
+    ```
+
+    An example is as below
+    
+    ```cpp
+    #include <Grandeur.h>
+
+    Grandeur::Project project;
+
+    void setup() {
+      // You can initialize device configurations like this.
+      project = grandeur.init(apiKey, token);
+    }
+
+    void loop() {  project.loop(WiFiState == CONNECTED);  // Same as "if(WiFiState == CONNECTED) project.loop();"}
+
+  ```
+
+  </Item>
+
+  <Item value="py" label="Py">
+
+  You can install Py SDK using python's pip.
 
 ```bash
 pip install grandeur
@@ -30,3 +76,8 @@ This is how you can import the Py SDK in your `.py` sketch on your RaspberryPi d
 ```py
 import grandeur.device as grandeur
 ```
+  </Item>
+
+</Tabs>
+
+

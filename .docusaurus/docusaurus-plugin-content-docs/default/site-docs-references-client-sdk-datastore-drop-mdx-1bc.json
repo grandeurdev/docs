@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/drop",
+  "id": "references/client-sdk/datastore/drop",
+  "title": "datastore.drop",
+  "description": "This method deletes a collections and all of its documents from the datastore of your project. This method accpets the following input arguments",
+  "source": "@site/docs/references/client-sdk/datastore/drop.mdx",
+  "sourceDirName": "references/client-sdk/datastore",
+  "slug": "/references/client-sdk/datastore/drop",
+  "permalink": "/docs/references/client-sdk/datastore/drop",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/drop.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "datastore.drop"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "datastore.list",
+    "permalink": "/docs/references/client-sdk/datastore/list"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/datastore/collection/overview"
+  }
+}

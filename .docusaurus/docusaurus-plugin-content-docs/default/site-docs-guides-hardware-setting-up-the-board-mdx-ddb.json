@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/setting-up-the-board",
+  "id": "guides/hardware/setting-up-the-board",
+  "title": "Setting up Boards",
+  "description": "Setup ESP8266 for Arduino",
+  "source": "@site/docs/guides/hardware/setting-up-the-board.mdx",
+  "sourceDirName": "guides/hardware",
+  "slug": "/guides/hardware/setting-up-the-board",
+  "permalink": "/docs/guides/hardware/setting-up-the-board",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/setting-up-the-board.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Setting up Boards"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Access Credentials",
+    "permalink": "/docs/guides/security/access-credentials"
+  },
+  "next": {
+    "title": "Handling the WiFi",
+    "permalink": "/docs/guides/hardware/handling-wifi"
+  }
+}

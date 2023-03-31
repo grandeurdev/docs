@@ -2,6 +2,9 @@
 title: isConnected
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # isConnected
 
 This method returns true if the device is connected with Grandeur.
@@ -10,7 +13,7 @@ This method returns true if the device is connected with Grandeur.
 
   <Item value="arduino" label="Arduino">
 
-    ```cpp
+```cpp
   Grandeur::Project project;
   void setup() {
   project = grandeur.init(apiKey, token);

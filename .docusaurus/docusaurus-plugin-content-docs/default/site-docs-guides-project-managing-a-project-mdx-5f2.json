@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/project/managing-a-project",
+  "id": "guides/project/managing-a-project",
+  "title": "Managing a Project",
+  "description": "A project is the first thing you need to create to start working with Grandeur. A project is like a namespace, a completely isolated network of users and devices, along with a separate datastore. While you can create an unlimited number of projects, but no two projects can interact or share anything with one other.",
+  "source": "@site/docs/guides/project/managing-a-project.mdx",
+  "sourceDirName": "guides/project",
+  "slug": "/guides/project/managing-a-project",
+  "permalink": "/docs/guides/project/managing-a-project",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/project/managing-a-project.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Managing a Project"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "API Key",
+    "permalink": "/docs/guides/project/api-key"
+  },
+  "next": {
+    "title": "Register a New User",
+    "permalink": "/docs/guides/auth/register"
+  }
+}

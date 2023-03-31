@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/canvas",
+  "id": "guides/canvas",
+  "title": "Canvas",
+  "description": "Canvas is an imperative addition to the Grandeur family. It is a prototyping tool that lets you drag and drop widgets — like buttons, sliders, displays, and graphs — to sketch a layout which you can use instead of coding a full app. This means you do not have to have app designers in your team before starting to build IoT — a single hardware engineer is a beast with Grandeur.",
+  "source": "@site/docs/guides/canvas.mdx",
+  "sourceDirName": "guides",
+  "slug": "/guides/canvas",
+  "permalink": "/docs/guides/canvas",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/canvas.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Canvas"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Builing Your Custom App",
+    "permalink": "/docs/build-your-custom-app"
+  },
+  "next": {
+    "title": "API Key",
+    "permalink": "/docs/guides/project/api-key"
+  }
+}

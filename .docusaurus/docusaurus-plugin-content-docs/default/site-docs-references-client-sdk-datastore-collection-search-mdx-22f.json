@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/collection/search",
+  "id": "references/client-sdk/datastore/collection/search",
+  "title": "collection.search",
+  "description": "This method can be used to query documents in a collection. It accepts a match condition and fetches the documents. It accepts following arguments",
+  "source": "@site/docs/references/client-sdk/datastore/collection/search.mdx",
+  "sourceDirName": "references/client-sdk/datastore/collection",
+  "slug": "/references/client-sdk/datastore/collection/search",
+  "permalink": "/docs/references/client-sdk/datastore/collection/search",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/search.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "collection.search"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "collection.insert",
+    "permalink": "/docs/references/client-sdk/datastore/collection/insert"
+  },
+  "next": {
+    "title": "collection.update",
+    "permalink": "/docs/references/client-sdk/datastore/collection/update"
+  }
+}

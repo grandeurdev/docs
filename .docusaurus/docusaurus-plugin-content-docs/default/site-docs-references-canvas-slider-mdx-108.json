@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/canvas/slider",
+  "id": "references/canvas/slider",
+  "title": "Slider",
+  "description": "Slider allows to view and send values in the predefined range. Usage examples: resistance, brightness etc. Set the slider handle to choose the required value.",
+  "source": "@site/docs/references/canvas/slider.mdx",
+  "sourceDirName": "references/canvas",
+  "slug": "/references/canvas/slider",
+  "permalink": "/docs/references/canvas/slider",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/slider.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Slider"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Progress",
+    "permalink": "/docs/references/canvas/progress"
+  },
+  "next": {
+    "title": "Table",
+    "permalink": "/docs/references/canvas/table"
+  }
+}

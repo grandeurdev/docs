@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/get",
+  "id": "references/client-sdk/devices/get",
+  "title": "devices.get",
+  "description": "This method comes in handy whenever you need a list of all the devices paired to a user account.",
+  "source": "@site/docs/references/client-sdk/devices/get.mdx",
+  "sourceDirName": "references/client-sdk/devices",
+  "slug": "/references/client-sdk/devices/get",
+  "permalink": "/docs/references/client-sdk/devices/get",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/get.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "devices.get"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/devices/overview"
+  },
+  "next": {
+    "title": "devices.count",
+    "permalink": "/docs/references/client-sdk/devices/count"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/auth/update-profile",
+  "id": "references/client-sdk/auth/update-profile",
+  "title": "updateProfile",
+  "description": "A user profile gets automatically created whenever you register a new user account. This makes it really easy for you as a developer to handle data specific to the user. Like you can setup display picture of a user. Which allows you present a unique experience to each user. This is why we have added this method with which you can update the profile of a authenticated user.",
+  "source": "@site/docs/references/client-sdk/auth/update-profile.mdx",
+  "sourceDirName": "references/client-sdk/auth",
+  "slug": "/references/client-sdk/auth/update-profile",
+  "permalink": "/docs/references/client-sdk/auth/update-profile",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/update-profile.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "updateProfile"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "auth.changePassword",
+    "permalink": "/docs/references/client-sdk/auth/change-password"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/datastore/overview"
+  }
+}

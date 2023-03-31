@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/collection/overview",
+  "id": "references/client-sdk/datastore/collection/overview",
+  "title": "Overview",
+  "description": "From the datastore class, you can get a reference to a collection in order to execute a query or insert new documents into it.",
+  "source": "@site/docs/references/client-sdk/datastore/collection/overview.mdx",
+  "sourceDirName": "references/client-sdk/datastore/collection",
+  "slug": "/references/client-sdk/datastore/collection/overview",
+  "permalink": "/docs/references/client-sdk/datastore/collection/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "datastore.drop",
+    "permalink": "/docs/references/client-sdk/datastore/drop"
+  },
+  "next": {
+    "title": "collection.insert",
+    "permalink": "/docs/references/client-sdk/datastore/collection/insert"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/set",
+  "id": "references/client-sdk/devices/device/set",
+  "title": "device.set",
+  "description": "Using device.set(), you can also change few fields of the device data. For example the name of the device can be changed from the SDK.",
+  "source": "@site/docs/references/client-sdk/devices/device/set.mdx",
+  "sourceDirName": "references/client-sdk/devices/device",
+  "slug": "/references/client-sdk/devices/device/set",
+  "permalink": "/docs/references/client-sdk/devices/device/set",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/set.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.set"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.get",
+    "permalink": "/docs/references/client-sdk/devices/device/get"
+  },
+  "next": {
+    "title": "device.on",
+    "permalink": "/docs/references/client-sdk/devices/device/on"
+  }
+}

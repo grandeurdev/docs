@@ -1,6 +1,10 @@
 ---
 title: data.set
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # data.set
 
 This method updates a device variable on Grandeur with new data.
@@ -15,7 +19,7 @@ This method updates a device variable on Grandeur with new data.
 
 <Tabs group="tab-test">
 
-  <Item value="arduino" label="Arduino">
+<Item value="arduino" label="Arduino">
 
 ```cpp
 Grandeur::Project project;
@@ -49,7 +53,7 @@ void loop() {
 
    <Item value="py" label="Py">
 
-      ```py
+  ```py
         import grandeur.device as grandeur
 
         # Init the sdk
@@ -67,7 +71,7 @@ void loop() {
 
         # Get data of the device
         device.data().set("", data, setCallback)
-    ```
+  ```
 </Item>
 
 </Tabs>

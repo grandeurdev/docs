@@ -1,0 +1,53 @@
+---
+title: Introduction
+pinned: pinned
+emoji: 🤖
+---
+
+# RestAPI
+
+You need three credentials to use the REST API for anything:
+
+1. API Key 
+2. Secret
+3. Personal Access Token
+
+All endpoints work on the POST method only. GET, UPDATE, DELETE, or any other endpoints return 400 error.
+
+All requests are sent with `Content-Type: application/json`.
+
+## Usage
+
+```jsx
+fetch("https://api.grandeur.dev<ENDPOINT_PATH>?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: BODY
+	}
+);
+```
+
+This is how each section could look like:
+
+## **/projects/meta**
+
+### Body:
+
+`{ apiKey: string }`
+
+### Success response:
+
+`{ code: "PROJECTS-FETCHED", message: "Project is successfully fetched", nProjects: 10 }`
+
+### Error response:
+
+- `{ code: "APIKEY-INVALID", message: "Your API Key seems unfamiliar." }`
+- `{ code: "SIGNATURE-INVALID" }`
+- `{ code: "AUTH-UNAUTHORIZED" }`
+
+### Usage:
+

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/device-sdk/device/overview",
+  "id": "references/device-sdk/device/overview",
+  "title": "Overview",
+  "description": "This method returns a reference to object of the device class.",
+  "source": "@site/docs/references/device-sdk/device/overview.mdx",
+  "sourceDirName": "references/device-sdk/device",
+  "slug": "/references/device-sdk/device/overview",
+  "permalink": "/docs/references/device-sdk/device/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "onConnection",
+    "permalink": "/docs/references/device-sdk/on-connection"
+  },
+  "next": {
+    "title": "data.get",
+    "permalink": "/docs/references/device-sdk/device/data/get"
+  }
+}

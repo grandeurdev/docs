@@ -1,0 +1,3202 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs",
+          "editUrlLocalized": "https://github.com/grandeurdev/docs/tree/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/mahamw.sheikh/Desktop/Docs/sidebars.js",
+          "contentPath": "/Users/mahamw.sheikh/Desktop/Docs/docs",
+          "contentPathLocalized": "/Users/mahamw.sheikh/Desktop/Docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "build-your-custom-app",
+              "id": "build-your-custom-app",
+              "title": "Builing Your Custom App",
+              "description": "We've already accomplished the task of blinking the on-board LED of ESP8266 through our Grandeur Platform so let's take things one step further. Would'nt it be cool if we could control that LED using our custom app.",
+              "source": "@site/docs/build-your-custom-app.mdx",
+              "sourceDirName": ".",
+              "slug": "/build-your-custom-app",
+              "permalink": "/docs/build-your-custom-app",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/build-your-custom-app.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Builing Your Custom App",
+                "pinned": "pinned",
+                "emoji": "🚀"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Hello World with IoT",
+                "permalink": "/docs/hello-world-with-iot"
+              },
+              "next": {
+                "title": "Canvas",
+                "permalink": "/docs/guides/canvas"
+              }
+            },
+            {
+              "unversionedId": "faqs",
+              "id": "faqs",
+              "title": "FAQs",
+              "description": "Where do I find support?",
+              "source": "@site/docs/faqs.mdx",
+              "sourceDirName": ".",
+              "slug": "/faqs",
+              "permalink": "/docs/faqs",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/faqs.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "FAQs"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Keywords",
+                "permalink": "/docs/keywords"
+              }
+            },
+            {
+              "unversionedId": "getting-started",
+              "id": "getting-started",
+              "title": "Getting Started",
+              "description": "To use Grandeur in our project, let's first set it up.",
+              "source": "@site/docs/getting-started.mdx",
+              "sourceDirName": ".",
+              "slug": "/getting-started",
+              "permalink": "/docs/getting-started",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/getting-started.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Getting Started",
+                "pinned": "pinned",
+                "emoji": "🔥"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/introduction"
+              },
+              "next": {
+                "title": "Hello World with IoT",
+                "permalink": "/docs/hello-world-with-iot"
+              }
+            },
+            {
+              "unversionedId": "guides/auth/login",
+              "id": "guides/auth/login",
+              "title": "Login a User",
+              "description": "After successful registration, the user can login with its credentials.",
+              "source": "@site/docs/guides/auth/login.mdx",
+              "sourceDirName": "guides/auth",
+              "slug": "/guides/auth/login",
+              "permalink": "/docs/guides/auth/login",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/login.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Login a User"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Register a New User",
+                "permalink": "/docs/guides/auth/register"
+              },
+              "next": {
+                "title": "Logout a User",
+                "permalink": "/docs/guides/auth/logout"
+              }
+            },
+            {
+              "unversionedId": "guides/auth/logout",
+              "id": "guides/auth/logout",
+              "title": "Logout a User",
+              "description": "Logout serves as the most basic and important feature.",
+              "source": "@site/docs/guides/auth/logout.mdx",
+              "sourceDirName": "guides/auth",
+              "slug": "/guides/auth/logout",
+              "permalink": "/docs/guides/auth/logout",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/logout.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Logout a User"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Login a User",
+                "permalink": "/docs/guides/auth/login"
+              },
+              "next": {
+                "title": "Update Account Password",
+                "permalink": "/docs/guides/auth/managing-user-account/update-account-password"
+              }
+            },
+            {
+              "unversionedId": "guides/auth/managing-user-account/update-account-password",
+              "id": "guides/auth/managing-user-account/update-account-password",
+              "title": "Update Account Password",
+              "description": "auth.changePassword()",
+              "source": "@site/docs/guides/auth/managing-user-account/update-account-password.mdx",
+              "sourceDirName": "guides/auth/managing-user-account",
+              "slug": "/guides/auth/managing-user-account/update-account-password",
+              "permalink": "/docs/guides/auth/managing-user-account/update-account-password",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/managing-user-account/update-account-password.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Update Account Password"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Logout a User",
+                "permalink": "/docs/guides/auth/logout"
+              },
+              "next": {
+                "title": "Update Forgotten Password",
+                "permalink": "/docs/guides/auth/managing-user-account/update-forgotten-password"
+              }
+            },
+            {
+              "unversionedId": "guides/auth/managing-user-account/update-forgotten-password",
+              "id": "guides/auth/managing-user-account/update-forgotten-password",
+              "title": "Update Forgotten Password",
+              "description": "auth.forgotPassword()",
+              "source": "@site/docs/guides/auth/managing-user-account/update-forgotten-password.mdx",
+              "sourceDirName": "guides/auth/managing-user-account",
+              "slug": "/guides/auth/managing-user-account/update-forgotten-password",
+              "permalink": "/docs/guides/auth/managing-user-account/update-forgotten-password",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/managing-user-account/update-forgotten-password.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Update Forgotten Password"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Update Account Password",
+                "permalink": "/docs/guides/auth/managing-user-account/update-account-password"
+              },
+              "next": {
+                "title": "Update User Profile",
+                "permalink": "/docs/guides/auth/managing-user-account/update-user-profile"
+              }
+            },
+            {
+              "unversionedId": "guides/auth/managing-user-account/update-user-profile",
+              "id": "guides/auth/managing-user-account/update-user-profile",
+              "title": "Update User Profile",
+              "description": "auth.updateProfile()",
+              "source": "@site/docs/guides/auth/managing-user-account/update-user-profile.mdx",
+              "sourceDirName": "guides/auth/managing-user-account",
+              "slug": "/guides/auth/managing-user-account/update-user-profile",
+              "permalink": "/docs/guides/auth/managing-user-account/update-user-profile",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/managing-user-account/update-user-profile.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Update User Profile"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Update Forgotten Password",
+                "permalink": "/docs/guides/auth/managing-user-account/update-forgotten-password"
+              },
+              "next": {
+                "title": "Model",
+                "permalink": "/docs/guides/devices/model"
+              }
+            },
+            {
+              "unversionedId": "guides/auth/register",
+              "id": "guides/auth/register",
+              "title": "Register a New User",
+              "description": "So you've created the perfect custom app and now want to elevate the end user experience by ensuring that they can use these apps securely. This is where the whole auth concept comes into play.",
+              "source": "@site/docs/guides/auth/register.mdx",
+              "sourceDirName": "guides/auth",
+              "slug": "/guides/auth/register",
+              "permalink": "/docs/guides/auth/register",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/auth/register.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Register a New User"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Managing a Project",
+                "permalink": "/docs/guides/project/managing-a-project"
+              },
+              "next": {
+                "title": "Login a User",
+                "permalink": "/docs/guides/auth/login"
+              }
+            },
+            {
+              "unversionedId": "guides/canvas",
+              "id": "guides/canvas",
+              "title": "Canvas",
+              "description": "Canvas is an imperative addition to the Grandeur family. It is a prototyping tool that lets you drag and drop widgets — like buttons, sliders, displays, and graphs — to sketch a layout which you can use instead of coding a full app. This means you do not have to have app designers in your team before starting to build IoT — a single hardware engineer is a beast with Grandeur.",
+              "source": "@site/docs/guides/canvas.mdx",
+              "sourceDirName": "guides",
+              "slug": "/guides/canvas",
+              "permalink": "/docs/guides/canvas",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/canvas.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Canvas"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Builing Your Custom App",
+                "permalink": "/docs/build-your-custom-app"
+              },
+              "next": {
+                "title": "API Key",
+                "permalink": "/docs/guides/project/api-key"
+              }
+            },
+            {
+              "unversionedId": "guides/datastore/collections",
+              "id": "guides/datastore/collections",
+              "title": "Collections",
+              "description": "Collections are essentially database tables where all of your information is stored.",
+              "source": "@site/docs/guides/datastore/collections.mdx",
+              "sourceDirName": "guides/datastore",
+              "slug": "/guides/datastore/collections",
+              "permalink": "/docs/guides/datastore/collections",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/datastore/collections.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Collections"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Datastore",
+                "permalink": "/docs/guides/datastore/overview"
+              },
+              "next": {
+                "title": "Querying",
+                "permalink": "/docs/guides/datastore/querying"
+              }
+            },
+            {
+              "unversionedId": "guides/datastore/overview",
+              "id": "guides/datastore/overview",
+              "title": "Datastore",
+              "description": "Data storage is the basic requirement of a data driven application or device. We have built this feature in order to enable users to store large amount of data like logs of devices. Imagine it as an infinite storage between your apps and your devices — ensuring high availability and scalability without you ever worrying about them. Millions of your devices could be logging tons of variables each and you can just treat it as a chunk of Big Data, analyze it, pass it through AI models, and learn from it.  To access this feature simply get a reference to the storage class by calling datastore() method with the project object.",
+              "source": "@site/docs/guides/datastore/overview.mdx",
+              "sourceDirName": "guides/datastore",
+              "slug": "/guides/datastore/overview",
+              "permalink": "/docs/guides/datastore/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/datastore/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Datastore"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Pairing",
+                "permalink": "/docs/guides/devices/pairing"
+              },
+              "next": {
+                "title": "Collections",
+                "permalink": "/docs/guides/datastore/collections"
+              }
+            },
+            {
+              "unversionedId": "guides/datastore/querying",
+              "id": "guides/datastore/querying",
+              "title": "Querying",
+              "description": "Just like SQL, querying here is used to retrieve the required data from the database. You may perform operations like select, group by, join and filtering to retrieve the required data and present it in a meaningful manner to extract significant information out of it.",
+              "source": "@site/docs/guides/datastore/querying.mdx",
+              "sourceDirName": "guides/datastore",
+              "slug": "/guides/datastore/querying",
+              "permalink": "/docs/guides/datastore/querying",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/datastore/querying.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Querying"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Collections",
+                "permalink": "/docs/guides/datastore/collections"
+              },
+              "next": {
+                "title": "User and Administrator",
+                "permalink": "/docs/guides/security/user-and-administrator"
+              }
+            },
+            {
+              "unversionedId": "guides/devices/data",
+              "id": "guides/devices/data",
+              "title": "Data",
+              "description": "When you register a device, you make it available in your project's network. Not just that, a new namespace is created for your device in the device registry.",
+              "source": "@site/docs/guides/devices/data.mdx",
+              "sourceDirName": "guides/devices",
+              "slug": "/guides/devices/data",
+              "permalink": "/docs/guides/devices/data",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/devices/data.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Data"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Model",
+                "permalink": "/docs/guides/devices/model"
+              },
+              "next": {
+                "title": "Pairing",
+                "permalink": "/docs/guides/devices/pairing"
+              }
+            },
+            {
+              "unversionedId": "guides/devices/model",
+              "id": "guides/devices/model",
+              "title": "Model",
+              "description": "To register your device, you first need to register its data model under the Models Section. Model is a way to manage and categorize devices. You can create multiple models and each model can then be associated with multiple devices. You are free to name the function whatever you want, but you have to be vigilant in the schema field while passing a variable with its value. Schema here is not strictly enforced and meant to give your device an initial state.",
+              "source": "@site/docs/guides/devices/model.mdx",
+              "sourceDirName": "guides/devices",
+              "slug": "/guides/devices/model",
+              "permalink": "/docs/guides/devices/model",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/devices/model.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Model"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Update User Profile",
+                "permalink": "/docs/guides/auth/managing-user-account/update-user-profile"
+              },
+              "next": {
+                "title": "Data",
+                "permalink": "/docs/guides/devices/data"
+              }
+            },
+            {
+              "unversionedId": "guides/devices/pairing",
+              "id": "guides/devices/pairing",
+              "title": "Pairing",
+              "description": "On Grandeur, a device falls under the ownership of the project's administrator. The project's API Key delegates the device pairing authority to the SDK which the user uses to pair with the device. Pairing a device makes it live on Grandeur and the user gets delegated access to the device's data. But a user cannot delete or modify a device's inherent data because it's not within its scope.A user can pair with any number of devices but a device can be paired with at the most one user.",
+              "source": "@site/docs/guides/devices/pairing.mdx",
+              "sourceDirName": "guides/devices",
+              "slug": "/guides/devices/pairing",
+              "permalink": "/docs/guides/devices/pairing",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/devices/pairing.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Pairing"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Data",
+                "permalink": "/docs/guides/devices/data"
+              },
+              "next": {
+                "title": "Datastore",
+                "permalink": "/docs/guides/datastore/overview"
+              }
+            },
+            {
+              "unversionedId": "guides/hardware/handling-connection-status",
+              "id": "guides/hardware/handling-connection-status",
+              "title": "Handling Connection Status",
+              "description": "You can also listen on SDK's connection-related events. For example, to run some code when the device makes a successful connection to Grandeur or when the device's connection to Grandeur breaks, you can wrap that code in \"a function that takes a bool and returns void\" and pass it to Grandeur::Project's onConnection() function.",
+              "source": "@site/docs/guides/hardware/handling-connection-status.mdx",
+              "sourceDirName": "guides/hardware",
+              "slug": "/guides/hardware/handling-connection-status",
+              "permalink": "/docs/guides/hardware/handling-connection-status",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-connection-status.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Handling Connection Status"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Handling the WiFi",
+                "permalink": "/docs/guides/hardware/handling-wifi"
+              },
+              "next": {
+                "title": "Handling Device Variables",
+                "permalink": "/docs/guides/hardware/handling-device-variables"
+              }
+            },
+            {
+              "unversionedId": "guides/hardware/handling-device-variables",
+              "id": "guides/hardware/handling-device-variables",
+              "title": "Handling Device Variables",
+              "description": "In IoT, every device in the network wants to publish some variables for users or other devices in the network to see. On Grandeur, we call these the data of the device. you can store the device variables as key-value pairs, like the device's voltage or current or its ON/OFF state. Keeping the online copy of device variables (aka. data) updated gives you many advantages: you can see if your device is ON or OFF at any moment just by fetching its state from Grandeur.",
+              "source": "@site/docs/guides/hardware/handling-device-variables.mdx",
+              "sourceDirName": "guides/hardware",
+              "slug": "/guides/hardware/handling-device-variables",
+              "permalink": "/docs/guides/hardware/handling-device-variables",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-device-variables.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Handling Device Variables"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Handling Connection Status",
+                "permalink": "/docs/guides/hardware/handling-connection-status"
+              },
+              "next": {
+                "title": "Handling Updates",
+                "permalink": "/docs/guides/hardware/handling-updates"
+              }
+            },
+            {
+              "unversionedId": "guides/hardware/handling-updates",
+              "id": "guides/hardware/handling-updates",
+              "title": "Handling Updates",
+              "description": "You can not only get()/set() but also subscribe to a device variable, which means if an update occurs in that variable at any time, the device will instantly get it. To subscribe to a variable, you just need to pass the variable name and a function to device(deviceId).data().on(). The function you pass to device(deviceId).data().on() is set as an update handler for that variable, which means the code inside that function will be run whenever that variable is updated.",
+              "source": "@site/docs/guides/hardware/handling-updates.mdx",
+              "sourceDirName": "guides/hardware",
+              "slug": "/guides/hardware/handling-updates",
+              "permalink": "/docs/guides/hardware/handling-updates",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-updates.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Handling Updates"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Handling Device Variables",
+                "permalink": "/docs/guides/hardware/handling-device-variables"
+              },
+              "next": {
+                "title": "Installation",
+                "permalink": "/docs/references/device-sdk/installation"
+              }
+            },
+            {
+              "unversionedId": "guides/hardware/handling-wifi",
+              "id": "guides/hardware/handling-wifi",
+              "title": "Handling the WiFi",
+              "description": "You can use a WiFi library corresponding to your microcontroller to handle your device's WiFi. Here are some popular ones:",
+              "source": "@site/docs/guides/hardware/handling-wifi.mdx",
+              "sourceDirName": "guides/hardware",
+              "slug": "/guides/hardware/handling-wifi",
+              "permalink": "/docs/guides/hardware/handling-wifi",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/handling-wifi.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Handling the WiFi"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Setting up Boards",
+                "permalink": "/docs/guides/hardware/setting-up-the-board"
+              },
+              "next": {
+                "title": "Handling Connection Status",
+                "permalink": "/docs/guides/hardware/handling-connection-status"
+              }
+            },
+            {
+              "unversionedId": "guides/hardware/setting-up-the-board",
+              "id": "guides/hardware/setting-up-the-board",
+              "title": "Setting up Boards",
+              "description": "Setup ESP8266 for Arduino",
+              "source": "@site/docs/guides/hardware/setting-up-the-board.mdx",
+              "sourceDirName": "guides/hardware",
+              "slug": "/guides/hardware/setting-up-the-board",
+              "permalink": "/docs/guides/hardware/setting-up-the-board",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/setting-up-the-board.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Setting up Boards"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Access Credentials",
+                "permalink": "/docs/guides/security/access-credentials"
+              },
+              "next": {
+                "title": "Handling the WiFi",
+                "permalink": "/docs/guides/hardware/handling-wifi"
+              }
+            },
+            {
+              "unversionedId": "guides/hardware/wifi-connection",
+              "id": "guides/hardware/wifi-connection",
+              "title": "Handling Wifi Connection",
+              "description": "loop function is what runs the SDK: it connects the device with Grandeur; when disconnected, it automatically reconnects; pulls new messages from Grandeur; pushes messages to Grandeur; and so on. But trying to do any sort of communication on the internet is useless until the WiFi isn't connected. That's exactly what the statement if(WiFi.status() == WLCONNECTED) myProject.loop() does. The if-statement decides when the SDK should run and when it should not. In this case, it would only run when the WiFi is connected. If while running, the WiFi gets disconnected, WiFi.status() == WLCONNECTED would evaluate to false and the SDK would stop running (trying to send more messages or fetch data).",
+              "source": "@site/docs/guides/hardware/wifi-connection.mdx",
+              "sourceDirName": "guides/hardware",
+              "slug": "/guides/hardware/wifi-connection",
+              "permalink": "/docs/guides/hardware/wifi-connection",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/wifi-connection.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Handling Wifi Connection"
+              }
+            },
+            {
+              "unversionedId": "guides/project/api-key",
+              "id": "guides/project/api-key",
+              "title": "API Key",
+              "description": "Each project is identified by a digital signature that we call the API key, just as your identification card or social security identifies you as a citizen. To connect your apps or hardware to your project's network, this is the first thing that you need to provide to any SDK. The API key is sent with every request to Grandeur and this is what tells the cloud about the project that you are requesting to.",
+              "source": "@site/docs/guides/project/api-key.mdx",
+              "sourceDirName": "guides/project",
+              "slug": "/guides/project/api-key",
+              "permalink": "/docs/guides/project/api-key",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/project/api-key.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "API Key"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Canvas",
+                "permalink": "/docs/guides/canvas"
+              },
+              "next": {
+                "title": "Managing a Project",
+                "permalink": "/docs/guides/project/managing-a-project"
+              }
+            },
+            {
+              "unversionedId": "guides/project/managing-a-project",
+              "id": "guides/project/managing-a-project",
+              "title": "Managing a Project",
+              "description": "A project is the first thing you need to create to start working with Grandeur. A project is like a namespace, a completely isolated network of users and devices, along with a separate datastore. While you can create an unlimited number of projects, but no two projects can interact or share anything with one other.",
+              "source": "@site/docs/guides/project/managing-a-project.mdx",
+              "sourceDirName": "guides/project",
+              "slug": "/guides/project/managing-a-project",
+              "permalink": "/docs/guides/project/managing-a-project",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/project/managing-a-project.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Managing a Project"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "API Key",
+                "permalink": "/docs/guides/project/api-key"
+              },
+              "next": {
+                "title": "Register a New User",
+                "permalink": "/docs/guides/auth/register"
+              }
+            },
+            {
+              "unversionedId": "guides/security/access-credentials",
+              "id": "guides/security/access-credentials",
+              "title": "Access Credentials",
+              "description": "Grandeur generates a secret key which acts as an imperative access credential in addition to the API key. This access token along with the API Key is what authorises the device's connection to Grandeur. You pass in your app credentials to gain complete access. The secret key provides an extra layer of security as it is not transferred over wire.",
+              "source": "@site/docs/guides/security/access-credentials.mdx",
+              "sourceDirName": "guides/security",
+              "slug": "/guides/security/access-credentials",
+              "permalink": "/docs/guides/security/access-credentials",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/security/access-credentials.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Access Credentials"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "CORS",
+                "permalink": "/docs/guides/security/cors"
+              },
+              "next": {
+                "title": "Setting up Boards",
+                "permalink": "/docs/guides/hardware/setting-up-the-board"
+              }
+            },
+            {
+              "unversionedId": "guides/security/cors",
+              "id": "guides/security/cors",
+              "title": "CORS",
+              "description": "In the real world, you would not want to add a new user or pair a device with that user manually every time someone buys your product. Therefore you delegate a part of your project authorities to the SDK when you plug your project's API Key in. And so a new user gets to sign up, pair, monitor and control your device through your product's companion app.",
+              "source": "@site/docs/guides/security/cors.mdx",
+              "sourceDirName": "guides/security",
+              "slug": "/guides/security/cors",
+              "permalink": "/docs/guides/security/cors",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/security/cors.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "CORS"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "User and Administrator",
+                "permalink": "/docs/guides/security/user-and-administrator"
+              },
+              "next": {
+                "title": "Access Credentials",
+                "permalink": "/docs/guides/security/access-credentials"
+              }
+            },
+            {
+              "unversionedId": "guides/security/user-and-administrator",
+              "id": "guides/security/user-and-administrator",
+              "title": "User and Administrator",
+              "description": "This topic is about the relationship between you as an administrator and your users and the access scope of both.",
+              "source": "@site/docs/guides/security/user-and-administrator.mdx",
+              "sourceDirName": "guides/security",
+              "slug": "/guides/security/user-and-administrator",
+              "permalink": "/docs/guides/security/user-and-administrator",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/security/user-and-administrator.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "User and Administrator"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Querying",
+                "permalink": "/docs/guides/datastore/querying"
+              },
+              "next": {
+                "title": "CORS",
+                "permalink": "/docs/guides/security/cors"
+              }
+            },
+            {
+              "unversionedId": "hello-world-with-iot",
+              "id": "hello-world-with-iot",
+              "title": "Hello World with IoT",
+              "description": "In order to truly understand the potential of Grandeur, we are going to make a start with building an internet switch. Just like internet makes the world a global village for us humans, Internet of Things does that for the things (the machines). For example, you can control your ESP8266 device using bluetooth as well. But when you want to connect 100s of devices, monitor them, control them, automate them, and over internet (for global access) things get extremely complex. That's where the concept of backend comes in. All your devices connect to the backend and this backend is what makes it possible then to control anything from anywhere in the world from your phone or laptop.",
+              "source": "@site/docs/hello-world-with-iot.mdx",
+              "sourceDirName": ".",
+              "slug": "/hello-world-with-iot",
+              "permalink": "/docs/hello-world-with-iot",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/hello-world-with-iot.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Hello World with IoT",
+                "pinned": "pinned",
+                "emoji": "👋🏻"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Getting Started",
+                "permalink": "/docs/getting-started"
+              },
+              "next": {
+                "title": "Builing Your Custom App",
+                "permalink": "/docs/build-your-custom-app"
+              }
+            },
+            {
+              "unversionedId": "introduction",
+              "id": "introduction",
+              "title": "Introduction",
+              "description": "Building a smart (IoT) device is an art because it is about unifying the physical world with the digital one. When you put a piece of hardware on the web, magic happens, but dealing with a single device is one thing, and forging an automated ecosystem with tens and thousands of these devices is another. Creating that sort of magic isn't without it's challenges:",
+              "source": "@site/docs/introduction.mdx",
+              "sourceDirName": ".",
+              "slug": "/introduction",
+              "permalink": "/docs/introduction",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/introduction.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Introduction",
+                "pinned": "pinned",
+                "emoji": "🤖"
+              },
+              "sidebar": "sidebar",
+              "next": {
+                "title": "Getting Started",
+                "permalink": "/docs/getting-started"
+              }
+            },
+            {
+              "unversionedId": "keywords",
+              "id": "keywords",
+              "title": "Keywords",
+              "description": "Grandeur",
+              "source": "@site/docs/keywords.mdx",
+              "sourceDirName": ".",
+              "slug": "/keywords",
+              "permalink": "/docs/keywords",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/keywords.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Keywords"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "CLI",
+                "permalink": "/docs/references/cli"
+              },
+              "next": {
+                "title": "FAQs",
+                "permalink": "/docs/faqs"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/button",
+              "id": "references/canvas/button",
+              "title": "Button",
+              "description": "Make buttons and control other services with a single tap. The button widget allows to send commands and view binary statuses of the device, such as power ON/OFF.",
+              "source": "@site/docs/references/canvas/button.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/button",
+              "permalink": "/docs/references/canvas/button",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/button.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Button"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/canvas/overview"
+              },
+              "next": {
+                "title": "Display",
+                "permalink": "/docs/references/canvas/display"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/display",
+              "id": "references/canvas/display",
+              "title": "Display",
+              "description": "A screen to display the current status of any of your chosen variable.This widget displays value of input pin e.g. temperature and other data types including strings.",
+              "source": "@site/docs/references/canvas/display.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/display",
+              "permalink": "/docs/references/canvas/display",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/display.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Display"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Button",
+                "permalink": "/docs/references/canvas/button"
+              },
+              "next": {
+                "title": "Progress",
+                "permalink": "/docs/references/canvas/progress"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/graph",
+              "id": "references/canvas/graph",
+              "title": "Graph",
+              "description": "The Graph widget displays quantitative attributes from a data source as a graphical representation. It allows end users to visualize and observe possible patterns and trends from raw data.",
+              "source": "@site/docs/references/canvas/graph.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/graph",
+              "permalink": "/docs/references/canvas/graph",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/graph.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Graph"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Table",
+                "permalink": "/docs/references/canvas/table"
+              },
+              "next": {
+                "title": "CLI",
+                "permalink": "/docs/references/cli"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/overview",
+              "id": "references/canvas/overview",
+              "title": "Overview",
+              "description": "Canvas is an imperative addition to the Grandeur family. It is a prototyping tool that lets you drag and drop widgets — like buttons, sliders, displays, and graphs — to sketch a layout which you can use instead of coding a full app. This means you do not have to have app designers in your team before starting to build IoT — a single hardware engineer is a beast with Grandeur.",
+              "source": "@site/docs/references/canvas/overview.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/overview",
+              "permalink": "/docs/references/canvas/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "collection.delete",
+                "permalink": "/docs/references/client-sdk/datastore/collection/delete"
+              },
+              "next": {
+                "title": "Button",
+                "permalink": "/docs/references/canvas/button"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/progress",
+              "id": "references/canvas/progress",
+              "title": "Progress",
+              "description": "Displays the current progress over a specified range. The progress is displayed as a %age.",
+              "source": "@site/docs/references/canvas/progress.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/progress",
+              "permalink": "/docs/references/canvas/progress",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/progress.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Progress"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Display",
+                "permalink": "/docs/references/canvas/display"
+              },
+              "next": {
+                "title": "Slider",
+                "permalink": "/docs/references/canvas/slider"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/slider",
+              "id": "references/canvas/slider",
+              "title": "Slider",
+              "description": "Slider allows to view and send values in the predefined range. Usage examples: resistance, brightness etc. Set the slider handle to choose the required value.",
+              "source": "@site/docs/references/canvas/slider.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/slider",
+              "permalink": "/docs/references/canvas/slider",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/slider.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Slider"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Progress",
+                "permalink": "/docs/references/canvas/progress"
+              },
+              "next": {
+                "title": "Table",
+                "permalink": "/docs/references/canvas/table"
+              }
+            },
+            {
+              "unversionedId": "references/canvas/table",
+              "id": "references/canvas/table",
+              "title": "Table",
+              "description": "Displays a particular collection of data from the datastore.",
+              "source": "@site/docs/references/canvas/table.mdx",
+              "sourceDirName": "references/canvas",
+              "slug": "/references/canvas/table",
+              "permalink": "/docs/references/canvas/table",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/table.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Table"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Slider",
+                "permalink": "/docs/references/canvas/slider"
+              },
+              "next": {
+                "title": "Graph",
+                "permalink": "/docs/references/canvas/graph"
+              }
+            },
+            {
+              "unversionedId": "references/cli",
+              "id": "references/cli",
+              "title": "CLI",
+              "description": "Grandeur CLI a text-based user interface (UI) used to run programs, manage computer files and interact with the computer.",
+              "source": "@site/docs/references/cli.mdx",
+              "sourceDirName": "references",
+              "slug": "/references/cli",
+              "permalink": "/docs/references/cli",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/cli.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "CLI"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Graph",
+                "permalink": "/docs/references/canvas/graph"
+              },
+              "next": {
+                "title": "Keywords",
+                "permalink": "/docs/keywords"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/change-password",
+              "id": "references/client-sdk/auth/change-password",
+              "title": "auth.changePassword",
+              "description": "This method is very similar to the forgot password feature. But unlike forgot password, here it is important for a user to be logged into his account first. To ensure the security of a user account, we send a verification code to the phone number associated with user account and return you a confirmation method.",
+              "source": "@site/docs/references/client-sdk/auth/change-password.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/change-password",
+              "permalink": "/docs/references/client-sdk/auth/change-password",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/change-password.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "auth.changePassword"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "auth.forgotPassword",
+                "permalink": "/docs/references/client-sdk/auth/forgot-password"
+              },
+              "next": {
+                "title": "updateProfile",
+                "permalink": "/docs/references/client-sdk/auth/update-profile"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/forgot-password",
+              "id": "references/client-sdk/auth/forgot-password",
+              "title": "auth.forgotPassword",
+              "description": "A very important feature is to add the forgot password option into your app. This method allows you to update the password of a user account if the user is not authenticated. We validate a user with phone authentication in this case. So just prompt user about the email account associated with the account, we will automatically send the verification code the phone number associated with the profile and after which you can submit a confirmation request.",
+              "source": "@site/docs/references/client-sdk/auth/forgot-password.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/forgot-password",
+              "permalink": "/docs/references/client-sdk/auth/forgot-password",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/forgot-password.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "auth.forgotPassword"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "auth.logout",
+                "permalink": "/docs/references/client-sdk/auth/logout"
+              },
+              "next": {
+                "title": "auth.changePassword",
+                "permalink": "/docs/references/client-sdk/auth/change-password"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/is-authenticated",
+              "id": "references/client-sdk/auth/is-authenticated",
+              "title": "auth.isAuthenticated",
+              "description": "Often times, it is required to verify that a user account is authenticated into the application or not. This functionality can be achieved through this method. It returns a response with user profile details if user is authorized.",
+              "source": "@site/docs/references/client-sdk/auth/is-authenticated.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/is-authenticated",
+              "permalink": "/docs/references/client-sdk/auth/is-authenticated",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/is-authenticated.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "auth.isAuthenticated"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "auth.register",
+                "permalink": "/docs/references/client-sdk/auth/register"
+              },
+              "next": {
+                "title": "auth.login",
+                "permalink": "/docs/references/client-sdk/auth/login"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/login",
+              "id": "references/client-sdk/auth/login",
+              "title": "auth.login",
+              "description": "This method allows you to login a user into his account. Simply provide the user email and password in the argument and execute the  method. The SDK will automatically obtain the auth token from the server. It is important to note that nearly all the methods of this SDK require a user to be authenticated first.",
+              "source": "@site/docs/references/client-sdk/auth/login.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/login",
+              "permalink": "/docs/references/client-sdk/auth/login",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/login.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "auth.login"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "auth.isAuthenticated",
+                "permalink": "/docs/references/client-sdk/auth/is-authenticated"
+              },
+              "next": {
+                "title": "auth.logout",
+                "permalink": "/docs/references/client-sdk/auth/logout"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/logout",
+              "id": "references/client-sdk/auth/logout",
+              "title": "auth.logout",
+              "description": "This method comes handy because along with logging the user in, it is also required to logout a user when required.",
+              "source": "@site/docs/references/client-sdk/auth/logout.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/logout",
+              "permalink": "/docs/references/client-sdk/auth/logout",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/logout.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "auth.logout"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "auth.login",
+                "permalink": "/docs/references/client-sdk/auth/login"
+              },
+              "next": {
+                "title": "auth.forgotPassword",
+                "permalink": "/docs/references/client-sdk/auth/forgot-password"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/overview",
+              "id": "references/client-sdk/auth/overview",
+              "title": "Overview",
+              "description": "This class provides access to the auth feature of Grandeur. Simply get a reference to the auth class by calling auth() method with the project object. This is illustrated as below",
+              "source": "@site/docs/references/client-sdk/auth/overview.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/overview",
+              "permalink": "/docs/references/client-sdk/auth/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.data.on",
+                "permalink": "/docs/references/client-sdk/devices/device/data/on"
+              },
+              "next": {
+                "title": "auth.register",
+                "permalink": "/docs/references/client-sdk/auth/register"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/register",
+              "id": "references/client-sdk/auth/register",
+              "title": "auth.register",
+              "description": "This method allows you to add new users to your project through SDK. To create a new user account, simply provide the user email, password, display name and phone number as an argument to this function. Unlike dashboard, where you can create a user account without validation by just filling user details in a form, registering a new user account with SDK is little bit different. Because instead of directly registering the new user, we first verify that either the user is genuine to protect you from bogus users. So when you execute this function, we automatically send a verification code to the phone number provided in the argument and returns you a promise.",
+              "source": "@site/docs/references/client-sdk/auth/register.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/register",
+              "permalink": "/docs/references/client-sdk/auth/register",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/register.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "auth.register"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/auth/overview"
+              },
+              "next": {
+                "title": "auth.isAuthenticated",
+                "permalink": "/docs/references/client-sdk/auth/is-authenticated"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/auth/update-profile",
+              "id": "references/client-sdk/auth/update-profile",
+              "title": "updateProfile",
+              "description": "A user profile gets automatically created whenever you register a new user account. This makes it really easy for you as a developer to handle data specific to the user. Like you can setup display picture of a user. Which allows you present a unique experience to each user. This is why we have added this method with which you can update the profile of a authenticated user.",
+              "source": "@site/docs/references/client-sdk/auth/update-profile.mdx",
+              "sourceDirName": "references/client-sdk/auth",
+              "slug": "/references/client-sdk/auth/update-profile",
+              "permalink": "/docs/references/client-sdk/auth/update-profile",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/auth/update-profile.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "updateProfile"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "auth.changePassword",
+                "permalink": "/docs/references/client-sdk/auth/change-password"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/datastore/overview"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/collection/delete",
+              "id": "references/client-sdk/datastore/collection/delete",
+              "title": "collection.delete",
+              "description": "This method can be used to delete a document from a collection. It accepts a json object which specifies the match condition and returns the count of total deleted documents. It accepts following arguments",
+              "source": "@site/docs/references/client-sdk/datastore/collection/delete.mdx",
+              "sourceDirName": "references/client-sdk/datastore/collection",
+              "slug": "/references/client-sdk/datastore/collection/delete",
+              "permalink": "/docs/references/client-sdk/datastore/collection/delete",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/delete.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "collection.delete"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "collection.update",
+                "permalink": "/docs/references/client-sdk/datastore/collection/update"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/canvas/overview"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/collection/insert",
+              "id": "references/client-sdk/datastore/collection/insert",
+              "title": "collection.insert",
+              "description": "This method can be used to insert a json object/document into a collection. It accepts an array of json objects (so you can insert one or many documents into a collection with single function call). It returns the ids of inserted documents in response (we automatically assign a unique id to each document before actually inserting it into the datastore - primary key). It accepts following arguments",
+              "source": "@site/docs/references/client-sdk/datastore/collection/insert.mdx",
+              "sourceDirName": "references/client-sdk/datastore/collection",
+              "slug": "/references/client-sdk/datastore/collection/insert",
+              "permalink": "/docs/references/client-sdk/datastore/collection/insert",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/insert.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "collection.insert"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/datastore/collection/overview"
+              },
+              "next": {
+                "title": "collection.search",
+                "permalink": "/docs/references/client-sdk/datastore/collection/search"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/collection/overview",
+              "id": "references/client-sdk/datastore/collection/overview",
+              "title": "Overview",
+              "description": "From the datastore class, you can get a reference to a collection in order to execute a query or insert new documents into it.",
+              "source": "@site/docs/references/client-sdk/datastore/collection/overview.mdx",
+              "sourceDirName": "references/client-sdk/datastore/collection",
+              "slug": "/references/client-sdk/datastore/collection/overview",
+              "permalink": "/docs/references/client-sdk/datastore/collection/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "datastore.drop",
+                "permalink": "/docs/references/client-sdk/datastore/drop"
+              },
+              "next": {
+                "title": "collection.insert",
+                "permalink": "/docs/references/client-sdk/datastore/collection/insert"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/collection/search",
+              "id": "references/client-sdk/datastore/collection/search",
+              "title": "collection.search",
+              "description": "This method can be used to query documents in a collection. It accepts a match condition and fetches the documents. It accepts following arguments",
+              "source": "@site/docs/references/client-sdk/datastore/collection/search.mdx",
+              "sourceDirName": "references/client-sdk/datastore/collection",
+              "slug": "/references/client-sdk/datastore/collection/search",
+              "permalink": "/docs/references/client-sdk/datastore/collection/search",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/search.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "collection.search"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "collection.insert",
+                "permalink": "/docs/references/client-sdk/datastore/collection/insert"
+              },
+              "next": {
+                "title": "collection.update",
+                "permalink": "/docs/references/client-sdk/datastore/collection/update"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/collection/update",
+              "id": "references/client-sdk/datastore/collection/update",
+              "title": "collection.update",
+              "description": "This method can be used to update a document in a collection. It accepts a json object which specifies the match condition and returns the count of total updated documents. It accepts following arguments",
+              "source": "@site/docs/references/client-sdk/datastore/collection/update.mdx",
+              "sourceDirName": "references/client-sdk/datastore/collection",
+              "slug": "/references/client-sdk/datastore/collection/update",
+              "permalink": "/docs/references/client-sdk/datastore/collection/update",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/update.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "collection.update"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "collection.search",
+                "permalink": "/docs/references/client-sdk/datastore/collection/search"
+              },
+              "next": {
+                "title": "collection.delete",
+                "permalink": "/docs/references/client-sdk/datastore/collection/delete"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/drop",
+              "id": "references/client-sdk/datastore/drop",
+              "title": "datastore.drop",
+              "description": "This method deletes a collections and all of its documents from the datastore of your project. This method accpets the following input arguments",
+              "source": "@site/docs/references/client-sdk/datastore/drop.mdx",
+              "sourceDirName": "references/client-sdk/datastore",
+              "slug": "/references/client-sdk/datastore/drop",
+              "permalink": "/docs/references/client-sdk/datastore/drop",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/drop.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "datastore.drop"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "datastore.list",
+                "permalink": "/docs/references/client-sdk/datastore/list"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/datastore/collection/overview"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/list",
+              "id": "references/client-sdk/datastore/list",
+              "title": "datastore.list",
+              "description": "This method returns the list of collections in the datastore of your project. This method accpets the following input arguments",
+              "source": "@site/docs/references/client-sdk/datastore/list.mdx",
+              "sourceDirName": "references/client-sdk/datastore",
+              "slug": "/references/client-sdk/datastore/list",
+              "permalink": "/docs/references/client-sdk/datastore/list",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/list.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "datastore.list"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/datastore/overview"
+              },
+              "next": {
+                "title": "datastore.drop",
+                "permalink": "/docs/references/client-sdk/datastore/drop"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/datastore/overview",
+              "id": "references/client-sdk/datastore/overview",
+              "title": "Overview",
+              "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below",
+              "source": "@site/docs/references/client-sdk/datastore/overview.mdx",
+              "sourceDirName": "references/client-sdk/datastore",
+              "slug": "/references/client-sdk/datastore/overview",
+              "permalink": "/docs/references/client-sdk/datastore/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "updateProfile",
+                "permalink": "/docs/references/client-sdk/auth/update-profile"
+              },
+              "next": {
+                "title": "datastore.list",
+                "permalink": "/docs/references/client-sdk/datastore/list"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/count",
+              "id": "references/client-sdk/devices/count",
+              "title": "devices.count",
+              "description": "This methods returns the total number of online, offline or all devices paired to a user account.",
+              "source": "@site/docs/references/client-sdk/devices/count.mdx",
+              "sourceDirName": "references/client-sdk/devices",
+              "slug": "/references/client-sdk/devices/count",
+              "permalink": "/docs/references/client-sdk/devices/count",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/count.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "devices.count"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "devices.get",
+                "permalink": "/docs/references/client-sdk/devices/get"
+              },
+              "next": {
+                "title": "devices.on",
+                "permalink": "/docs/references/client-sdk/devices/on"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/data/get",
+              "id": "references/client-sdk/devices/device/data/get",
+              "title": "device.data.get",
+              "description": "Each device comes with a privileged space in which you can save data. Like suppose you have build a power meter, then you can store the voltage, current and power measured by the device in this space. This data can be be set by a device and retrived by the app to be consumed/displayed to end user.",
+              "source": "@site/docs/references/client-sdk/devices/device/data/get.mdx",
+              "sourceDirName": "references/client-sdk/devices/device/data",
+              "slug": "/references/client-sdk/devices/device/data/get",
+              "permalink": "/docs/references/client-sdk/devices/device/data/get",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/data/get.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.data.get"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.unpair",
+                "permalink": "/docs/references/client-sdk/devices/device/unpair"
+              },
+              "next": {
+                "title": "device.data.set",
+                "permalink": "/docs/references/client-sdk/devices/device/data/set"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/data/on",
+              "id": "references/client-sdk/devices/device/data/on",
+              "title": "device.data.on",
+              "description": "You can also attach a listener to device data. For example if {voltage 10, vrms 1} is stored then you can subscribe to updates on either vpp and current by providing voltage.vpp and current in path field respectively. You can subscribe to root by providing empty path.",
+              "source": "@site/docs/references/client-sdk/devices/device/data/on.mdx",
+              "sourceDirName": "references/client-sdk/devices/device/data",
+              "slug": "/references/client-sdk/devices/device/data/on",
+              "permalink": "/docs/references/client-sdk/devices/device/data/on",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/data/on.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.data.on"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.data.set",
+                "permalink": "/docs/references/client-sdk/devices/device/data/set"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/auth/overview"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/data/set",
+              "id": "references/client-sdk/devices/device/data/set",
+              "title": "device.data.set",
+              "description": "Just like get, you can also set the data of the device in similar way.",
+              "source": "@site/docs/references/client-sdk/devices/device/data/set.mdx",
+              "sourceDirName": "references/client-sdk/devices/device/data",
+              "slug": "/references/client-sdk/devices/device/data/set",
+              "permalink": "/docs/references/client-sdk/devices/device/data/set",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/data/set.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.data.set"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.data.get",
+                "permalink": "/docs/references/client-sdk/devices/device/data/get"
+              },
+              "next": {
+                "title": "device.data.on",
+                "permalink": "/docs/references/client-sdk/devices/device/data/on"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/get",
+              "id": "references/client-sdk/devices/device/get",
+              "title": "device.get",
+              "description": "This method returns the meta data of a device like device name, product id, device id and state.",
+              "source": "@site/docs/references/client-sdk/devices/device/get.mdx",
+              "sourceDirName": "references/client-sdk/devices/device",
+              "slug": "/references/client-sdk/devices/device/get",
+              "permalink": "/docs/references/client-sdk/devices/device/get",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/get.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.get"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/devices/device/overview"
+              },
+              "next": {
+                "title": "device.set",
+                "permalink": "/docs/references/client-sdk/devices/device/set"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/on",
+              "id": "references/client-sdk/devices/device/on",
+              "title": "device.on",
+              "description": "You can also attach a listener to device meta data. For example you can subscribe to updates on device name to automatically receive update whenever the name of device will be updated.",
+              "source": "@site/docs/references/client-sdk/devices/device/on.mdx",
+              "sourceDirName": "references/client-sdk/devices/device",
+              "slug": "/references/client-sdk/devices/device/on",
+              "permalink": "/docs/references/client-sdk/devices/device/on",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/on.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.on"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.set",
+                "permalink": "/docs/references/client-sdk/devices/device/set"
+              },
+              "next": {
+                "title": "device.pair",
+                "permalink": "/docs/references/client-sdk/devices/device/pair"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/overview",
+              "id": "references/client-sdk/devices/device/overview",
+              "title": "Overview",
+              "description": "From the devices class, you can get reference to a device class by calling this function. Then you can perform various operations on a device using the device reference.",
+              "source": "@site/docs/references/client-sdk/devices/device/overview.mdx",
+              "sourceDirName": "references/client-sdk/devices/device",
+              "slug": "/references/client-sdk/devices/device/overview",
+              "permalink": "/docs/references/client-sdk/devices/device/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "devices.on",
+                "permalink": "/docs/references/client-sdk/devices/on"
+              },
+              "next": {
+                "title": "device.get",
+                "permalink": "/docs/references/client-sdk/devices/device/get"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/pair",
+              "id": "references/client-sdk/devices/device/pair",
+              "title": "device.pair",
+              "description": "As documented earlier, it is compulsory to pair a device with a user account before getting access to its data. Pairing feature is similar to claiming ownership over a device. When you send us a pairing request, we first verify that the device isn't paired to another account.",
+              "source": "@site/docs/references/client-sdk/devices/device/pair.mdx",
+              "sourceDirName": "references/client-sdk/devices/device",
+              "slug": "/references/client-sdk/devices/device/pair",
+              "permalink": "/docs/references/client-sdk/devices/device/pair",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/pair.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.pair"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.on",
+                "permalink": "/docs/references/client-sdk/devices/device/on"
+              },
+              "next": {
+                "title": "device.unpair",
+                "permalink": "/docs/references/client-sdk/devices/device/unpair"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/set",
+              "id": "references/client-sdk/devices/device/set",
+              "title": "device.set",
+              "description": "Using device.set(), you can also change few fields of the device data. For example the name of the device can be changed from the SDK.",
+              "source": "@site/docs/references/client-sdk/devices/device/set.mdx",
+              "sourceDirName": "references/client-sdk/devices/device",
+              "slug": "/references/client-sdk/devices/device/set",
+              "permalink": "/docs/references/client-sdk/devices/device/set",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/set.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.set"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.get",
+                "permalink": "/docs/references/client-sdk/devices/device/get"
+              },
+              "next": {
+                "title": "device.on",
+                "permalink": "/docs/references/client-sdk/devices/device/on"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/device/unpair",
+              "id": "references/client-sdk/devices/device/unpair",
+              "title": "device.unpair",
+              "description": "This method allows you to unpair a device from a user account. It simply declares that the user account no longer owns the device. In other words, it makes the device available for other users to claim.",
+              "source": "@site/docs/references/client-sdk/devices/device/unpair.mdx",
+              "sourceDirName": "references/client-sdk/devices/device",
+              "slug": "/references/client-sdk/devices/device/unpair",
+              "permalink": "/docs/references/client-sdk/devices/device/unpair",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/unpair.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "device.unpair"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "device.pair",
+                "permalink": "/docs/references/client-sdk/devices/device/pair"
+              },
+              "next": {
+                "title": "device.data.get",
+                "permalink": "/docs/references/client-sdk/devices/device/data/get"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/get",
+              "id": "references/client-sdk/devices/get",
+              "title": "devices.get",
+              "description": "This method comes in handy whenever you need a list of all the devices paired to a user account.",
+              "source": "@site/docs/references/client-sdk/devices/get.mdx",
+              "sourceDirName": "references/client-sdk/devices",
+              "slug": "/references/client-sdk/devices/get",
+              "permalink": "/docs/references/client-sdk/devices/get",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/get.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "devices.get"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/devices/overview"
+              },
+              "next": {
+                "title": "devices.count",
+                "permalink": "/docs/references/client-sdk/devices/count"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/on",
+              "id": "references/client-sdk/devices/on",
+              "title": "devices.on",
+              "description": "The best thing about Grandeur is the fact that it is event driven. Means you can subscribe to events and we will automatically send you an alert whenever the subscribed event will occur.",
+              "source": "@site/docs/references/client-sdk/devices/on.mdx",
+              "sourceDirName": "references/client-sdk/devices",
+              "slug": "/references/client-sdk/devices/on",
+              "permalink": "/docs/references/client-sdk/devices/on",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/on.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "devices.on"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "devices.count",
+                "permalink": "/docs/references/client-sdk/devices/count"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/devices/device/overview"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/devices/overview",
+              "id": "references/client-sdk/devices/overview",
+              "title": "Overview",
+              "description": "This class provides access to the features associated to device. Simply get a reference to the device class by calling devices() method with the project object. This is illustrated as below",
+              "source": "@site/docs/references/client-sdk/devices/overview.mdx",
+              "sourceDirName": "references/client-sdk/devices",
+              "slug": "/references/client-sdk/devices/overview",
+              "permalink": "/docs/references/client-sdk/devices/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "onConnection",
+                "permalink": "/docs/references/client-sdk/on-connection"
+              },
+              "next": {
+                "title": "devices.get",
+                "permalink": "/docs/references/client-sdk/devices/get"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/initialization",
+              "id": "references/client-sdk/initialization",
+              "title": "Initialization",
+              "description": "First and foremost thing that you are required to do in order to access our platform is initialization. When you drop in the link of the CDN in your app, we create a global object accessible through JS. This object can be then utilized to init the SDK with your API key and access credential. Upon init, the SDK returns you a reference to your project, through which you can access all the features of Grandeur.",
+              "source": "@site/docs/references/client-sdk/initialization.mdx",
+              "sourceDirName": "references/client-sdk",
+              "slug": "/references/client-sdk/initialization",
+              "permalink": "/docs/references/client-sdk/initialization",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/initialization.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Initialization"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/references/client-sdk/installation"
+              },
+              "next": {
+                "title": "isConnected",
+                "permalink": "/docs/references/client-sdk/is-connected"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/installation",
+              "id": "references/client-sdk/installation",
+              "title": "Installation",
+              "description": "Simply drop the link of JavaScript SDK in a script tag inside your web app using our CDN.",
+              "source": "@site/docs/references/client-sdk/installation.mdx",
+              "sourceDirName": "references/client-sdk",
+              "slug": "/references/client-sdk/installation",
+              "permalink": "/docs/references/client-sdk/installation",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/installation.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Installation"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "search",
+                "permalink": "/docs/references/device-sdk/datastore/collection/search"
+              },
+              "next": {
+                "title": "Initialization",
+                "permalink": "/docs/references/client-sdk/initialization"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/is-connected",
+              "id": "references/client-sdk/is-connected",
+              "title": "isConnected",
+              "description": "Once you init the SDK and get reference to the project, the SDK tries to establish a persistent connection to the cloud platform. Establishing this persistent connection is the key because this allows us to do realtime communication with the server. Almost all of the SDK features are based on this realtime channel. This is why we have added this function, which can be utilized to verify either we are connected to the server or not.",
+              "source": "@site/docs/references/client-sdk/is-connected.mdx",
+              "sourceDirName": "references/client-sdk",
+              "slug": "/references/client-sdk/is-connected",
+              "permalink": "/docs/references/client-sdk/is-connected",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/is-connected.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "isConnected"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Initialization",
+                "permalink": "/docs/references/client-sdk/initialization"
+              },
+              "next": {
+                "title": "onConnection",
+                "permalink": "/docs/references/client-sdk/on-connection"
+              }
+            },
+            {
+              "unversionedId": "references/client-sdk/on-connection",
+              "id": "references/client-sdk/on-connection",
+              "title": "onConnection",
+              "description": "This methods let to keep track of the persistent connection that the SDK tries to establish with the cloud. As mentioned earlier, the persistent connection is the key because this allows us to do realtime communication with the server. Almost all of the SDK features are based on this realtime channel. This is why we have added this function, which can be utilized to verify either we are connected to the server or not.",
+              "source": "@site/docs/references/client-sdk/on-connection.mdx",
+              "sourceDirName": "references/client-sdk",
+              "slug": "/references/client-sdk/on-connection",
+              "permalink": "/docs/references/client-sdk/on-connection",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/on-connection.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "onConnection"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "isConnected",
+                "permalink": "/docs/references/client-sdk/is-connected"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/client-sdk/devices/overview"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/datastore/collection/insert",
+              "id": "references/device-sdk/datastore/collection/insert",
+              "title": "insert",
+              "description": "This method inserts documents into datastore.",
+              "source": "@site/docs/references/device-sdk/datastore/collection/insert.mdx",
+              "sourceDirName": "references/device-sdk/datastore/collection",
+              "slug": "/references/device-sdk/datastore/collection/insert",
+              "permalink": "/docs/references/device-sdk/datastore/collection/insert",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/datastore/collection/insert.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "insert"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/device-sdk/datastore/overview"
+              },
+              "next": {
+                "title": "search",
+                "permalink": "/docs/references/device-sdk/datastore/collection/search"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/datastore/collection/search",
+              "id": "references/device-sdk/datastore/collection/search",
+              "title": "search",
+              "description": "| Name       | Type |   Description |",
+              "source": "@site/docs/references/device-sdk/datastore/collection/search.mdx",
+              "sourceDirName": "references/device-sdk/datastore/collection",
+              "slug": "/references/device-sdk/datastore/collection/search",
+              "permalink": "/docs/references/device-sdk/datastore/collection/search",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/datastore/collection/search.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "search"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "insert",
+                "permalink": "/docs/references/device-sdk/datastore/collection/insert"
+              },
+              "next": {
+                "title": "Installation",
+                "permalink": "/docs/references/client-sdk/installation"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/datastore/overview",
+              "id": "references/device-sdk/datastore/overview",
+              "title": "Overview",
+              "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below",
+              "source": "@site/docs/references/device-sdk/datastore/overview.mdx",
+              "sourceDirName": "references/device-sdk/datastore",
+              "slug": "/references/device-sdk/datastore/overview",
+              "permalink": "/docs/references/device-sdk/datastore/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/datastore/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "data.on",
+                "permalink": "/docs/references/device-sdk/device/data/on"
+              },
+              "next": {
+                "title": "insert",
+                "permalink": "/docs/references/device-sdk/datastore/collection/insert"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/device/data/get",
+              "id": "references/device-sdk/device/data/get",
+              "title": "data.get",
+              "description": "This method gets a device variable from Grandeur.",
+              "source": "@site/docs/references/device-sdk/device/data/get.mdx",
+              "sourceDirName": "references/device-sdk/device/data",
+              "slug": "/references/device-sdk/device/data/get",
+              "permalink": "/docs/references/device-sdk/device/data/get",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/data/get.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "data.get"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/references/device-sdk/device/overview"
+              },
+              "next": {
+                "title": "data.set",
+                "permalink": "/docs/references/device-sdk/device/data/set"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/device/data/on",
+              "id": "references/device-sdk/device/data/on",
+              "title": "data.on",
+              "description": "This method schedules a function to be called when a device variable changes on Grandeur.",
+              "source": "@site/docs/references/device-sdk/device/data/on.mdx",
+              "sourceDirName": "references/device-sdk/device/data",
+              "slug": "/references/device-sdk/device/data/on",
+              "permalink": "/docs/references/device-sdk/device/data/on",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/data/on.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "data.on"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "data.set",
+                "permalink": "/docs/references/device-sdk/device/data/set"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/device-sdk/datastore/overview"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/device/data/set",
+              "id": "references/device-sdk/device/data/set",
+              "title": "data.set",
+              "description": "This method updates a device variable on Grandeur with new data.",
+              "source": "@site/docs/references/device-sdk/device/data/set.mdx",
+              "sourceDirName": "references/device-sdk/device/data",
+              "slug": "/references/device-sdk/device/data/set",
+              "permalink": "/docs/references/device-sdk/device/data/set",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/data/set.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "data.set"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "data.get",
+                "permalink": "/docs/references/device-sdk/device/data/get"
+              },
+              "next": {
+                "title": "data.on",
+                "permalink": "/docs/references/device-sdk/device/data/on"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/device/overview",
+              "id": "references/device-sdk/device/overview",
+              "title": "Overview",
+              "description": "This method returns a reference to object of the device class.",
+              "source": "@site/docs/references/device-sdk/device/overview.mdx",
+              "sourceDirName": "references/device-sdk/device",
+              "slug": "/references/device-sdk/device/overview",
+              "permalink": "/docs/references/device-sdk/device/overview",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/device/overview.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Overview"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "onConnection",
+                "permalink": "/docs/references/device-sdk/on-connection"
+              },
+              "next": {
+                "title": "data.get",
+                "permalink": "/docs/references/device-sdk/device/data/get"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/initialization",
+              "id": "references/device-sdk/initialization",
+              "title": "Initialization",
+              "description": "Initialization is as simple as calling grandeur.init() with your credentials (Your project's API Key and device's Access Token). The SDK uses your API key to know which project and access token to make sure the request is coming from a legit source. It then returns a Grandeur::Project object which exposes other subclasses like Device and Datastore, and you can go programming your device from there.",
+              "source": "@site/docs/references/device-sdk/initialization.mdx",
+              "sourceDirName": "references/device-sdk",
+              "slug": "/references/device-sdk/initialization",
+              "permalink": "/docs/references/device-sdk/initialization",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/initialization.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Initialization"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/references/device-sdk/installation"
+              },
+              "next": {
+                "title": "isConnected",
+                "permalink": "/docs/references/device-sdk/is-connected"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/installation",
+              "id": "references/device-sdk/installation",
+              "title": "Installation",
+              "description": "1. You can search for Grandeur in Arduino's library manager. In Arduino IDE, open Sketch > Include Library > Manage Libraries and install Grandeur from there.",
+              "source": "@site/docs/references/device-sdk/installation.mdx",
+              "sourceDirName": "references/device-sdk",
+              "slug": "/references/device-sdk/installation",
+              "permalink": "/docs/references/device-sdk/installation",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/installation.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Installation"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Handling Updates",
+                "permalink": "/docs/guides/hardware/handling-updates"
+              },
+              "next": {
+                "title": "Initialization",
+                "permalink": "/docs/references/device-sdk/initialization"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/is-connected",
+              "id": "references/device-sdk/is-connected",
+              "title": "isConnected",
+              "description": "This method returns true if the device is connected with Grandeur.",
+              "source": "@site/docs/references/device-sdk/is-connected.mdx",
+              "sourceDirName": "references/device-sdk",
+              "slug": "/references/device-sdk/is-connected",
+              "permalink": "/docs/references/device-sdk/is-connected",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/is-connected.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "isConnected"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "Initialization",
+                "permalink": "/docs/references/device-sdk/initialization"
+              },
+              "next": {
+                "title": "onConnection",
+                "permalink": "/docs/references/device-sdk/on-connection"
+              }
+            },
+            {
+              "unversionedId": "references/device-sdk/on-connection",
+              "id": "references/device-sdk/on-connection",
+              "title": "onConnection",
+              "description": "This method schedules a function to be called when the device's connection with Grandeur is made or broken. The function passed to it as argument is called an event handler for it handles events like connection/disconnection with Grandeur. Example below illustrates its usage.",
+              "source": "@site/docs/references/device-sdk/on-connection.mdx",
+              "sourceDirName": "references/device-sdk",
+              "slug": "/references/device-sdk/on-connection",
+              "permalink": "/docs/references/device-sdk/on-connection",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/device-sdk/on-connection.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "onConnection"
+              },
+              "sidebar": "sidebar",
+              "previous": {
+                "title": "isConnected",
+                "permalink": "/docs/references/device-sdk/is-connected"
+              },
+              "next": {
+                "title": "Overview",
+                "permalink": "/docs/references/device-sdk/device/overview"
+              }
+            },
+            {
+              "unversionedId": "restapi",
+              "id": "restapi",
+              "title": "Introduction",
+              "description": "You need three credentials to use the REST API for anything:",
+              "source": "@site/docs/restapi.mdx",
+              "sourceDirName": ".",
+              "slug": "/restapi",
+              "permalink": "/docs/restapi",
+              "draft": false,
+              "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/restapi.mdx",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {
+                "title": "Introduction",
+                "pinned": "pinned",
+                "emoji": "🤖"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "sidebar": [
+              {
+                "type": "doc",
+                "label": "Introduction",
+                "id": "introduction",
+                "translatable": true
+              },
+              {
+                "type": "doc",
+                "label": "Getting started",
+                "id": "getting-started",
+                "translatable": true
+              },
+              {
+                "type": "doc",
+                "label": "Hello world with IoT",
+                "id": "hello-world-with-iot",
+                "translatable": true
+              },
+              {
+                "type": "doc",
+                "label": "Build your custom app",
+                "id": "build-your-custom-app",
+                "translatable": true
+              },
+              {
+                "type": "category",
+                "label": "Guides",
+                "items": [
+                  {
+                    "type": "doc",
+                    "label": "Canvas",
+                    "id": "guides/canvas",
+                    "translatable": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Project",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "API key",
+                        "id": "guides/project/api-key",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Managing a project",
+                        "id": "guides/project/managing-a-project",
+                        "translatable": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Auth",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Register",
+                        "id": "guides/auth/register",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Login",
+                        "id": "guides/auth/login",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Logout",
+                        "id": "guides/auth/logout",
+                        "translatable": true
+                      },
+                      {
+                        "type": "category",
+                        "label": "Managing user account",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "label": "Update account password",
+                            "id": "guides/auth/managing-user-account/update-account-password",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": "Update forgotten password",
+                            "id": "guides/auth/managing-user-account/update-forgotten-password",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": "Update user profile",
+                            "id": "guides/auth/managing-user-account/update-user-profile",
+                            "translatable": true
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Devices",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Model",
+                        "id": "guides/devices/model",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Data",
+                        "id": "guides/devices/data",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Pairing",
+                        "id": "guides/devices/pairing",
+                        "translatable": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Datastore",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Overview",
+                        "id": "guides/datastore/overview",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Collections",
+                        "id": "guides/datastore/collections",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Querying",
+                        "id": "guides/datastore/querying",
+                        "translatable": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Security",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "User and administrator",
+                        "id": "guides/security/user-and-administrator",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "CORS",
+                        "id": "guides/security/cors",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Access Credentials",
+                        "id": "guides/security/access-credentials",
+                        "translatable": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Hardware",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Setting up the board",
+                        "id": "guides/hardware/setting-up-the-board",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Handling WiFi",
+                        "id": "guides/hardware/handling-wifi",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Handling Connection Status",
+                        "id": "guides/hardware/handling-connection-status",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Handling Device Variables",
+                        "id": "guides/hardware/handling-device-variables",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Handling Updates",
+                        "id": "guides/hardware/handling-updates",
+                        "translatable": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "References",
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Device SDK",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Installation",
+                        "id": "references/device-sdk/installation",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": ".init",
+                        "id": "references/device-sdk/initialization",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": ".isConnected",
+                        "id": "references/device-sdk/is-connected",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": ".onConnection",
+                        "id": "references/device-sdk/on-connection",
+                        "translatable": true
+                      },
+                      {
+                        "type": "category",
+                        "label": "device",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "label": "Overview",
+                            "id": "references/device-sdk/device/overview",
+                            "translatable": true
+                          },
+                          {
+                            "type": "category",
+                            "label": ".data",
+                            "items": [
+                              {
+                                "type": "doc",
+                                "label": ".get",
+                                "id": "references/device-sdk/device/data/get",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".set",
+                                "id": "references/device-sdk/device/data/set",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".on",
+                                "id": "references/device-sdk/device/data/on",
+                                "translatable": true
+                              }
+                            ],
+                            "collapsed": true,
+                            "collapsible": true
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      },
+                      {
+                        "type": "category",
+                        "label": "datastore",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "label": "Overview",
+                            "id": "references/device-sdk/datastore/overview",
+                            "translatable": true
+                          },
+                          {
+                            "type": "category",
+                            "label": ".collection",
+                            "items": [
+                              {
+                                "type": "doc",
+                                "label": ".insert",
+                                "id": "references/device-sdk/datastore/collection/insert",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".search",
+                                "id": "references/device-sdk/datastore/collection/search",
+                                "translatable": true
+                              }
+                            ],
+                            "collapsed": true,
+                            "collapsible": true
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Client SDK",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Installation",
+                        "id": "references/client-sdk/installation",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": ".init",
+                        "id": "references/client-sdk/initialization",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": ".isConnected",
+                        "id": "references/client-sdk/is-connected",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": ".onConnection",
+                        "id": "references/client-sdk/on-connection",
+                        "translatable": true
+                      },
+                      {
+                        "type": "category",
+                        "label": "devices",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "label": "Overview",
+                            "id": "references/client-sdk/devices/overview",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".get",
+                            "id": "references/client-sdk/devices/get",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".count",
+                            "id": "references/client-sdk/devices/count",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".on",
+                            "id": "references/client-sdk/devices/on",
+                            "translatable": true
+                          },
+                          {
+                            "type": "category",
+                            "label": ".device",
+                            "items": [
+                              {
+                                "type": "doc",
+                                "label": "Overview",
+                                "id": "references/client-sdk/devices/device/overview",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".get",
+                                "id": "references/client-sdk/devices/device/get",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".set",
+                                "id": "references/client-sdk/devices/device/set",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".on",
+                                "id": "references/client-sdk/devices/device/on",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".pair",
+                                "id": "references/client-sdk/devices/device/pair",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".unpair",
+                                "id": "references/client-sdk/devices/device/unpair",
+                                "translatable": true
+                              },
+                              {
+                                "type": "category",
+                                "label": ".data",
+                                "items": [
+                                  {
+                                    "type": "doc",
+                                    "label": ".get",
+                                    "id": "references/client-sdk/devices/device/data/get",
+                                    "translatable": true
+                                  },
+                                  {
+                                    "type": "doc",
+                                    "label": ".set",
+                                    "id": "references/client-sdk/devices/device/data/set",
+                                    "translatable": true
+                                  },
+                                  {
+                                    "type": "doc",
+                                    "label": ".on",
+                                    "id": "references/client-sdk/devices/device/data/on",
+                                    "translatable": true
+                                  }
+                                ],
+                                "collapsed": true,
+                                "collapsible": true
+                              }
+                            ],
+                            "collapsed": true,
+                            "collapsible": true
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      },
+                      {
+                        "type": "category",
+                        "label": "auth",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "label": "Overview",
+                            "id": "references/client-sdk/auth/overview",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".register",
+                            "id": "references/client-sdk/auth/register",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".isAuthenticated",
+                            "id": "references/client-sdk/auth/is-authenticated",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".login",
+                            "id": "references/client-sdk/auth/login",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".logout",
+                            "id": "references/client-sdk/auth/logout",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".forgotPassword",
+                            "id": "references/client-sdk/auth/forgot-password",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".changePassword",
+                            "id": "references/client-sdk/auth/change-password",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".updateProfile",
+                            "id": "references/client-sdk/auth/update-profile",
+                            "translatable": true
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      },
+                      {
+                        "type": "category",
+                        "label": "datastore",
+                        "items": [
+                          {
+                            "type": "doc",
+                            "label": "Overview",
+                            "id": "references/client-sdk/datastore/overview",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".list",
+                            "id": "references/client-sdk/datastore/list",
+                            "translatable": true
+                          },
+                          {
+                            "type": "doc",
+                            "label": ".drop",
+                            "id": "references/client-sdk/datastore/drop",
+                            "translatable": true
+                          },
+                          {
+                            "type": "category",
+                            "label": ".collection",
+                            "items": [
+                              {
+                                "type": "doc",
+                                "label": "Overview",
+                                "id": "references/client-sdk/datastore/collection/overview",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".insert",
+                                "id": "references/client-sdk/datastore/collection/insert",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".search",
+                                "id": "references/client-sdk/datastore/collection/search",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".update",
+                                "id": "references/client-sdk/datastore/collection/update",
+                                "translatable": true
+                              },
+                              {
+                                "type": "doc",
+                                "label": ".delete",
+                                "id": "references/client-sdk/datastore/collection/delete",
+                                "translatable": true
+                              }
+                            ],
+                            "collapsed": true,
+                            "collapsible": true
+                          }
+                        ],
+                        "collapsed": true,
+                        "collapsible": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Canvas",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "label": "Overview",
+                        "id": "references/canvas/overview",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Button",
+                        "id": "references/canvas/button",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Display",
+                        "id": "references/canvas/display",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Progress",
+                        "id": "references/canvas/progress",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Slider",
+                        "id": "references/canvas/slider",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Table",
+                        "id": "references/canvas/table",
+                        "translatable": true
+                      },
+                      {
+                        "type": "doc",
+                        "label": "Graph",
+                        "id": "references/canvas/graph",
+                        "translatable": true
+                      }
+                    ],
+                    "collapsed": true,
+                    "collapsible": true
+                  },
+                  {
+                    "type": "doc",
+                    "label": "CLI",
+                    "id": "references/cli",
+                    "translatable": true
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "doc",
+                "label": "Keywords",
+                "id": "keywords",
+                "translatable": true
+              },
+              {
+                "type": "doc",
+                "label": "FAQs",
+                "id": "faqs",
+                "translatable": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "editUrl": "https://github.com/grandeurdev/blog/tree/main/blog/2021-08-26-welcome/index.md",
+            "source": "@site/blog/2021-08-26-welcome/index.md",
+            "title": "Welcome",
+            "description": "Docusaurus blogging features are powered by the blog plugin.",
+            "date": "2021-08-26T00:00:00.000Z",
+            "formattedDate": "August 26, 2021",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.405,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              },
+              {
+                "name": "Yangshun Tay",
+                "title": "Front End Engineer @ Facebook",
+                "url": "https://github.com/yangshun",
+                "imageURL": "https://github.com/yangshun.png",
+                "key": "yangshun"
+              }
+            ],
+            "frontMatter": {
+              "slug": "welcome",
+              "title": "Welcome",
+              "authors": [
+                "slorber",
+                "yangshun"
+              ],
+              "tags": [
+                "facebook",
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "nextItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            }
+          },
+          "content": "[Docusaurus blogging features](https://docusaurus.io/docs/blog) are powered by the [blog plugin](https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog).\n\nSimply add Markdown files (or folders) to the `blog` directory.\n\nRegular blog authors can be added to `authors.yml`.\n\nThe blog post date can be extracted from filenames, such as:\n\n- `2019-05-30-welcome.md`\n- `2019-05-30-welcome/index.md`\n\nA blog post folder can be convenient to co-locate blog post images:\n\n![Docusaurus Plushie](./docusaurus-plushie-banner.jpeg)\n\nThe blog supports tags as well!\n\n**And if you don't want a blog**: just delete this directory, and use `blog: false` in your Docusaurus config."
+        },
+        {
+          "id": "mdx-blog-post",
+          "metadata": {
+            "permalink": "/blog/mdx-blog-post",
+            "editUrl": "https://github.com/grandeurdev/blog/tree/main/blog/2021-08-01-mdx-blog-post.mdx",
+            "source": "@site/blog/2021-08-01-mdx-blog-post.mdx",
+            "title": "MDX Blog Post",
+            "description": "Blog posts support Docusaurus Markdown features, such as MDX.",
+            "date": "2021-08-01T00:00:00.000Z",
+            "formattedDate": "August 1, 2021",
+            "tags": [
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Sébastien Lorber",
+                "title": "Docusaurus maintainer",
+                "url": "https://sebastienlorber.com",
+                "imageURL": "https://github.com/slorber.png",
+                "key": "slorber"
+              }
+            ],
+            "frontMatter": {
+              "slug": "mdx-blog-post",
+              "title": "MDX Blog Post",
+              "authors": [
+                "slorber"
+              ],
+              "tags": [
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).\n\n:::tip\n\nUse the power of React to create interactive blog posts.\n\n```js\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n```\n\n<button onClick={() => alert('button clicked!')}>Click me!</button>\n\n:::"
+        },
+        {
+          "id": "long-blog-post",
+          "metadata": {
+            "permalink": "/blog/long-blog-post",
+            "editUrl": "https://github.com/grandeurdev/blog/tree/main/blog/2019-05-29-long-blog-post.md",
+            "source": "@site/blog/2019-05-29-long-blog-post.md",
+            "title": "Long Blog Post",
+            "description": "This is the summary of a very long blog post,",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 2.05,
+            "hasTruncateMarker": true,
+            "authors": [
+              {
+                "name": "Endilie Yacop Sucipto",
+                "title": "Maintainer of Docusaurus",
+                "url": "https://github.com/endiliey",
+                "imageURL": "https://github.com/endiliey.png",
+                "key": "endi"
+              }
+            ],
+            "frontMatter": {
+              "slug": "long-blog-post",
+              "title": "Long Blog Post",
+              "authors": "endi",
+              "tags": [
+                "hello",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "MDX Blog Post",
+              "permalink": "/blog/mdx-blog-post"
+            },
+            "nextItem": {
+              "title": "First Blog Post",
+              "permalink": "/blog/first-blog-post"
+            }
+          },
+          "content": "This is the summary of a very long blog post,\n\nUse a `<!--` `truncate` `-->` comment to limit blog post size in the list view.\n\n<!--truncate-->\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        },
+        {
+          "id": "first-blog-post",
+          "metadata": {
+            "permalink": "/blog/first-blog-post",
+            "editUrl": "https://github.com/grandeurdev/blog/tree/main/blog/2019-05-28-first-blog-post.md",
+            "source": "@site/blog/2019-05-28-first-blog-post.md",
+            "title": "First Blog Post",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              }
+            ],
+            "frontMatter": {
+              "slug": "first-blog-post",
+              "title": "First Blog Post",
+              "authors": {
+                "name": "Gao Wei",
+                "title": "Docusaurus Core Team",
+                "url": "https://github.com/wgao19",
+                "image_url": "https://github.com/wgao19.png",
+                "imageURL": "https://github.com/wgao19.png"
+              },
+              "tags": [
+                "hola",
+                "docusaurus"
+              ]
+            },
+            "prevItem": {
+              "title": "Long Blog Post",
+              "permalink": "/blog/long-blog-post"
+            }
+          },
+          "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet"
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 4,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          }
+        }
+      ],
+      "blogTags": {
+        "/blog/tags/facebook": {
+          "label": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/facebook",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/facebook",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hello": {
+          "label": "hello",
+          "items": [
+            "welcome",
+            "long-blog-post"
+          ],
+          "permalink": "/blog/tags/hello",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "long-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hello",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 2,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/docusaurus": {
+          "label": "docusaurus",
+          "items": [
+            "welcome",
+            "mdx-blog-post",
+            "long-blog-post",
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/docusaurus",
+          "pages": [
+            {
+              "items": [
+                "welcome",
+                "mdx-blog-post",
+                "long-blog-post",
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/docusaurus",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 4,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/hola": {
+          "label": "hola",
+          "items": [
+            "first-blog-post"
+          ],
+          "permalink": "/blog/tags/hola",
+          "pages": [
+            {
+              "items": [
+                "first-blog-post"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/hola",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        }
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "keywords",
+  "id": "keywords",
+  "title": "Keywords",
+  "description": "Grandeur",
+  "source": "@site/docs/keywords.mdx",
+  "sourceDirName": ".",
+  "slug": "/keywords",
+  "permalink": "/docs/keywords",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/keywords.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Keywords"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "CLI",
+    "permalink": "/docs/references/cli"
+  },
+  "next": {
+    "title": "FAQs",
+    "permalink": "/docs/faqs"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/canvas/table",
+  "id": "references/canvas/table",
+  "title": "Table",
+  "description": "Displays a particular collection of data from the datastore.",
+  "source": "@site/docs/references/canvas/table.mdx",
+  "sourceDirName": "references/canvas",
+  "slug": "/references/canvas/table",
+  "permalink": "/docs/references/canvas/table",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/canvas/table.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Table"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Slider",
+    "permalink": "/docs/references/canvas/slider"
+  },
+  "next": {
+    "title": "Graph",
+    "permalink": "/docs/references/canvas/graph"
+  }
+}

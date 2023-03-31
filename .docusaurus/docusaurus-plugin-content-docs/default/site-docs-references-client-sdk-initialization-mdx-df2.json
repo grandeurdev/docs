@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/initialization",
+  "id": "references/client-sdk/initialization",
+  "title": "Initialization",
+  "description": "First and foremost thing that you are required to do in order to access our platform is initialization. When you drop in the link of the CDN in your app, we create a global object accessible through JS. This object can be then utilized to init the SDK with your API key and access credential. Upon init, the SDK returns you a reference to your project, through which you can access all the features of Grandeur.",
+  "source": "@site/docs/references/client-sdk/initialization.mdx",
+  "sourceDirName": "references/client-sdk",
+  "slug": "/references/client-sdk/initialization",
+  "permalink": "/docs/references/client-sdk/initialization",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/initialization.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Initialization"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/references/client-sdk/installation"
+  },
+  "next": {
+    "title": "isConnected",
+    "permalink": "/docs/references/client-sdk/is-connected"
+  }
+}

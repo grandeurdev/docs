@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/device/unpair",
+  "id": "references/client-sdk/devices/device/unpair",
+  "title": "device.unpair",
+  "description": "This method allows you to unpair a device from a user account. It simply declares that the user account no longer owns the device. In other words, it makes the device available for other users to claim.",
+  "source": "@site/docs/references/client-sdk/devices/device/unpair.mdx",
+  "sourceDirName": "references/client-sdk/devices/device",
+  "slug": "/references/client-sdk/devices/device/unpair",
+  "permalink": "/docs/references/client-sdk/devices/device/unpair",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/device/unpair.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "device.unpair"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "device.pair",
+    "permalink": "/docs/references/client-sdk/devices/device/pair"
+  },
+  "next": {
+    "title": "device.data.get",
+    "permalink": "/docs/references/client-sdk/devices/device/data/get"
+  }
+}

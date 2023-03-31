@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/datastore/collection/update",
+  "id": "references/client-sdk/datastore/collection/update",
+  "title": "collection.update",
+  "description": "This method can be used to update a document in a collection. It accepts a json object which specifies the match condition and returns the count of total updated documents. It accepts following arguments",
+  "source": "@site/docs/references/client-sdk/datastore/collection/update.mdx",
+  "sourceDirName": "references/client-sdk/datastore/collection",
+  "slug": "/references/client-sdk/datastore/collection/update",
+  "permalink": "/docs/references/client-sdk/datastore/collection/update",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/datastore/collection/update.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "collection.update"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "collection.search",
+    "permalink": "/docs/references/client-sdk/datastore/collection/search"
+  },
+  "next": {
+    "title": "collection.delete",
+    "permalink": "/docs/references/client-sdk/datastore/collection/delete"
+  }
+}

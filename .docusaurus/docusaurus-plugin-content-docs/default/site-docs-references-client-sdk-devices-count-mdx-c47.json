@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/count",
+  "id": "references/client-sdk/devices/count",
+  "title": "devices.count",
+  "description": "This methods returns the total number of online, offline or all devices paired to a user account.",
+  "source": "@site/docs/references/client-sdk/devices/count.mdx",
+  "sourceDirName": "references/client-sdk/devices",
+  "slug": "/references/client-sdk/devices/count",
+  "permalink": "/docs/references/client-sdk/devices/count",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/count.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "devices.count"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "devices.get",
+    "permalink": "/docs/references/client-sdk/devices/get"
+  },
+  "next": {
+    "title": "devices.on",
+    "permalink": "/docs/references/client-sdk/devices/on"
+  }
+}

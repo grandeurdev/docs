@@ -1,0 +1,26 @@
+{
+  "unversionedId": "references/client-sdk/devices/on",
+  "id": "references/client-sdk/devices/on",
+  "title": "devices.on",
+  "description": "The best thing about Grandeur is the fact that it is event driven. Means you can subscribe to events and we will automatically send you an alert whenever the subscribed event will occur.",
+  "source": "@site/docs/references/client-sdk/devices/on.mdx",
+  "sourceDirName": "references/client-sdk/devices",
+  "slug": "/references/client-sdk/devices/on",
+  "permalink": "/docs/references/client-sdk/devices/on",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/client-sdk/devices/on.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "devices.on"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "devices.count",
+    "permalink": "/docs/references/client-sdk/devices/count"
+  },
+  "next": {
+    "title": "Overview",
+    "permalink": "/docs/references/client-sdk/devices/device/overview"
+  }
+}
