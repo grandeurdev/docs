@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '7e7'),
+    component: ComponentCreator('/docs', '33b'),
     routes: [
       {
         path: '/docs/build-your-custom-app',
@@ -593,9 +593,16 @@ export default [
         sidebar: "sidebar"
       },
       {
-        path: '/docs/restapi',
-        component: ComponentCreator('/docs/restapi', '121'),
-        exact: true
+        path: '/docs/references/response-codes',
+        component: ComponentCreator('/docs/references/response-codes', '06b'),
+        exact: true,
+        sidebar: "sidebar"
+      },
+      {
+        path: '/docs/references/restapi',
+        component: ComponentCreator('/docs/references/restapi', 'da7'),
+        exact: true,
+        sidebar: "sidebar"
       }
     ]
   },

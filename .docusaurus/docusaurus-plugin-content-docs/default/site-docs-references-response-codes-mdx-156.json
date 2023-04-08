@@ -1,0 +1,28 @@
+{
+  "unversionedId": "references/response-codes",
+  "id": "references/response-codes",
+  "title": "Response Codes",
+  "description": "",
+  "source": "@site/docs/references/response-codes.mdx",
+  "sourceDirName": "references",
+  "slug": "/references/response-codes",
+  "permalink": "/docs/references/response-codes",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/response-codes.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Response Codes",
+    "pinned": "pinned",
+    "emoji": "🤖"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "RestAPI",
+    "permalink": "/docs/references/restapi"
+  },
+  "next": {
+    "title": "Keywords",
+    "permalink": "/docs/keywords"
+  }
+}

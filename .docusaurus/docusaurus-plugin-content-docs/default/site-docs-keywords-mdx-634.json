@@ -16,8 +16,8 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "CLI",
-    "permalink": "/docs/references/cli"
+    "title": "Response Codes",
+    "permalink": "/docs/references/response-codes"
   },
   "next": {
     "title": "FAQs",

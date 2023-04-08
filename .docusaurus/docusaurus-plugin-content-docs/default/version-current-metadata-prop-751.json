@@ -654,6 +654,18 @@
             "label": "CLI",
             "href": "/docs/references/cli",
             "docId": "references/cli"
+          },
+          {
+            "type": "link",
+            "label": "RestAPI",
+            "href": "/docs/references/restapi",
+            "docId": "references/restapi"
+          },
+          {
+            "type": "link",
+            "label": "Response Codes",
+            "href": "/docs/references/response-codes",
+            "docId": "references/response-codes"
           }
         ],
         "collapsed": true,
@@ -1165,10 +1177,17 @@
       "description": "This method schedules a function to be called when the device's connection with Grandeur is made or broken. The function passed to it as argument is called an event handler for it handles events like connection/disconnection with Grandeur. Example below illustrates its usage.",
       "sidebar": "sidebar"
     },
-    "restapi": {
-      "id": "restapi",
-      "title": "Introduction",
-      "description": "You need three credentials to use the REST API for anything:"
+    "references/response-codes": {
+      "id": "references/response-codes",
+      "title": "Response Codes",
+      "description": "",
+      "sidebar": "sidebar"
+    },
+    "references/restapi": {
+      "id": "references/restapi",
+      "title": "RestAPI",
+      "description": "You need three credentials to use the REST API for anything:",
+      "sidebar": "sidebar"
     }
   }
 }

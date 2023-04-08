@@ -547,6 +547,11 @@ const sidebars = {
           type: 'doc',
           label: 'RestAPI',
           id: 'references/restapi'
+        },
+        {
+          type: 'doc',
+          label: 'Response Codes',
+          id: 'references/response-codes'
         }
       ],
     },

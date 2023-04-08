@@ -420,8 +420,14 @@
               "sidebar": "sidebar"
             },
             {
-              "id": "restapi",
-              "path": "/docs/restapi"
+              "id": "references/response-codes",
+              "path": "/docs/references/response-codes",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "references/restapi",
+              "path": "/docs/references/restapi",
+              "sidebar": "sidebar"
             }
           ],
           "draftIds": [],

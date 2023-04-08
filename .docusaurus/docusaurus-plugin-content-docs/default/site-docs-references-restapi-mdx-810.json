@@ -1,0 +1,28 @@
+{
+  "unversionedId": "references/restapi",
+  "id": "references/restapi",
+  "title": "RestAPI",
+  "description": "You need three credentials to use the REST API for anything:",
+  "source": "@site/docs/references/restapi.mdx",
+  "sourceDirName": "references",
+  "slug": "/references/restapi",
+  "permalink": "/docs/references/restapi",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/references/restapi.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "RestAPI",
+    "pinned": "pinned",
+    "emoji": "🤖"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "CLI",
+    "permalink": "/docs/references/cli"
+  },
+  "next": {
+    "title": "Response Codes",
+    "permalink": "/docs/references/response-codes"
+  }
+}
