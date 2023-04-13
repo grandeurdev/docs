@@ -1,0 +1,15 @@
+{
+  "index": "Introduction",
+  "getting-started": "Getting started",
+  "hello-world-with-iot": "Hello world with IoT",
+  "build-your-custom-app": "Build your custom app",
+  "guides": "Guides",
+  "faqs": {
+    "title": "FAQs",
+    "type": "page"
+  },
+  "keywords": {
+    "title": "Keywords",
+    "type": "page"
+  }
+}
