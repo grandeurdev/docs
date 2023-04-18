@@ -1,3 +1,9 @@
 {
-    "hehe": "Haha"
+    "project": "Project",
+    "devices": "Devices",
+    "auth": "Auth",
+    "datastore": "Datastore",
+    "canvas": "Canvas",
+    "hardware": "Hardware",
+    "security": "Security"
 }

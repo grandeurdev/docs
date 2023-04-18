@@ -1,0 +1,809 @@
+---
+title: REST API
+pinned: pinned
+emoji: 🤖
+---
+
+# REST API
+
+You need three credentials to use the REST API for anything:
+
+1. API Key 
+2. Secret
+3. Personal Access Token
+
+All endpoints work on the POST method only. GET, UPDATE, DELETE, or any other endpoints return 400 error.
+
+All requests are sent with `Content-Type: application/json`.
+
+## Usage
+
+```jsx
+fetch("https://api.grandeur.dev<ENDPOINT_PATH>?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: BODY
+	}
+);
+```
+
+This is how each section could look like:
+
+## /projects/meta
+
+### Body:
+
+`{ apiKey: string }`
+
+### Success response:
+
+`{ code: "PROJECTS-FETCHED", message: "Project is successfully fetched", nProjects: 10 }`
+
+### Error response:
+
+- `{ code: "APIKEY-INVALID", message: "Your API Key seems unfamiliar." }`
+- `{ code: "SIGNATURE-INVALID" }`
+- `{ code: "AUTH-UNAUTHORIZED" }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: BODY
+	}
+);
+```
+
+## /users/count
+
+### Body:
+
+`{  }`
+
+### Success response:
+
+`{ code: "PROJECT-USERS-COUNT-FETCHED", message: "Number of project users is successfully fetched."}`
+
+### Error response:
+
+`{ code: "PROJECT-USERS-COUNT-FETCH-FAILED", message: "Number of project users could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {}
+	}
+);
+```
+## /users/get
+
+### Body:
+
+`{ nPage: integer , keywords: string  }`
+
+### Success response:
+
+`{ code: ""PROJECT-USERS-FETCHED"", message: "List of project users is successfully fetched."}`
+
+### Error response:
+
+`{ code: "PROJECT-USERS-FETCH-FAILED", message: "List of project users could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			 Authorization: TOKEN
+		}
+		body: {
+		    "nPage": 1,
+            "keywords": ""
+		}
+	}
+);
+```
+
+## /users/create
+
+### Body:
+
+`{ email:string , password:string , displayName:string , phone: string }`
+
+### Success response:
+
+`{ code: "PROJECT-CREATED", message: "Project is successfully created"}`
+
+### Error response:
+
+`{ code: "PROJECT-CREATION-FAILED", message: "New project could not be created." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body:    { 
+			   "email": "moiz@grandeur.tech",
+               "password": "password",
+               "displayName": "Moiz Husnain",
+               "phone": "+923346807695" 
+		}
+	}	
+);
+```
+
+## /user/delete
+
+### Body:
+
+`{ userID:string }`
+
+### Success response:
+
+`{ code: "PROJECT-USER-DELETED", message: "User account is successfully deleted from the project."}`
+
+### Error response:
+
+`{ code: "PROJECT-USER-DELETION-FAILED", message: "User account could not be deleted from the project." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+			"userID": "moiz@grandeur.tech"
+		}
+	}
+);
+```
+
+## /devices/count
+
+### Body:
+
+`{ type: string , filter: object  }`
+
+### Success response:
+
+`{ code: "PROJECT-DEVICES-COUNT-FETCHED", message: "Number of project devices is successfully fetched."}`
+
+### Error response:
+
+`{ code: "PROJECT-DEVICES-COUNT-FETCH-FAILED", message: "Number of project devices could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+			  "type": "registered/paired/unpaired",
+              "filter": "online/offline"
+		}
+	}
+);
+```
+
+## /devices/get
+
+### Body:
+
+`{ type:string , filter:object , productID: string }`
+
+### Success response:
+
+`{ code: "PROJECT-DEVICES-FETCHED"", message: "List of project devices is successfully fetched."}`
+
+### Error response:
+
+`{ code: "PROJECT-DEVICES-FETCH-FAILED", message: "List of project devices could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "type": "registered/paired/unpaired",
+		    "filter": "online/offline",
+            "productID": ""
+        }
+	}
+);
+```
+
+## /devices/register
+
+### Body:
+
+`{ modelID:string , productID:string , deviceName: string }`
+
+### Success response:
+
+`{ code: "PROJECT-DEVICE-REGISTERED", message: "Device is successfully registered with the project."}`
+
+### Error response:
+
+`{ code: "PROJECT-DEVICE-REGISTRATION-FAILED", message: "Device could not be registered with the project." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "modelID": "{modelID}",
+            "productID": "Device 1",
+            "deviceName": "Device 1"
+        }
+	}
+);
+```
+
+## /device/pair
+
+### Body:
+
+`{ deviceID:string , userID:string  }`
+
+### Success response:
+
+- `{ code: "DEVICE-PAIRED", message: "Device is successfully paired to the user account."}`
+- `{ code: "DEVICE-IS-PAIRED", message: "Device is paired to the user account."}`
+- `{ code: "DEVICE-ALREADY-PAIRED", message: "User device is already paired to a user account. Un-pair it first to pair it again." }`
+
+### Error response:
+
+- `{ code: "DEVICE-PAIRING-FAILED", message: "Device could not be paired to the user account." }`
+- `{ code: "DEVICE-NOT-PAIRED", message: "Device is not paired to the user account. Pair it first for monitoring and control." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "userID": "moiz@grandeur.tech"
+        }
+	}
+);
+```
+
+## /device/unpair
+
+### Body:
+
+`{ deviceID:string }`
+
+### Success response:
+
+`{ code: "DEVICE-UNPAIRED", message: "Device is successfully un-paired from the user account." }`
+
+### Error response:
+
+`{ code: "DEVICE-UNPAIRING-FAILED", message: "Device could not be un-paired from the user account." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}"
+        }
+	}
+);
+```
+
+## /device/delete
+
+### Body:
+
+`{ deviceID:string }`
+
+### Success response:
+
+`{ code: "PROJECT-DEVICE-DELETED", message: "The device is successfully deleted from the project."}`
+
+### Error response:
+
+`{ code: "PROJECT-DEVICE-DELETED-FAILED", message: "The device could not be deleted from the project." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}"
+        }
+	}
+);
+```
+
+## /device/get
+
+### Body:
+
+`{ deviceID: string , path: string  }`
+
+### Success response:
+
+`{ code: "DEVICES-DETAILS-FETCHED", message: "Details of device are successfully fetched."}`
+
+### Error response:
+
+`{ code: "DEVICES-DETAILS-FETCHING-FAILED", message: "Details of device could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": ""
+        }
+	}
+);
+```
+## /device/set
+
+### Body:
+
+`{ deviceID:string , path:string , data: string }`
+
+### Success response:
+
+`{ code: "DEVICE-DETAILS-UPDATED", message: "Details of device are successfully updated"}`
+
+### Error response:
+
+`{ code: "DEVICE-DETAILS-UPDATE-FAILED", message: "Details of device could not be updated." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": "name/productID",
+            "data": "New Name"
+        }
+	}
+);
+```
+## /device/data/get
+
+### Body:
+
+`{ deviceID:string , path:string  }`
+
+### Success response:
+
+`{ code: "DEVICE-DATA-FETCHED", message: "Data of device is successfully fetched."}`
+
+### Error response:
+
+`{ code: "DEVICE-DATA-FETCHING-FAILED", message: "Data of device could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": ""
+        }
+	}
+);
+```
+
+## /device/data/set
+
+### Body:
+
+`{ deviceID:string , path:string , data:object  }`
+
+### Success response:
+
+`{ code: "DEVICE-DATA-UPDATED", message: "Data of device is successfully updated"}`
+
+### Error response:
+
+`{ code: "PROJECT-CREATION-FAILED", message: "Data of device could not be updated." }`
+DEVUCE DATA UPDATED
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": "",
+            "data": {
+                "state": 1
+            }
+        }
+	}
+);
+```
+
+## /datastore/meta
+
+### Body:
+
+`{  }`
+
+### Success response:
+
+`{ code: "DATASTORE-DOCUMENTS-FETCHED", message: "Documents are successfully fetched from the datastore."}`
+
+### Error response:
+
+`{ code: "DATASTORE-DOCUMENTS-FETCH-FAILED", message: "Documents could not be fetched from the datastore." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+        }
+	}
+);
+```
+
+## /datastore/list
+
+### Body:
+
+`{ nPage:string }`
+
+### Success response:
+
+`{ code: "DATASTORE-COLLECTIONS-FETCHED", message: "List of collections is successfully fetched from the datastore."}`
+
+### Error response:
+
+`{ code: "DATASTORE-COLLECTIONS-FETCH-FAILED", message: " List of collections could not be fetched from the datastore." }`
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "nPage": 1
+        }
+	}
+);
+```
+## /datastore/drop
+
+### Body:
+
+`{ collection:string }`
+
+### Success response:
+
+`{ code: "DATASTORE-COLLECTION-DROPPED", message: "Collection is successfully dropped from the datastore."}`
+
+### Error response:
+
+`{ code: "DATASTORE-COLLECTION-DROPPING-FAILED", message: "Collection could not be fetched from the datastore." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name"
+        }
+	}
+);
+```
+
+## /datastore/insert
+
+### Body:
+
+`{ collection:string , documents:array  }`
+
+### Success response:
+
+- `{ code: "DATASTORE-DOCUMENTS-INSERTED", message: "Documents are successfully inserted into the datastore."}`
+- `{ code: "DATASTORE-DOCUMENTS-DUPLICATE", message: "Documents are successfully inserted into the datastore."}`
+
+### Error response:
+
+`{ code: "DATASTORE-DOCUMENTS-INSERTION-FAILED", message: "Documents could not be inserted into the datastore." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "documents": [{
+                "state": 1
+            }]
+		}
+	}
+);
+```
+
+## /datastore/delete
+
+### Body:
+
+`{ collection:string , filter:object  }`
+
+### Success response:
+
+`{ code: "DATASTORE-DOCUMENTS-DELETED", message: "Documents are successfully deleted from the datastore."}`
+
+### Error response:
+
+`{ code: "Documents could not be deleted from the datastore.", message: "New project could not be created." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "filter": {}
+        }
+	}
+);
+```
+
+## /datastore/update
+
+### Body:
+
+`{ collection:string , filter:object , update:object }`
+
+### Success response:
+
+`{ code: "PROJECT-CREATED", message: "Project is successfully created"}`
+
+### Error response:
+
+`{ code: "PROJECT-CREATION-FAILED", message: "New project could not be created." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "filter": {},
+            "update": {
+                "state": 2
+            }
+        }
+	}
+);
+```
+
+## /datastore/pipeline
+
+### Body:
+
+`{ collection:string , index:object , pipeline: array , nPage: integer   }`
+
+### Success response:
+
+`{ code: "PROJECT-CREATED", message: "Project is successfully created"}`
+
+### Error response:
+
+`{ code: "DATASTORE-DOCUMENT-NOT-FOUND", message: "Document not found with reference to the query specified." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "index": {},
+            "pipeline": [{
+                "type": "match",
+                "filter": ""
+            }],
+            "nPage": 1
+        }
+	}
+);
+```
+
+## /topic/subscribe
+
+### Body:
+
+`{ event:string , deviceID:string , path: string , userID: string  }`
+
+### Success response:
+
+`{ code: "TOPIC-SUBSCRIBED", message: "User is successfully subscribed to the device for the topic."}`
+
+### Error response:
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "event": "data/name/status/devices",
+            "deviceID": "{deviceID}",
+            "path": "topic",
+            "userID": "moiz@grandeur.tech"
+        }
+	}
+);
+```
+
+## /topic/unsubscribe
+
+### Body:
+
+`{ id:string }`
+
+### Success response:
+
+`{ code: "TOPIC-UNSUBSCRIBED", message: "User is successfully unsubscribed to the device for the topic." }`
+
+### Error response:
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "id": "subscriptionID"
+        }
+	}
+);
+```

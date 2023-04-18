@@ -1,0 +1,109 @@
+---
+title: data.set
+---
+
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# data.set
+
+This method updates a device variable on Grandeur with new data.
+
+
+| Name       | Type |   Description |
+| :------------ | :---------: | ----------: |
+| path        |    string    | Path of the device variable using dot notation|
+| callback     |   var     | New data to store in the variable|
+| data        |    string    | Path of the device variable using dot notation|
+
+
+<Tabs items={['Arduino', 'Py']}>
+
+<Tab>
+
+```cpp
+Grandeur::Project project;
+Grandeur::Project::Device device;
+
+void setVoltageCallback(const char* code, int voltage) { // You can write any type int/double/bool/const char* in place of int and it'll cast voltage to that type.
+  // This method prints "voltage" value after it is updated on Grandeur.
+  Serial.println(voltage);
+}
+
+void setup() {
+  project = grandeur.init(apiKey, token);
+  device = project.device(deviceID);
+}
+
+void loop() {
+  // Reading pin value.
+  int voltage = analogRead(A0);
+  // This requests to set the "voltage" variable on every loop and calls setVoltageCallback() function when the
+  // variable is actually updated on Grandeur.
+  device.data().set("voltage", voltage, setVoltageCallback);
+
+  if(WiFiIsConnected) project.loop();
+}
+
+//If you do not need to do anything after the successful update of a data variable, you can use the callback-less set function overload.
+
+```
+
+  </Tab>
+
+   <Tab>
+
+  ```py
+        import grandeur.device as grandeur
+
+        # Init the sdk
+        project = grandeur.init(apiKey, token)
+
+        # Get reference to device class
+        device = project.device(deviceID)
+
+        # Function to handle the response on get call
+        def setCallback(code, res):
+          print(res["update"])
+
+        # Store new data in a dict
+        data = {"state": 0}
+
+        # Get data of the device
+        device.data().set("", data, setCallback)
+  ```
+</Tab>
+
+</Tabs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+{
+    "device-sdk": "Device SDK",
+    "canvas": "Canvas",
+    "client-sdk": "Client SDK",
+    "rest-api": "REST API",
+    "cli": "CLI",
+    "response-codes": "Response Codes"
+}

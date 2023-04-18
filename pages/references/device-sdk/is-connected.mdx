@@ -1,0 +1,60 @@
+---
+title: isConnected
+---
+
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# isConnected
+
+This method returns true if the device is connected with Grandeur.
+
+<Tabs items={['Arduino', 'Py']}>
+
+  <Tab>
+
+```cpp
+  Grandeur::Project project;
+  void setup() {
+  project = grandeur.init(apiKey, token);
+}
+
+void loop() {
+  if(!project.isConnected()) {
+    Serial.println("Device is not connected with Grandeur!\n");
+  }
+  else {
+    Serial.println("Yay! Device has made a successful connection with Grandeur!\n");
+  }
+
+  project.loop();
+}
+
+```
+  </Tab>
+
+  <Tab>
+
+   ```py
+import grandeur.device as grandeur
+
+# Init the sdk
+project = grandeur.init(apiKey, token)
+
+# ....
+# Check connection status
+print(project.isConnected())
+
+```
+
+  </Tab>
+
+</Tabs>
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ pinned: pinned
 emoji: 👋🏻
 ---
 import ReactPlayer from 'react-player';
-
+import { Callout } from 'nextra-theme-docs';
 
 # Hello World with IoT
 
@@ -23,7 +23,14 @@ We are essentially using Arduino IDE as it supports ESP8266 library easily. ESP8
 With Software Development Kits (SDKs) like Grandeur's, you can directly program the ESP8266’s on-chip Microcontroller to blink the LED.
 Grandeur runs on top of ESP8266 to help you not only store data on cloud but also transfer data from device to a user.
 
+<Callout emoji="✅">
+You can download the library for your specific microcontroller to connect your hardware to grandeur. Our SDK’s can support multiple architectures:
 
+‣ ESP8266 and ESP32 with Arduino
+
+‣ Most Linux based SOCs with Python work on Raspberry PI.
+
+</Callout>
 
 To read more about it, click [here](/guides/hardware)
 
@@ -176,7 +183,9 @@ To control the on-board LED on the ESP8266, go the Grandeur Dashboard and creat
 
 A Canvas guide is also lsited below.
 
-
+<Callout emoji="📋">
+    [Canvas Guide](/guides/canvas) 
+</Callout>
 
 Click the switch and look at the LED on the ESP8266. The LED on the ESP8266 should toggle every time you hit the switch button. Here is an example of how your canvas button will look like whle you are controlling the on-board LED.
 

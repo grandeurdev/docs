@@ -1,0 +1,18 @@
+{
+    "setting-up-the-board": "Setting up boards",
+    "handling-wifi": {
+        "display": "hidden"
+    },
+    "handling-connection-status": {
+        "display": "hidden"
+    },
+    "handling-device-variables": {
+        "display": "hidden"
+    },
+    "handling-updates": {
+        "display": "hidden"
+    },
+    "wifi-connection": {
+        "display": "hidden"
+    }
+}
