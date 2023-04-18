@@ -1,0 +1,45 @@
+/* Import fonts */
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+/* Mont */
+@font-face {
+    font-family: 'Mont';
+    src: local('Mont Bold'), local('Mont Bold'),
+        url('./fonts//Mont-Bold.woff') format('woff'),
+        url('./fonts//Mont-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Glacial Indifference */
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: local('GlacialIndifference Regular'), local('GlacialIndifference Regular'),
+        url('./fonts//GlacialIndifference-Regular.woff') format('woff'),
+        url('./fonts//GlacialIndifference-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: local('GlacialIndifference Bold'), local('GlacialIndifference Bold'),
+        url('./fonts//GlacialIndifference-Bold.woff') format('woff'),
+        url('./fonts//GlacialIndifference-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Background colors */
+body, footer, .nextra-nav-container nav, .nx-sticky {
+    background-color: #121217 !important;
+}
+/* Headings */
+h1 {
+    font-family: 'Mont', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'GlacialIndifference', sans-serif;
+}
+
