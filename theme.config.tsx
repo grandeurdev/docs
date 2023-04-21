@@ -48,7 +48,7 @@ const config: DocsThemeConfig = {
   // Footer
   footer: {
     text: <span>
-    <a href="https://nextra.site" target="_blank">Grandeur {new Date().getFullYear()} © </a>
+    <a href="https://grandeur.dev" target="_blank">Grandeur {new Date().getFullYear()} © </a>
   </span>,
   },
 

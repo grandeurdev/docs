@@ -1,4 +1,8 @@
 {
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
   "quickstart": {
     "title": "Quickstart",
     "type": "page"
