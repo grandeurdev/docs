@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/users/register",
+  "id": "guides/users/register",
+  "title": "Register a New User",
+  "description": "So you've created the perfect custom app and now want to elevate the end user experience by ensuring that they can use these apps securely. This is where the whole auth concept comes into play.",
+  "source": "@site/docs/guides/users/register.mdx",
+  "sourceDirName": "guides/users",
+  "slug": "/guides/users/register",
+  "permalink": "/docs/guides/users/register",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/users/register.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Register a New User"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Username and Password",
+    "permalink": "/docs/guides/access-credentials/username-and-password"
+  },
+  "next": {
+    "title": "Login a User",
+    "permalink": "/docs/guides/users/login"
+  }
+}

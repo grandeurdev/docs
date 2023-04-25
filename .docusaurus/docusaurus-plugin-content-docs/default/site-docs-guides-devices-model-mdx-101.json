@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Model"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Update User Profile",
-    "permalink": "/docs/guides/auth/managing-user-account/update-user-profile"
-  },
-  "next": {
-    "title": "Data",
-    "permalink": "/docs/guides/devices/data"
   }
 }

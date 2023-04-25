@@ -42,11 +42,7 @@ const sidebars = {
       type: 'category',
       label: 'Guides',
       items: [
-        {
-          type: 'doc',
-          label: 'Canvas',
-          id: 'guides/canvas'
-        },
+        
         {
           type: 'category',
           label: 'Project',
@@ -65,55 +61,13 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Auth',
-          items: [
-            {
-              type: 'doc',
-              label: 'Register',
-              id: "guides/auth/register"
-            },
-            {
-              type: 'doc',
-              label: 'Login',
-              id: "guides/auth/login"
-            },
-            {
-              type: 'doc',
-              label: 'Logout',
-              id: "guides/auth/logout"
-            },
-            {
-              type: 'category',
-              label: 'Managing user account',
-              items: [
-                {
-                  type: "doc",
-                  label: "Update account password",
-                  id: "guides/auth/managing-user-account/update-account-password"
-                },
-                {
-                  type: "doc",
-                  label: "Update forgotten password",
-                  id: "guides/auth/managing-user-account/update-forgotten-password"
-                },
-                {
-                  type: "doc",
-                  label: "Update user profile",
-                  id: "guides/auth/managing-user-account/update-user-profile"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          type: 'category',
           label: 'Devices',
           items: [
-            {
-              type: "doc",
-              label: "Model",
-              id: "guides/devices/model"
-            },
+            // {
+            //   type: "doc",
+            //   label: "Model",
+            //   id: "guides/devices/model"
+            // },
             {
               type: "doc",
               label: "Data",
@@ -127,78 +81,167 @@ const sidebars = {
           ],
         },
         {
-          type: 'category',
-          label: 'Datastore',
-          items: [
-            {
-              type: "doc",
-              label: "Overview",
-              id: "guides/datastore/overview"
-            },
-            {
-              type: "doc",
-              label: "Collections",
-              id: "guides/datastore/collections"
-            },
-            {
-              type: "doc",
-              label: "Querying",
-              id: "guides/datastore/querying"
-            }
-          ],
+          type: 'doc',
+          label: 'Canvas',
+          id: 'guides/canvas'
         },
-        {
-          type: 'category',
-          label: 'Security',
-          items: [
-            {
-              type: "doc",
-              label: "User and administrator",
-              id: "guides/security/user-and-administrator"
-            },
-            {
-              type: "doc",
-              label: "CORS",
-              id: "guides/security/cors"
-            },
-            {
-              type: "doc",
-              label: "Access Credentials",
-              id: "guides/security/access-credentials"
-            }
-          ],
-        },
+        // {
+        //   type: 'category',
+        //   label: 'Datastore',
+        //   items: [
+        //     {
+        //       type: "doc",
+        //       label: "Overview",
+        //       id: "guides/datastore/overview"
+        //     },
+        //     {
+        //       type: "doc",
+        //       label: "Collections",
+        //       id: "guides/datastore/collections"
+        //     },
+        //     {
+        //       type: "doc",
+        //       label: "Querying",
+        //       id: "guides/datastore/querying"
+        //     }
+        //   ],
+        // },
         {
           type: 'category',
           label: 'Hardware',
           items: [
             {
               type: "doc",
-              label: "Setting up the board",
-              id: "guides/hardware/setting-up-the-board"
+              label: "Overview",
+              id: "guides/hardware/overview"
+            },
+            {
+              type: 'category',
+              label: 'Setting up Boards',
+              items: [
+                {
+                  type: "doc",
+                  label: "Setting Up ESP32",
+                  id: "guides/hardware/setting-boards/setting-up-esp32" 
+                },
+                {
+                  type: "doc",
+                  label: "Setting up ESP8266",
+                  id: "guides/hardware/setting-boards/setting-up-esp8266"
+                },
+                {
+                  type: "doc",
+                  label: "Setting up Raspberry Pi",
+                  id: "guides/hardware/setting-boards/setting-up-raspberry-pi"
+                }
+              ]
+            }
+            // {
+            //   type: "doc",
+            //   label: "Handling WiFi",
+            //   id: "guides/hardware/handling-wifi"
+            // },
+            // {
+            //   type: "doc",
+            //   label: "Handling Connection Status",
+            //   id: "guides/hardware/handling-connection-status"
+            // },
+            // {
+            //   type: "doc",
+            //   label: "Handling Device Variables",
+            //   id: "guides/hardware/handling-device-variables"
+            // },
+            // {
+            //   type: "doc",
+            //   label: "Handling Updates",
+            //   id: "guides/hardware/handling-updates"
+            // }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Access Credentials',
+          items: [
+            // {
+            //   type: "doc",
+            //   label: "User and administrator",
+            //   id: "guides/security/user-and-administrator"
+            // },
+            {
+              type: "doc",
+              label: "CORS",
+              id: "guides/access-credentials/cors"
             },
             {
               type: "doc",
-              label: "Handling WiFi",
-              id: "guides/hardware/handling-wifi"
+              label: "Access Credentials",
+              id: "guides/access-credentials/secret-key"
             },
             {
               type: "doc",
-              label: "Handling Connection Status",
-              id: "guides/hardware/handling-connection-status"
+              label: "Auth Token",
+              id: "guides/access-credentials/auth-token"
             },
             {
               type: "doc",
-              label: "Handling Device Variables",
-              id: "guides/hardware/handling-device-variables"
+              label: "Device Id and Token",
+              id: "guides/access-credentials/device-id-token"
             },
             {
               type: "doc",
-              label: "Handling Updates",
-              id: "guides/hardware/handling-updates"
+              label: "API Key",
+              id: "guides/access-credentials/api-key"
+            },
+            {
+              type: "doc",
+              label: "Username and Password",
+              id: "guides/access-credentials/username-and-password"
             }
           ],
+        },
+        {
+          type: 'category',
+          label: 'Users',
+          items: [
+            {
+              type: 'doc',
+              label: 'Register',
+              id: "guides/users/register"
+            },
+            {
+              type: 'doc',
+              label: 'Login',
+              id: "guides/users/login"
+            },
+            {
+              type: 'doc',
+              label: 'Logout',
+              id: "guides/users/logout"
+            },
+            {
+              type: 'category',
+              label: 'Managing user account',
+              items: [
+                {
+                  type: "doc",
+                  label: "Update account password",
+                  id: "guides/users/managing-user-account/update-account-password"
+                },
+                {
+                  type: "doc",
+                  label: "Update forgotten password",
+                  id: "guides/users/managing-user-account/update-forgotten-password"
+                },
+                {
+                  type: "doc",
+                  label: "Update user profile",
+                  id: "guides/users/managing-user-account/update-user-profile"
+                }
+              ]
+            }
+          ]
         }
+        
       ],
     },
     {
@@ -260,34 +303,34 @@ const sidebars = {
                   ]
                 }
               ]
-            },
-            {
-              type: 'category',
-              label: 'datastore',
-              items: [
-                {
-                  type: 'doc',
-                  label: 'Overview',
-                  id: 'references/device-sdk/datastore/overview'
-                },
-                {
-                  type: 'category',
-                  label: '.collection',
-                  items: [
-                    {
-                      type: 'doc',
-                      label: '.insert',
-                      id: 'references/device-sdk/datastore/collection/insert'
-                    },
-                    {
-                      type: 'doc',
-                      label: '.search',
-                      id: 'references/device-sdk/datastore/collection/search'
-                    }
-                  ]
-                }
-              ]
             }
+            // {
+            //   type: 'category',
+            //   label: 'datastore',
+            //   items: [
+            //     {
+            //       type: 'doc',
+            //       label: 'Overview',
+            //       id: 'references/device-sdk/datastore/overview'
+            //     },
+            //     {
+            //       type: 'category',
+            //       label: '.collection',
+            //       items: [
+            //         {
+            //           type: 'doc',
+            //           label: '.insert',
+            //           id: 'references/device-sdk/datastore/collection/insert'
+            //         },
+            //         {
+            //           type: 'doc',
+            //           label: '.search',
+            //           id: 'references/device-sdk/datastore/collection/search'
+            //         }
+            //       ]
+            //     }
+            //   ]
+            // }
           ],
         },
         {
@@ -442,59 +485,59 @@ const sidebars = {
                   id: 'references/client-sdk/auth/update-profile'
                 },
               ]
-            },
-            {
-              type: 'category',
-              label: 'datastore',
-              items: [
-                {
-                  type: 'doc',
-                  label: 'Overview',
-                  id: 'references/client-sdk/datastore/overview'
-                },
-                {
-                  type: 'doc',
-                  label: '.list',
-                  id: 'references/client-sdk/datastore/list'
-                },
-                {
-                  type: 'doc',
-                  label: '.drop',
-                  id: 'references/client-sdk/datastore/drop'
-                },
-                {
-                  type: 'category',
-                  label: '.collection',
-                  items: [
-                    {
-                      type: 'doc',
-                      label: 'Overview',
-                      id: 'references/client-sdk/datastore/collection/overview'
-                    },
-                    {
-                      type: 'doc',
-                      label: '.insert',
-                      id: 'references/client-sdk/datastore/collection/insert'
-                    },
-                    {
-                      type: 'doc',
-                      label: '.search',
-                      id: 'references/client-sdk/datastore/collection/search'
-                    },
-                    {
-                      type: 'doc',
-                      label: '.update',
-                      id: 'references/client-sdk/datastore/collection/update'
-                    },
-                    {
-                      type: 'doc',
-                      label: '.delete',
-                      id: 'references/client-sdk/datastore/collection/delete'
-                    }
-                  ]
-                }
-              ]
             }
+            // {
+            //   type: 'category',
+            //   label: 'datastore',
+            //   items: [
+            //     {
+            //       type: 'doc',
+            //       label: 'Overview',
+            //       id: 'references/client-sdk/datastore/overview'
+            //     },
+            //     {
+            //       type: 'doc',
+            //       label: '.list',
+            //       id: 'references/client-sdk/datastore/list'
+            //     },
+            //     {
+            //       type: 'doc',
+            //       label: '.drop',
+            //       id: 'references/client-sdk/datastore/drop'
+            //     },
+            //     {
+            //       type: 'category',
+            //       label: '.collection',
+            //       items: [
+            //         {
+            //           type: 'doc',
+            //           label: 'Overview',
+            //           id: 'references/client-sdk/datastore/collection/overview'
+            //         },
+            //         {
+            //           type: 'doc',
+            //           label: '.insert',
+            //           id: 'references/client-sdk/datastore/collection/insert'
+            //         },
+            //         {
+            //           type: 'doc',
+            //           label: '.search',
+            //           id: 'references/client-sdk/datastore/collection/search'
+            //         },
+            //         {
+            //           type: 'doc',
+            //           label: '.update',
+            //           id: 'references/client-sdk/datastore/collection/update'
+            //         },
+            //         {
+            //           type: 'doc',
+            //           label: '.delete',
+            //           id: 'references/client-sdk/datastore/collection/delete'
+            //         }
+            //       ]
+            //     }
+            //   ]
+            // }
           ],
         },
         {

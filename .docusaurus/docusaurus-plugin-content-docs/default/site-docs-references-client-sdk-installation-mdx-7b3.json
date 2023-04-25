@@ -16,8 +16,8 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "search",
-    "permalink": "/docs/references/device-sdk/datastore/collection/search"
+    "title": "data.on",
+    "permalink": "/docs/references/device-sdk/device/data/on"
   },
   "next": {
     "title": "Initialization",

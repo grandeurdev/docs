@@ -2,7 +2,7 @@
   "unversionedId": "guides/devices/data",
   "id": "guides/devices/data",
   "title": "Data",
-  "description": "When you register a device, you make it available in your project's network. Not just that, a new namespace is created for your device in the device registry.",
+  "description": "When you register a device, you make it available in your project's network so that you can save all device data now. Device data is a space where you can save all device variables once the device comes online.",
   "source": "@site/docs/guides/devices/data.mdx",
   "sourceDirName": "guides/devices",
   "slug": "/guides/devices/data",
@@ -16,8 +16,8 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "Model",
-    "permalink": "/docs/guides/devices/model"
+    "title": "Managing a Project",
+    "permalink": "/docs/guides/project/managing-a-project"
   },
   "next": {
     "title": "Pairing",

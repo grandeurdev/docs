@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/setting-boards/setting-up-esp32",
+  "id": "guides/hardware/setting-boards/setting-up-esp32",
+  "title": "Setting up ESP32",
+  "description": "- Start Arduino IDE and open the Preferences window.",
+  "source": "@site/docs/guides/hardware/setting-boards/setting-up-esp32.mdx",
+  "sourceDirName": "guides/hardware/setting-boards",
+  "slug": "/guides/hardware/setting-boards/setting-up-esp32",
+  "permalink": "/docs/guides/hardware/setting-boards/setting-up-esp32",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/setting-boards/setting-up-esp32.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Setting up ESP32"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/guides/hardware/overview"
+  },
+  "next": {
+    "title": "Setting up ESP8266",
+    "permalink": "/docs/guides/hardware/setting-boards/setting-up-esp8266"
+  }
+}

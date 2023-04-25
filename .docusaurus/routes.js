@@ -99,7 +99,7 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '33b'),
+    component: ComponentCreator('/docs', '65c'),
     routes: [
       {
         path: '/docs/build-your-custom-app',
@@ -120,38 +120,43 @@ export default [
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/auth/login',
-        component: ComponentCreator('/docs/guides/auth/login', '4a5'),
+        path: '/docs/guides/access-credentials/api-key',
+        component: ComponentCreator('/docs/guides/access-credentials/api-key', '266'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/auth/logout',
-        component: ComponentCreator('/docs/guides/auth/logout', '324'),
+        path: '/docs/guides/access-credentials/auth-token',
+        component: ComponentCreator('/docs/guides/access-credentials/auth-token', '0c3'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/auth/managing-user-account/update-account-password',
-        component: ComponentCreator('/docs/guides/auth/managing-user-account/update-account-password', 'a1d'),
+        path: '/docs/guides/access-credentials/cors',
+        component: ComponentCreator('/docs/guides/access-credentials/cors', '19f'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/auth/managing-user-account/update-forgotten-password',
-        component: ComponentCreator('/docs/guides/auth/managing-user-account/update-forgotten-password', 'cb2'),
+        path: '/docs/guides/access-credentials/device-id-token',
+        component: ComponentCreator('/docs/guides/access-credentials/device-id-token', '81d'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/auth/managing-user-account/update-user-profile',
-        component: ComponentCreator('/docs/guides/auth/managing-user-account/update-user-profile', 'e73'),
+        path: '/docs/guides/access-credentials/secret-key',
+        component: ComponentCreator('/docs/guides/access-credentials/secret-key', '78f'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/auth/register',
-        component: ComponentCreator('/docs/guides/auth/register', '70d'),
+        path: '/docs/guides/access-credentials/user-and-administrator',
+        component: ComponentCreator('/docs/guides/access-credentials/user-and-administrator', 'e05'),
+        exact: true
+      },
+      {
+        path: '/docs/guides/access-credentials/username-and-password',
+        component: ComponentCreator('/docs/guides/access-credentials/username-and-password', '6ae'),
         exact: true,
         sidebar: "sidebar"
       },
@@ -163,21 +168,18 @@ export default [
       },
       {
         path: '/docs/guides/datastore/collections',
-        component: ComponentCreator('/docs/guides/datastore/collections', '5eb'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/datastore/collections', '7bb'),
+        exact: true
       },
       {
         path: '/docs/guides/datastore/overview',
-        component: ComponentCreator('/docs/guides/datastore/overview', 'ce0'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/datastore/overview', 'c0a'),
+        exact: true
       },
       {
         path: '/docs/guides/datastore/querying',
-        component: ComponentCreator('/docs/guides/datastore/querying', 'ea7'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/datastore/querying', '6fb'),
+        exact: true
       },
       {
         path: '/docs/guides/devices/data',
@@ -187,9 +189,8 @@ export default [
       },
       {
         path: '/docs/guides/devices/model',
-        component: ComponentCreator('/docs/guides/devices/model', '9d4'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/devices/model', 'c1d'),
+        exact: true
       },
       {
         path: '/docs/guides/devices/pairing',
@@ -199,31 +200,45 @@ export default [
       },
       {
         path: '/docs/guides/hardware/handling-connection-status',
-        component: ComponentCreator('/docs/guides/hardware/handling-connection-status', '043'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/hardware/handling-connection-status', 'de2'),
+        exact: true
       },
       {
         path: '/docs/guides/hardware/handling-device-variables',
-        component: ComponentCreator('/docs/guides/hardware/handling-device-variables', 'bf9'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/hardware/handling-device-variables', '437'),
+        exact: true
       },
       {
         path: '/docs/guides/hardware/handling-updates',
-        component: ComponentCreator('/docs/guides/hardware/handling-updates', '4c5'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/guides/hardware/handling-updates', 'bef'),
+        exact: true
       },
       {
         path: '/docs/guides/hardware/handling-wifi',
-        component: ComponentCreator('/docs/guides/hardware/handling-wifi', 'b5d'),
+        component: ComponentCreator('/docs/guides/hardware/handling-wifi', '5ea'),
+        exact: true
+      },
+      {
+        path: '/docs/guides/hardware/overview',
+        component: ComponentCreator('/docs/guides/hardware/overview', '658'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/hardware/setting-up-the-board',
-        component: ComponentCreator('/docs/guides/hardware/setting-up-the-board', '730'),
+        path: '/docs/guides/hardware/setting-boards/setting-up-esp32',
+        component: ComponentCreator('/docs/guides/hardware/setting-boards/setting-up-esp32', 'f9b'),
+        exact: true,
+        sidebar: "sidebar"
+      },
+      {
+        path: '/docs/guides/hardware/setting-boards/setting-up-esp8266',
+        component: ComponentCreator('/docs/guides/hardware/setting-boards/setting-up-esp8266', '703'),
+        exact: true,
+        sidebar: "sidebar"
+      },
+      {
+        path: '/docs/guides/hardware/setting-boards/setting-up-raspberry-pi',
+        component: ComponentCreator('/docs/guides/hardware/setting-boards/setting-up-raspberry-pi', '423'),
         exact: true,
         sidebar: "sidebar"
       },
@@ -245,20 +260,38 @@ export default [
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/security/access-credentials',
-        component: ComponentCreator('/docs/guides/security/access-credentials', '361'),
+        path: '/docs/guides/users/login',
+        component: ComponentCreator('/docs/guides/users/login', 'd0e'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/security/cors',
-        component: ComponentCreator('/docs/guides/security/cors', '83b'),
+        path: '/docs/guides/users/logout',
+        component: ComponentCreator('/docs/guides/users/logout', '686'),
         exact: true,
         sidebar: "sidebar"
       },
       {
-        path: '/docs/guides/security/user-and-administrator',
-        component: ComponentCreator('/docs/guides/security/user-and-administrator', '669'),
+        path: '/docs/guides/users/managing-user-account/update-account-password',
+        component: ComponentCreator('/docs/guides/users/managing-user-account/update-account-password', 'c37'),
+        exact: true,
+        sidebar: "sidebar"
+      },
+      {
+        path: '/docs/guides/users/managing-user-account/update-forgotten-password',
+        component: ComponentCreator('/docs/guides/users/managing-user-account/update-forgotten-password', '485'),
+        exact: true,
+        sidebar: "sidebar"
+      },
+      {
+        path: '/docs/guides/users/managing-user-account/update-user-profile',
+        component: ComponentCreator('/docs/guides/users/managing-user-account/update-user-profile', 'e34'),
+        exact: true,
+        sidebar: "sidebar"
+      },
+      {
+        path: '/docs/guides/users/register',
+        component: ComponentCreator('/docs/guides/users/register', 'fd3'),
         exact: true,
         sidebar: "sidebar"
       },
@@ -378,51 +411,43 @@ export default [
       },
       {
         path: '/docs/references/client-sdk/datastore/collection/delete',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/delete', '04e'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/delete', '6b6'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/collection/insert',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/insert', 'd9a'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/insert', 'a1c'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/collection/overview',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/overview', '9d9'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/overview', 'b6b'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/collection/search',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/search', 'e2e'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/search', 'c99'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/collection/update',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/update', '902'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/collection/update', '985'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/drop',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/drop', '3ae'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/drop', 'd92'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/list',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/list', 'ea9'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/list', 'e22'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/datastore/overview',
-        component: ComponentCreator('/docs/references/client-sdk/datastore/overview', 'c6a'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/client-sdk/datastore/overview', '78b'),
+        exact: true
       },
       {
         path: '/docs/references/client-sdk/devices/count',
@@ -528,21 +553,18 @@ export default [
       },
       {
         path: '/docs/references/device-sdk/datastore/collection/insert',
-        component: ComponentCreator('/docs/references/device-sdk/datastore/collection/insert', 'c42'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/device-sdk/datastore/collection/insert', 'b18'),
+        exact: true
       },
       {
         path: '/docs/references/device-sdk/datastore/collection/search',
-        component: ComponentCreator('/docs/references/device-sdk/datastore/collection/search', '374'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/device-sdk/datastore/collection/search', 'b91'),
+        exact: true
       },
       {
         path: '/docs/references/device-sdk/datastore/overview',
-        component: ComponentCreator('/docs/references/device-sdk/datastore/overview', 'e0d'),
-        exact: true,
-        sidebar: "sidebar"
+        component: ComponentCreator('/docs/references/device-sdk/datastore/overview', 'ff2'),
+        exact: true
       },
       {
         path: '/docs/references/device-sdk/device/data/get',

@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Handling Updates"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Handling Device Variables",
-    "permalink": "/docs/guides/hardware/handling-device-variables"
-  },
-  "next": {
-    "title": "Installation",
-    "permalink": "/docs/references/device-sdk/installation"
   }
 }

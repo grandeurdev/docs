@@ -186,7 +186,7 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-33b": {
+  "/docs-65c": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
       "plugin": "plugin---docs-132-fff"
@@ -205,43 +205,47 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-getting-started-302-242"
   },
-  "/docs/guides/auth/login-4a5": {
+  "/docs/guides/access-credentials/api-key-266": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-auth-login-472-6b9"
+    "content": "content---docs-guides-access-credentials-api-keyb-16-f98"
   },
-  "/docs/guides/auth/logout-324": {
+  "/docs/guides/access-credentials/auth-token-0c3": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-auth-logoutcd-6-606"
+    "content": "content---docs-guides-access-credentials-auth-tokenc-81-d0d"
   },
-  "/docs/guides/auth/managing-user-account/update-account-password-a1d": {
+  "/docs/guides/access-credentials/cors-19f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-auth-managing-user-account-update-account-passwordf-9-a-c4b"
+    "content": "content---docs-guides-access-credentials-cors-0-bc-bfe"
   },
-  "/docs/guides/auth/managing-user-account/update-forgotten-password-cb2": {
+  "/docs/guides/access-credentials/device-id-token-81d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-auth-managing-user-account-update-forgotten-password-893-e3f"
+    "content": "content---docs-guides-access-credentials-device-id-token-2-e-5-3e2"
   },
-  "/docs/guides/auth/managing-user-account/update-user-profile-e73": {
+  "/docs/guides/access-credentials/secret-key-78f": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-auth-managing-user-account-update-user-profileaa-3-bee"
+    "content": "content---docs-guides-access-credentials-secret-key-7-d-1-eca"
   },
-  "/docs/guides/auth/register-70d": {
+  "/docs/guides/access-credentials/user-and-administrator-e05": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-auth-registere-0-a-5c2"
+    "content": "content---docs-guides-access-credentials-user-and-administrator-031-e16"
+  },
+  "/docs/guides/access-credentials/username-and-password-6ae": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-access-credentials-username-and-password-56-f-197"
   },
   "/docs/guides/canvas-a09": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-canvasb-70-633"
   },
-  "/docs/guides/datastore/collections-5eb": {
+  "/docs/guides/datastore/collections-7bb": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-datastore-collections-527-3f0"
   },
-  "/docs/guides/datastore/overview-ce0": {
+  "/docs/guides/datastore/overview-c0a": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-datastore-overview-06-a-c02"
   },
-  "/docs/guides/datastore/querying-ea7": {
+  "/docs/guides/datastore/querying-6fb": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-datastore-queryingf-8-a-f2e"
   },
@@ -249,7 +253,7 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-devices-datac-3-b-8a2"
   },
-  "/docs/guides/devices/model-9d4": {
+  "/docs/guides/devices/model-c1d": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-devices-model-101-3c2"
   },
@@ -257,25 +261,37 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-devices-pairing-54-e-950"
   },
-  "/docs/guides/hardware/handling-connection-status-043": {
+  "/docs/guides/hardware/handling-connection-status-de2": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-hardware-handling-connection-status-998-428"
   },
-  "/docs/guides/hardware/handling-device-variables-bf9": {
+  "/docs/guides/hardware/handling-device-variables-437": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-hardware-handling-device-variablesc-09-639"
   },
-  "/docs/guides/hardware/handling-updates-4c5": {
+  "/docs/guides/hardware/handling-updates-bef": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-hardware-handling-updates-9-e-3-915"
   },
-  "/docs/guides/hardware/handling-wifi-b5d": {
+  "/docs/guides/hardware/handling-wifi-5ea": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-hardware-handling-wifi-45-d-c0d"
   },
-  "/docs/guides/hardware/setting-up-the-board-730": {
+  "/docs/guides/hardware/overview-658": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-hardware-setting-up-the-boardddb-688"
+    "content": "content---docs-guides-hardware-overviewed-9-72a"
+  },
+  "/docs/guides/hardware/setting-boards/setting-up-esp32-f9b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-setting-boards-setting-up-esp-3233-b-e83"
+  },
+  "/docs/guides/hardware/setting-boards/setting-up-esp8266-703": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-setting-boards-setting-up-esp-8266-a-11-d4a"
+  },
+  "/docs/guides/hardware/setting-boards/setting-up-raspberry-pi-423": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-hardware-setting-boards-setting-up-raspberry-pi-04-a-3ec"
   },
   "/docs/guides/hardware/wifi-connection-b4a": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -289,17 +305,29 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-guides-project-managing-a-project-5-f-2-514"
   },
-  "/docs/guides/security/access-credentials-361": {
+  "/docs/guides/users/login-d0e": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-security-access-credentials-0-e-1-b54"
+    "content": "content---docs-guides-users-login-19-f-ed2"
   },
-  "/docs/guides/security/cors-83b": {
+  "/docs/guides/users/logout-686": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-security-corscc-5-f5b"
+    "content": "content---docs-guides-users-logout-03-e-180"
   },
-  "/docs/guides/security/user-and-administrator-669": {
+  "/docs/guides/users/managing-user-account/update-account-password-c37": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-guides-security-user-and-administrator-0-d-7-722"
+    "content": "content---docs-guides-users-managing-user-account-update-account-password-25-b-989"
+  },
+  "/docs/guides/users/managing-user-account/update-forgotten-password-485": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-users-managing-user-account-update-forgotten-password-292-33c"
+  },
+  "/docs/guides/users/managing-user-account/update-user-profile-e34": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-users-managing-user-account-update-user-profilea-6-d-5f2"
+  },
+  "/docs/guides/users/register-fd3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-guides-users-register-4-cf-bcf"
   },
   "/docs/hello-world-with-iot-4d5": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -377,35 +405,35 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-auth-update-profile-4-ec-636"
   },
-  "/docs/references/client-sdk/datastore/collection/delete-04e": {
+  "/docs/references/client-sdk/datastore/collection/delete-6b6": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-collection-delete-226-3bb"
   },
-  "/docs/references/client-sdk/datastore/collection/insert-d9a": {
+  "/docs/references/client-sdk/datastore/collection/insert-a1c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-collection-insertad-0-5f6"
   },
-  "/docs/references/client-sdk/datastore/collection/overview-9d9": {
+  "/docs/references/client-sdk/datastore/collection/overview-b6b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-collection-overview-84-f-d32"
   },
-  "/docs/references/client-sdk/datastore/collection/search-e2e": {
+  "/docs/references/client-sdk/datastore/collection/search-c99": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-collection-search-22-f-ad2"
   },
-  "/docs/references/client-sdk/datastore/collection/update-902": {
+  "/docs/references/client-sdk/datastore/collection/update-985": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-collection-update-0-dd-a07"
   },
-  "/docs/references/client-sdk/datastore/drop-3ae": {
+  "/docs/references/client-sdk/datastore/drop-d92": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-drop-1-bc-116"
   },
-  "/docs/references/client-sdk/datastore/list-ea9": {
+  "/docs/references/client-sdk/datastore/list-e22": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-listf-5-a-b6c"
   },
-  "/docs/references/client-sdk/datastore/overview-c6a": {
+  "/docs/references/client-sdk/datastore/overview-78b": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-datastore-overview-196-ded"
   },
@@ -477,15 +505,15 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-client-sdk-on-connection-455-829"
   },
-  "/docs/references/device-sdk/datastore/collection/insert-c42": {
+  "/docs/references/device-sdk/datastore/collection/insert-b18": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-device-sdk-datastore-collection-insert-3-dd-ae8"
   },
-  "/docs/references/device-sdk/datastore/collection/search-374": {
+  "/docs/references/device-sdk/datastore/collection/search-b91": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-device-sdk-datastore-collection-search-43-d-5be"
   },
-  "/docs/references/device-sdk/datastore/overview-e0d": {
+  "/docs/references/device-sdk/datastore/overview-ff2": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-references-device-sdk-datastore-overviewf-86-4bd"
   },

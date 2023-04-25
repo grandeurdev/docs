@@ -38,12 +38,6 @@
         "label": "Guides",
         "items": [
           {
-            "type": "link",
-            "label": "Canvas",
-            "href": "/docs/guides/canvas",
-            "docId": "guides/canvas"
-          },
-          {
             "type": "category",
             "label": "Project",
             "items": [
@@ -65,66 +59,8 @@
           },
           {
             "type": "category",
-            "label": "Auth",
-            "items": [
-              {
-                "type": "link",
-                "label": "Register",
-                "href": "/docs/guides/auth/register",
-                "docId": "guides/auth/register"
-              },
-              {
-                "type": "link",
-                "label": "Login",
-                "href": "/docs/guides/auth/login",
-                "docId": "guides/auth/login"
-              },
-              {
-                "type": "link",
-                "label": "Logout",
-                "href": "/docs/guides/auth/logout",
-                "docId": "guides/auth/logout"
-              },
-              {
-                "type": "category",
-                "label": "Managing user account",
-                "items": [
-                  {
-                    "type": "link",
-                    "label": "Update account password",
-                    "href": "/docs/guides/auth/managing-user-account/update-account-password",
-                    "docId": "guides/auth/managing-user-account/update-account-password"
-                  },
-                  {
-                    "type": "link",
-                    "label": "Update forgotten password",
-                    "href": "/docs/guides/auth/managing-user-account/update-forgotten-password",
-                    "docId": "guides/auth/managing-user-account/update-forgotten-password"
-                  },
-                  {
-                    "type": "link",
-                    "label": "Update user profile",
-                    "href": "/docs/guides/auth/managing-user-account/update-user-profile",
-                    "docId": "guides/auth/managing-user-account/update-user-profile"
-                  }
-                ],
-                "collapsed": true,
-                "collapsible": true
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
-          },
-          {
-            "type": "category",
             "label": "Devices",
             "items": [
-              {
-                "type": "link",
-                "label": "Model",
-                "href": "/docs/guides/devices/model",
-                "docId": "guides/devices/model"
-              },
               {
                 "type": "link",
                 "label": "Data",
@@ -142,56 +78,10 @@
             "collapsible": true
           },
           {
-            "type": "category",
-            "label": "Datastore",
-            "items": [
-              {
-                "type": "link",
-                "label": "Overview",
-                "href": "/docs/guides/datastore/overview",
-                "docId": "guides/datastore/overview"
-              },
-              {
-                "type": "link",
-                "label": "Collections",
-                "href": "/docs/guides/datastore/collections",
-                "docId": "guides/datastore/collections"
-              },
-              {
-                "type": "link",
-                "label": "Querying",
-                "href": "/docs/guides/datastore/querying",
-                "docId": "guides/datastore/querying"
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
-          },
-          {
-            "type": "category",
-            "label": "Security",
-            "items": [
-              {
-                "type": "link",
-                "label": "User and administrator",
-                "href": "/docs/guides/security/user-and-administrator",
-                "docId": "guides/security/user-and-administrator"
-              },
-              {
-                "type": "link",
-                "label": "CORS",
-                "href": "/docs/guides/security/cors",
-                "docId": "guides/security/cors"
-              },
-              {
-                "type": "link",
-                "label": "Access Credentials",
-                "href": "/docs/guides/security/access-credentials",
-                "docId": "guides/security/access-credentials"
-              }
-            ],
-            "collapsed": true,
-            "collapsible": true
+            "type": "link",
+            "label": "Canvas",
+            "href": "/docs/guides/canvas",
+            "docId": "guides/canvas"
           },
           {
             "type": "category",
@@ -199,33 +89,131 @@
             "items": [
               {
                 "type": "link",
-                "label": "Setting up the board",
-                "href": "/docs/guides/hardware/setting-up-the-board",
-                "docId": "guides/hardware/setting-up-the-board"
+                "label": "Overview",
+                "href": "/docs/guides/hardware/overview",
+                "docId": "guides/hardware/overview"
+              },
+              {
+                "type": "category",
+                "label": "Setting up Boards",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Setting Up ESP32",
+                    "href": "/docs/guides/hardware/setting-boards/setting-up-esp32",
+                    "docId": "guides/hardware/setting-boards/setting-up-esp32"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Setting up ESP8266",
+                    "href": "/docs/guides/hardware/setting-boards/setting-up-esp8266",
+                    "docId": "guides/hardware/setting-boards/setting-up-esp8266"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Setting up Raspberry Pi",
+                    "href": "/docs/guides/hardware/setting-boards/setting-up-raspberry-pi",
+                    "docId": "guides/hardware/setting-boards/setting-up-raspberry-pi"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Access Credentials",
+            "items": [
+              {
+                "type": "link",
+                "label": "CORS",
+                "href": "/docs/guides/access-credentials/cors",
+                "docId": "guides/access-credentials/cors"
               },
               {
                 "type": "link",
-                "label": "Handling WiFi",
-                "href": "/docs/guides/hardware/handling-wifi",
-                "docId": "guides/hardware/handling-wifi"
+                "label": "Access Credentials",
+                "href": "/docs/guides/access-credentials/secret-key",
+                "docId": "guides/access-credentials/secret-key"
               },
               {
                 "type": "link",
-                "label": "Handling Connection Status",
-                "href": "/docs/guides/hardware/handling-connection-status",
-                "docId": "guides/hardware/handling-connection-status"
+                "label": "Auth Token",
+                "href": "/docs/guides/access-credentials/auth-token",
+                "docId": "guides/access-credentials/auth-token"
               },
               {
                 "type": "link",
-                "label": "Handling Device Variables",
-                "href": "/docs/guides/hardware/handling-device-variables",
-                "docId": "guides/hardware/handling-device-variables"
+                "label": "Device Id and Token",
+                "href": "/docs/guides/access-credentials/device-id-token",
+                "docId": "guides/access-credentials/device-id-token"
               },
               {
                 "type": "link",
-                "label": "Handling Updates",
-                "href": "/docs/guides/hardware/handling-updates",
-                "docId": "guides/hardware/handling-updates"
+                "label": "API Key",
+                "href": "/docs/guides/access-credentials/api-key",
+                "docId": "guides/access-credentials/api-key"
+              },
+              {
+                "type": "link",
+                "label": "Username and Password",
+                "href": "/docs/guides/access-credentials/username-and-password",
+                "docId": "guides/access-credentials/username-and-password"
+              }
+            ],
+            "collapsed": true,
+            "collapsible": true
+          },
+          {
+            "type": "category",
+            "label": "Users",
+            "items": [
+              {
+                "type": "link",
+                "label": "Register",
+                "href": "/docs/guides/users/register",
+                "docId": "guides/users/register"
+              },
+              {
+                "type": "link",
+                "label": "Login",
+                "href": "/docs/guides/users/login",
+                "docId": "guides/users/login"
+              },
+              {
+                "type": "link",
+                "label": "Logout",
+                "href": "/docs/guides/users/logout",
+                "docId": "guides/users/logout"
+              },
+              {
+                "type": "category",
+                "label": "Managing user account",
+                "items": [
+                  {
+                    "type": "link",
+                    "label": "Update account password",
+                    "href": "/docs/guides/users/managing-user-account/update-account-password",
+                    "docId": "guides/users/managing-user-account/update-account-password"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Update forgotten password",
+                    "href": "/docs/guides/users/managing-user-account/update-forgotten-password",
+                    "docId": "guides/users/managing-user-account/update-forgotten-password"
+                  },
+                  {
+                    "type": "link",
+                    "label": "Update user profile",
+                    "href": "/docs/guides/users/managing-user-account/update-user-profile",
+                    "docId": "guides/users/managing-user-account/update-user-profile"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
               }
             ],
             "collapsed": true,
@@ -298,40 +286,6 @@
                         "label": ".on",
                         "href": "/docs/references/device-sdk/device/data/on",
                         "docId": "references/device-sdk/device/data/on"
-                      }
-                    ],
-                    "collapsed": true,
-                    "collapsible": true
-                  }
-                ],
-                "collapsed": true,
-                "collapsible": true
-              },
-              {
-                "type": "category",
-                "label": "datastore",
-                "items": [
-                  {
-                    "type": "link",
-                    "label": "Overview",
-                    "href": "/docs/references/device-sdk/datastore/overview",
-                    "docId": "references/device-sdk/datastore/overview"
-                  },
-                  {
-                    "type": "category",
-                    "label": ".collection",
-                    "items": [
-                      {
-                        "type": "link",
-                        "label": ".insert",
-                        "href": "/docs/references/device-sdk/datastore/collection/insert",
-                        "docId": "references/device-sdk/datastore/collection/insert"
-                      },
-                      {
-                        "type": "link",
-                        "label": ".search",
-                        "href": "/docs/references/device-sdk/datastore/collection/search",
-                        "docId": "references/device-sdk/datastore/collection/search"
                       }
                     ],
                     "collapsed": true,
@@ -530,70 +484,6 @@
                 ],
                 "collapsed": true,
                 "collapsible": true
-              },
-              {
-                "type": "category",
-                "label": "datastore",
-                "items": [
-                  {
-                    "type": "link",
-                    "label": "Overview",
-                    "href": "/docs/references/client-sdk/datastore/overview",
-                    "docId": "references/client-sdk/datastore/overview"
-                  },
-                  {
-                    "type": "link",
-                    "label": ".list",
-                    "href": "/docs/references/client-sdk/datastore/list",
-                    "docId": "references/client-sdk/datastore/list"
-                  },
-                  {
-                    "type": "link",
-                    "label": ".drop",
-                    "href": "/docs/references/client-sdk/datastore/drop",
-                    "docId": "references/client-sdk/datastore/drop"
-                  },
-                  {
-                    "type": "category",
-                    "label": ".collection",
-                    "items": [
-                      {
-                        "type": "link",
-                        "label": "Overview",
-                        "href": "/docs/references/client-sdk/datastore/collection/overview",
-                        "docId": "references/client-sdk/datastore/collection/overview"
-                      },
-                      {
-                        "type": "link",
-                        "label": ".insert",
-                        "href": "/docs/references/client-sdk/datastore/collection/insert",
-                        "docId": "references/client-sdk/datastore/collection/insert"
-                      },
-                      {
-                        "type": "link",
-                        "label": ".search",
-                        "href": "/docs/references/client-sdk/datastore/collection/search",
-                        "docId": "references/client-sdk/datastore/collection/search"
-                      },
-                      {
-                        "type": "link",
-                        "label": ".update",
-                        "href": "/docs/references/client-sdk/datastore/collection/update",
-                        "docId": "references/client-sdk/datastore/collection/update"
-                      },
-                      {
-                        "type": "link",
-                        "label": ".delete",
-                        "href": "/docs/references/client-sdk/datastore/collection/delete",
-                        "docId": "references/client-sdk/datastore/collection/delete"
-                      }
-                    ],
-                    "collapsed": true,
-                    "collapsible": true
-                  }
-                ],
-                "collapsed": true,
-                "collapsible": true
               }
             ],
             "collapsed": true,
@@ -704,40 +594,45 @@
       "description": "To use Grandeur in our project, let's first set it up.",
       "sidebar": "sidebar"
     },
-    "guides/auth/login": {
-      "id": "guides/auth/login",
-      "title": "Login a User",
-      "description": "After successful registration, the user can login with its credentials.",
+    "guides/access-credentials/api-key": {
+      "id": "guides/access-credentials/api-key",
+      "title": "API Key",
+      "description": "Each project is identified by a digital signature that we call the API key, just as your identification card or social security identifies you as a citizen. To connect your apps or hardware to your project's network, this is the first thing that you need to provide to any SDK. The API key is sent with every request to Grandeur and this is what tells the cloud about the project that you are requesting to.",
       "sidebar": "sidebar"
     },
-    "guides/auth/logout": {
-      "id": "guides/auth/logout",
-      "title": "Logout a User",
-      "description": "Logout serves as the most basic and important feature.",
+    "guides/access-credentials/auth-token": {
+      "id": "guides/access-credentials/auth-token",
+      "title": "Auth Token",
+      "description": "You can generate multiple auth tokens. Auth tokens lead to sandboxed access in custom apps so that multiple users",
       "sidebar": "sidebar"
     },
-    "guides/auth/managing-user-account/update-account-password": {
-      "id": "guides/auth/managing-user-account/update-account-password",
-      "title": "Update Account Password",
-      "description": "auth.changePassword()",
+    "guides/access-credentials/cors": {
+      "id": "guides/access-credentials/cors",
+      "title": "CORS",
+      "description": "In the real world, you would not want to add a new user or pair a device with that user manually every time someone buys your product. Therefore you delegate a part of your project authorities to the SDK when you plug your project's API Key in. And so a new user gets to sign up, pair, monitor and control your device through your product's companion app.",
       "sidebar": "sidebar"
     },
-    "guides/auth/managing-user-account/update-forgotten-password": {
-      "id": "guides/auth/managing-user-account/update-forgotten-password",
-      "title": "Update Forgotten Password",
-      "description": "auth.forgotPassword()",
+    "guides/access-credentials/device-id-token": {
+      "id": "guides/access-credentials/device-id-token",
+      "title": "Device ID and Token",
+      "description": "Just like the API key is your project identifier, the Device ID is your device identifier where each device gets a unique device id",
       "sidebar": "sidebar"
     },
-    "guides/auth/managing-user-account/update-user-profile": {
-      "id": "guides/auth/managing-user-account/update-user-profile",
-      "title": "Update User Profile",
-      "description": "auth.updateProfile()",
+    "guides/access-credentials/secret-key": {
+      "id": "guides/access-credentials/secret-key",
+      "title": "Secret Key",
+      "description": "Grandeur generates a secret key which acts acts as a security layer for custom apps. You pass it in your app credentials to gain complete access. Albeit not unique to each app it acts an extra layer of security as it is not transferred over the wire.",
       "sidebar": "sidebar"
     },
-    "guides/auth/register": {
-      "id": "guides/auth/register",
-      "title": "Register a New User",
-      "description": "So you've created the perfect custom app and now want to elevate the end user experience by ensuring that they can use these apps securely. This is where the whole auth concept comes into play.",
+    "guides/access-credentials/user-and-administrator": {
+      "id": "guides/access-credentials/user-and-administrator",
+      "title": "User and Administrator",
+      "description": "This topic is about the relationship between you as an administrator and your users and the access scope of both."
+    },
+    "guides/access-credentials/username-and-password": {
+      "id": "guides/access-credentials/username-and-password",
+      "title": "Username and Password",
+      "description": "Your username is an identifier and password is used as an authentication layer so that you can login into your Grandeur account. This username and password verification is also used to login into custom apps and control particular devices.",
       "sidebar": "sidebar"
     },
     "guides/canvas": {
@@ -749,32 +644,28 @@
     "guides/datastore/collections": {
       "id": "guides/datastore/collections",
       "title": "Collections",
-      "description": "Collections are essentially database tables where all of your information is stored.",
-      "sidebar": "sidebar"
+      "description": "Collections are essentially database tables where all of your information is stored."
     },
     "guides/datastore/overview": {
       "id": "guides/datastore/overview",
       "title": "Datastore",
-      "description": "Data storage is the basic requirement of a data driven application or device. We have built this feature in order to enable users to store large amount of data like logs of devices. Imagine it as an infinite storage between your apps and your devices — ensuring high availability and scalability without you ever worrying about them. Millions of your devices could be logging tons of variables each and you can just treat it as a chunk of Big Data, analyze it, pass it through AI models, and learn from it.  To access this feature simply get a reference to the storage class by calling datastore() method with the project object.",
-      "sidebar": "sidebar"
+      "description": "Data storage is the basic requirement of a data driven application or device. We have built this feature in order to enable users to store large amount of data like logs of devices. Imagine it as an infinite storage between your apps and your devices — ensuring high availability and scalability without you ever worrying about them. Millions of your devices could be logging tons of variables each and you can just treat it as a chunk of Big Data, analyze it, pass it through AI models, and learn from it.  To access this feature simply get a reference to the storage class by calling datastore() method with the project object."
     },
     "guides/datastore/querying": {
       "id": "guides/datastore/querying",
       "title": "Querying",
-      "description": "Just like SQL, querying here is used to retrieve the required data from the database. You may perform operations like select, group by, join and filtering to retrieve the required data and present it in a meaningful manner to extract significant information out of it.",
-      "sidebar": "sidebar"
+      "description": "Just like SQL, querying here is used to retrieve the required data from the database. You may perform operations like select, group by, join and filtering to retrieve the required data and present it in a meaningful manner to extract significant information out of it."
     },
     "guides/devices/data": {
       "id": "guides/devices/data",
       "title": "Data",
-      "description": "When you register a device, you make it available in your project's network. Not just that, a new namespace is created for your device in the device registry.",
+      "description": "When you register a device, you make it available in your project's network so that you can save all device data now. Device data is a space where you can save all device variables once the device comes online.",
       "sidebar": "sidebar"
     },
     "guides/devices/model": {
       "id": "guides/devices/model",
       "title": "Model",
-      "description": "To register your device, you first need to register its data model under the Models Section. Model is a way to manage and categorize devices. You can create multiple models and each model can then be associated with multiple devices. You are free to name the function whatever you want, but you have to be vigilant in the schema field while passing a variable with its value. Schema here is not strictly enforced and meant to give your device an initial state.",
-      "sidebar": "sidebar"
+      "description": "To register your device, you first need to register its data model under the Models Section. Model is a way to manage and categorize devices. You can create multiple models and each model can then be associated with multiple devices. You are free to name the function whatever you want, but you have to be vigilant in the schema field while passing a variable with its value. Schema here is not strictly enforced and meant to give your device an initial state."
     },
     "guides/devices/pairing": {
       "id": "guides/devices/pairing",
@@ -785,31 +676,45 @@
     "guides/hardware/handling-connection-status": {
       "id": "guides/hardware/handling-connection-status",
       "title": "Handling Connection Status",
-      "description": "You can also listen on SDK's connection-related events. For example, to run some code when the device makes a successful connection to Grandeur or when the device's connection to Grandeur breaks, you can wrap that code in \"a function that takes a bool and returns void\" and pass it to Grandeur::Project's onConnection() function.",
-      "sidebar": "sidebar"
+      "description": "You can also listen on SDK's connection-related events. For example, to run some code when the device makes a successful connection to Grandeur or when the device's connection to Grandeur breaks, you can wrap that code in \"a function that takes a bool and returns void\" and pass it to Grandeur::Project's onConnection() function."
     },
     "guides/hardware/handling-device-variables": {
       "id": "guides/hardware/handling-device-variables",
       "title": "Handling Device Variables",
-      "description": "In IoT, every device in the network wants to publish some variables for users or other devices in the network to see. On Grandeur, we call these the data of the device. you can store the device variables as key-value pairs, like the device's voltage or current or its ON/OFF state. Keeping the online copy of device variables (aka. data) updated gives you many advantages: you can see if your device is ON or OFF at any moment just by fetching its state from Grandeur.",
-      "sidebar": "sidebar"
+      "description": "In IoT, every device in the network wants to publish some variables for users or other devices in the network to see. On Grandeur, we call these the data of the device. you can store the device variables as key-value pairs, like the device's voltage or current or its ON/OFF state. Keeping the online copy of device variables (aka. data) updated gives you many advantages: you can see if your device is ON or OFF at any moment just by fetching its state from Grandeur."
     },
     "guides/hardware/handling-updates": {
       "id": "guides/hardware/handling-updates",
       "title": "Handling Updates",
-      "description": "You can not only get()/set() but also subscribe to a device variable, which means if an update occurs in that variable at any time, the device will instantly get it. To subscribe to a variable, you just need to pass the variable name and a function to device(deviceId).data().on(). The function you pass to device(deviceId).data().on() is set as an update handler for that variable, which means the code inside that function will be run whenever that variable is updated.",
-      "sidebar": "sidebar"
+      "description": "You can not only get()/set() but also subscribe to a device variable, which means if an update occurs in that variable at any time, the device will instantly get it. To subscribe to a variable, you just need to pass the variable name and a function to device(deviceId).data().on(). The function you pass to device(deviceId).data().on() is set as an update handler for that variable, which means the code inside that function will be run whenever that variable is updated."
     },
     "guides/hardware/handling-wifi": {
       "id": "guides/hardware/handling-wifi",
       "title": "Handling the WiFi",
-      "description": "You can use a WiFi library corresponding to your microcontroller to handle your device's WiFi. Here are some popular ones:",
+      "description": "You can use a WiFi library corresponding to your microcontroller to handle your device's WiFi. Here are some popular ones:"
+    },
+    "guides/hardware/overview": {
+      "id": "guides/hardware/overview",
+      "title": "Overview",
+      "description": "Hardware ka overview",
       "sidebar": "sidebar"
     },
-    "guides/hardware/setting-up-the-board": {
-      "id": "guides/hardware/setting-up-the-board",
-      "title": "Setting up Boards",
-      "description": "Setup ESP8266 for Arduino",
+    "guides/hardware/setting-boards/setting-up-esp32": {
+      "id": "guides/hardware/setting-boards/setting-up-esp32",
+      "title": "Setting up ESP32",
+      "description": "- Start Arduino IDE and open the Preferences window.",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/setting-boards/setting-up-esp8266": {
+      "id": "guides/hardware/setting-boards/setting-up-esp8266",
+      "title": "Setting up ESP8266",
+      "description": "- Start Arduino IDE and open the Preferences window.",
+      "sidebar": "sidebar"
+    },
+    "guides/hardware/setting-boards/setting-up-raspberry-pi": {
+      "id": "guides/hardware/setting-boards/setting-up-raspberry-pi",
+      "title": "Setting up RaspberryPi",
+      "description": "To read more about it click here.",
       "sidebar": "sidebar"
     },
     "guides/hardware/wifi-connection": {
@@ -819,7 +724,7 @@
     },
     "guides/project/api-key": {
       "id": "guides/project/api-key",
-      "title": "API Key",
+      "title": "Using API Key",
       "description": "Each project is identified by a digital signature that we call the API key, just as your identification card or social security identifies you as a citizen. To connect your apps or hardware to your project's network, this is the first thing that you need to provide to any SDK. The API key is sent with every request to Grandeur and this is what tells the cloud about the project that you are requesting to.",
       "sidebar": "sidebar"
     },
@@ -829,22 +734,40 @@
       "description": "A project is the first thing you need to create to start working with Grandeur. A project is like a namespace, a completely isolated network of users and devices, along with a separate datastore. While you can create an unlimited number of projects, but no two projects can interact or share anything with one other.",
       "sidebar": "sidebar"
     },
-    "guides/security/access-credentials": {
-      "id": "guides/security/access-credentials",
-      "title": "Access Credentials",
-      "description": "Grandeur generates a secret key which acts as an imperative access credential in addition to the API key. This access token along with the API Key is what authorises the device's connection to Grandeur. You pass in your app credentials to gain complete access. The secret key provides an extra layer of security as it is not transferred over wire.",
+    "guides/users/login": {
+      "id": "guides/users/login",
+      "title": "Login a User",
+      "description": "After successful registration, the user can login with its credentials.",
       "sidebar": "sidebar"
     },
-    "guides/security/cors": {
-      "id": "guides/security/cors",
-      "title": "CORS",
-      "description": "In the real world, you would not want to add a new user or pair a device with that user manually every time someone buys your product. Therefore you delegate a part of your project authorities to the SDK when you plug your project's API Key in. And so a new user gets to sign up, pair, monitor and control your device through your product's companion app.",
+    "guides/users/logout": {
+      "id": "guides/users/logout",
+      "title": "Logout a User",
+      "description": "Logout serves as the most basic and important feature.",
       "sidebar": "sidebar"
     },
-    "guides/security/user-and-administrator": {
-      "id": "guides/security/user-and-administrator",
-      "title": "User and Administrator",
-      "description": "This topic is about the relationship between you as an administrator and your users and the access scope of both.",
+    "guides/users/managing-user-account/update-account-password": {
+      "id": "guides/users/managing-user-account/update-account-password",
+      "title": "Update Account Password",
+      "description": "auth.changePassword()",
+      "sidebar": "sidebar"
+    },
+    "guides/users/managing-user-account/update-forgotten-password": {
+      "id": "guides/users/managing-user-account/update-forgotten-password",
+      "title": "Update Forgotten Password",
+      "description": "auth.forgotPassword()",
+      "sidebar": "sidebar"
+    },
+    "guides/users/managing-user-account/update-user-profile": {
+      "id": "guides/users/managing-user-account/update-user-profile",
+      "title": "Update User Profile",
+      "description": "auth.updateProfile()",
+      "sidebar": "sidebar"
+    },
+    "guides/users/register": {
+      "id": "guides/users/register",
+      "title": "Register a New User",
+      "description": "So you've created the perfect custom app and now want to elevate the end user experience by ensuring that they can use these apps securely. This is where the whole auth concept comes into play.",
       "sidebar": "sidebar"
     },
     "hello-world-with-iot": {
@@ -964,50 +887,42 @@
     "references/client-sdk/datastore/collection/delete": {
       "id": "references/client-sdk/datastore/collection/delete",
       "title": "collection.delete",
-      "description": "This method can be used to delete a document from a collection. It accepts a json object which specifies the match condition and returns the count of total deleted documents. It accepts following arguments",
-      "sidebar": "sidebar"
+      "description": "This method can be used to delete a document from a collection. It accepts a json object which specifies the match condition and returns the count of total deleted documents. It accepts following arguments"
     },
     "references/client-sdk/datastore/collection/insert": {
       "id": "references/client-sdk/datastore/collection/insert",
       "title": "collection.insert",
-      "description": "This method can be used to insert a json object/document into a collection. It accepts an array of json objects (so you can insert one or many documents into a collection with single function call). It returns the ids of inserted documents in response (we automatically assign a unique id to each document before actually inserting it into the datastore - primary key). It accepts following arguments",
-      "sidebar": "sidebar"
+      "description": "This method can be used to insert a json object/document into a collection. It accepts an array of json objects (so you can insert one or many documents into a collection with single function call). It returns the ids of inserted documents in response (we automatically assign a unique id to each document before actually inserting it into the datastore - primary key). It accepts following arguments"
     },
     "references/client-sdk/datastore/collection/overview": {
       "id": "references/client-sdk/datastore/collection/overview",
       "title": "Overview",
-      "description": "From the datastore class, you can get a reference to a collection in order to execute a query or insert new documents into it.",
-      "sidebar": "sidebar"
+      "description": "From the datastore class, you can get a reference to a collection in order to execute a query or insert new documents into it."
     },
     "references/client-sdk/datastore/collection/search": {
       "id": "references/client-sdk/datastore/collection/search",
       "title": "collection.search",
-      "description": "This method can be used to query documents in a collection. It accepts a match condition and fetches the documents. It accepts following arguments",
-      "sidebar": "sidebar"
+      "description": "This method can be used to query documents in a collection. It accepts a match condition and fetches the documents. It accepts following arguments"
     },
     "references/client-sdk/datastore/collection/update": {
       "id": "references/client-sdk/datastore/collection/update",
       "title": "collection.update",
-      "description": "This method can be used to update a document in a collection. It accepts a json object which specifies the match condition and returns the count of total updated documents. It accepts following arguments",
-      "sidebar": "sidebar"
+      "description": "This method can be used to update a document in a collection. It accepts a json object which specifies the match condition and returns the count of total updated documents. It accepts following arguments"
     },
     "references/client-sdk/datastore/drop": {
       "id": "references/client-sdk/datastore/drop",
       "title": "datastore.drop",
-      "description": "This method deletes a collections and all of its documents from the datastore of your project. This method accpets the following input arguments",
-      "sidebar": "sidebar"
+      "description": "This method deletes a collections and all of its documents from the datastore of your project. This method accpets the following input arguments"
     },
     "references/client-sdk/datastore/list": {
       "id": "references/client-sdk/datastore/list",
       "title": "datastore.list",
-      "description": "This method returns the list of collections in the datastore of your project. This method accpets the following input arguments",
-      "sidebar": "sidebar"
+      "description": "This method returns the list of collections in the datastore of your project. This method accpets the following input arguments"
     },
     "references/client-sdk/datastore/overview": {
       "id": "references/client-sdk/datastore/overview",
       "title": "Overview",
-      "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below",
-      "sidebar": "sidebar"
+      "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below"
     },
     "references/client-sdk/devices/count": {
       "id": "references/client-sdk/devices/count",
@@ -1114,20 +1029,17 @@
     "references/device-sdk/datastore/collection/insert": {
       "id": "references/device-sdk/datastore/collection/insert",
       "title": "insert",
-      "description": "This method inserts documents into datastore.",
-      "sidebar": "sidebar"
+      "description": "This method inserts documents into datastore."
     },
     "references/device-sdk/datastore/collection/search": {
       "id": "references/device-sdk/datastore/collection/search",
       "title": "search",
-      "description": "| Name       | Type |   Description |",
-      "sidebar": "sidebar"
+      "description": "| Name       | Type |   Description |"
     },
     "references/device-sdk/datastore/overview": {
       "id": "references/device-sdk/datastore/overview",
       "title": "Overview",
-      "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below",
-      "sidebar": "sidebar"
+      "description": "Data storage is the basic requirement of a data driven application or device. We have build this feature in order to enable users to store large amount of data like logs of devices. To access this feature simply get a reference to the storage class by calling datastore() method with the project object. This is illustrated as below"
     },
     "references/device-sdk/device/data/get": {
       "id": "references/device-sdk/device/data/get",

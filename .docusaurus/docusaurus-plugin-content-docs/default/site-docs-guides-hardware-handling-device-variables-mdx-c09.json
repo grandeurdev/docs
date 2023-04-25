@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Handling Device Variables"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Handling Connection Status",
-    "permalink": "/docs/guides/hardware/handling-connection-status"
-  },
-  "next": {
-    "title": "Handling Updates",
-    "permalink": "/docs/guides/hardware/handling-updates"
   }
 }

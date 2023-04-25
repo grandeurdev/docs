@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "collection.insert"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Overview",
-    "permalink": "/docs/references/client-sdk/datastore/collection/overview"
-  },
-  "next": {
-    "title": "collection.search",
-    "permalink": "/docs/references/client-sdk/datastore/collection/search"
   }
 }

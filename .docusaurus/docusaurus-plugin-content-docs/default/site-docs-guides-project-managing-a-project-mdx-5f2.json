@@ -16,11 +16,11 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "API Key",
+    "title": "Using API Key",
     "permalink": "/docs/guides/project/api-key"
   },
   "next": {
-    "title": "Register a New User",
-    "permalink": "/docs/guides/auth/register"
+    "title": "Data",
+    "permalink": "/docs/guides/devices/data"
   }
 }

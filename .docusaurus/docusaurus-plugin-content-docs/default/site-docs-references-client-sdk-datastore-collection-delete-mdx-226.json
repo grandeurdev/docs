@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "collection.delete"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "collection.update",
-    "permalink": "/docs/references/client-sdk/datastore/collection/update"
-  },
-  "next": {
-    "title": "Overview",
-    "permalink": "/docs/references/canvas/overview"
   }
 }

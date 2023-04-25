@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Handling the WiFi"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Setting up Boards",
-    "permalink": "/docs/guides/hardware/setting-up-the-board"
-  },
-  "next": {
-    "title": "Handling Connection Status",
-    "permalink": "/docs/guides/hardware/handling-connection-status"
   }
 }

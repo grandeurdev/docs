@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Collections"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Datastore",
-    "permalink": "/docs/guides/datastore/overview"
-  },
-  "next": {
-    "title": "Querying",
-    "permalink": "/docs/guides/datastore/querying"
   }
 }

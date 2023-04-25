@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "search"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "insert",
-    "permalink": "/docs/references/device-sdk/datastore/collection/insert"
-  },
-  "next": {
-    "title": "Installation",
-    "permalink": "/docs/references/client-sdk/installation"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/setting-boards/setting-up-raspberry-pi",
+  "id": "guides/hardware/setting-boards/setting-up-raspberry-pi",
+  "title": "Setting up RaspberryPi",
+  "description": "To read more about it click here.",
+  "source": "@site/docs/guides/hardware/setting-boards/setting-up-raspberry-pi.mdx",
+  "sourceDirName": "guides/hardware/setting-boards",
+  "slug": "/guides/hardware/setting-boards/setting-up-raspberry-pi",
+  "permalink": "/docs/guides/hardware/setting-boards/setting-up-raspberry-pi",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/setting-boards/setting-up-raspberry-pi.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Setting up RaspberryPi"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Setting up ESP8266",
+    "permalink": "/docs/guides/hardware/setting-boards/setting-up-esp8266"
+  },
+  "next": {
+    "title": "CORS",
+    "permalink": "/docs/guides/access-credentials/cors"
+  }
+}

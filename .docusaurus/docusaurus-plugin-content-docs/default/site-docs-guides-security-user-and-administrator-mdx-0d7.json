@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "User and Administrator"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Querying",
-    "permalink": "/docs/guides/datastore/querying"
-  },
-  "next": {
-    "title": "CORS",
-    "permalink": "/docs/guides/security/cors"
   }
 }

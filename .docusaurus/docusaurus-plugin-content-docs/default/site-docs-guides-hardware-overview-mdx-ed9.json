@@ -1,0 +1,26 @@
+{
+  "unversionedId": "guides/hardware/overview",
+  "id": "guides/hardware/overview",
+  "title": "Overview",
+  "description": "Hardware ka overview",
+  "source": "@site/docs/guides/hardware/overview.mdx",
+  "sourceDirName": "guides/hardware",
+  "slug": "/guides/hardware/overview",
+  "permalink": "/docs/guides/hardware/overview",
+  "draft": false,
+  "editUrl": "https://github.com/grandeurdev/docs/tree/main/docs/guides/hardware/overview.mdx",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Overview"
+  },
+  "sidebar": "sidebar",
+  "previous": {
+    "title": "Canvas",
+    "permalink": "/docs/guides/canvas"
+  },
+  "next": {
+    "title": "Setting up ESP32",
+    "permalink": "/docs/guides/hardware/setting-boards/setting-up-esp32"
+  }
+}

@@ -26,33 +26,37 @@
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/auth/login",
-              "path": "/docs/guides/auth/login",
+              "id": "guides/access-credentials/api-key",
+              "path": "/docs/guides/access-credentials/api-key",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/auth/logout",
-              "path": "/docs/guides/auth/logout",
+              "id": "guides/access-credentials/auth-token",
+              "path": "/docs/guides/access-credentials/auth-token",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/auth/managing-user-account/update-account-password",
-              "path": "/docs/guides/auth/managing-user-account/update-account-password",
+              "id": "guides/access-credentials/cors",
+              "path": "/docs/guides/access-credentials/cors",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/auth/managing-user-account/update-forgotten-password",
-              "path": "/docs/guides/auth/managing-user-account/update-forgotten-password",
+              "id": "guides/access-credentials/device-id-token",
+              "path": "/docs/guides/access-credentials/device-id-token",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/auth/managing-user-account/update-user-profile",
-              "path": "/docs/guides/auth/managing-user-account/update-user-profile",
+              "id": "guides/access-credentials/secret-key",
+              "path": "/docs/guides/access-credentials/secret-key",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/auth/register",
-              "path": "/docs/guides/auth/register",
+              "id": "guides/access-credentials/user-and-administrator",
+              "path": "/docs/guides/access-credentials/user-and-administrator"
+            },
+            {
+              "id": "guides/access-credentials/username-and-password",
+              "path": "/docs/guides/access-credentials/username-and-password",
               "sidebar": "sidebar"
             },
             {
@@ -62,18 +66,15 @@
             },
             {
               "id": "guides/datastore/collections",
-              "path": "/docs/guides/datastore/collections",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/datastore/collections"
             },
             {
               "id": "guides/datastore/overview",
-              "path": "/docs/guides/datastore/overview",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/datastore/overview"
             },
             {
               "id": "guides/datastore/querying",
-              "path": "/docs/guides/datastore/querying",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/datastore/querying"
             },
             {
               "id": "guides/devices/data",
@@ -82,8 +83,7 @@
             },
             {
               "id": "guides/devices/model",
-              "path": "/docs/guides/devices/model",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/devices/model"
             },
             {
               "id": "guides/devices/pairing",
@@ -92,27 +92,38 @@
             },
             {
               "id": "guides/hardware/handling-connection-status",
-              "path": "/docs/guides/hardware/handling-connection-status",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/hardware/handling-connection-status"
             },
             {
               "id": "guides/hardware/handling-device-variables",
-              "path": "/docs/guides/hardware/handling-device-variables",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/hardware/handling-device-variables"
             },
             {
               "id": "guides/hardware/handling-updates",
-              "path": "/docs/guides/hardware/handling-updates",
-              "sidebar": "sidebar"
+              "path": "/docs/guides/hardware/handling-updates"
             },
             {
               "id": "guides/hardware/handling-wifi",
-              "path": "/docs/guides/hardware/handling-wifi",
+              "path": "/docs/guides/hardware/handling-wifi"
+            },
+            {
+              "id": "guides/hardware/overview",
+              "path": "/docs/guides/hardware/overview",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/hardware/setting-up-the-board",
-              "path": "/docs/guides/hardware/setting-up-the-board",
+              "id": "guides/hardware/setting-boards/setting-up-esp32",
+              "path": "/docs/guides/hardware/setting-boards/setting-up-esp32",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/setting-boards/setting-up-esp8266",
+              "path": "/docs/guides/hardware/setting-boards/setting-up-esp8266",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/hardware/setting-boards/setting-up-raspberry-pi",
+              "path": "/docs/guides/hardware/setting-boards/setting-up-raspberry-pi",
               "sidebar": "sidebar"
             },
             {
@@ -130,18 +141,33 @@
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/security/access-credentials",
-              "path": "/docs/guides/security/access-credentials",
+              "id": "guides/users/login",
+              "path": "/docs/guides/users/login",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/security/cors",
-              "path": "/docs/guides/security/cors",
+              "id": "guides/users/logout",
+              "path": "/docs/guides/users/logout",
               "sidebar": "sidebar"
             },
             {
-              "id": "guides/security/user-and-administrator",
-              "path": "/docs/guides/security/user-and-administrator",
+              "id": "guides/users/managing-user-account/update-account-password",
+              "path": "/docs/guides/users/managing-user-account/update-account-password",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/users/managing-user-account/update-forgotten-password",
+              "path": "/docs/guides/users/managing-user-account/update-forgotten-password",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/users/managing-user-account/update-user-profile",
+              "path": "/docs/guides/users/managing-user-account/update-user-profile",
+              "sidebar": "sidebar"
+            },
+            {
+              "id": "guides/users/register",
+              "path": "/docs/guides/users/register",
               "sidebar": "sidebar"
             },
             {
@@ -241,43 +267,35 @@
             },
             {
               "id": "references/client-sdk/datastore/collection/delete",
-              "path": "/docs/references/client-sdk/datastore/collection/delete",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/collection/delete"
             },
             {
               "id": "references/client-sdk/datastore/collection/insert",
-              "path": "/docs/references/client-sdk/datastore/collection/insert",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/collection/insert"
             },
             {
               "id": "references/client-sdk/datastore/collection/overview",
-              "path": "/docs/references/client-sdk/datastore/collection/overview",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/collection/overview"
             },
             {
               "id": "references/client-sdk/datastore/collection/search",
-              "path": "/docs/references/client-sdk/datastore/collection/search",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/collection/search"
             },
             {
               "id": "references/client-sdk/datastore/collection/update",
-              "path": "/docs/references/client-sdk/datastore/collection/update",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/collection/update"
             },
             {
               "id": "references/client-sdk/datastore/drop",
-              "path": "/docs/references/client-sdk/datastore/drop",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/drop"
             },
             {
               "id": "references/client-sdk/datastore/list",
-              "path": "/docs/references/client-sdk/datastore/list",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/list"
             },
             {
               "id": "references/client-sdk/datastore/overview",
-              "path": "/docs/references/client-sdk/datastore/overview",
-              "sidebar": "sidebar"
+              "path": "/docs/references/client-sdk/datastore/overview"
             },
             {
               "id": "references/client-sdk/devices/count",
@@ -366,18 +384,15 @@
             },
             {
               "id": "references/device-sdk/datastore/collection/insert",
-              "path": "/docs/references/device-sdk/datastore/collection/insert",
-              "sidebar": "sidebar"
+              "path": "/docs/references/device-sdk/datastore/collection/insert"
             },
             {
               "id": "references/device-sdk/datastore/collection/search",
-              "path": "/docs/references/device-sdk/datastore/collection/search",
-              "sidebar": "sidebar"
+              "path": "/docs/references/device-sdk/datastore/collection/search"
             },
             {
               "id": "references/device-sdk/datastore/overview",
-              "path": "/docs/references/device-sdk/datastore/overview",
-              "sidebar": "sidebar"
+              "path": "/docs/references/device-sdk/datastore/overview"
             },
             {
               "id": "references/device-sdk/device/data/get",

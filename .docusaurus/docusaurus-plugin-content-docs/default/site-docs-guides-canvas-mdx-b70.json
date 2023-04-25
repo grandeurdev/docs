@@ -16,11 +16,11 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "Builing Your Custom App",
-    "permalink": "/docs/build-your-custom-app"
+    "title": "Pairing",
+    "permalink": "/docs/guides/devices/pairing"
   },
   "next": {
-    "title": "API Key",
-    "permalink": "/docs/guides/project/api-key"
+    "title": "Overview",
+    "permalink": "/docs/guides/hardware/overview"
   }
 }

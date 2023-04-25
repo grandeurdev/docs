@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "collection.update"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "collection.search",
-    "permalink": "/docs/references/client-sdk/datastore/collection/search"
-  },
-  "next": {
-    "title": "collection.delete",
-    "permalink": "/docs/references/client-sdk/datastore/collection/delete"
   }
 }

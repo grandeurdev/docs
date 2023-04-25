@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "datastore.drop"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "datastore.list",
-    "permalink": "/docs/references/client-sdk/datastore/list"
-  },
-  "next": {
-    "title": "Overview",
-    "permalink": "/docs/references/client-sdk/datastore/collection/overview"
   }
 }

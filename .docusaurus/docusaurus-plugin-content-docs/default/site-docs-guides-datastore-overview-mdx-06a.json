@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Datastore"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Pairing",
-    "permalink": "/docs/guides/devices/pairing"
-  },
-  "next": {
-    "title": "Collections",
-    "permalink": "/docs/guides/datastore/collections"
   }
 }

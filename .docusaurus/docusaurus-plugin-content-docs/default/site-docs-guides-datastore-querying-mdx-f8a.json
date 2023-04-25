@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Querying"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Collections",
-    "permalink": "/docs/guides/datastore/collections"
-  },
-  "next": {
-    "title": "User and Administrator",
-    "permalink": "/docs/guides/security/user-and-administrator"
   }
 }

@@ -368,25 +368,6 @@ async function updateState() {
 start();
 ```
 
-Here is how this app mainly works:
-
-![State Diagram](/demos/js-app/test.png)
-
-So in short, when the app loads it shows a login page through which we can log into our specified user account.
-After logging in, it establishes the communication channel with the Cloud using the API key, access key and token. And when the button clicking calls the `updateState` function, we send a request to the Cloud to update the state variable.
-Once the user has performed the required operation, he can logout and return to the login screen.
-
-We get the device name and device data through data.get() to work with. Later, we subscribe to the device-state by data.on() so that we can get notified in chase of change of any event,
-To learn more about them click [here](/references/client-sdk/devices/device-device/device-data/device-data-get).
-
-![Display Device](/demos/js-app/display-device.webp)
-
-The event listener on a device toggles the state of that device. Also since the app subscribed to the device state, its listener is automatically fired once the state is updated on clicking on/off button, and updates the app's UI to represent that the state has been changed (Grandeur is event driven, remember!).
-
-![Update State](/demos/js-app/update-state.webp)
-
-This is how your complete app will look like and function:
-
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/js-app/js-app.webm" />
 
 ## Testing Locally
@@ -400,4 +381,4 @@ Here we are finally. Let's test what we have build. We go to run our web app to 
   icon appear at the bottom.
 </Callout>
 
-But there's a security measure. You cannot send data from your app to the Cloud unless you [whitelist your domain](/guides/security/cors) in the settings section. Your domain is the address that is shown in the browser's URL bar when you open your app. This prevents all the unidentified sources from accessing your Cloud project's data in case you lose your access key.
+But there's a security measure. You cannot send data from your app to the Cloud unless you [whitelist your domain](./guides/access-credentials /cors.mdx) in the settings section. Your domain is the address that is shown in the browser's URL bar when you open your app. This prevents all the unidentified sources from accessing your Cloud project's data in case you lose your access key.

@@ -16,8 +16,8 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "collection.delete",
-    "permalink": "/docs/references/client-sdk/datastore/collection/delete"
+    "title": "updateProfile",
+    "permalink": "/docs/references/client-sdk/auth/update-profile"
   },
   "next": {
     "title": "Button",

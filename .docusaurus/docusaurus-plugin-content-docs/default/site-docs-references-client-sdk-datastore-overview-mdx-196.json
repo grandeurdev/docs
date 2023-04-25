@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Overview"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "updateProfile",
-    "permalink": "/docs/references/client-sdk/auth/update-profile"
-  },
-  "next": {
-    "title": "datastore.list",
-    "permalink": "/docs/references/client-sdk/datastore/list"
   }
 }

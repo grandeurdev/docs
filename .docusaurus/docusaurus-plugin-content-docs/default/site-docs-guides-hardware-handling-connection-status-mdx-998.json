@@ -13,14 +13,5 @@
   "version": "current",
   "frontMatter": {
     "title": "Handling Connection Status"
-  },
-  "sidebar": "sidebar",
-  "previous": {
-    "title": "Handling the WiFi",
-    "permalink": "/docs/guides/hardware/handling-wifi"
-  },
-  "next": {
-    "title": "Handling Device Variables",
-    "permalink": "/docs/guides/hardware/handling-device-variables"
   }
 }

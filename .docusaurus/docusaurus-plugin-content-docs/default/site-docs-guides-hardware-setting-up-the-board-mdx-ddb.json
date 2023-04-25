@@ -16,11 +16,11 @@
   },
   "sidebar": "sidebar",
   "previous": {
-    "title": "Access Credentials",
-    "permalink": "/docs/guides/security/access-credentials"
+    "title": "username-and-password",
+    "permalink": "/docs/guides/access-credentials/username-and-password"
   },
   "next": {
-    "title": "Handling the WiFi",
-    "permalink": "/docs/guides/hardware/handling-wifi"
+    "title": "Installation",
+    "permalink": "/docs/references/device-sdk/installation"
   }
 }
