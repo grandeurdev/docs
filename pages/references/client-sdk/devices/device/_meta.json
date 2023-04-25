@@ -1,0 +1,8 @@
+{
+    "get": ".get()",
+    "set": ".set()",
+    "on": ".on()",
+    "pair": ".pair()",
+    "unpair": ".unpair()",
+    "data": ".data()"
+}

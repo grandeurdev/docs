@@ -1,0 +1,9 @@
+{
+    "api-key": "API key",
+    "device-id-token": "Device ID and token",
+    "secret-key": "Secret",
+    "auth-token": "Auth Token",
+    "cors": "CORS",
+    "user-and-administrator": "User and administrator",
+    "username-and-password": "Username and password"
+}

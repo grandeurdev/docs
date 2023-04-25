@@ -1,9 +1,9 @@
 {
     "project": "Project",
     "devices": "Devices",
-    "auth": "Auth",
+    "users": "Users",
     "datastore": "Datastore",
     "canvas": "Canvas",
     "hardware": "Hardware",
-    "security": "Security"
+    "access-credentials": "Access Credentials"
 }

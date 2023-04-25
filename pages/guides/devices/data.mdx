@@ -5,14 +5,14 @@ import ReactPlayer from 'react-player';
 
 # Device Data
 
-When you register a device, you make it available in your project's network. Not just that, a new namespace is created for your device in the device registry. 
+When you register a device, you make it available in your project's network so that you can save all device data now. Device data is a space where you can save all device variables once the device comes online. 
+Each device comes with a privileged space in which you can save data in the form of key value pairs.
+Like suppose you have built a power meter, then you can store the voltage, current and power measured by the device in this space. 
+Or you’ve built a weather monitoring device, you can store the temperature logs. Want to keep a track of a loved ones location? You can easily log GPS data. 
+This data can be set by a device and retrieved by the app to be consumed/displayed to end user.
+Grandeur gives you a lot of control over your data. You can use multiple methods like get,set and on to access and manipulate your data.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/device-add.webm" /><br />
 
-When your device comes online, this is where all of its data is stored.
-Each device comes with a privileged space in which you can save data. Like suppose you have built a power meter, then you can store the voltage, current and power measured by the device in this space. Or you’ve built a weather monitoring device, you can store the temperature logs.  This data can be set by a device and retrieved by the app to be consumed/displayed to end user.
-This storage space is sandboxed, so only the paired users can request or update the data. You can store the data in json format and can also get/set individual key by specifying the path in dot notation.
-Grandeur gives you a lot of control over your data. You can use multiple methods to access and manipulate your data.
 
 The usage of these methods is illustrated below:
 
@@ -26,12 +26,12 @@ device.data().set();
 //Subscribe to the data update event of a device
 device.data().on();
 ```
-The device data variable is an actual physical parameter, which in layman terms serves as a super global varibale which can be accessed from anywhere. 
 
+The device data variable is an actual physical parameter, which in layman terms serves as a super global varibale which can be accessed from anywhere. 
+So essentially you can fetch your data from anywhere in the world, set any parameter immediately and subscribe to any data variable so that you get updated in case of a change. 
+This is what makes us event-driven. Any device update can be set/viewn from absolutely anywhere in the wolrd. 
 The user can also view device data:
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/view-data.webm" />
 
-
-
-
+Imagine the possibilities of what you can create with this. 
