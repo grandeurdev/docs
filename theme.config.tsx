@@ -7,7 +7,7 @@ const config: DocsThemeConfig = {
   primaryHue: 171,
 
   // Logo (change logo url later with docs url)
-  logoLink: 'https://uploads-ssl.webflow.com/61b8cbd25f7bbc2678e64784/636c954ea4dc6a3bd90b9895_Grandeur_NewLogo_SVG%201.svg',
+  logoLink: 'https://docs.grandeur.dev',
   logo: (
     <svg width="100" height="25" viewBox="0 0 80 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_1_2)">

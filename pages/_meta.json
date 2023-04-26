@@ -2,24 +2,12 @@
   "index": {
     "display": "hidden"
   },
-  "quickstart": {
-    "title": "Quickstart",
+  "*": {
     "type": "page"
   },
-  "guides": {
-    "title": "Guides",
-    "type": "page"
-  },
-  "references": {
-    "title": "References",
-    "type": "page"
-  },
-  "faqs": {
-    "title": "FAQs",
-    "type": "page"
-  },
-  "keywords": {
-    "title": "Keywords",
-    "type": "page"
-  }
+  "quickstart":  "Quickstart",
+  "guides":  "Guides",
+  "references":  "References",
+  "faqs":  "FAQs",
+  "keywords":  "Keywords"
 }
