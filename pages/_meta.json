@@ -1,10 +1,8 @@
 {
-  "index": {
-    "display": "hidden"
-  },
   "*": {
     "type": "page"
   },
+  "index": "Home",
   "quickstart":  "Quickstart",
   "guides":  "Guides",
   "references":  "References",
