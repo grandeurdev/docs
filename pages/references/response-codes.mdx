@@ -1,0 +1,181 @@
+---
+title: Response Codes
+pinned: pinned
+emoji: 🤖
+---
+
+# Response Codes
+
+```json
+{
+    "SERVER": {
+        "SERVER-DECENT-SHUTDOWN-FAILED": "Server could not be initialized.",
+        "SERVER-INVALID-ENDPOINT": "User tried to reach a non-existent endpoint."
+    },
+    "CORS": {
+        "CORS-ERROR": "User's request is unauthorized by CORS."
+    },
+    "DATA": {
+        "DATA-INVALID": "Data entered by user has an unfamiliar format or some required fields are sent empty.",
+        "DATA-VALIDATED": "User data is valid"
+    },
+    "AUTH": {
+        "AUTH-UNAUTHORIZED": "User performs a meaningless operation.",
+        "AUTH-AUTHORIZED": "Access token is verified.",
+        "AUTH-ACCOUNT-INVALID-EMAIL": "Email is not registered with our server.",
+        "AUTH-ACCOUNT-INVALID-PASSWORD": "Email is not registered with our server.",
+        "AUTH-ACCOUNT-DISABLED": "User account is disabled.",
+        "AUTH-ACCOUNT-ALREADY-LOGGEDIN": "User is already logged in.",
+        "AUTH-ACCOUNT-LOGGEDIN": "User is successfully logged into its account.",
+        "AUTH-ACCOUNT-LOGIN-FAILED": "User could not be logged into its account",
+        "AUTH-ACCOUNT-LOGGEDOUT": "User is successfully logged into its account.",
+        "AUTH-ACCOUNT-LOGOUT-FAILED": "User could not be logged out of its account.",
+        "AUTH-ACCOUNT-REGISTERED": "User Account is successfully created.",
+        "AUTH-ACCOUNT-REGISTERED-DISABLED": "User Account is successfully created.",
+        "AUTH-ACCOUNT-REGISTRATION-FAILED": "User's new account could not be created.",
+        "AUTH-ACCOUNT-DUPLICATE": "Email is already registered with our server.",
+        "AUTH-PROFILE-UPDATED": "User's profile is successfully updated.",
+        "AUTH-PROFILE-UPTODATE": "User profile is already up-to-date.",
+        "AUTH-PROFILE-UPDATE-FAILED": "User's profile could not be updated."
+    },
+    "APIKEY": {
+        "APIKEY-INVALID": "User sent an unfamiliar API Key."
+    },
+    "TOKEN": {
+        "TOKEN-INVALID": "Token send has an invalid signature.",
+        "TOKEN-GENERATED": "New token is successfully generated.",
+        "TOKEN-GENERATION-FAILED": "Token could not be generated.",
+        "TOKEN-VALIDATION-FAILED": "User token could not be validated."
+    },
+    "PROJECT": {
+        "PROJECT-ID-FETCHED": "Project ID is successfully fetched.",
+        "PROJECT-ID-FETCH-FAILED": "Project ID could not be fetched.",
+        "PROJECT-DACS-FETCHED": "Project default account creation strategy is successfully fetched.",
+        "PROJECT-DACS-FETCH-FAILED": "Project default account creation strategy could not be fetched.",
+        "PROJECT-PSID-FETCHED": "Project phone service ID is successfully fetched.",
+        "PROJECT-PSID-FETCH-FAILED": "Project phone service ID could not be fetched.",
+        "PROJECT-CREATED": "Project is successfully created.",
+        "PROJECT-CREATION-FAILED": "New project could not be created.",
+        "PROJECT-DELETED": "Project is successfully deleted.",
+        "PROJECT-DELETION-FAILED": "Project could not be deleted.",
+        "PROJECT-LIST-EMPTY": "No projects are registered with the user.",
+        "PROJECT-LIST-FETCHED": "Projects list is successfully fetched.",
+        "PROJECT-LIST-FETCHED-FAILED": "Projects list could not be fetched.",
+        "PROJECT-DETAILS-FETCHED": "Project details are successfully fetched.",
+        "PROJECT-DETAILS-FETCH-FAILED": "Project details could not be fetched.",
+        "PROJECT-DETAILS-UPDATED": "Project details are successfully updated.",
+        "PROJECT-DETAILS-UPDATE-FAILED": "Project details could not be updated.",
+        "PROJECT-SUMMARY-FETCHED": "Project summary is successfully fetched.",
+        "PROJECT-SUMMARY-FETCH-FAILED": "Project summary could not be fetched.",
+        "PROJECT-USERS-COUNT-FETCHED": "Number of project users is successfully fetched.",
+        "PROJECT-USERS-COUNT-FETCH-FAILED": "Number of project users could not be fetched.",
+        "PROJECT-USERS-FETCHED": "List of project users is successfully fetched.",
+        "PROJECT-USERS-FETCH-FAILED": "List of project users could not be fetched.",
+        "PROJECT-USERS-SEARCH-FAILED": "An unknown error occurred while searching project users in the project.",
+        "PROJECT-USER-DELETED": "User account is successfully deleted from the project.",
+        "PROJECT-USER-ID-INVALID": "User account is not registered with the project.",
+        "PROJECT-USER-DELETION-FAILED": "User account could not be deleted from the project.",
+        "PROJECT-DEVICES-COUNT-FETCHED": "Number of project devices is successfully fetched.",
+        "PROJECT-DEVICES-COUNT-FETCH-FAILED": "Number of project devices could not be fetched.",
+        "PROJECT-DEVICES-FETCHED": "List of project devices is successfully fetched.",
+        "PROJECT-DEVICES-FETCH-FAILED": "List of project devices could not be fetched.",
+        "PROJECT-DEVICES-TYPE-INVALID": "User entered an unfamiliar device type.",
+        "PROJECT-DEVICES-SEARCH-FAILED": "An unknown error occurred while searching project device in the project.",
+        "PROJECT-DEVICE-ID-INVALID": "Device ID is not registered with the project.",
+        "PROJECT-DEVICE-REGISTERED": "Device is successfully registered with the project.",
+        "PROJECT-DEVICE-REGISTRATION-FAILED": "Device could not be registered with the project.",
+        "PROJECT-DEVICE-ID-DUPLICATE": "Device ID is already registered with the project.",
+        "PROJECT-DEVICE-DELETED": "The device is successfully deleted from the project.",
+        "PROJECT-DEVICE-DELETED-FAILED": "The device could not be deleted from the project.",
+        "PROJECT-DEVICE-TEMPLATE-CREATED": "Device template is successfully created for the project.",
+        "PROJECT-DEVICE-TEMPLATE-CREATION-FAILED": "New device template could not be created.",
+        "PROJECT-DEVICE-TEMPLATE-ID-INVALID": "Device template ID is not registered with the project.",
+        "PROJECT-DEVICE-TEMPLATE-DELETED": "Device template is successfully deleted from the project.",
+        "PROJECT-DEVICE-TEMPLATE-DELETION-FAILED": "Device template could not be deleted from the project.",
+        "PROJECT-DEVICE-TEMPLATES-FETCHED": "List of device templates successfully fetched.",
+        "PROJECT-DEVICE-TEMPLATES-FETCH-FAILED": "List of device templates could not be fetched.",
+        "PROJECT-DEVICE-TEMPLATE-FETCHED": "Device template is successfully fetched.",
+        "PROJECT-DEVICE-TEMPLATE-FETCH-FAILED": "Device template could not be fetched.",
+        "PROJECT-DOMAIN-AUTHORIZED": "Domain is successfully authorized for the project.",
+        "PROJECT-DOMAIN-AUTHORIZATION-FAILED": "Domain could not be authorized for the project.",
+        "PROJECT-DATASTORE-DOCUMENTS-FETCHED": "Datastore documents are successfully fetched.",
+        "PROJECT-DATASTORE-DOCUMENTS-FETCH-FAILED": "Datastore documents could not be fetched.",
+        "PROJECT-DATASTORE-COLLECTIONS-FETCHED": "Datastore collections are successfully fetched.",
+        "PROJECT-DATASTORE-COLLECTIONS-FETCH-FAILED": "Datastore collections could not be fetched.",
+        "PROJECT-DATASTORE-NOT-FOUND": "Datastore is not found for the project."
+    },
+    "PHONE": {
+        "PHONE-NUMBER-FETCHED": "User's phone number is successfully fetched.",
+        "PHONE-NUMBER-FETCH-FAILED": "User's phone number could not be fetched.",
+        "PHONE-NUMBER-INVALID": "User entered an invalid phone number.",
+        "PHONE-SERVICE-CREATED": "Phone service is successfully created for the project.",
+        "PHONE-SERVICE-CREATION-FAILED": "Phone service could not be created.",
+        "PHONE-SERVICE-NAME-UPDATED": "Phone service name is successfully updated.",
+        "PHONE-SERVICE-NAME-UPDATE-FAILED": "Phone service name could not be updated.",
+        "PHONE-SERVICE-DELETED": "Phone service is successfully deleted.",
+        "PHONE-SERVICE-DELETION-FAILED": "Phone service could not be deleted.",
+        "PHONE-SERVICE-ID-INVALID": "Phone service ID is not registered with the server.",
+        "PHONE-CODE-SENT": "Verification code is successfully sent to the phone number.",
+        "PHONE-CODE-SENDING-FAILED": "Verification code could not be sent to the phone number.",
+        "PHONE-CODE-VERIFIED": "User's code is successfully verified.",
+        "PHONE-CODE-INVALID": "Verification code is invalid.",
+        "PHONE-CODE-VERIFICATION-FAILED": "User's phone number could not be verified.",
+        "PHONE-REQUESTS-REJECTED": "Too many requests are being received from the client and thus rejected."
+    },
+    "DEVICE": {
+        "DEVICE-ALREADY-PAIRED": "User device is already paired to a user account. Un-pair it first to pair it again.",
+        "DEVICE-PAIRING-FAILED": "Device could not be paired to the user account.",
+        "DEVICE-PAIRED": "Device is successfully paired to the user account.",
+        "DEVICE-NOT-PAIRED": "Device is not paired to the user account. Pair it first for monitoring and control.",
+        "DEVICE-IS-PAIRED": "Device is paired to the user account.",
+        "DEVICE-ADMIN-VERIFICATION-FAILED": "An unknown error occurred while verifying the admin of the device.",
+        "DEVICE-ID-INVALID": "Device ID is not registered with the project.",
+        "DEVICE-UNPAIRED": "Device is successfully un-paired from the user account.",
+        "DEVICE-UNPAIRING-FAILED": "Device could not be un-paired from the user account.",
+        "DEVICES-LIST-FETCHED": "List of user devices is successfully fetched.",
+        "DEVICES-LIST-FETCHING-FAILED": "List of user devices could not be fetched.",
+        "DEVICE-STATUS-UPDATE-FAILED": "Online status of the device could not be updated.",
+        "DEVICE-STATUS-UPDATED": "Online status of the device is successfully updated.",
+        "DEVICE-SUMMARY-FETCHED": "Summary of the device is successfully fetched.",
+        "DEVICE-SUMMARY-FETCHING-FAILED": "Summary of the device could not be fetched.",
+        "DEVICE-SUMMARY-UPDATE-FAILED": "Summary of the device could not be updated.",
+        "DEVICE-SUMMARY-UPDATED": "Summary of the device successfully updated.",
+        "DEVICE-PARMS-FETCHED": "Parms of the device are successfully fetched.",
+        "DEVICE-PARMS-FETCHING-FAILED": "Parms of the device could not be fetched.",
+        "DEVICE-PARMS-UPDATE-FAILED": "Parms of the device could not be updated.",
+        "DEVICE-PARMS-UPDATED": "Parms of the device successfully updated.",
+        "DEVICE-DETAILS-FETCHED": "Details of the device are successfully fetched.",
+        "DEVICE-DETAILS-FETCHING-FAILED": "Details of the device could not be fetched.",
+        "DEVICE-NAME-UPDATED": "Name of the device is successfully updated.",
+        "DEVICE-NAME-UPDATE-FAILED": "Name of the device could not be updated.",
+        "DEVICE-STATUS-FETCHED": "Online status of the device is successfully fetched.",
+        "DEVICE-STATUS-FETCH-FAILED": "Online status of the device could not be fetched.",
+        "DEVICES-ONLINE-COUNT-FETCHED": "Number of online devices is successfully fetched.",
+        "DEVICES-ONLINE-COUNT-FETCH-FAILED": "Number of online devices could not be fetched."
+    },
+    "DATASTORE": {
+        "DATASTORE-INITIALIZED": "Datastore is successfully initialized.",
+        "DATASTORE-INITIALIZATION-FAILED": "Datastore is successfully initialized.",
+        "DATASTORE-NOT-FOUND": "Datastore does not exists for the project.",
+        "DATASTORE-DOCUMENTS-INSERTED": "Documents are successfully inserted into the datastore.",
+        "DATASTORE-DOCUMENTS-DUPLICATE": "Documents are successfully inserted into the datastore.",
+        "DATASTORE-DOCUMENTS-INSERTION-FAILED": "Documents could not be inserted into the datastore.",
+        "DATASTORE-DOCUMENTS-DELETED": "Documents are successfully deleted from the datastore.",
+        "DATASTORE-DOCUMENTS-DELETION-FAILED": "Documents could not be deleted from the datastore.",
+        "DATASTORE-DOCUMENT-NOT-FOUND": "Document not found with reference to the query specified.",
+        "DATASTORE-DOCUMENTS-FETCHED": "Documents are successfully fetched from the datastore.",
+        "DATASTORE-DOCUMENTS-FETCH-FAILED": "Documents could not be fetched from the datastore.",
+        "DATASTORE-COLLECTIONS-FETCHED": "List of collections is successfully fetched from the datastore.",
+        "DATASTORE-COLLECTIONS-FETCH-FAILED": "List of collections could not be fetched from the datastore.",
+        "DATASTORE-COLLECTION-DROPPED": "Collection is successfully dropped from the datastore.",
+        "DATASTORE-COLLECTION-DROPPING-FAILED": "Collection could not be fetched from the datastore."
+    },
+    "TOPIC": {
+        "TOPIC-INVALID": "Specified topic seems invalid.",
+        "TOPIC-SUBSCRIBED": "User is successfully subscribed to the device for the topic.",
+        "TOPIC-UNSUBSCRIBED": "User is successfully unsubscribed to the device for the topic.",
+        "TOPICS-UNSUBSCRIBED": "User has successfully unsubscribed to all the topics.",
+        "TOPICS-LIST-FETCHED": "List of user's subscribed topics is successfully fetched."
+    }
+}
+```

@@ -1,0 +1,79 @@
+---
+title: data.get
+---
+
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# data.get
+
+This method gets a device variable from Grandeur.
+
+### Parameters
+
+| Name       | Type |   Description |
+| :------------| :---------: | ----------: |
+| callback     |    callback | A function to be called when get response is received.|
+| path         |    String	 | Path of the device variable using dot notation.|
+
+
+<Tabs items={['Arduino', 'Py']}>
+
+<Tab>
+
+```cpp
+Grandeur::Project project;
+Grandeur::Project::Device device;
+
+void getVoltageCallback(const char* code, int voltage) { // You can write any type int/double/bool/const char* in place of Var and it'll cast voltage to that type.
+  // This method prints *voltage* variable from device data.
+  Serial.println(voltage);
+}
+
+void setup() {
+  project = grandeur.init(ApiKey, YourToken);
+  device = project.device(deviceID);
+}
+
+void loop() {
+  // This requests to get "voltage" variable from device data on every loop and calls getVoltageCallback() function when the
+  // data from Grandeur actually arrives.
+  device.data().get("voltage", getVoltageCallback);
+
+  if(WiFiIsConnected) project.loop();
+}
+```
+
+  </Tab>
+
+   <Tab>
+
+  ```py
+      import grandeur.device as grandeur
+
+      # Init the sdk
+      project = grandeur.init(apiKey, token)
+
+      # Get reference to device class
+      device = project.device(deviceID)
+
+      # Function to handle the response on get call
+      def getCallback(code, res):
+        print(res["data"])
+
+      # Get data of the device
+      device.data().get("", getCallback)
+  ```
+</Tab>
+
+</Tabs>
+
+
+
+
+
+
+
+
+
+
+

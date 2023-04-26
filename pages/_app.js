@@ -1,23 +1,6 @@
-// Global styles
-import '../styles/globals.css';
-import 'tailwindcss/tailwind.css';
-import '../styles/prism.css';
+import '../styles.css'
 
-// Import provider to pass custom components to mdx
-import { MDXProvider } from '@mdx-js/react';
-
-// Components to be passed to provider
-import Callout from '../components/callout/callout.component';
-import Tabs from '../components/tabs/tabs.component';
-import Item from '../components/tabs/item.component';
-import Video from '../components/video/video.component';
-
-// Core layout component
-import Layout from './_layout';
-
-function App({ Component, pageProps }) {
-	// Wrap the page in layout and render
-	return <MDXProvider components={ { Callout, Tabs, Item, Video } }><Layout><Component {...pageProps} /></Layout></MDXProvider>
+// This default export is required in a new `pages/_app.js` file.
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
-
-export default App

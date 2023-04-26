@@ -1,0 +1,9 @@
+{
+    "project": "Project",
+    "devices": "Devices",
+    "users": "Users",
+    "datastore": "Datastore",
+    "canvas": "Canvas",
+    "hardware": "Hardware",
+    "access-credentials": "Access Credentials"
+}

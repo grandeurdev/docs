@@ -1,0 +1,23 @@
+{
+    "device-sdk": "Device SDK",
+    "-": {
+        "type": "separator"
+    },
+    "canvas": "Canvas",
+    "--": {
+        "type": "separator"
+    },
+    "client-sdk": "Client SDK",
+    "---": {
+        "type": "separator"
+    },
+    "rest-api": "REST API",
+    "----": {
+        "type": "separator"
+    },
+    "cli": "CLI",
+    "-----": {
+        "type": "separator"
+    },
+    "response-codes": "Response Codes"
+}

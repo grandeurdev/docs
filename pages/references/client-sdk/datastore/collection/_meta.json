@@ -1,0 +1,6 @@
+{
+    "insert": ".insert()",
+    "delete": ".delete()",
+    "search": ".search()",
+    "update": ".update()"
+}
