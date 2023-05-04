@@ -6,6 +6,13 @@ const config: DocsThemeConfig = {
   // Color hue
   primaryHue: 171,
 
+  // Title
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Grandeur'
+    }
+  },
+
   // Logo (change logo url later with docs url)
   logoLink: 'https://docs.grandeur.dev',
   logo: (
