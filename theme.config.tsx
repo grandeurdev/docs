@@ -3,6 +3,15 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
 
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Grandeur" />
+      <meta property="og:description" content="Docs website for grandeur.dev" />
+      <link rel="icon" type="image/x-icon" href="/logo.png"></link>
+    </>
+  ),
+
   // Color hue
   primaryHue: 171,
 
