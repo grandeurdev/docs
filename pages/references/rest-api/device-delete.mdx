@@ -1,0 +1,30 @@
+## /device/delete
+
+### Body:
+
+`{ deviceID:string }`
+
+### Success response:
+
+`{ code: "PROJECT-DEVICE-DELETED", message: "The device is successfully deleted from the project."}`
+
+### Error response:
+
+`{ code: "PROJECT-DEVICE-DELETED-FAILED", message: "The device could not be deleted from the project." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}"
+        }
+	}
+);
+```

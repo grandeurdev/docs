@@ -1,0 +1,31 @@
+## /device/get
+
+### Body:
+
+`{ deviceID: string , path: string  }`
+
+### Success response:
+
+`{ code: "DEVICES-DETAILS-FETCHED", message: "Details of device are successfully fetched."}`
+
+### Error response:
+
+`{ code: "DEVICES-DETAILS-FETCHING-FAILED", message: "Details of device could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": ""
+        }
+	}
+);
+```

@@ -1,0 +1,32 @@
+## /devices/get
+
+### Body:
+
+`{ type:string , filter:object , productID: string }`
+
+### Success response:
+
+`{ code: "PROJECT-DEVICES-FETCHED"", message: "List of project devices is successfully fetched."}`
+
+### Error response:
+
+`{ code: "PROJECT-DEVICES-FETCH-FAILED", message: "List of project devices could not be fetched." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "type": "registered/paired/unpaired",
+		    "filter": "online/offline",
+            "productID": ""
+        }
+	}
+);
+```

@@ -1,0 +1,32 @@
+## /device/set
+
+### Body:
+
+`{ deviceID:string , path:string , data: string }`
+
+### Success response:
+
+`{ code: "DEVICE-DETAILS-UPDATED", message: "Details of device are successfully updated"}`
+
+### Error response:
+
+`{ code: "DEVICE-DETAILS-UPDATE-FAILED", message: "Details of device could not be updated." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": "name/productID",
+            "data": "New Name"
+        }
+	}
+);
+```

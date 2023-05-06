@@ -1,0 +1,41 @@
+---
+title : datastore/insert
+---
+
+# /datastore/insert
+
+### Body:
+
+`{ collection:string , documents:array  }`
+
+### Success response:
+
+- `{ code: "DATASTORE-DOCUMENTS-INSERTED", message: "Documents are successfully inserted into the datastore."}`
+
+### Error response:
+
+`{ code: "DATASTORE-DOCUMENTS-INSERTION-FAILED", message: "Documents could not be inserted into the datastore." }`
+
+`{ code: "DATA-INVALID", message: "Atleast one document should be provided to be inserted." }`
+
+`{ code: "DATA-INVALID", message: "Collection name is required to be specified." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "documents": [{
+                "state": 1
+            }]
+		}
+	}
+);
+```

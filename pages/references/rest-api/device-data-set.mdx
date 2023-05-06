@@ -1,0 +1,34 @@
+## /device/data/set
+
+### Body:
+
+`{ deviceID:string , path:string , data:object  }`
+
+### Success response:
+
+`{ code: "DEVICE-DATA-UPDATED", message: "Data of device is successfully updated"}`
+
+### Error response:
+
+`{ code: "PROJECT-CREATION-FAILED", message: "Data of device could not be updated." }`
+DEVUCE DATA UPDATED
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": "",
+            "data": {
+                "state": 1
+            }
+        }
+	}
+);
+```
