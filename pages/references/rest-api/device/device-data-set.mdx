@@ -1,0 +1,48 @@
+---
+title : /device/data/set
+---
+
+# /device/data/set
+
+### Body:
+
+`{ deviceID:string , path:string , data:object  }`
+
+### Success response:
+
+`{ code: "DEVICE-DATA-UPDATED", message: "Data of device is successfully updated" , path: "current", update: 20 }`
+
+### Error response:
+
+`{ code: "DATA-INVALID", message: "Both Device and User IDs are required." }`
+
+`{ code: "DEVICE-ID-INVALID", message: "Device is not registered with the project."}`
+
+`{code: "DEVICE-NOT-PAIRED", message: "Device is not paired with the user."}`
+
+`{ code: "DEVICE-UNAUTHORIZED", message: "Device is not authorized to update data of other devices." }`
+
+`{ code: "DATA-INVALID", message: "Device ID is required for fetching its data."}`
+
+`{code: "DEVICE-DATA-UPDATE-FAILED", message: "Failed to update the data at the specified path."}`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": "",
+            "data": {
+                "state": 1
+            }
+        }
+	}
+);
+```

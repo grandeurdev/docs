@@ -1,0 +1,43 @@
+---
+title : /datastore/pipeline
+---
+# /datastore/pipeline
+
+### Body:
+
+`{ collection:string , index:object , pipeline: array , nPage: integer   }`
+
+### Success response:
+
+`{ code: "DATASTORE-DOCUMENTS-FETCHED", message: "Documents are fetched as a result of successful execution of the query" , nDocuments: 1,
+documents: [{ documentID: "ck12676391dgjhwag918790128", state: 1, current: 10 }]}`
+
+### Error response:
+
+`{ code: "DATA-INVALID"", message: "Collection name is required to be specified." }`
+
+`{ code: "DATASTORE-DOCUMENTS-FETCH-FAILED", message: "An unknown error occurred while searching into the datastore." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "index": {},
+            "pipeline": [{
+            
+                "type": "match",
+                "filter": ""
+            }],
+            "nPage": 1
+        }
+	}
+);
+```

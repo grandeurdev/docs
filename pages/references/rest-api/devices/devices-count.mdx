@@ -1,0 +1,31 @@
+---
+title : /devices/count
+---
+
+# /devices/count
+
+### Body:
+
+`{ type: string , filter: object  }`
+
+### Success response:
+
+`{ code: "DEVICES-COUNT-FETCHED", message: "Number of online devices is successfully fetched." , nDevices: 20}`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+			  "type": "registered/paired/unpaired",
+              "filter": "online/offline"
+		}
+	}
+);
+```

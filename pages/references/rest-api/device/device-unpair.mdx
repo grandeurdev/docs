@@ -1,0 +1,34 @@
+---
+title : /device/unpair
+---
+
+# /device/unpair
+
+### Body:
+
+`{ deviceID:string }`
+
+### Success response:
+
+`{ code: "DEVICE-UNPAIRED", message: "Device is successfully un-paired from the user account." }`
+
+### Error response:
+
+`{ code: "DEVICE-UNPAIRING-FAILED", message: "Device could not be un-paired from the user account." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}"
+        }
+	}
+);
+```

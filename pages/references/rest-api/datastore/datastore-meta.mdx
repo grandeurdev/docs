@@ -1,0 +1,33 @@
+---
+title : /datastore/meta
+---
+
+# /datastore/meta
+
+### Body:
+
+`{  }`
+
+### Success response:
+
+`{ code: "DATASTORE-COLLECTIONS-COUNT-FETCHED", message: "Datastore meta data has been fetched." , nCollections: 5, totalSize: 21736981}`
+
+### Error response:
+
+`{ code: "DATASTORE-COLLECTIONS-COUNT-FETCH-FAILED", message: "An unknown error occurred while fetching datastore meta data." }`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+        }
+	}
+);
+```

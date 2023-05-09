@@ -1,0 +1,49 @@
+---
+title : /device/pair
+---
+
+# /device/pair
+
+### Body:
+
+`{ deviceID:string , userID:string  }`
+
+### Success response:
+
+`{ code: "DEVICE-PAIRED", message: "Device is successfully paired to the user account."}`
+
+### Error response:
+
+`{ code: "DATA-INVALID", message: "User's email is missing."}`
+
+`{code: "USER-NOT-FOUND", message: "User is not registered with the project."}`
+
+`{code: "DATA-INVALID", message: "Device ID is required for pairing it."}`
+
+`{ code: "DEVICE-ID-INVALID", message: "Device is not registered with the project."}`
+
+`{ code: "DEVICE-ALREADY-PAIRED", message: "User device is already paired to a user account. Un-pair it first to pair it again." }`
+
+`{code: "DEVICE-PAIRING-FAILED", message: "An unknown error occurred while pairing the device."}`
+
+
+
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "userID": "moiz@grandeur.tech"
+        }
+	}
+);
+```
