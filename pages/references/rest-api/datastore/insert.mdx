@@ -8,6 +8,18 @@ title : /datastore/insert
 
 `{ collection:string , documents:array  }`
 
+#### `collection`
+
+- **Type:** String
+- **Examples:** `"logs"{:js}`, `"anomalies"{:js}`
+
+#### `documents`
+
+- **Type:** List
+- **Examples:** `[ { "time": 1683885667842, "temperature": 27 } ]{:js}`
+
+___
+
 ### Success response:
 
 `{ code: "DATASTORE-DOCUMENTS-INSERTED", message: "Documents are successfully inserted into the datastore."}`
@@ -23,7 +35,7 @@ title : /datastore/insert
 ### Usage:
 
 ```jsx
-fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+fetch("https://api.grandeur.tech/projects/meta?apiKey=<APIKEY>",
 	{
 		headers: {
 			"Content-Type": "application/json"

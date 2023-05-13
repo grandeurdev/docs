@@ -1,0 +1,87 @@
+---
+title : /datastore/meta
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /datastore/meta
+
+### Success response
+
+#### code
+
+`"DATASTORE-COLLECTIONS-COUNT-FETCHED" {:js}`
+
+#### message
+
+`"Datastore meta data has been fetched." {:js}`
+
+#### nCollections
+
+- **Type:** Integer
+- **Examples:** `5 {:js}`
+
+#### totalSize
+
+- **Type:** Integer representing number of bytes
+- **Examples:** `21736981 {:js}`
+
+___
+
+### Error response
+
+#### `DATASTORE-COLLECTIONS-COUNT-FETCH-FAILED`
+
+`{ code: "DATASTORE-COLLECTIONS-COUNT-FETCH-FAILED", message: "An unknown error occurred while fetching datastore meta data."} {:js}`
+
+___
+
+### Usage
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/datastore/meta?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}"
+```
+
+</Tab>
+<Tab>
+```jsx
+fetch(`https://api.grandeur.tech/datastore/meta?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+    }
+)
+.then(console.log);
+```
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/datastore/meta?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DATASTORE-COLLECTIONS-COUNT-FETCHED",
+    "message": "Datastore meta data has been fetched.",
+    "nCollections": 5,
+    "totalSize": 21736981
+}
+```

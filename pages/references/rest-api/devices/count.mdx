@@ -1,0 +1,95 @@
+---
+title : /devices/count
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /devices/count
+
+### Body
+
+#### `type` (optional)
+
+- **Type**: Enumeration
+- **Examples:** `"registered"{:js}`, `"paired"{:js}`, `"unpaired"{:js}`
+
+#### `filter` (optional)
+
+- **Type**: Enumeration
+- **Examples:** `"online"{:js}`, `"offline"{:js}`
+
+___
+
+
+### Success response
+
+#### code
+
+`"DEVICES-COUNT-FETCHED" {:js}`
+
+#### message
+
+`"Number of online devices is successfully fetched." {:js}`
+
+#### nDevices
+
+- **Type:** Integer
+- **Examples:** `20 {:js}`
+
+___
+
+### Usage:
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/devices/count?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}" --json '{"type": "paired", "filter": "offline"}'
+```
+
+</Tab>
+<Tab>
+
+```jsx
+fetch(`https://api.grandeur.tech/devices/count?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+        body: {
+            "type": "paired",         // allows only paired devices
+            "filter": "offline"       // allows devices that are offline
+        }
+    }
+)
+.then(console.log);
+```
+
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/devices/count?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+    json={"type": "paired", "filter": "offline"}
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DEVICES-COUNT-FETCHED",
+    "message": "Number of online devices is successfully fetched.",
+    "nDevices": 20
+}
+```

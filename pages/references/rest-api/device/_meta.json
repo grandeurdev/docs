@@ -1,0 +1,17 @@
+{
+    "get": "/get",
+    "set": {
+        "display": "hidden"
+    },
+    "pair": {
+        "display": "hidden"
+    },
+    "unpair": {
+        "display": "hidden"
+    },
+    "delete": {
+        "display": "hidden"
+    },
+    "data-get": "/data/get",
+    "data-set": "/data/set"
+}

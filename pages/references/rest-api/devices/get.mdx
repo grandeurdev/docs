@@ -1,0 +1,114 @@
+---
+title : /devices/get
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /devices/get
+
+### Body
+
+#### `type` (optional)
+
+- **Type**: Enumeration
+- **Examples:** `"registered"{:js}`, `"paired"{:js}`, `"unpaired"{:js}`
+
+#### `filter` (optional)
+
+- **Type**: Enumeration
+- **Examples:** `"online"{:js}`, `"offline"{:js}`
+
+
+#### `productID` (optional)
+
+- **Type**: String
+- **Examples:** `"DRONE"{:js}`
+
+___
+
+### Success response
+
+#### code
+
+`"DEVICES-LIST-FETCHED" {:js}`
+
+#### message
+
+`"List of requested devices is successfully fetched." {:js}`
+
+#### nDevices
+
+- **Type:** Integer
+- **Examples:** `1 {:js}`
+
+#### devices
+
+- **Type:** List
+- **Examples:** `[ { deviceID: "devicelfdzibp1qwso0jj7blg4a407", productID: "DRONE-01", name: "DRONE-01", status: false, admin: "tonystark@grandeur.dev", "registeredAt": 1679144882869, "lastPairedAt": 1679144984839, paired: true } ] {:js}`
+
+___
+
+### Usage
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/devices/get?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}" --json '{"type": "paired", "filter": "offline", "productID": "DRONE-0"}'
+```
+
+</Tab>
+<Tab>
+```jsx
+fetch(`https://api.grandeur.tech/devices/get?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+        body: {
+            "type": "paired",           // allows only paired devices
+            "filter": "offline",        // allows devices that are offline
+            "productID": "DRONE-0"      // allows devices starting with DRONE-0
+        }
+    }
+)
+.then(console.log);
+```
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/devices/get?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+    json={"type": "paired", "filter": "offline", "productID": "DRONE-0"}
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DEVICES-LIST-FETCHED",
+    "message": "List of requested devices is successfully fetched.",
+    "nDevices": 1,
+    "devices": [ {
+        "deviceID": "devicelfdzibp1qwso0jj7blg4a407",
+        "productID": "DRONE-01",
+        "name": "DRONE-01",
+        "status": false,
+        "admin": "tonystark@grandeur.dev",
+        "registeredAt":1679144882869,
+        "lastPairedAt":1679144984839,
+        "paired": true
+    } ]
+}
+```

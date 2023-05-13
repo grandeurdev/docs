@@ -1,0 +1,127 @@
+---
+title : /datastore/pipeline
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /datastore/pipeline
+
+### Body:
+
+#### `collection`
+
+- **Type:** String
+- **Examples:** `"logs"{:js}`, `"anomalies"{:js}`
+
+#### `index`
+
+- **Type:** JSON
+- **Examples:** `{ documentID: "docgasu7268asd97ds9ijdaoslk" }{:js}`
+
+#### `pipeline`
+
+- **Type:** List
+- **Examples:** `[ { type: "match", filter: { temperature: 25 } }, { type: "project", specs: { time: 1, temperature: 1 } } ]{:js}`
+
+#### `nPage`
+
+- **Type:** Integer
+- **Examples:** `1{:js}`, `10{:js}`
+
+___
+
+### Success response:
+
+#### code
+
+`"DATASTORE-DOCUMENTS-FETCHED" {:js}`
+
+#### message
+
+`"Documents are fetched as a result of successful execution of the query." {:js}`
+
+#### nDocuments
+
+- **Type:** Integer
+- **Examples:** `1 {:js}`
+
+#### documents
+
+- **Type:** List
+- **Examples:** `[ { documentID: "ck12676391dgjhwag918790128", time: 1683885667842, temperature: 25 } ] {:js}`
+
+___
+
+### Error response:
+
+#### `DATA-INVALID`
+
+`{ code: "DATA-INVALID", message: "Collection name is required to be specified." } {:js}`
+
+#### `DATASTORE-DOCUMENTS-FETCH-FAILED`
+
+`{ code: "DATASTORE-DOCUMENTS-FETCH-FAILED", message: "An unknown error occurred while searching into the datastore." } {:js}`
+
+### Usage:
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/datastore/pipeline?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}" --json '{"collection": "anomalies", "index": {}, "pipeline": [{"type": "match", "filter": {"temperature": 25}}, {"type": "project", "specs": {"time": 1, "temperature": 1}}], "nPage": 1}'
+```
+
+</Tab>
+<Tab>
+```jsx
+fetch(`https://api.grandeur.tech/datastore/pipeline?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+        body: {
+            collection: "anomalies",                            // which collection
+            index: {},                                          // which property of the device
+            pipeline: [
+                { type: "match", filter: { temperature: 25 } },
+                { type: "project", specs: { time: 1, temperature: 1 } }
+            ]
+            nPage: 1
+        }
+    }
+)
+.then(console.log);
+```
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/datastore/pipeline?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+    json={"collection": "anomalies", "index": {}, "pipeline": [{"type": "match", "filter": {"temperature": 25}}, {"type": "project", "specs": {"time": 1, "temperature": 1}}], "nPage": 1}
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DATASTORE-DOCUMENTS-FETCHED",
+    "message": "Documents are fetched as a result of successful execution of the query.",
+    "nDocuments": 1,
+    "documents": [ {
+        documentID: "ck12676391dgjhwag918790128",
+        time: 1683885667842,
+        temperature: 25
+    } ]
+}
+```
