@@ -3,11 +3,27 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
 
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta property="og:title" content="Grandeur" />
+      <meta property="og:description" content="Docs website for grandeur.dev" />
+      <link rel="icon" type="image/x-icon" href="/logo.png"></link>
+    </>
+  ),
+
   // Color hue
   primaryHue: 171,
 
+  // Title
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s – Grandeur'
+    }
+  },
+
   // Logo (change logo url later with docs url)
-  logoLink: 'https://uploads-ssl.webflow.com/61b8cbd25f7bbc2678e64784/636c954ea4dc6a3bd90b9895_Grandeur_NewLogo_SVG%201.svg',
+  logoLink: 'https://docs.grandeur.dev',
   logo: (
     <svg width="100" height="25" viewBox="0 0 80 18" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_1_2)">

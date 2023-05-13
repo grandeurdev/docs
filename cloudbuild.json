@@ -1,0 +1,28 @@
+{
+	"steps": [
+		{
+			"name": "gcr.io/cloud-builders/docker",
+			"args": [
+				"build",
+				"-t",
+				"gcr.io/trusty-obelisk-356022/docs:$COMMIT_SHA",
+				"."
+			]
+		},
+		{
+			"name": "gcr.io/cloud-builders/docker",
+			"args": [
+				"push",
+				"gcr.io/trusty-obelisk-356022/docs:$COMMIT_SHA"
+			]
+		},
+		{
+			"name": "gcr.io/cloud-builders/gcloud",
+			"entrypoint": "bash",
+			"args": [
+				"-c",
+				"curl -X POST 'https://dashboard.getporter.dev/api/webhooks/deploy/df970c63406947e4bae8d3246458ec11?commit=$COMMIT_SHA'"
+			]
+		}
+	]
+}

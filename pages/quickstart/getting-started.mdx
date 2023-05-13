@@ -18,7 +18,7 @@ Go to https://console.grandeur.dev
 - You'd receive a one-time-password (OTP) on your phone. Enter it and click Submit.
 - Congratulations! Your account is created.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/signing-up.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/register.webm" />
 
 ## Create a Project
 
@@ -27,42 +27,14 @@ A [project](/guides/project/managing-a-project.mdx) is the first thing you need 
 - Click on New Project button.
 - Fill in the name and description of the project and click Create Project button. Your project will be created.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/creating-project.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/create-project.webm" />
 
 ## Register your Device
 
 When you register a [device](/guides/devices/data.mdx), you make it available in your project's network. It is meant to securely connect devices to cloud.
 
-- Click on the Devices tab from the left sidebar.
-- To register your device, you first need to register its data model. Model is a way to manage and categorize devices. You can create multiple models and each model can then be associated with multiple devices.
-- To register a model, under the Models header, click the Add button. Fill in the name and schema of the model. and click the Add button.
-- The model is added.
+To register a new device, just type a preferably unique name for your device and click enter. A dialog box will give you your device's unique ID and token that you can copy and then use later in your device code for connecting with the internet.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/model.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/create-device.webm" />
 
-- To add the device, under the Devices header, click the Add button.
-- Select the model that you created in the last step and give the device a machine-descriptive product ID.
-- This would give you a device ID of the form devicekwl7rb7702ig0pxfhb5fdu9c and a device token. These are imperative fpr use later.
-- Your device is registered.
-
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/device-add.webm" />
-
-## Register a New User
-
-To control the device from the app, you need a user account. The the users here are end users, who will be using the device in production. Click on the Accounts tab from the left menu and then on the Add Account button.
-
-- Fill in the new account details and click Add
-- Your user account has been created.
-
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/user-add.webm" />
-
-## Pair the Device with Account
-
-We pair the device to a user so that only the user or the admin of the project can access the data. This serves as an extra security measure so an account can only see and control the devices paired with it. So go to the Devices tab,
-
-- Click on the Pair button in the Actions column of the device you created in the previous steps. Select your user account and done.
-- Your device is now paired with your user account.
-
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/pair.webm" /><br />
-
-Now that we are done with setting up our environment, lets [move on](/hello-world-with-iot.mdx) to building our first hardware device.
+Now that we are done with setting up our environment, lets [move on](/quickstart/hello-world-with-iot.mdx) to building our first hardware device.
