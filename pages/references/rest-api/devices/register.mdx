@@ -1,0 +1,42 @@
+---
+title : /devices/register
+---
+
+# /devices/register
+
+### Body:
+
+`{ modelID:string , productID:string , deviceName: string }`
+
+### Success response:
+
+`{ code: "DEVICE-REGISTERED", message: "User's device is successfully registered for this project.", deviceID: "device612581738jhdag127839182jk"}`
+
+### Error response:
+
+`{ code: "DATA-INVALID", message: "productID, deviceName are required." }`
+
+`{ code: "DEVICE-MODEL-ID-INVALID", message: "Model ID is invalid." }`
+
+`{code: "PROJECT-DEVICE-ID-DUPLICATE",message: "Another device is already registered with this ID."}`
+
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.tech/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "modelID": "{modelID}",
+            "productID": "Device 1",
+            "deviceName": "Device 1"
+        }
+	}
+);
+```

@@ -1,0 +1,120 @@
+---
+title : /device/data/set
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /device/data/set
+
+### Body
+
+#### `deviceID`
+
+- **Type:** String
+- **Examples:** `"devicelfdzibp1qwso0jj7blg4a407"{:js}`
+
+#### `path`
+
+- **Type:** String
+- **Examples:** `"state"{:js}`, `"voltage"{:js}`, `"temperature"{:js}`
+
+#### `data`
+
+- **Type:** Number, Boolean, or String
+- **Examples:** `20{:js}`, `true{:js}`, `"standby"{:js}`
+
+___
+
+### Success response
+
+#### code
+
+`"DEVICE-DATA-UPDATED" {:js}`
+
+#### message
+
+`"Data of device is successfully updated." {:js}`
+
+#### path
+
+- **Type:** String
+- **Examples:** `"temperature"{:js}`, `"current"{:js}`, `"state"{:js}`
+
+#### update
+
+- **Type:** Number, Boolean, String
+- **Examples:** `20{:js}`, `true{:js}`, `"standby"{:js}`
+
+___
+
+### Error response
+
+#### `DATA-INVALID`
+
+`{ code: "DATA-INVALID", message: "Device ID is required for fetching its data."}{:js}`
+
+#### `DEVICE-ID-INVALID`
+
+`{ code: "DEVICE-ID-INVALID", message: "Device is not registered with the project."}{:js}`
+
+#### `DEVICE-DATA-UPDATE-FAILED`
+
+`{code: "DEVICE-DATA-UPDATE-FAILED", message: "Failed to update the data at the specified path."}{:js}`
+
+___
+
+### Usage
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/device/data/set?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}" --json '{"deviceID": "devicelfdzibp1qwso0jj7blg4a407", "path": "temperature", "data": 30}'
+```
+
+</Tab>
+<Tab>
+```jsx
+fetch(`https://api.grandeur.tech/device/data/set?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+        body: {
+            "deviceID": "devicelfdzibp1qwso0jj7blg4a407",   // which device
+            "path": "temperature",                          // which variable of the device
+            "data": "30"                                    // what data to set to the variable
+        }
+    }
+)
+.then(console.log);
+```
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/device/data/set?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+    json={"deviceID": "devicelfdzibp1qwso0jj7blg4a407", "path": "temperature", "data": 30}
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DEVICE-DATA-UPDATED",
+    "message": "Data of device is successfully updated.",
+    "path": "temperature",
+    "update": 30
+}
+```

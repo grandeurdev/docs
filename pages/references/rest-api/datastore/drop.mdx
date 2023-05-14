@@ -1,0 +1,37 @@
+---
+title : /datastore/drop
+---
+
+# /datastore/drop
+
+### Body:
+
+`{ collection:string }`
+
+### Success response:
+
+`{ code: "DATASTORE-COLLECTION-DROPPED", message: "Collection is successfully dropped from the datastore."}`
+
+### Error response:
+
+`{ code: "DATASTORE-COLLECTION-DROPPING-FAILED", message: "Collection could not be fetched from the datastore." }`
+
+`{ code: "DATASTORE-COLLECTION-NOT-FOUND", message: "Collection with the specified name was not found." }`
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.tech/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name"
+        }
+	}
+);
+```

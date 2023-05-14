@@ -1,0 +1,7 @@
+{
+    "get": "/get",
+    "count": "/count",
+    "register": {
+        "display": "hidden"
+    }
+}

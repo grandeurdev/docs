@@ -1,0 +1,47 @@
+---
+title : /device/set
+---
+# /device/set
+
+### Body:
+
+`{ deviceID:string , path:string , data: string }`
+
+### Success response:
+
+`{ code: "DEVICE-DETAILS-UPDATED", message: "Details of device are successfully updated" }`
+
+### Error response:
+
+`{ code: "DEVICE-DETAILS-UPDATE-FAILED", message: "Details of device could not be updated." }`
+
+`{ code: "DATA-INVALID", message: "Invalid path." }`
+
+`{ code: "DATA-INVALID", message: "Both Device and User IDs are required." }`
+
+`{ code: "DEVICE-ID-INVALID", message: "Device is not registered with the project."}`
+
+`{code: "DEVICE-NOT-PAIRED", message: "Device is not paired with the user."}`
+
+`{code: "DATA-INVALID",message: "Device ID is required for updating its name."}`
+
+`{code: "DEVICE-ID-INVALID",message: "Device is not registered with the project."}`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.tech/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}",
+            "path": "name/productID",
+            "data": "New Name"
+        }
+	}
+);
+```

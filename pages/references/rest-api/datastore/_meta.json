@@ -1,0 +1,17 @@
+{
+    "meta": "/meta",
+    "list": "/list",
+    "drop":  {
+        "display": "hidden"
+    },
+    "insert": {
+        "display": "hidden"
+    },
+    "delete":  {
+        "display": "hidden"
+    },
+    "pipeline": "/pipeline",
+    "update":  {
+        "display": "hidden"
+    }
+}

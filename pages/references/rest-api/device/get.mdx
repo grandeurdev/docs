@@ -1,0 +1,106 @@
+---
+title : /device/get
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /device/get
+
+### Body
+
+#### `deviceID`
+
+- **Type:** String
+- **Examples:** `"devicelfdzibp1qwso0jj7blg4a407"{:js}`
+
+#### `path` (optional)
+
+- **Type:** String
+- **Examples:** `"productID"{:js}`, `"status"{:js}`, `"admin"{:js}`
+
+___
+
+### Success response
+
+#### code
+
+`"DEVICE-DETAILS-FETCHED" {:js}`
+
+#### message
+
+`"Details of the device are successfully fetched: " {:js}`
+
+#### device
+
+- **Type:** Dictionary
+- **Examples:** `{ deviceID: "devicelfdzibp1qwso0jj7blg4a407", productID: "DRONE-01", name: "DRONE-01", status: false, admin: "tonystark@grandeur.dev", "registeredAt": 1679144882869, "lastPairedAt": 1679144984839, paired: true } {:js}`
+
+___
+
+### Error response
+
+#### `DATA-INVALID`
+
+`{ code: "DATA-INVALID", message: "Device ID is required for fetching its details." } {:js}`
+
+#### `DEVICE-ID-INVALID`
+
+`{ code: "DEVICE-ID-INVALID", message: "Device is not registered with the project."} {:js}`
+
+___
+
+### Usage
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/device/get?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}" --json '{"deviceID": "devicelfdzibp1qwso0jj7blg4a407", "path": "paired"}'
+```
+
+</Tab>
+<Tab>
+```jsx
+fetch(`https://api.grandeur.tech/device/get?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+        body: {
+            "deviceID": "devicelfdzibp1qwso0jj7blg4a407",   // which device
+            "path": "paired",                          // which property of the device
+        }
+    }
+)
+.then(console.log);
+```
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/device/get?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+    json={"deviceID": "devicelfdzibp1qwso0jj7blg4a407", "path": "paired"}
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DEVICE-DETAILS-FETCHED",
+    "message": "Details of the device are successfully fetched: ",
+    "device": {
+        "paired": true
+    }
+}
+```

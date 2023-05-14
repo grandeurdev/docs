@@ -1,0 +1,36 @@
+---
+title : /device/delete
+---
+
+# /device/delete
+
+### Body:
+
+`{ deviceID:string }`
+
+### Success response:
+
+`{ code: "DEVICE-DELETED", message: "User's device is successfully deleted for this project." };`
+
+### Error response:
+
+`{ code: "DATA-INVALID", message: "Device ID is required."}`
+
+`{code: "DEVICE-ID-INVALID", message: "No device with this ID is found."}`
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.tech/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "deviceID": "{deviceID}"
+        }
+	}
+);
+```

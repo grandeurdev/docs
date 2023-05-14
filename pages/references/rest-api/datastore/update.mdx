@@ -1,0 +1,44 @@
+---
+title : /datastore/update
+---
+
+# /datastore/update
+
+### Body:
+
+`{ collection:string , filter:object , update:object }`
+
+### Success response:
+
+`{ code: "DATASTORE-DOCUMENTS-UPDATED", message: "Documents update from the datastore is successfully completed." , modifiedCount: 5}`
+
+### Error response:
+
+`{ code: "DATA-INVALID", message: "Collection name is required to be specified." }`
+
+`{ code: "DATASTORE-DOCUMENTS-NOT-FOUND", message: "No document in the datastore satisfies the query." }`
+
+`{ code: "DATASTORE-DOCUMENTS-UPDATE-FAILED", message: "An unknown error occurred while updating documents from the datastore." }`
+
+
+
+### Usage:
+
+```jsx
+fetch("https://api.grandeur.dev/projects/meta?apiKey=<APIKEY>",
+	{
+		headers: {
+			"Content-Type": "application/json"
+			"gt-otp": SECRET
+			Authorization: TOKEN
+		}
+		body: {
+            "collection": "name",
+            "filter": {},
+            "update": {
+                "state": 2
+            }
+        }
+	}
+);
+```

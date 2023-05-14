@@ -1,0 +1,108 @@
+---
+title : /device/data/get
+---
+import { Tab, Tabs } from 'nextra-theme-docs';
+
+# /device/data/get
+
+### Body
+
+#### `deviceID`
+
+- **Type:** String
+- **Examples:** `"devicelfdzibp1qwso0jj7blg4a407"{:js}`
+
+#### `path` (optional)
+
+- **Type:** String
+- **Examples:** `"state"{:js}`, `"voltage"{:js}`, `"temperature"{:js}`
+
+___
+
+### Success response
+
+#### code
+
+`"DEVICE-DATA-FETCHED" {:js}`
+
+#### message
+
+`"Data for the device is successfully fetched: " {:js}`
+
+#### data
+
+- **Type:** Number, Boolean, String, or Dictionary containing all variables and their values
+- **Examples:** `20{:js}`, `true{:js}`, `"standby"{:js}`
+
+___
+
+### Error response
+
+#### `DATA-INVALID`
+
+`{ code: "DATA-INVALID", message: "Device ID is required for fetching its data."}{:js}`
+
+#### `DEVICE-ID-INVALID`
+
+`{ code: "DEVICE-ID-INVALID", message: "Device is not registered with the project."}{:js}`
+
+#### `PATH-INVALID`
+
+`{ code: "PATH-INVALID", message: "Data is undefined at the specified path."}{:js}`
+
+___
+
+### Usage
+
+<Tabs items={['cURL', 'Javascript', 'Python']}>
+<Tab>
+
+```bash
+curl "https://api.grandeur.tech/device/data/get?apiKey=${API_KEY}" -H "Authorization: ${AUTH_TOKEN}" --json '{"deviceID": "devicelfdzibp1qwso0jj7blg4a407", "path": "temperature"}'
+```
+
+</Tab>
+<Tab>
+```jsx
+fetch(`https://api.grandeur.tech/device/data/get?apiKey=${API_KEY}`,
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+            Authorization: AUTH_TOKEN
+        }
+        body: {
+            "deviceID": "devicelfdzibp1qwso0jj7blg4a407",   // which device
+            "path": "temperature",                          // which variable of the device
+        }
+    }
+)
+.then(console.log);
+```
+</Tab>
+<Tab>
+
+```py
+import requests
+
+response = requests.post(
+    f'https://api.grandeur.tech/device/data/get?apiKey={API_KEY}',
+    headers={'Authorization': AUTH_TOKEN},
+    json={"deviceID": "devicelfdzibp1qwso0jj7blg4a407", "path": "temperature"}
+)
+
+print(response.text)
+```
+
+</Tab>
+</Tabs>
+
+#### Output
+
+```json filename="JSON"
+{
+    "code": "DEVICE-DATA-FETCHED",
+    "message": "Data for the device is successfully fetched: ",
+    "data": 30
+}
+```

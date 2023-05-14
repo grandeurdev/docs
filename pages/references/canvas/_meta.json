@@ -1,9 +1,10 @@
 {
-    "overview": "Overview",
-    "display": "Display",
     "button": "Button",
-    "graph": "Graph",
+    "display": "Display",
     "progress": "Progress",
     "slider": "Slider",
-    "table": "Table"
+    "graph": "Graph",
+    "table": {
+        "display": "hidden"
+    }
 }
