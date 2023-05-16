@@ -6,6 +6,11 @@
   "quickstart":  "Quickstart",
   "guides":  "Guides",
   "references":  "References",
-  "faqs":  "FAQs",
-  "keywords":  "Keywords"
+  "faqs":  {
+    "display": "hidden"
+  },
+  "keywords":    {
+    "display": "hidden"
+  },
+  "releases": "Releases"
 }

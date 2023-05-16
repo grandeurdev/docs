@@ -1,0 +1,91 @@
+---
+title: V3.0.0
+emoji: 🚀
+---
+
+## 1. Streams
+
+Streams are the natural evolution for datastore. We launched datastore in August 2020 with [this article on Hackster](https://www.hackster.io/grandeurdev/data-persistence-in-iot-with-grander-fd09ee) to allow devices store logs and users to view device's history and plot it on neat graphs.
+
+As of now, we are retiring the datastore itself as an entity and a separate tab on [console](https://console.grandeur.dev), and merging it with the device. Each device previously just had data variables that you could update to show current state of the device. We are now giving devices their own storage where they can store a history of their variables, and guess what we are calling it, **streams**. Because it looks like an inflow of data from an infinite past going into to an indefinite future.
+
+If you could model a device in JSON, previously it would be like this:
+
+```json
+{
+    "productID": "DRONE-001",
+    "data": {                   // Device variables
+        "extTemperature": 44,
+        "intTemperature": 46,
+        "currentDrawn": 4
+    }
+}
+```
+
+Now with streams, it looks like this:
+
+```json
+{
+    "productID": "DRONE-001",
+    "data": {
+        "extTemperature": 44,   // current value of external temperature
+        "intTemperature": 46,
+        "currentDrawn": 4.5
+    },
+    "streams": {               // We are only logging extTemperature and intTemperature in streams
+        "extTemperature": [{time: 1684161412566, value: 44}, {time: 1684161413566, value: 45}, {time: 1684161414568, value: 45}, {time: 1684161415569, value: 45}, {time: 1684161416570, value: 45}, {time: 1684161417571, value: 44}, {time: 1684161418573, value: 44}, {time: 1684161419575, value: 43}, {time: 1684161420576, value: 43}, {time: 1684161421577, value: 43}, ...],
+        "intTemperature": [{time: 1684161425581, value: 46}, {time: 1684161426582, value: 47}, {time: 1684161427583, value: 47}, {time: 1684161428497, value: 47}, {time: 1684161429498, value: 47}, {time: 1684161430499, value: 46}, {time: 1684161431500, value: 46}, {time: 1684161432501, value: 46}, {time: 1684161433502, value: 47}, {time: 1684161434504, value: 47}, ...],
+    }
+}
+```
+
+**Here is how you can start using streams in your projects:**
+
+On your device side, you can replace `device.data().set()` with `device.data().log()` to both set your variable's value in device data and add it to device streams.
+
+```cpp
+
+...
+
+loop() {
+    if(millis() - current > 5000) {
+        device.data().log("extTemperature", 45);
+    }
+
+    project.loop();
+}
+```
+
+On your app side, you can get the history of a device variable as an `array` by calling `device.data().stream()`.
+
+```js
+const device = project.devices().device(deviceID);
+const extTemperature = await device.data().stream("extTemperature");
+console.log(extTemperature); // [ { time: 1684161412566, value: 44 }, { time: 1684161413566, value: 45 }, { time: 1684161414568, value: 45 }, { time: 1684161415569, value: 45 }, { time: 1684161416570, value: 45 }, { time: 1684161417571, value: 44 }, { time: 1684161418573, value: 44 }, { time: 1684161419575, value: 43 }, { time: 1684161420576, value: 43 }, { time: 1684161421577, value: 43 }, ...]
+```
+
+## 2. MQTT (device over MQTT)
+
+This has been long due but we are finally launching support for MQTT on both ends:
+- for connecting your devices with Grandeur over MQTT
+- integrating Grandeur to other platforms like Grafana, Retool, and Datacake.
+
+It supports most of MQTT Pub/Sub standard out of the box, checkout [references](references/mqtt) for an exact detail. And go to [quickstarts](../quickstart/getting-started) to get started with MQTT in your project.
+ 
+## 3. Integrations
+
+REST API is a huge addition to Grandeur. While previously you were dependent on SDK support in your app language, now you can use the bare bone REST API to integrate Grandeur in your apps. And you are not limited to just coding, you can use connect Grandeur with dashboard and app builders like Grafana and Retool to visualize your devices there.
+
+But REST API still has some limitations in terms of latency and it doesn't support pub/sub. That's where MQTT steals the gold.
+
+You'd want to go to [quickstarts](quickstart/getting-started) to build your first integration with Grafana.
+
+## 4. Intelligence
+
+We kept the best one for the last as it might just blow your mind. It's just been a couple of months since we launched Grandeur 2.0 where we remodelled it from scratch, made it more integrated, interactive, and just no-brainer to use. Now we want you to not use your brain at all, **we are making Grandeur intelligent**. Imagine Skynet but less hostile to humans, just kidding, it's completely safe 🤖.
+
+Let's take a use case for example. You want to see, for an inverter, at what times did the voltage peak above 120 today. With the old dumb Grandeur, you'd have to first get the device voltage stream using JS SDK or Py SDK and then filter out the samples where the voltage value is greater than 120. Take another use case, your device (inverter) is logging voltage and current to device stream, and you want to calculate the average power consumption for a particular day. One way is to get both streams, apply a formula to calculate power at each instant, and average.
+
+With the new, *completely non-hostile*, AI, you just need to ask! Ask your question in your natural language: `"At what times did the voltage peak above 120 today?"`, `"how much power on average did the device consume today?"`, `"Calculate me the energy consumed during this whole month."`, or just `"Surprise me with an interesting pattern in my device data"`.
+
+Look for a text box in device canvas and you'd know it's time to geek around 🤓!
