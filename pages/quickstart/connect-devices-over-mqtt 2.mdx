@@ -1,0 +1,265 @@
+---
+title: Connect devices over MQTT
+emoji: 👋🏻
+---
+import { Callout } from 'nextra-theme-docs';
+import { Steps } from 'nextra-theme-docs';
+import ReactPlayer from 'react-player';
+
+# Connect devices over MQTT
+
+While it's a complete no-brainer to bring your devices online using the available [SDKs](/references/device-sdk), you can also use the MQTT interface. MQTT makes it simple to connect any of your favorite boards with Grandeur without worrying about the official SDK support.
+
+<Callout type="info">
+  The idea behind MQTT is more than just bringing your devices online but we'll explore that in a later document. For now, we'll see how we can get our devices connected with it.
+</Callout>
+
+In this document, we'll connect an **ESP32** with Grandeur over MQTT. But first:
+
+#### How does it work?
+
+You can use any MQTT client libraries available in whatever environment you are working in. If I want to connect an ESP8266, I can program it through Arduino, ESP8266 RTOS SDK, or ESP8266 NO-OS SDK, and for each environment, I can use whatever MQTT library is available in that environment.
+
+**The URL** to connect to over MQTT is `mqtt://mqtt.api.grandeur.tech:1883`. It's a protected broker which means you need to pass your credentials to connect to it. Your [API key](/guides/access-credentials/api-key) goes in as the username and the [auth token](/guides/access-credentials/auth-token) as password.
+
+After you are connected, you can subscribe to any topics that you want, and you will receive an update as an event whenever someone from anywhere in your project publishes on that topic. But there are a couple of things to keep in mind about valid topics, which you can find [here](/guides/mqtt/topic).
+
+<Callout type="warning">
+Wildcards, QoS, and MQTT over websockets are in active development but not currently supported.
+</Callout>
+
+#### That's it! Let's get to the coding now.
+
+We'll program our ESP using the RTOS SDK instead of Arduino, specifically to show how you can connect an SDK-unsupported board to Grandeur.
+
+<Steps>
+
+### Set up a project directory
+
+Set up your project structure as:
+
+```txt
+- projectDir/
+            - CMakeLists.txt
+            - sdkconfig
+            - components/   - wifi/     - CMakeLists.txt
+                                        - Kconfig.projbuild
+                                        - wifi.c
+                                        - include/  - wifi.h
+            - main/         - CMakeLists.txt
+                            - app_main.c
+
+            - build/
+```
+
+`main/app_main.c` will contain the main MQTT code for your app. `components/wifi` will contain the code for handling WiFi which we'll not go through in this document but you can always download and run the [full example code](https://github.com/grandeurdev/examples/esp8266/esp8266_rtos_sdk/mqtt). [Here's documentation for RTOS's WiFi library](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/api-reference/wifi/esp_wifi.html) if you want to learn how it works.
+
+### Install an MQTT client library
+ 
+**ESP8266_RTOS_SDK** SDK comes built-in with the MQTT library (`mqtt_client.h`). You can follow the [MQTT TCP example](https://github.com/espressif/ESP8266_RTOS_SDK/tree/af0cdc36fa2600033d0a09301c754008cf1503c1/examples/protocols/mqtt/tcp) to get started from scratch, and [here is the MQTT library's documentation](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/protocols/mqtt.html).
+
+To install the **ESP8266_RTOS_SDK** altogether, you can follow [this guide](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/index.html).
+
+### Connect with Grandeur's MQTT broker
+ 
+```c filename="app_main.c"
+/* Connect to Grandeur over MQTT
+*/
+
+// Necessary headers.
+#include "freertos/FreeRTOS.h"
+#include "esp_netif.h"
+#include "esp_log.h"
+#include "mqtt_client.h"
+#include "wifi.h"
+
+// Just for logging.
+static const char *TAG = "GRANDEUR_MQTT";
+
+#define MQTT_BROKER_URL "mqtt://mqtt.api.grandeur.tech:1883"
+#define API_KEY CONFIG_API_KEY
+#define AUTH_TOKEN CONFIG_AUTH_TOKEN
+
+static esp_err_t mqtt_event_handler_cb(esp_mqtt_event_handle_t event) {
+    // Checks which event occurred.
+    switch (event->event_id) {
+        case MQTT_EVENT_CONNECTED:
+            ESP_LOGI(TAG, "Connected to Grandeur!");
+            break;
+        case MQTT_EVENT_DISCONNECTED:
+            ESP_LOGI(TAG, "Disconnected from Grandeur!");
+            break;
+        case MQTT_EVENT_ERROR:
+            ESP_LOGI(TAG, "Error occurred!");
+            break;
+        case MQTT_EVENT_DATA:
+        case MQTT_EVENT_SUBSCRIBED:
+        case MQTT_EVENT_BEFORE_CONNECT:
+        case MQTT_EVENT_PUBLISHED:
+        case MQTT_EVENT_UNSUBSCRIBED:
+        case MQTT_EVENT_ANY:
+        break;
+    }
+    return ESP_OK;
+}
+
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data) {
+    mqtt_event_handler_cb(event_data);
+}
+
+static void mqtt_app_start(void) {
+    // Sets up a new MQTT configuration.
+    esp_mqtt_client_config_t mqtt_cfg = {
+        .uri = MQTT_BROKER_URL,
+        .username = API_KEY,
+        .password = AUTH_TOKEN
+    };
+
+    // Creates a new MQTT client with our configuration.
+    esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
+    // Sets up our event handler.
+    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, client);
+    // Fires up the MQTT client.
+    esp_mqtt_client_start(client);
+}
+
+void app_main(void) {
+    // Initializes the TCP/IP adapter.
+    ESP_ERROR_CHECK(esp_netif_init());
+    // Creates an event loop for event-handling.
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    // Initializes the WiFi.
+    wifi_init_sta();
+    // Starts the MQTT.
+    mqtt_app_start();
+}
+```
+
+`app_main` is the main task from where the app starts its execution. We start with initializing the TCP/IP adapter required for MQTT and creating an event loop for the app. Then we fire up our WiFi and then MQTT. You will find implementation for `wifi_init_sta()` in the `components/wifi/wifi.c` file.
+
+MQTT starts with creating a new client with our configurations (URL, username, and password) and setting up the MQTT event handler for all MQTT events (`ESP_EVENT_ANY_ID`) so we receive events for connection, disconnection, error, new message, subscription, publishing, and others when they occur. You can find the events we are handling in the `mqtt_event_handler_cb()` function. We are only handling the first three for now.
+
+You can run the project (compile and upload it to your board) and also opening the serial monitor when the upload is finished using the CLI command below:
+
+```bash
+idf.py flash monitor -p PORT
+```
+
+The board will first connect to WiFi, then Grandeur, and stop printing at `"Connected to Grandeur"`. Here is a screenshot of the output:
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/connect-device-over-mqtt-terminal-recording-half.webm" />
+
+### Subscribing to device variables
+
+Now let's subscribe to device's data so that whenever someone changes it from the apps, this device gets notified.
+
+```c filename="app_main.c" { 18-23, 30, 39-42 }
+/* Connect to Grandeur over MQTT
+*/
+
+// Necessary headers.
+#include "freertos/FreeRTOS.h"
+#include "esp_netif.h"
+#include "esp_log.h"
+#include "mqtt_client.h"
+#include "wifi.h"
+
+// Just for logging.
+static const char *TAG = "GRANDEUR_MQTT";
+
+#define MQTT_BROKER_URL "mqtt://mqtt.api.grandeur.tech:1883"
+#define API_KEY CONFIG_API_KEY
+#define AUTH_TOKEN CONFIG_AUTH_TOKEN
+
+#define N_TOPICS 2
+const char* topicsList[N_TOPICS] = {"devicelfdzibp1qwso0jj7blg4a407/current", "devicelfdzibp1qwso0jj7blg4a407/voltage"};
+
+void subscribe(esp_mqtt_client_handle_t client, const char* topic) {
+    esp_mqtt_client_subscribe(client, topic, 0);
+}
+
+static esp_err_t mqtt_event_handler_cb(esp_mqtt_event_handle_t event) {
+    // Checks which event occurred.
+    switch (event->event_id) {
+        case MQTT_EVENT_CONNECTED:
+            ESP_LOGI(TAG, "Connected to Grandeur!");
+            for(int i = 0; i < N_TOPICS; i++) subscribe(event->client, topicsList[i]);
+            break;
+        case MQTT_EVENT_DISCONNECTED:
+            ESP_LOGI(TAG, "Disconnected from Grandeur!");
+            break;
+        case MQTT_EVENT_ERROR:
+            ESP_LOGI(TAG, "Error occurred!");
+            break;
+        case MQTT_EVENT_DATA:
+            // When an update occurs, this prints topic and the updated data on that topic.
+            printf("Update on topic %.*s: ", event->topic_len, event->topic);
+            printf("%.*s\r\n", event->data_len, event->data);
+            break;
+        case MQTT_EVENT_SUBSCRIBED:
+        case MQTT_EVENT_BEFORE_CONNECT:
+        case MQTT_EVENT_PUBLISHED:
+        case MQTT_EVENT_UNSUBSCRIBED:
+        case MQTT_EVENT_ANY:
+        break;
+    }
+    return ESP_OK;
+}
+
+static void mqtt_event_handler(void *handler_args, esp_event_base_t base, int32_t event_id, void *event_data) {
+    mqtt_event_handler_cb(event_data);
+}
+
+static void mqtt_app_start(void) {
+    // Sets up a new MQTT configuration.
+    esp_mqtt_client_config_t mqtt_cfg = {
+        .uri = MQTT_BROKER_URL,
+        .username = API_KEY,
+        .password = AUTH_TOKEN
+    };
+
+    // Creates a new MQTT client with our configuration.
+    esp_mqtt_client_handle_t client = esp_mqtt_client_init(&mqtt_cfg);
+    // Sets up our event handler.
+    esp_mqtt_client_register_event(client, ESP_EVENT_ANY_ID, mqtt_event_handler, client);
+    // Fires up the MQTT client.
+    esp_mqtt_client_start(client);
+}
+
+void app_main(void) {
+    // Initializes the TCP/IP adapter.
+    ESP_ERROR_CHECK(esp_netif_init());
+    // Creates an event loop for event-handling.
+    ESP_ERROR_CHECK(esp_event_loop_create_default());
+    // Initializes the WiFi.
+    wifi_init_sta();
+    // Starts the MQTT.
+    mqtt_app_start();
+}
+```
+
+We first make a list of topics that we want to subscribe to. Then we add a `subscribe()` helper function that we call, for each of our topic in `topicsList`, after our device forms a successful MQTT connection with Grandeur (i.e., inside `MQTT_EVENT_CONNECTED` case).
+
+Then we handle all the updates that are sent our way, after subscribing, inside the `MQTT_EVENT_DATA` case, where we just print the topic on which the update occurred and the new value of the updated variable.
+
+Running the code gives the following output:
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/connect-device-over-mqtt-terminal-recording-full.webm" />
+
+### Live action
+
+To see the live action of updates coming in, we'll go to our device's Canvas on [Console](https://console.grandeur.dev) and change the `current` and `voltage` variables repeatedly.
+
+Here's how you can set up your canvas:
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/connect-device-over-mqtt-canvas-setup.webm" />
+
+And here's the live action!
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/connect-device-over-mqtt-live-action.webm" />
+
+</Steps>
+
+If you find this cool, you can find the full code of this app on [GitHub](https://github.com/grandeurdev/examples/esp8266/esp8266_rtos_sdk/mqtt).
+
+This is a small portion of what you can do with MQTT. In [the next document](/build-integrations-over-mqtt), we'll explore the full role of MQTT in opening Grandeur to connect with other platforms.

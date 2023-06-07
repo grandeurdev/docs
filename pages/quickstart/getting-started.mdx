@@ -4,13 +4,16 @@ pinned: pinned
 emoji: 🔥
 ---
 import ReactPlayer from 'react-player';
+import { Steps } from 'nextra-theme-docs';
 
 
 # Getting Started
 
 To use Grandeur in our project, let's first set it up.
 
-## Sign up on Grandeur
+<Steps>
+
+### Sign up on Grandeur
 
 Go to https://console.grandeur.dev
 
@@ -20,7 +23,7 @@ Go to https://console.grandeur.dev
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/register.webm" />
 
-## Create a Project
+### Create a Project
 
 A [project](/guides/project/managing-a-project.mdx) is the first thing you need to create to start working with Grandeur. A project is like a namespace, a completely isolated network of users and devices, along with a separate datastore. This is essentially the playground for the developer.
 
@@ -29,12 +32,14 @@ A [project](/guides/project/managing-a-project.mdx) is the first thing you need 
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/create-project.webm" />
 
-## Register your Device
+### Register your Device
 
 When you register a [device](/guides/devices/data.mdx), you make it available in your project's network. It is meant to securely connect devices to cloud.
 
 To register a new device, just type a preferably unique name for your device and click enter. A dialog box will give you your device's unique ID and token that you can copy and then use later in your device code for connecting with the internet.
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/create-device.webm" />
+
+</Steps>
 
 Now that we are done with setting up our environment, lets [move on](/quickstart/hello-world-with-iot.mdx) to building our first hardware device.

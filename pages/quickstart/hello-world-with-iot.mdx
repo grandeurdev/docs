@@ -4,8 +4,7 @@ pinned: pinned
 emoji: 👋🏻
 ---
 import ReactPlayer from 'react-player';
-import { Callout } from 'nextra-theme-docs';
-
+import { Steps } from 'nextra-theme-docs';
 
 # Hello World with IoT
 
@@ -15,6 +14,8 @@ In this tutorial, we will use the `ESP8266 - Espressif Wemos D1 Mini ` module an
 
 First, make sure you are all set up by following this [guideline](/getting-started.mdx).
 
+<Steps>
+
 ### Setting up the Arduino Environment
 
 If you don't already have the Arduino IDE set up , [here's](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing) how you can do it.
@@ -23,15 +24,6 @@ We are essentially using Arduino IDE as it supports ESP8266 library easily. ESP8
 
 With Software Development Kits (SDKs) like Grandeur's, you can directly program the ESP8266’s on-chip Microcontroller to blink the LED.
 Grandeur runs on top of ESP8266 to help you not only store data on cloud but also transfer data from device to a user.
-
-<Callout emoji="✅">
-You can download the library for your specific microcontroller to connect your hardware to grandeur. Our SDK’s can support multiple architectures:
-
-‣ ESP8266 and ESP32 with Arduino
-
-‣ Most Linux based SOCs with Python work on Raspberry PI.
-
-</Callout>
 
 To read more about it, click [here](/guides/hardware)
 
@@ -156,6 +148,8 @@ void connectWiFi() {
 }
 
 ```
+
+</Steps>
 
 ### What Next
 

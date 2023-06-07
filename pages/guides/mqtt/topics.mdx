@@ -1,0 +1,13 @@
+---
+title: About topics
+---
+
+# About topics
+
+A device can only subscribe to its own topic. For an app, it must specify which device it wants to subscribe to. That's why every topic must start with a [device ID](/guides/access-credentials/device-id-token) like `"devicelfdzibp1qwso0jj7blg4a407/state"{:js}` otherwise Grandeur will return an `TOPIC-INVALID` error.
+
+Apart from this, keep the following things in mind as well to avoid unexpected errors:
+
+1. You cannot leave the topic string empty.
+2. A topic does not start or end with a forward slash (`/`).
+3. Topic cannot have an empty level either like `"device//data"{:js}`.
