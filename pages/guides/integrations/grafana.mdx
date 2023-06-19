@@ -1,0 +1,59 @@
+---
+title: Grafana
+---
+import { Steps } from "nextra-theme-docs";
+import ReactPlayer from 'react-player';
+import { Callout } from "nextra-theme-docs";
+
+# Grafana
+
+Grafana is an analytics and visualization platform. It connects to any datasource including databases and can create dashboards on top of them with visualizations and queries. A query describes how to get the data from the datasource and format it for the widget. The visualization just displays that data on the dashboard. You can build dashboards for insights and reporting on just about any data.
+
+To connect Grandeur with Grafana, you have two options:
+
+1. **JSON API plugin**: it connects with Grandeur over the REST API and is good for infrequent fetching of large amounts of data, e.g., list of all devices to initialize the main page of your dashboard.
+2. **MQTT plugin**: it connects with Grandeur over MQTT and is perfect for showing live changes, for example, in a device variable.
+
+## Installation
+
+To install these plugins in your instance, either click on **Connect data** from your instance's home page or from the left menu, go to **Connections > Add new connection** and search for JSON API and MQTT and click on them.
+
+## Configuration
+
+After installing them, you need to configure JSON API and MQTT to connect with Grandeur. In the left menu, go to **Connections > Data sources** and click on **Add new data source** button.
+
+First search for the **JSON API**. Clicking on it will create a new datasource and take you to its configuration page.
+
+Fill the **URL** field with `https://api.grandeur.tech`.
+
+In the **Headers** field, add the **Authorization** header and put your **Auth token** in it. To generate an **Auth token** for Grafana, go to [Grandeur console's Access](https://console.grandeur.dev/access) tab.
+
+In **Query string**, add your **API key** from [Grandeur console's Access](https://console.grandeur.dev/access) page.
+
+Click **Save & test**, if there are no errors, Grafana saves your datasource.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-setup-json-datasource.webm" />
+
+Now search for **MQTT** in **Add new data source** and click on it to open its configuration.
+
+In the **URI** field, paste this url: `tcp://mqtt.api.grandeur.tech`.
+
+Add your **API key** in the **Username** field and **Auth token** in the **Password** field.
+
+Click **Save & test**, if Grafana can connect with Grandeur, it saves your datasource.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-setup-mqtt-datasource.webm" />
+
+## Building dashboards
+
+After setting up these datasources, you are ready to build dashboards. Just go to **Dashboards** from the left menu and click on the **New** button to create a new dashboard.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-create-new-dashboard.webm" />
+
+Click on **Add visualization** to add your first visualization. This will open the visualziation's **Edit panel**. Select the Grandeur JSON from the **Data source** dropdown. This will open the options for the JSON API datasource below.
+
+**Path** tab takes the endpoint you want to send request to. You can find a [list of all endpoints here](/references/rest-api). To list all your devices registered in your project on Grandeur, you can enter `devices/get` here.
+
+In the **Fields** tab, you can describe how to format the response coming from the Grandeur. `$` shows the response as it is (in JSON). You can access fields inside the response with dot-notation like `$.code` or `$.devices`.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-widget-list-all-devices.webm" />

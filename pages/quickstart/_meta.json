@@ -3,5 +3,5 @@
   "hello-world-with-iot": "Hello world with IoT",
   "build-your-custom-app": "Build your custom app",
   "connect-devices-over-mqtt": "Connect devices over MQTT",
-  "grafana" : "REST x Grafana"
+  "connect-grafana" : "Connect Grafana with Grandeur"
 }

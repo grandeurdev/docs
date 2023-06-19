@@ -6,5 +6,6 @@
     "canvas": "Canvas",
     "hardware": "Hardware",
     "access-credentials": "Access Credentials",
-    "mqtt": "MQTT"
+    "mqtt": "MQTT",
+    "integrations": "Connecting with Other Platforms"
 }
