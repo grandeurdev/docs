@@ -7,7 +7,7 @@
     "--": {
         "type": "separator"
     },
-    "client-sdk": "Client SDK",
+    "client-sdk": "App SDK",
     "---": {
         "type": "separator"
     },
