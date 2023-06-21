@@ -1,10 +1,15 @@
 ---
 title: Usage
 ---
+import { Tab, Tabs } from 'nextra-theme-docs';
 
 # Usage
 
-```jsx
+<Tabs items={['NodeJS']}>
+<Tab>
+```javascript
+const mqtt = require("mqtt");
+
 const client  = mqtt.connect("mqtt://mqtt.api.grandeur.tech:1883", {
     username: API_KEY,
     password: AUTH_TOKEN
@@ -35,3 +40,5 @@ client.on("error", function (error) {
     client.end();
 });
 ```
+</Tab>
+</Tabs>

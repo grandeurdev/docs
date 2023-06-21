@@ -1,9 +1,7 @@
 ---
 title: Grafana
 ---
-import { Steps } from "nextra-theme-docs";
 import ReactPlayer from 'react-player';
-import { Callout } from "nextra-theme-docs";
 
 # Grafana
 
@@ -46,7 +44,7 @@ Click **Save & test**, if Grafana can connect with Grandeur, it saves your datas
 
 ## Building dashboards
 
-After setting up these datasources, you are ready to build dashboards. Just go to **Dashboards** from the left menu and click on the **New** button to create a new dashboard.
+After setting up **JSON API** and **MQTT** datasources, you are ready to build dashboards. Just go to **Dashboards** from the left menu and click on the **New** button to create a new dashboard.
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-create-new-dashboard.webm" />
 
@@ -54,6 +52,14 @@ Click on **Add visualization** to add your first visualization. This will open t
 
 **Path** tab takes the endpoint you want to send request to. You can find a [list of all endpoints here](/references/rest-api). To list all your devices registered in your project on Grandeur, you can enter `devices/get` here.
 
-In the **Fields** tab, you can describe how to format the response coming from the Grandeur. `$` shows the response as it is (in JSON). You can access fields inside the response with dot-notation like `$.code` or `$.devices`.
+In the **Fields** tab, you can describe how to format the response coming from the Grandeur. `$` shows the response as it is (in JSON). You can access fields inside the response with dot-notation like `$.code` or `$.devices`. Since `$.devices` is an array, you can select an individual element with `$.devices[0]` and all elements with `$.devices[*]`.
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-widget-list-all-devices.webm" />
+
+**Grandeur JSON** based on the **JSON API** is ideal for infrequent fetching of large amounts of data, not for getting updates in realtime. For that, you can use the **Grandeur MQTT**. Add another visualization but select **Grandeur MQTT** datasource. **MQTT** needs only one thing: the topic. A topic consists of two parts, device ID and variable path joined by a forward slash like `YOUR_DEVICE_ID/current`. Once you type it in, the datasource subscribes to that topic on Grandeur and whenever there is an update, Grandeur forwards that to this datasource.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides-grafana-widget-on-device-variable.webm" />
+
+## What's more
+
+That's all for Grafana for now! We'll share more details soon.
