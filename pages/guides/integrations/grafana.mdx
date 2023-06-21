@@ -32,7 +32,7 @@ In **Query string**, add your **API key** from [Grandeur console's Access](https
 
 Click **Save & test**, if there are no errors, Grafana saves your datasource.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-setup-json-datasource.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-setup-json-datasource.webm" />
 
 Now search for **MQTT** in **Add new data source** and click on it to open its configuration.
 
@@ -42,13 +42,13 @@ Add your **API key** in the **Username** field and **Auth token** in the **Passw
 
 Click **Save & test**, if Grafana can connect with Grandeur, it saves your datasource.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-setup-mqtt-datasource.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-setup-mqtt-datasource.webm" />
 
 ## Building dashboards
 
 After setting up these datasources, you are ready to build dashboards. Just go to **Dashboards** from the left menu and click on the **New** button to create a new dashboard.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-create-new-dashboard.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-create-new-dashboard.webm" />
 
 Click on **Add visualization** to add your first visualization. This will open the visualziation's **Edit panel**. Select the Grandeur JSON from the **Data source** dropdown. This will open the options for the JSON API datasource below.
 
@@ -56,4 +56,4 @@ Click on **Add visualization** to add your first visualization. This will open t
 
 In the **Fields** tab, you can describe how to format the response coming from the Grandeur. `$` shows the response as it is (in JSON). You can access fields inside the response with dot-notation like `$.code` or `$.devices`.
 
-<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana-widget-list-all-devices.webm" />
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-widget-list-all-devices.webm" />
