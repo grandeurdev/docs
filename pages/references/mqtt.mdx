@@ -1,0 +1,47 @@
+---
+title: MQTT
+---
+import { Callout } from "nextra-theme-docs";
+
+# MQTT
+
+MQTT (Message Queuing Telemetry Transport) is a standard for IoT messaging based on the publish-subscribe model. It's one of the most used protocols in IoT.
+
+It consists of clients that connect to a broker instead of directly connecting with each other. This broker stores information about all clients connected to it and the topics they are subscribed to.
+
+When clients connect over MQTT, it opens a realtime connection with the broker. The communication then happens in terms of **Subscribe** and **Publish** messages. When a device subscribes to a topic, it tells the broker it wants to receive all the messages published on that topic. When any device publishes a message on a topic, the broker looks up for devices that are subscribed to that topic and forwards the message to them. Pretty straight forward!
+
+However when you are connecting your devices to Grandeur over MQTT, **there are a few things to keep in mind**.
+
+## Modes
+
+There are two modes to connect: **device mode** and **admin mode**.
+
+### Device mode
+
+When a device uses its [device token](guides/access-credentials/device-id-token) to connect, it connects in the device mode. In device mode, it can only subscribe and publish data on its own variables.
+
+Device mode is the most common mode for devices to connect with Grandeur.
+
+### Admin mode
+
+When a device uses an [auth token](guides/access-credentials/auth-token) to connect, it connects in the admin mode. In admin mode, it can subscribe and publish data to not just its own variables, but also other devices. This means a device in admin mode can freely monitor and control all other devices in the project.
+
+<Callout type="warning">
+A device in admin mode can freely monitor and control any other device in the project. That's a lot of power to unknowingly give to a device. Be cautious of how you use your auth tokens.
+</Callout>
+
+## Topic
+
+A topic structure looks like this: `DEVICE_ID/VARIABLE {:js}`. First part is the ID of the device you want to subscribe or publish to. Second part is the variable of that device.
+
+<Callout type="info">
+**Remember!**
+For a device connected in device mode, device ID is the ID of its own self. If it's not, the method would return a `TOPIC-INVALID` error.
+</Callout>
+
+Apart from this, keep the following things in mind as well to avoid unexpected errors:
+
+1. You cannot leave the topic string empty.
+2. A topic does not start or end with a forward slash (`/`).
+3. Topic cannot have an empty level either like `"device//data"{:js}`.
