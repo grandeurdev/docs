@@ -37,7 +37,7 @@ Now with streams, it looks like this:
 
 **Here is how you can start using streams in your projects:**
 
-On your device side, you need to change nothing. When you call `device.data().set(VARIABLE, VALUE)` now, it automatically adds the latest `VALUE` to the `VARIABLE`'s stream.
+On your device side, you need to change nothing. When you call `device.data().set(VARIABLE, VALUE)` now, it automatically pushes the latest `VALUE` to the `VARIABLE`'s stream.
 
 ```cpp
 
@@ -64,7 +64,7 @@ You can also run queries on a variable stream. Dive deeper in the [streams guide
 
 ## 2. Connect devices over MQTT
 
-This has been long due but you can finally connect your favorite devices to Grandeur with nothing but MQTT. While SDKs still are much more powerful, with MQTT, you can connect your devices and subscribe and publish to topics, like you love to.
+This has been long due but you can finally connect your favorite devices to Grandeur with nothing but MQTT. While SDKs still are much more powerful, with MQTT, you can connect any device and subscribe and publish to topics, like you love to.
 
 Go to [quickstarts](../quickstart/connect-devices-over-mqtt) to connect an ESP8266 to Grandeur over MQTT.
  
@@ -72,7 +72,7 @@ Go to [quickstarts](../quickstart/connect-devices-over-mqtt) to connect an ESP82
 
 With REST API and MQTT now live, a huge opporunity has now opened. You can integrate Grandeur to other platforms like Grafana, Retool, and Datacake.
 
-Previously to interact with your devices, your options were limited to either Grandeur Canvas or building an app using one of the [App SDKs](references/app-sdk). But now, **sky is your limit**.
+Previously to interact with your devices, your options were limited to either [Grandeur Canvas](/references/canvas) or building an app using one of the [App SDKs](/references/app-sdk). But now, **sky is your limit**.
 
 You'd want to go to [quickstarts](quickstart/connect-grafana) to build your first integration with Grafana.
 
@@ -80,7 +80,17 @@ You'd want to go to [quickstarts](quickstart/connect-grafana) to build your firs
 
 We kept the best one for the last as it might just blow your mind. It's just been a couple of months since we launched Grandeur 2.0 where we remodelled it from scratch, made it more integrated, interactive, and just no-brainer to use. Now we want you to not use your brain at all, **we are making Grandeur intelligent**. Imagine Skynet but less hostile to humans, just kidding, it's completely safe 🤖.
 
-Let's take a use case for example. You want to see, for an inverter, at what times did the voltage peak above 120 today. With the old dumb Grandeur, you'd have to first get the device voltage stream using JS SDK or Py SDK and then filter out the samples where the voltage value is greater than 120. Take another use case, your device (inverter) is logging voltage and current to device stream, and you want to calculate the average power consumption for a particular day. One way is to get both streams, apply a formula to calculate power at each instant, and average.
+Let's take a use case for example. You want to see, for an inverter, at what times did the voltage peak above 120 today. With the old non-smart Grandeur, you'd have to get the device voltage stream with a `gt` operator using JS SDK or Py SDK. In javascript, it'd look like this:
+
+```js
+const project = grandeur.init(API_KEY, SECRET);
+const device = project.devices().device(DEVICE_ID);
+
+device.data().get("voltage").gt(120)    //gt: greater than
+.then(console.log);
+```
+
+Take another use case, your device (inverter) is logging voltage and current to device stream, and you want to calculate the average active power consumption for a particular day. One way is to get both streams, apply a formula to calculate active power at each instant, and average.
 
 With the new, *completely non-hostile*, AI, you just need to ask! Ask your question in your natural language: `"At what times did the voltage peak above 120 today?"`, `"how much power on average did the device consume today?"`, `"Calculate me the energy consumed during this whole month."`, or just `"Surprise me with an interesting pattern in my device data"`.
 
