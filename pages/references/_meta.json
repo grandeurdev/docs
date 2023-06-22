@@ -15,6 +15,7 @@
     "----": {
         "type": "separator"
     },
+    "mqtt": "MQTT",
     "cli": "CLI",
     "-----": {
         "type": "separator"
