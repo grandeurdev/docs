@@ -21,7 +21,7 @@
 			"entrypoint": "bash",
 			"args": [
 				"-c",
-				"curl -X POST 'https://dashboard.getporter.dev/api/webhooks/deploy/df970c63406947e4bae8d3246458ec11?commit=$COMMIT_SHA'"
+				"curl -X POST 'https://dashboard.getporter.dev/api/webhooks/deploy/8b28030792d7b6d018dd205a272ccefb?commit=$COMMIT_SHA'"
 			]
 		}
 	]
