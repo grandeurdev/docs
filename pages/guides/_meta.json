@@ -3,6 +3,7 @@
     "devices": "Devices",
     "users": "Users",
     "datastore": "Datastore",
+    "streams": "Streams",
     "canvas": "Canvas",
     "hardware": "Hardware",
     "access-credentials": "Access Credentials",

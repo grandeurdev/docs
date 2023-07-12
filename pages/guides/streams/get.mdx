@@ -1,0 +1,176 @@
+---
+title: Get a variable's stream
+---
+import { Tabs, Tab } from "nextra-theme-docs";
+
+# Get a variable's stream
+
+Stream is part of the variable. So when you `get` a variable, you also get it's stream:
+
+<Tabs items={['Javascript', 'Python']}>
+<Tab>
+```javascript
+const project = grandeur.init(API_KEY, DEVICE_TOKEN);
+const device = project.device(DEVICE_ID);
+
+const temperature = await device.data().get("temperature");
+
+console.log(temperature);
+/**
+ * Prints:
+ * {
+ *    code: "DEVICE-DATA-FETCHED",
+ *    data: 30.6,
+ *    logs: [
+ *        { timestamp: "2022-01-01T16:00:00.000Z", data: 30.6 },
+ *        { timestamp: "2022-01-01T16:00:10.000Z", data: 31.2 },
+ *        { timestamp: "2022-01-01T16:00:20.000Z", data: 31.8 },
+ *        { timestamp: "2022-01-01T16:00:30.000Z", data: 32.4 },
+ *        { timestamp: "2022-01-01T16:00:40.000Z", data: 33 },
+ *        ...]
+ * }
+*/
+```
+</Tab>
+<Tab>
+```python
+project = grandeur.init(API_KEY, DEVICE_TOKEN)
+device = project.device(DEVICE_ID)
+
+temperature = device.data().get("temperature")
+
+print(temperature)
+# Prints:
+# {
+#    code: "DEVICE-DATA-FETCHED",
+#    data: 30.6,
+#    logs: [
+#        { timestamp: "2022-01-01T16:00:00.000Z", data: 30.6 },
+#        { timestamp: "2022-01-01T16:00:10.000Z", data: 31.2 },
+#        { timestamp: "2022-01-01T16:00:20.000Z", data: 31.8 },
+#        { timestamp: "2022-01-01T16:00:30.000Z", data: 32.4 },
+#        { timestamp: "2022-01-01T16:00:40.000Z", data: 33 },
+#        ...]
+# }
+```
+</Tab>
+</Tabs>
+
+`data` contains the latest value of the variable and `logs` contains the whole history.
+
+But a single variable can contain theoretically an infinite amount of data. To find anything in that data is like finding a needle in a haystack.
+
+**That's what querying is for.**
+
+When you get a variable, you can add a query to it as well to filter its data.
+
+<Tabs items={['Javascript', 'Python']}>
+<Tab>
+```javascript
+const project = grandeur.init(API_KEY, DEVICE_TOKEN);
+const device = project.device(DEVICE_ID);
+
+const temperature = await device.data()
+    .get("temperature")
+    .from(new Date("2023-05-25 07:35"))
+    .to(new Date("2023-05-25 12:35"));
+
+console.log(temperature);
+/**
+ * Prints:
+ * {
+ *    code: "DEVICE-DATA-FETCHED",
+ *    data: 30.6,
+ *    logs: [
+ *        { timestamp: "2023-05-25T07:35:08.627Z", data: 30.6 },
+ *        { timestamp: "2023-05-25T08:05:08.876Z", data: 31.2 },
+ *        { timestamp: "2023-05-25T08:35:08.298Z", data: 31.8 },
+ *        { timestamp: "2023-05-25T09:05:08.567Z", data: 32.4 },
+ *        { timestamp: "2023-05-25T10:35:08.821Z", data: 33 },
+ *        ...]
+ * }
+*/
+```
+</Tab>
+<Tab>
+```python
+project = grandeur.init(API_KEY, DEVICE_TOKEN)
+device = project.device(DEVICE_ID)
+
+temperature = device.data()
+    .get("temperature")
+    .from("2023-05-25T07:35:00.000Z")
+    .to("2023-05-25T12:35:00.000Z")
+
+print(temperature)
+# Prints:
+# {
+#    code: "DEVICE-DATA-FETCHED",
+#    data: 30.6,
+#    logs: [
+#        { timestamp: "2023-05-25T07:35:08.627Z", data: 30.6 },
+#        { timestamp: "2023-05-25T08:05:08.876Z", data: 31.2 },
+#        { timestamp: "2023-05-25T08:35:08.298Z", data: 31.8 },
+#        { timestamp: "2023-05-25T09:05:08.567Z", data: 32.4 },
+#        { timestamp: "2023-05-25T10:35:08.821Z", data: 33 },
+#        ...]
+# }
+```
+</Tab>
+</Tabs>
+
+You can query data of the last 3 days, or all the moments when temperature went below 30.
+
+<Tabs items={['Javascript', 'Python']}>
+<Tab>
+```javascript
+const project = grandeur.init(API_KEY, DEVICE_TOKEN);
+const device = project.device(DEVICE_ID);
+
+const temperature = device.data()
+    .get("temperature")
+    .from("2023-05-25T00:00:00.000Z")
+    .lt("30");
+/**
+ * Prints:
+ * {
+ *    code: "DEVICE-DATA-FETCHED",
+ *    data: 30.6,
+ *    logs: [
+ *        { timestamp: "2023-05-25T16:00:00.000Z", data: 29.4 },
+ *        { timestamp: "2023-05-25T08:00:00.000Z", data: 29.4 },
+ *        { timestamp: "2023-05-25T08:30:00.000Z", data: 28.8 },
+ *        { timestamp: "2023-05-25T09:00:00.000Z", data: 29.4 },
+ *        { timestamp: "2023-05-25T10:00:00.000Z", data: 28.8 },
+ *        ...]
+ * }
+ * 
+*/
+```
+</Tab>
+<Tab>
+```python
+project = grandeur.init(API_KEY, DEVICE_TOKEN)
+device = project.device(DEVICE_ID)
+
+temperature = device.data()
+    .get("temperature")
+    .from("2023-05-25T00:00:00.000Z")
+    .lt("30")
+# Prints:
+# {
+#    code: "DEVICE-DATA-FETCHED",
+#    data: 30.6,
+#    logs: [
+#        { timestamp: "2023-05-25T16:00:00.000Z", data: 29.4 },
+#        { timestamp: "2023-05-25T08:00:00.000Z", data: 29.4 },
+#        { timestamp: "2023-05-25T08:30:00.000Z", data: 28.8 },
+#        { timestamp: "2023-05-25T09:00:00.000Z", data: 29.4 },
+#        { timestamp: "2023-05-25T10:00:00.000Z", data: 28.8 },
+#        ...]
+# }
+```
+</Tab>
+</Tabs>
+
+You'll notice whatever query you run, the value of `data` field stays the same. That's because data contains variable's latest value. Your query only applies on the data in `logs`.
