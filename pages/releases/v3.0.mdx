@@ -1,0 +1,97 @@
+---
+title: V3.0.0
+emoji: 🚀
+---
+
+## 1. Streams – the native place for device logs
+
+Streams are the natural evolution for datastore. We launched datastore with [this article on Hackster](https://www.hackster.io/grandeurdev/data-persistence-in-iot-with-grander-fd09ee) to allow devices to store logs and users to view device's history and plot it on neat graphs. As of now, we are retiring the datastore itself as an entity and a separate tab on [console](https://console.grandeur.dev), and merging it with the device.
+
+Each device previously just had data variables that you could frequently update to show current state of the device. We are now turning them from holding a single value into holding a list of all the values (timestamped) since the creation of the variable. And guess what we are calling it, **streams**. Because it looks like an inflow of data from an infinite past going into to an indefinite future.
+
+If you could model a device in JSON, previously it would be like this:
+
+```json
+{
+    "productID": "DRONE-001",
+    "data": {                   // Device variables
+        "extTemperature": 44,
+        "intTemperature": 46,
+        "currentDrawn": 4
+    }
+}
+```
+
+Now with streams, it looks like this:
+
+```json
+{
+    "productID": "DRONE-001",
+    "data": {
+        "extTemperature": [{time: 1684161412566, value: 44}, {time: 1684161413566, value: 45}, {time: 1684161414568, value: 45}, {time: 1684161415569, value: 45}, {time: 1684161416570, value: 45}, {time: 1684161417571, value: 44}, {time: 1684161418573, value: 44}, {time: 1684161419575, value: 43}, {time: 1684161420576, value: 43}, {time: 1684161421577, value: 43}, ...],
+        "intTemperature": [{time: 1684161425581, value: 46}, {time: 1684161426582, value: 47}, {time: 1684161427583, value: 47}, {time: 1684161428497, value: 47}, {time: 1684161429498, value: 47}, {time: 1684161430499, value: 46}, {time: 1684161431500, value: 46}, {time: 1684161432501, value: 46}, {time: 1684161433502, value: 47}, {time: 1684161434504, value: 47}, ...],
+        "currentDrawn": [{time: 1684161425581, value: 4}, {time: 1684161426582, value: 5}, {time: 1684161427583, value: 5}, {time: 1684161428497, value: 5}, {time: 1684161429498, value: 5}, {time: 1684161430499, value: 4}, {time: 1684161431500, value: 4}, {time: 1684161432501, value: 3}, {time: 1684161433502, value: 3}, {time: 1684161434504, value: 3}, ...],
+    }
+}
+```
+
+**Here is how you can start using streams in your projects:**
+
+On your device side, you need to change nothing. When you call `device.data().set(VARIABLE, VALUE)` now, it automatically pushes the latest `VALUE` to the `VARIABLE`'s stream.
+
+```cpp
+
+...
+
+loop() {
+    if(millis() - current > 5000) {
+        device.data().set("extTemperature", 45);
+    }
+
+    project.loop();
+}
+```
+
+On your app side, you automatically get the history of a device variable by calling the same old `device.data().get()`.
+
+```js
+const device = project.devices().device(deviceID);
+const extTemperature = await device.data().get("extTemperature");
+console.log(extTemperature); // { code: "DEVICE-DATA-FETCHED", data: 44, logs: [ { time: 1684161412566, value: 44 }, { time: 1684161413566, value: 45 }, { time: 1684161414568, value: 45 }, { time: 1684161415569, value: 45 }, { time: 1684161416570, value: 45 }, { time: 1684161417571, value: 44 }, { time: 1684161418573, value: 44 }, { time: 1684161419575, value: 43 }, { time: 1684161420576, value: 43 }, { time: 1684161421577, value: 43 }, ...] }
+```
+
+You can also run queries on a variable stream. Dive deeper in the [streams guide](guides/devices/streams).
+
+## 2. Connect devices over MQTT
+
+This has been long due but you can finally connect your favorite devices to Grandeur with nothing but MQTT. While SDKs still are much more powerful, with MQTT, you can connect any device and subscribe and publish to topics, like you love to.
+
+Go to [quickstarts](../quickstart/connect-devices-over-mqtt) to connect an ESP8266 to Grandeur over MQTT.
+ 
+## 3. Integrations with other platforms
+
+With REST API and MQTT now live, a huge opporunity has now opened. You can integrate Grandeur to other platforms like Grafana, Retool, and Datacake.
+
+Previously to interact with your devices, your options were limited to either [Grandeur Canvas](/references/canvas) or building an app using one of the [App SDKs](/references/app-sdk). But now, **sky is your limit**.
+
+You'd want to go to [quickstarts](quickstart/connect-grafana) to build your first integration with Grafana.
+
+## 4. Intelligence
+
+We kept the best one for the last as it might just blow your mind. It's just been a couple of months since we launched Grandeur 2.0 where we remodelled it from scratch, made it more integrated, interactive, and just no-brainer to use. Now we want you to not use your brain at all, **we are making Grandeur intelligent**. Imagine Skynet but less hostile to humans, just kidding, it's completely safe 🤖.
+
+Let's take a use case for example. You want to see, for an inverter, at what times did the voltage peak above 120 today. With the old non-smart Grandeur, you'd have to get the device voltage stream with a `gt` operator using JS SDK or Py SDK. In javascript, it'd look like this:
+
+```js
+const project = grandeur.init(API_KEY, SECRET);
+const device = project.devices().device(DEVICE_ID);
+
+device.data().get("voltage").gt(120)    //gt: greater than
+.then(console.log);
+```
+
+Take another use case, your device (inverter) is logging voltage and current to device stream, and you want to calculate the average active power consumption for a particular day. One way is to get both streams, apply a formula to calculate active power at each instant, and average.
+
+With the new, *completely non-hostile*, AI, you just need to ask! Ask your question in your natural language: `"At what times did the voltage peak above 120 today?"`, `"how much power on average did the device consume today?"`, `"Calculate me the energy consumed during this whole month."`, or just `"Surprise me with an interesting pattern in my device data"`.
+
+Look for a text box in device canvas and you'd know it's time to geek around 🤓!

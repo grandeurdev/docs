@@ -58,7 +58,7 @@ const config: DocsThemeConfig = {
 
   // Discord for navbar
   chat: {
-    link: 'https://discord.gg/gYFBAp2mdj',
+    link: 'https://discord.gg/HQWX4uwkqC',
   },
 
   // Footer
@@ -75,7 +75,7 @@ const config: DocsThemeConfig = {
 
   // Feedback on the right
   feedback: {
-    useLink: () => 'https://discord.gg/gYFBAp2mdj'
+    useLink: () => 'https://discord.gg/HQWX4uwkqC'
   }
   
 }

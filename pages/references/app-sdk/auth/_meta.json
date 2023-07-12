@@ -1,0 +1,9 @@
+{
+    "login": ".login()",
+    "logout": ".logout()",
+    "register": ".register()",
+    "update-profile": ".updateProfile()",
+    "is-authenticated": ".isAuthenticated()",
+    "forgot-password": ".forgotPassword()",
+    "change-password": ".changePassword()"
+}

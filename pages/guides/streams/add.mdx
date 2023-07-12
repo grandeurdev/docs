@@ -1,0 +1,48 @@
+---
+title: Add to a variable's stream
+---
+import ReactPlayer from "react-player";
+import { Tabs, Tab } from "nextra-theme-docs";
+
+# Add to a variable's stream
+
+When you `set` a variable, the new value is autoamtically pushed to the variable's stream, and you can view it on the [Console](https://console.grandeur.dev).
+
+<Tabs  items={['Arduino', 'Raspberry Pi']}>
+<Tab>
+```cpp
+Grandeur::Project project;
+Grandeur::Device device;
+unsigned long current = millis();
+
+void setup() {
+    project = grandeur.init(API_KEY, DEVICE_TOKEN);
+    device = project.device(DEVICE_ID);
+}
+
+void loop() {
+    if(millis() - current > 10000) { // Runs if-block after every 10 seconds.
+        double temperature = readTemperatureFromGPIO();
+        device.data().set("temperature", temperature);
+        current = millis();
+    }
+
+    project.loop();
+}
+```
+</Tab>
+<Tab>
+```python
+project = grandeur.init(API_KEY, DEVICE_TOKEN);
+device = project.device(DEVICE_ID)
+
+while(1) {
+    temperature = readTemperatureFromGPIO()
+    device.data().set("temperature", temperature)
+    wait(10000) # Wait for ten seconds
+}
+```
+</Tab>
+</Tabs>
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/guides/console-view-device-variable-stream.webm" />

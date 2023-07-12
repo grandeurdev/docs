@@ -1,0 +1,62 @@
+---
+title: Datacake
+---
+import ReactPlayer from 'react-player';
+
+# Datacake
+
+Datacake is one of the low-code IoT platforms.
+
+You can connect it to Grandeur using **MQTT**, which means any live updates will be forwarded to Datacake as soon as they happen on your devices.
+
+## Adding an API device on datacake
+
+An API device is a device that sends data to datacake through HTTP API or MQTT. And since we are connecting Datacake with Grandeur over MQTT So before anything, make sure you have an API device added.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/datacake/datacake-add-device.webm" />
+
+## Add Fields
+
+To add data to a device, Datacake requires that you first add fields. Fields are on Datacake what variables are on Grandeur, but unlike Grandeur where variables are dynamic and are automatically created when they are set for the first time, fields on Datacake must be created beforehand as part of the device configuration.
+
+To receive `current` variable from Grandeur, you need to add a **Current** field in your datacake device. For that, open the device **Configuration** and go to the **Fields** section. Click on **Add Field** to add a new variable.
+
+Select the **Type** of variable and fill in the **Name** and **Unit**. Notice the **identifier** automatically gets filled when you type in the **Name**. Click on **Add Field** button to add this variable to your device.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/datacake/datacake-add-field.webm" />
+
+Next when you add the Uplink Decoder, you'll use a variable's **identifier** to save data coming from MQTT inside a particular variable.
+
+## Add MQTT Server
+
+Open the device **Configurations** and go to the **MQTT Configuration** section.
+
+**MQTT Server** subsection has a dropdown where you can select any MQTT servers that you've previously added. To add a new server, click on **Add new MQTT Server**.
+
+Fill the **Hostname** with `mqtt.api.grandeur.tech`.
+
+Toggle **Use Authentication** to ON and fill the **Username** with your **API key** from Grandeur and **Password** with your **Auth token**.
+
+Clicking on **Test Connection** tests your connection configurations, and if it connects, click on the **Add MQTT Server** to add the server, and click **Save** to save the **MQTT Configration**.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/datacake/datacake-add-mqtt-server.webm" />
+
+This is a one-time setup and for any new devices, you can just select this server from the **MQTT Server** dropdown without having to add a new MQTT server.
+
+## Add Uplink Decoder
+
+After selecting the MQTT server, you need to add an **Uplink Decoder** to describe where to store the data coming from Grandeur. Click on **Add Uplink Decoder**.
+
+In **Subscribe to Topics** input box, fill in your topic: `Your_Device_ID/current` (subscribes to `current` variable).
+
+**Decoder function** describes how to send the incoming data to your device when Datacake receives an update on the topic in the **Subscribe to topics** field. Your `deviceID` goes in the `device` field, variable **identifier** goes in `field`, and `payload` in `value`. Don't forget to uncomment this `return`-statement.
+
+Finally, click on **Add uplink decoder** to add this decoder to the MQTT, and click **Save**.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/datacake/datacake-add-uplink-decoder.webm" />
+
+## Visualize live data
+
+Add a **Slider** widget on Canvas to manipulate the `current` variable to see the updates being forwarded automatically to Datacake.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/datacake/datacake-final-demo.webm" />

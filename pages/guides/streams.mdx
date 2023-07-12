@@ -1,0 +1,47 @@
+---
+title: Streams
+---
+
+# Streams
+
+Every device variable has a stream attached to it. A stream is a complete history of that variable, every change that occurred and at what time, since the variable was created.
+
+Let's say your device `set`s a variable `temperature` after every 10 seconds like this:
+
+```cpp filename="Arduino"
+Grandeur::Project project;
+Grandeur::Device device;
+unsigned long current = millis();
+
+void setup() {
+    project = grandeur.init(API_KEY, DEVICE_TOKEN);
+    device = project.device(DEVICE_ID);
+}
+
+void loop() {
+    if(millis() - current > 10000) { // Runs if-block after every 10 seconds.
+        double temperature = readTemperatureFromGPIO();
+        device.data().set("temperature", temperature);
+        current = millis();
+    }
+
+    project.loop();
+}
+```
+
+If you `get` the temperature variable, here's how the result shows:
+
+```python filename="Python"
+project = grandeur.init(API_KEY, DEVICE_TOKEN);
+device = project.device(DEVICE_ID);
+
+print(device.data().get("temperature"));
+# Prints:
+# {
+#    code: "DEVICE-DATA-FETCHED",
+#    data: 30.6,
+#    logs: [{ timestamp: "2022-01-01T16:00:00.000Z", data: 30.6 }, { timestamp: "2022-01-01T16:00:10.000Z", data: 31.2 }, { timestamp: "2022-01-01T16:00:20.000Z", data: 31.8 }, { timestamp: "2022-01-01T16:00:30.000Z", data: 32.4 }, { timestamp: "2022-01-01T16:00:40.000Z", data: 33 }, ...]
+# }
+```
+
+When you delete a variable, you also delete its stream.

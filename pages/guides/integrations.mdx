@@ -1,0 +1,20 @@
+---
+title: Connecting with other platforms
+---
+import { Callout } from "nextra-theme-docs";
+
+# Connecting with other platforms
+
+I think the best thing about Grandeur is it's open, from all sides. Which means your data isn't stuck at one place in any way, **you can just connect any platform of your choice** and forward data coming from your devices there, in realtime, with the same rate as you receive it on Grandeur. This saves you from any possible vendor lock-ins and opens your project to unprecedented possibilities.
+
+Right now, there are two ways to connect other platforms with Grandeur:
+- REST
+- MQTT
+
+REST works on pull approach, the famous request-response design, where you have to send a request to get the new data. On the other hand, MQTT applies the push approach, and is more event-driven. If you want to run a **"list-all-devices"** query to initialize your app's home page with your devices (something that's only done once or doesn't need frequent updating), you should choose REST. But if you want to show the live value of a device variable, MQTT is your way to go.
+
+<Callout type="info">
+    Other integration methods like WebHooks are in active development and will be added very soon!
+</Callout>
+
+Using these methods, you can connect to most platforms out there, including Grafana, Datacake, Retool, Mixpanel, and any other data plotting or processing tools. With Zapier and IFTTT, you can forward your devices data to social apps like Twitter and Whatsapp or build automations. The sky is never-ending to cover and we'll keep adding more platforms here as we test them. You can suggest your favorite ones to us on [Discord](https://discord.gg/HQWX4uwkqC) or email us at [hi@grandeur.dev](mailto:hi@grandeur.dev).

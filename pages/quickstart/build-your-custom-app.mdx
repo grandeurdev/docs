@@ -5,21 +5,24 @@ emoji: 🚀
 ---
 import ReactPlayer from 'react-player';
 import { Callout } from 'nextra-theme-docs';
+import { Steps } from 'nextra-theme-docs';
 
 
-# Builing Your Custom App
+### Builing Your Custom App
 
 We've already accomplished the task of blinking the on-board LED of ESP8266 through our Grandeur Platform so let's take things one step further. Would'nt it be cool if we could control that LED using our custom app.
 That is exactly what we're going to build.
 
 Just like the last time, make sure you're all set up by following this tutorial [here](/getting-started).
 
-## Get Started on Web
+<Steps>
+
+### Get Started on Web
 
 We are going to use the [JavaScript SDK](https://github.com/grandeurtech/grandeurcloud-js-sdk) to integrate Grandeur into our app.
 The first step is to create an application through which we will publish data to our device. Our app will contain two files `index.html` where we will design the layout of the page and `main.js` where we will build the logic of page.
 
-## Web Application
+### Web Application
 
 Here's our `index.html` file in which we define our layout and style.
 
@@ -371,15 +374,17 @@ start();
 
 <ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/js-app/js-app.webm" />
 
-## Testing Locally
+### Testing Locally
 
 Here we are finally. Let's test what we have build. We go to run our web app to send the data. For that we run a local server with the live server extension of our editing environment.
 
-<Callout emoji="ℹ️">
+<Callout type="info">
   [<ins>Live Server</ins>
   ](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is
   the go-to option in VS Code. Just install the extension and you can see a Go Live
   icon appear at the bottom.
 </Callout>
 
-But there's a security measure. You cannot send data from your app to the Cloud unless you [whitelist your domain](./guides/access-credentials /cors.mdx) in the settings section. Your domain is the address that is shown in the browser's URL bar when you open your app. This prevents all the unidentified sources from accessing your Cloud project's data in case you lose your access key.
+But there's a security measure. You cannot send data from your app to the Cloud unless you [whitelist your domain](/guides/access-credentials/cors.mdx) in the settings section. Your domain is the address that is shown in the browser's URL bar when you open your app. This prevents all the unidentified sources from accessing your Cloud project's data in case you lose your access key.
+
+</Steps>

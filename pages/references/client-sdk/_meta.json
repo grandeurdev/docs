@@ -1,9 +1,0 @@
-{
-    "installation": "Installation",
-    "initialization": "grandeur.init()",
-    "on-connection": "project.onConnection()",
-    "is-connected": "project.isConnected()",
-    "auth": "project.auth()",
-    "devices": "project.devices()",
-    "datastore": "project.datastore()"
-}

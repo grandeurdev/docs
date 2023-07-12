@@ -1,6 +1,0 @@
-{
-    "get": ".get()",
-    "on": ".on()",
-    "count": ".count()",
-    "device": ".device()"
-}

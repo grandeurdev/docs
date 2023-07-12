@@ -1,0 +1,64 @@
+---
+title: Retool
+---
+import { Steps } from "nextra-theme-docs";
+import ReactPlayer from 'react-player';
+import { Callout } from "nextra-theme-docs";
+
+# Retool
+
+Retool is a software development platform that allows people to create custom tools, applications, and workflows without needing to write code from scratch. 
+It simplifies the process of building user interfaces and connecting to various data sources, making it easier for individuals or teams to build internal tools for their specific needs.
+
+To connect Grandeur with Retool you have to choose RESTQuery(restapi) as a data source and you are good to go. 
+
+## Basic Setup and Querying
+
+Press the **Create New** button and select **App**
+
+Choose **RESTQuery(restapi)** as **resource**.
+
+Choose the **action type** as **POST** and then fill in the **URL field** with `https://api.grandeur.tech` followed by the path or endpoint you want to send the request to. 
+You can find a [list of all endpoints here](/references/rest-api)
+For example, to list all your devices registered in your project and their details, you will use `devices/get`.
+
+In **URL Parameters**, add your **API key** from [Grandeur console's Access](https://console.grandeur.dev/access) page.
+
+In the **Headers** field, add the **Authorization** header and put your **Auth token** in it. To generate an **Auth token** for Retool, go to [Grandeur console's Access](https://console.grandeur.dev/access) tab.
+
+Click **Save and Run** and you can see a complete response in the response section.
+
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/retool/retool-basic-query.webm" />
+
+
+## Formatting your Query
+
+Queries can be filtered to obtain the desired response. Enable the **transformer** to achieve that.
+
+In this case we are querying for only 
+four parameters ; ID,name,status and pairing status using the following code:
+
+```js
+return data.devices.map(device => ({id: device.deviceID, name: device.name, status: device.status, paired:device.paired}));
+```
+
+Click **Save and Run** to run your query and you will see only requested parameters in the response.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/retool/retool-formatting-query.webm" />
+
+
+## Visualisation
+
+Use the multiple components Retool offers for better visualization. In this case we'll be using a **table** to visualise our response. 
+
+Open the **right sidebar**.
+
+Drag and drop a table from the **components list** on the right.
+
+You can customise your component/app by using the **styles** option.
+
+Use the **toggle preview mode icon** to preview your app.
+
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/retool/retool-visualise.webm" />

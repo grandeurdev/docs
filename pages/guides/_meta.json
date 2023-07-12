@@ -3,7 +3,9 @@
     "devices": "Devices",
     "users": "Users",
     "datastore": "Datastore",
+    "streams": "Streams",
     "canvas": "Canvas",
     "hardware": "Hardware",
-    "access-credentials": "Access Credentials"
+    "access-credentials": "Access Credentials",
+    "integrations": "Connecting with Other Platforms"
 }

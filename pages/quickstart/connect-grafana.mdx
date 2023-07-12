@@ -1,0 +1,124 @@
+---
+title: Connect Grafana with Grandeur
+---
+import { Steps } from "nextra-theme-docs";
+import ReactPlayer from 'react-player';
+import { Callout } from "nextra-theme-docs";
+
+# Connect Grafana with Grandeur
+
+Grandeur is not just making it possible to bring any board online, you can also connect Grandeur with other platforms. This opens the doors for interconnectivity where your data isn't stuck in one place anywhere on the internet, it can roam freely and everywhere, from the source (your devices) to wherever you need it, in realtime.
+
+**Grandeur will act as a gateway for your devices to the internet of humans!**
+
+In this document, we'll demonstrate how you can connect Grandeur to Grafana, but you can use the REST and MQTT interfaces to do the same for any other platform that supports it. [Keep an eye on this list](/guides/integrations) as we expand it by testing Grandeur with more and more platforms out there.
+
+<Steps>
+
+### Log in or Sign up on Grafana
+
+If you have never used Grafana before, go to [grafana.com](https://grafana.com) and **register** to create an account, otherwise just **sign in**.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-signin.webm" />
+
+### Launch Grafana instance
+
+Signing in takes you to the **Grafana Cloud Portal** where you can manage your cloud instances. Go ahead and just create or launch the Grafana instance. Everything you'll do from now on happens inside this instance, it's like Grafana has provisioned you a VM to work in with the Grafana core preinstalled.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-launch-instance.webm" />
+
+### Set up datasources
+
+Before you build any dashboards, you need to create new datasources that talk with Grandeur to get data over REST and MQTT. Click on **Connect Data** to get started with datasources.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-connect-data.webm" />
+
+#### Install JSON API plugin to connect via REST
+
+JSON API helps you connect to a datasource over a REST API that returns responses in JSON (almost all of them). To use it as a datasource, you first need to install it as a plugin in your Grafana instance. For that, search for **JSON API** in the **Add new connection** search bar and click on **JSON API**.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-install-json-plugin.webm" />
+
+#### Install MQTT plugin to connect via MQTT
+
+After the JSON API is installed, go back to the **Add new connection** page, search for MQTT in the search bar, and click on the **MQTT** plugin to install it.
+
+MQTT helps you connect to an MQTT broker and subscribe to topics on that broker. Any entity that is publishing on your subscribed topic on the broker acts as your datasource.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-install-mqtt-plugin.webm" />
+
+#### Add datasources
+
+From the menu on the left, look for **Connections > Data sources**.
+
+To add a **JSON API** datasource, click on **Add new data source** button and search for JSON API. Clicking on it will create a new datasource and take you to its configuration page. There you can give your datasource a name, add the Grandeur API's URL (https://api.grandeur.tech) to connect to, and add credentials that the datasource needs to connect to the API. Add the API key in the **Query string** field as `apiKey=YOUR_API_KEY` and your Auth token in the **Headers** field as the **Authorization** header. Clicking on **Save and test** tests the API availibility and if it doesn't return an error, it saves the datasource. You can see it in the list of datasources by going back to **Connection > Data source** page from the left menu.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-setup-json-datasource.webm" />
+
+Now to add an **MQTT** datasource, click again on the **Add new data source** button and search for the MQTT. Clicking on it will create a new datasource and take you to its configuration page. There you can give your datasource a name, add the Grandeur MQTT broker's URI ([tcp://mqtt.api.grandeur.tech](tcp://mqtt.api.grandeur.tech)) to connect to, and add credentials that the datasource needs to connect to the broker. Add the API key in the **Username** field and your Auth token in the **Password** field. Clicking on **Save and test** tests the broker's availibility and if it doesn't return an error, it saves the datasource. You can see it in the list of datasources too by going back to **Connection > Data source** page from the left menu.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-setup-mqtt-datasource.webm" />
+
+<Callout type="warning">
+The plugins need a couple of minutes to install, so don't worry if you can't see JSON API or MQTT in **Add data source** search list yet. Just wait a couple of minutes before trying again.
+</Callout>
+
+### Set up the dashboard
+
+After you have the datasources set up, you are ready to build dashboards that query or subscribe to data from Grandeur and put it on display.
+
+Go to the **Dashboards** page from the left menu, and create a new dashboard.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-create-new-dashboard.webm" />
+
+#### List all devices
+
+To add your first widget to your newly created dashboard, click on **Add Visualization** and select a datasource. To list all our devices on Grandeur, we'll use the JSON API datasource we named **Grandeur JSON**.
+
+On the widget **edit panel**, first give your widget a title, and change its type to **Table**. Table is one of the most flexible and powerful visualizations in Grafana that can display almost any kind of data and you can use it as a debugging tool when any other visualization fails to show any data at all.
+
+##### Now let's come to the query part.
+
+To list all devices, you need to send a **POST** request on `/devices/get` endpoint, so that's what we add to the **Path** tab. **Fields** tab is where you format your query's response. Whatever you do here affects the query's output and not the input. You have two ways to format your query's response: **JSONPath** and **JSONata**, they are similar and different in ways, and for now, we'll use the default **JSONPath**.
+
+Writing `$` shows the full response as it is without any formatting. You can do dot-notation from here on to access any fields inside the response like `$.code` and `$.devices`. If a field is an array, you can do `$.devices[0]` and `$.devices[1]` to access elements at index 0 and 1 respectively. You can also just show all elements with a `*` in place of the index like this: `$.devices[*]`. And if the array has JSON elements, you can access each elements fields like `$.devices[*].name` and `$.devices[*].status`. An interesting thing to note about the `*` operator is if you use it in a JSON object instead of an array, like `$.*` or `$[*]`, it shows values of all the JSON fields, and no keys.
+
+Grafana autoamtically adds rows if your JSONPath returns more than one element. But columns are not automatically added, you need to click on the **+** next to **Alias** to add more columns and describe with **JSONPath**, what to show in each column.
+
+Once you are satisfied what your widget shows, you can **Save** your widget and **Apply** to go back to the Dashboard.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-widget-list-all-devices.webm" />
+
+#### Get a device variable
+
+Add another visualization to display a device variable. Select **Grandeur JSON** as the datasource again, and write `device/data/get` in **Path** and `$` in **Fields** to show the full response. For `device/data/get` endpoint, you need to specify the device ID and the path of the variable you want to show, both of which we add to the **Body** as **JSON**.
+
+Don't forget to change to **Cache Time** to **0s** otherwise it wouldn't update the response instantly when you change the query.
+
+Finally when the query returns the device data, replace `$` with `$.data` in the **Fields** tab to only display data. And change the Widget type to **Stat** which is a special type to only show one value and its change. **Save** the widget and **Apply** to back to the Dashboard.
+
+All the widgets on the dashboard only run their queries once when the dashboard loads for the first time. To update the dashboard with new data, you need to click on the cycle icon on the top right. You can also click on its dropdown to set a timer which means your dashboard would be automatically be refershed after every X seconds or minutes pass.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-widget-get-device-variable.webm" />
+
+#### Track live variable updates with MQTT
+
+REST is limited by the requirement to request to get the update. To get live updates as they happen, you need to use the MQTT datasource.
+
+Add a new visualization but this time choose Grandeur MQTT. There is only one thing to worry about here: the **Topic**. Your topic consists of two things: your device ID and the name (path) of your variable, joined by a forward slash like: `YOUR_DEVICE_ID/current`.
+
+The time range selector above the display panel decides how frequent should the widget be updated. The broader the range, the lesser frequent the widget updates. You can see the current update interval on the right side of the **Query inspector**. Once you are satisfied with it, click **Save** and **Apply** to go back to the Dashboard.
+
+You can select the time range for all the widgets from the dashboard too.
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-widget-on-device-variable.webm" />
+
+### Final demo
+
+Here's how your dashboard would work when you change the variable from Canvas:
+
+<ReactPlayer playing controls volume={0} width={832} height={468} url="/demos/grafana/grafana-final-demo.webm" />
+
+The **Current (live)** widget is over MQTT and so it updates whenever we change current variable from Canvas. On the other hand, **Current** widget is over REST so it doesn't update until we hit refresh.
+
+</Steps>
